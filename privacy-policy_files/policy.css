@@ -1,0 +1,163 @@
+.default-page .tab-control-language {
+    margin: 65px 0 56px;
+}
+
+.default-page .tab-control-language .tab-language {
+    display: flex;
+    gap: 24px;
+}
+
+.default-page .tab-control-language .tab-language .language-item {
+    width: 83px;
+    height: 52px;
+    border: 1px solid #E1E1E1;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 198.48%;
+    color: #2A2A2A;
+    cursor: pointer;
+    text-align: center;
+}
+
+.default-page .tab-control-language .tab-language .language-item.active ,
+.default-page .tab-control-language .tab-language .language-item:hover {
+    background: #57D575;
+    border-color: #57D575;
+}
+
+.default-page .tab-control-language .tab-content {
+    max-width: 82.95%;
+    margin-top: 40px;
+}
+.default-page .tab-control-language .tab-content > *{
+   
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 170%;    
+        color: #2A2A2A;
+}
+
+p,
+ol,
+ul,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+ul li::marker {
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+    .default-page .tab-control-language .tab-content {
+        max-width: 100%;
+    }
+
+    ul,
+    ol {
+        font-family: var(--list--font-family);
+        /* margin: 0; */
+        padding-left: calc(2 * var(--global--spacing-horizontal));
+        padding-left: 30px;
+    }
+
+    ul.aligncenter,
+    ol.aligncenter {
+        list-style-position: inside;
+        padding: 0;
+    }
+
+    ul.alignright,
+    ol.alignright {
+        list-style-position: inside;
+        text-align: right;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .default-page .tab-control-language {
+        margin: 60px 0 89px;
+    }
+
+    .default-page .tab-control-language .tab-language {
+       
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+        .default-page .tab-control-language .tab-content {
+        margin-top: 60px;
+        }
+
+    .default-page .tab-control-language .tab-language .language-item {
+        width: 72px;
+    }
+
+    p,
+    ol,
+    ul,
+    dl,
+    dt,
+    dd,
+    blockquote,
+    figure,
+    fieldset,
+    form,
+    legend,
+    textarea,
+    pre,
+    iframe,
+    hr,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480.98px) {
+
+
+    .default-page .tab-control-language .tab-language {
+
+        gap: 7px;
+
+    }
+
+}
