@@ -1,0 +1,139 @@
+
+enemy1.png
+size: 670,240
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 450, 9
+  size: 106, 94
+  orig: 107, 94
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 382, 105
+  size: 133, 118
+  orig: 134, 120
+  offset: 0, 2
+  index: -1
+head1
+  rotate: true
+  xy: 502, 106
+  size: 132, 118
+  orig: 134, 120
+  offset: 1, 1
+  index: -1
+kua
+  rotate: false
+  xy: 614, 73
+  size: 53, 29
+  orig: 53, 29
+  offset: 0, 0
+  index: -1
+tx_dao
+  rotate: true
+  xy: 2, 6
+  size: 232, 244
+  orig: 256, 256
+  offset: 4, 3
+  index: -1
+wp
+  rotate: true
+  xy: 248, 75
+  size: 163, 132
+  orig: 165, 134
+  offset: 1, 1
+  index: -1
+youjiao1
+  rotate: false
+  xy: 622, 185
+  size: 46, 53
+  orig: 48, 55
+  offset: 1, 1
+  index: -1
+youjiao2
+  rotate: true
+  xy: 614, 44
+  size: 27, 51
+  orig: 29, 53
+  offset: 1, 1
+  index: -1
+youjiao3
+  rotate: true
+  xy: 590, 8
+  size: 35, 21
+  orig: 37, 23
+  offset: 1, 1
+  index: -1
+youshou1
+  rotate: false
+  xy: 303, 15
+  size: 45, 58
+  orig: 46, 59
+  offset: 0, 0
+  index: -1
+youshou2
+  rotate: false
+  xy: 622, 104
+  size: 40, 35
+  orig: 42, 37
+  offset: 1, 1
+  index: -1
+youshou3
+  rotate: true
+  xy: 558, 2
+  size: 40, 30
+  orig: 42, 32
+  offset: 1, 1
+  index: -1
+youshou4
+  rotate: true
+  xy: 613, 7
+  size: 35, 31
+  orig: 37, 33
+  offset: 1, 1
+  index: -1
+zuojiao1
+  rotate: false
+  xy: 350, 16
+  size: 43, 57
+  orig: 45, 59
+  offset: 1, 1
+  index: -1
+zuojiao2
+  rotate: true
+  xy: 558, 70
+  size: 34, 54
+  orig: 36, 56
+  offset: 1, 1
+  index: -1
+zuojiao3
+  rotate: false
+  xy: 558, 45
+  size: 35, 23
+  orig: 37, 25
+  offset: 1, 1
+  index: -1
+zuoshou1
+  rotate: false
+  xy: 248, 10
+  size: 53, 63
+  orig: 53, 63
+  offset: 0, 0
+  index: -1
+zuoshou2
+  rotate: true
+  xy: 622, 141
+  size: 42, 46
+  orig: 44, 48
+  offset: 1, 1
+  index: -1
+zuoshou3
+  rotate: true
+  xy: 395, 2
+  size: 101, 53
+  orig: 103, 55
+  offset: 1, 1
+  index: -1

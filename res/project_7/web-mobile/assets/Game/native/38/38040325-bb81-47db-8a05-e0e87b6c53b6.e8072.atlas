@@ -1,0 +1,27 @@
+
+statue.png
+size: 655,164
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guang
+  rotate: true
+  xy: 342, 10
+  size: 152, 240
+  orig: 152, 240
+  offset: 0, 0
+  index: -1
+ren
+  rotate: true
+  xy: 2, 2
+  size: 160, 338
+  orig: 160, 338
+  offset: 0, 0
+  index: -1
+zuan
+  rotate: true
+  xy: 584, 92
+  size: 70, 69
+  orig: 73, 72
+  offset: 1, 2
+  index: -1

@@ -1,0 +1,146 @@
+
+zhujue1.png
+size: 702,268
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 629, 25
+  size: 71, 91
+  orig: 75, 109
+  offset: 0, 18
+  index: -1
+head
+  rotate: true
+  xy: 429, 117
+  size: 149, 133
+  orig: 150, 133
+  offset: 1, 0
+  index: -1
+head1
+  rotate: true
+  xy: 564, 118
+  size: 148, 131
+  orig: 148, 131
+  offset: 0, 0
+  index: -1
+hua
+  rotate: true
+  xy: 500, 2
+  size: 67, 127
+  orig: 67, 127
+  offset: 0, 0
+  index: -1
+kua
+  rotate: true
+  xy: 477, 71
+  size: 44, 27
+  orig: 44, 27
+  offset: 0, 0
+  index: -1
+tx_dao
+  rotate: false
+  xy: 2, 22
+  size: 232, 244
+  orig: 256, 256
+  offset: 4, 3
+  index: -1
+wp
+  rotate: false
+  xy: 236, 59
+  size: 191, 207
+  orig: 193, 209
+  offset: 1, 1
+  index: -1
+youjiao1
+  rotate: false
+  xy: 313, 4
+  size: 30, 53
+  orig: 30, 56
+  offset: 0, 0
+  index: -1
+youjiao2
+  rotate: false
+  xy: 440, 6
+  size: 23, 59
+  orig: 25, 61
+  offset: 1, 1
+  index: -1
+youjiao3
+  rotate: false
+  xy: 2, 4
+  size: 31, 16
+  orig: 33, 18
+  offset: 1, 1
+  index: -1
+youshou1
+  rotate: false
+  xy: 236, 4
+  size: 38, 53
+  orig: 40, 55
+  offset: 1, 1
+  index: -1
+youshou2
+  rotate: false
+  xy: 397, 7
+  size: 41, 50
+  orig: 43, 52
+  offset: 1, 1
+  index: -1
+youshou3
+  rotate: true
+  xy: 538, 76
+  size: 39, 30
+  orig: 41, 32
+  offset: 1, 1
+  index: -1
+youshou4
+  rotate: true
+  xy: 506, 75
+  size: 40, 30
+  orig: 42, 32
+  offset: 1, 1
+  index: -1
+zuojiao1
+  rotate: false
+  xy: 276, 4
+  size: 35, 53
+  orig: 37, 55
+  offset: 1, 1
+  index: -1
+zuojiao2
+  rotate: false
+  xy: 465, 7
+  size: 33, 58
+  orig: 35, 60
+  offset: 1, 1
+  index: -1
+zuojiao3
+  rotate: true
+  xy: 602, 92
+  size: 24, 20
+  orig: 26, 22
+  offset: 1, 1
+  index: -1
+zuoshou1
+  rotate: true
+  xy: 345, 6
+  size: 51, 50
+  orig: 53, 52
+  offset: 1, 1
+  index: -1
+zuoshou2
+  rotate: false
+  xy: 429, 67
+  size: 46, 48
+  orig: 48, 50
+  offset: 1, 1
+  index: -1
+zuoshou3
+  rotate: true
+  xy: 570, 77
+  size: 39, 30
+  orig: 41, 32
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,104 @@
+
+princess.png
+size: 921,308
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 296, 304
+  orig: 296, 456
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: false
+  xy: 300, 81
+  size: 213, 225
+  orig: 213, 246
+  offset: 0, 21
+  index: -1
+hair2
+  rotate: false
+  xy: 300, 5
+  size: 104, 74
+  orig: 105, 74
+  offset: 1, 0
+  index: -1
+hair3
+  rotate: true
+  xy: 515, 34
+  size: 67, 77
+  orig: 73, 80
+  offset: 0, 3
+  index: -1
+head1
+  rotate: false
+  xy: 648, 143
+  size: 131, 163
+  orig: 133, 165
+  offset: 1, 1
+  index: -1
+head2
+  rotate: true
+  xy: 648, 10
+  size: 131, 161
+  orig: 131, 163
+  offset: 0, 0
+  index: -1
+head3
+  rotate: false
+  xy: 515, 103
+  size: 131, 203
+  orig: 133, 205
+  offset: 1, 1
+  index: -1
+head4
+  rotate: false
+  xy: 781, 145
+  size: 131, 161
+  orig: 131, 163
+  offset: 0, 0
+  index: -1
+huangguan
+  rotate: true
+  xy: 864, 74
+  size: 69, 55
+  orig: 71, 57
+  offset: 1, 1
+  index: -1
+hudie
+  rotate: true
+  xy: 594, 31
+  size: 70, 45
+  orig: 72, 47
+  offset: 1, 1
+  index: -1
+youshou1
+  rotate: true
+  xy: 811, 3
+  size: 38, 64
+  orig: 40, 66
+  offset: 1, 1
+  index: -1
+youshou2
+  rotate: false
+  xy: 811, 43
+  size: 51, 100
+  orig: 52, 101
+  offset: 0, 0
+  index: -1
+zuoshou1
+  rotate: false
+  xy: 877, 4
+  size: 33, 68
+  orig: 35, 70
+  offset: 1, 1
+  index: -1
+zuoshou2
+  rotate: true
+  xy: 406, 6
+  size: 73, 99
+  orig: 74, 99
+  offset: 1, 0
+  index: -1

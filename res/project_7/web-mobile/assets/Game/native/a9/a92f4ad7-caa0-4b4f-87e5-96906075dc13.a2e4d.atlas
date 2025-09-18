@@ -1,0 +1,139 @@
+
+enemy6.png
+size: 93,219
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bei
+  rotate: false
+  xy: 2, 110
+  size: 54, 40
+  orig: 54, 40
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 152
+  size: 65, 68
+  orig: 65, 68
+  offset: 0, 0
+  index: -1
+body1
+  rotate: true
+  xy: 58, 109
+  size: 23, 32
+  orig: 23, 32
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 63
+  size: 50, 45
+  orig: 50, 45
+  offset: 0, 0
+  index: -1
+head1
+  rotate: false
+  xy: 2, 16
+  size: 50, 45
+  orig: 50, 45
+  offset: 0, 0
+  index: -1
+houjiao1_1
+  rotate: false
+  xy: 72, 191
+  size: 18, 26
+  orig: 18, 32
+  offset: 0, 6
+  index: -1
+houjiao1_2
+  rotate: true
+  xy: 20, 3
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+houjiao1_3
+  rotate: false
+  xy: 72, 145
+  size: 17, 7
+  orig: 17, 7
+  offset: 0, 0
+  index: -1
+houjiao2_3
+  rotate: false
+  xy: 72, 145
+  size: 17, 7
+  orig: 17, 7
+  offset: 0, 0
+  index: -1
+houjiao2_1
+  rotate: false
+  xy: 72, 163
+  size: 18, 26
+  orig: 18, 32
+  offset: 0, 6
+  index: -1
+houjiao2_2
+  rotate: true
+  xy: 2, 4
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 54, 57
+  size: 50, 37
+  orig: 50, 37
+  offset: 0, 0
+  index: -1
+qianjiao1_1
+  rotate: true
+  xy: 54, 31
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+qianjiao1_2
+  rotate: true
+  xy: 37, 2
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+qianjiao1_3
+  rotate: false
+  xy: 72, 154
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+qianjiao2_3
+  rotate: false
+  xy: 72, 154
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+qianjiao2_1
+  rotate: true
+  xy: 54, 5
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+qianjiao2_2
+  rotate: false
+  xy: 58, 134
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+w
+  rotate: true
+  xy: 72, 134
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
