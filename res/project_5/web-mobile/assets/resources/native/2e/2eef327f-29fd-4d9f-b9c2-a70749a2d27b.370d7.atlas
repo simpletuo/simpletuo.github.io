@@ -1,0 +1,27 @@
+
+vfx_boom.png
+size: 357,237
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Spot_028
+  rotate: false
+  xy: 237, 117
+  size: 118, 118
+  orig: 128, 128
+  offset: 5, 5
+  index: -1
+Spot_058
+  rotate: false
+  xy: 237, 49
+  size: 68, 66
+  orig: 72, 71
+  offset: 2, 3
+  index: -1
+dtvc_aa03
+  rotate: false
+  xy: 2, 2
+  size: 233, 233
+  orig: 236, 236
+  offset: 1, 2
+  index: -1

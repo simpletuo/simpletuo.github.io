@@ -1,0 +1,125 @@
+
+faucet1.png
+size: 406,1041
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dtvc_aa03
+  rotate: false
+  xy: 2, 577
+  size: 233, 233
+  orig: 236, 236
+  offset: 1, 2
+  index: -1
+icon-key
+  rotate: false
+  xy: 201, 524
+  size: 30, 51
+  orig: 30, 51
+  offset: 0, 0
+  index: -1
+lizo_shui_00006
+  rotate: false
+  xy: 237, 495
+  size: 163, 177
+  orig: 163, 177
+  offset: 0, 0
+  index: -1
+lizo_shui_00028
+  rotate: false
+  xy: 237, 495
+  size: 163, 177
+  orig: 163, 177
+  offset: 0, 0
+  index: -1
+lizo_shui_00041
+  rotate: false
+  xy: 237, 495
+  size: 163, 177
+  orig: 163, 177
+  offset: 0, 0
+  index: -1
+lizo_shui_00009
+  rotate: false
+  xy: 103, 3
+  size: 55, 74
+  orig: 55, 75
+  offset: 0, 1
+  index: -1
+lizo_shui_00012
+  rotate: true
+  xy: 2, 2
+  size: 75, 99
+  orig: 75, 99
+  offset: 0, 0
+  index: -1
+lizo_shui_00015
+  rotate: true
+  xy: 289, 59
+  size: 91, 115
+  orig: 91, 115
+  offset: 0, 0
+  index: -1
+lizo_shui_00019
+  rotate: false
+  xy: 176, 12
+  size: 111, 138
+  orig: 111, 139
+  offset: 0, 0
+  index: -1
+lizo_shui_00024
+  rotate: false
+  xy: 256, 674
+  size: 145, 163
+  orig: 147, 163
+  offset: 1, 0
+  index: -1
+xing_st_00018
+  rotate: true
+  xy: 2, 79
+  size: 124, 172
+  orig: 300, 300
+  offset: 95, 89
+  index: -1
+xing_st_00021
+  rotate: false
+  xy: 256, 839
+  size: 146, 200
+  orig: 300, 300
+  offset: 83, 75
+  index: -1
+xing_st_00025
+  rotate: false
+  xy: 201, 271
+  size: 173, 222
+  orig: 300, 300
+  offset: 69, 54
+  index: -1
+xing_st_00030
+  rotate: false
+  xy: 2, 205
+  size: 180, 172
+  orig: 300, 300
+  offset: 51, 24
+  index: -1
+xing_st_00033
+  rotate: false
+  xy: 2, 379
+  size: 197, 196
+  orig: 300, 300
+  offset: 50, 7
+  index: -1
+xing_st_00044
+  rotate: true
+  xy: 184, 152
+  size: 117, 198
+  orig: 300, 300
+  offset: 114, 19
+  index: -1
+xingxing_0xv
+  rotate: true
+  xy: 2, 812
+  size: 227, 252
+  orig: 227, 252
+  offset: 0, 0
+  index: -1

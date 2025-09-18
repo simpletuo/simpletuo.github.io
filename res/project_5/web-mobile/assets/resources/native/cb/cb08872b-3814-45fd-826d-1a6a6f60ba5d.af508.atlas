@@ -1,0 +1,27 @@
+
+conduit_c01.png
+size: 212,82
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sc002
+  rotate: false
+  xy: 190, 60
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+sc004
+  rotate: true
+  xy: 2, 2
+  size: 32, 186
+  orig: 32, 186
+  offset: 0, 0
+  index: -1
+sg002
+  rotate: true
+  xy: 2, 36
+  size: 44, 186
+  orig: 44, 186
+  offset: 0, 0
+  index: -1

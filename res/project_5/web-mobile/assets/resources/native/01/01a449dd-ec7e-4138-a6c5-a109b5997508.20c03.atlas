@@ -1,0 +1,27 @@
+
+faucet2.png
+size: 191,67
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+frame004
+  rotate: true
+  xy: 2, 3
+  size: 62, 107
+  orig: 62, 107
+  offset: 0, 0
+  index: -1
+frame004_dfsr
+  rotate: false
+  xy: 111, 2
+  size: 56, 63
+  orig: 56, 63
+  offset: 0, 0
+  index: -1
+sc002
+  rotate: false
+  xy: 169, 45
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1

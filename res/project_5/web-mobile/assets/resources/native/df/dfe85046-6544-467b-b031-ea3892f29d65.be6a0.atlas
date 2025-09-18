@@ -1,0 +1,27 @@
+
+conduit_d01.png
+size: 268,124
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sc002
+  rotate: false
+  xy: 246, 102
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+sc008
+  rotate: false
+  xy: 2, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+sg006
+  rotate: false
+  xy: 124, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1

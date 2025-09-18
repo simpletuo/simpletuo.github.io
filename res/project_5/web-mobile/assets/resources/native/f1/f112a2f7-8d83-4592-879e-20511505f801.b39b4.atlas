@@ -1,0 +1,27 @@
+
+laundry.png
+size: 358,209
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sc001
+  rotate: false
+  xy: 292, 67
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+yg005
+  rotate: true
+  xy: 2, 2
+  size: 205, 288
+  orig: 207, 289
+  offset: 1, 0
+  index: -1
+yg005a
+  rotate: true
+  xy: 292, 119
+  size: 88, 64
+  orig: 88, 64
+  offset: 0, 0
+  index: -1
