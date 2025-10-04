@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Tube Connect</title>
+	<link href="TemplateData/styleStart78.css" rel="stylesheet">
+	 	<style type="text/css">
+
+		body,html{
+			padding:0 !important;
+			margin:0;
+			width:100%;
+			height:100%;
+			margin:0!important;
+			position:relative!important;
+			overflow: visible !important;
+			/**overflow:hidden;**/
+			background-color: #eee;
+		}
+
+        #unity-container{
+		}		
+			
+		#game_banner{
+			width: 100%;
+			justify-content: center;
+			display: flex;
+			position: fixed;
+			left:0;
+			bottom:0;
+			z-index:999;
+			height: 50px;
+		
+		}
+		
+		#loadingAD2{
+			width: 100%;
+			justify-content: center;
+			display: flex;
+			position: relative;
+		}
+		
+		#loaderContainer2
+		{
+			width: 100%;
+			height:200%;
+		}
+		
+		#app{
+			display:inline-block;
+			width:100%;
+			height:150%;
+			position:absolute;
+			left:0;
+			top:0 !important;
+			margin:0 !important;
+		}
+		
+		#unity-container.unity-desktop{
+			width:100%;
+			height:100%;
+			display:block
+			padding:-10;
+			background-color:#195496;
+		}
+		.canvasClass{
+			width:100%;
+			height: calc(100% - 50px);
+		}
+		
+		 /**广告未填充就不显示**/
+		ins.adsbygoogle[data-ad-status="unfilled"] {
+			display: none !important;
+		}
+		
+		#GameDiv
+		{
+			height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+		}
+		
+		
+		#GameFrame
+		{
+			height: calc(100vh - 100px) !important;
+            width: 100% !important;
+            position: absolute;
+            left: 0;
+            top: 0px !important;
+		}
+	</style>
+
+	<script>
+		window.adsbygoogle = window.adsbygoogle || [];
+		var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+		
+		MyUnityInstance = null;
+		
+	</script>
+
+</head>
+<body onresize="SetResolution();">
+<div id="app">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=640 height=1137  class="canvasClass"></canvas>
+	</div>
+	<div id="loaderContainer">
+    <div class="game-img">
+        <div class="img-box">
+            <img src="TemplateData/icon.png"/> 
+            <p>Tube Connect</p>
+        </div>
+    </div>
+    <div class="game-Play" >
+		<div class="game-Play2" id="loading-bar"></div>
+		<div class="game-Play3" id="loadingText">0%</div>
+	</div>
+	
+    <div id="loadingAD"></div>
+	<script>
+      SetResolution = function()
+      {
+          var canvas = document.getElementById("unity-canvas");//获取#canvas
+		  if(canvas == undefined)
+		  {
+		  
+			return;
+		  }
+
+		  var w = window.innerWidth  || document.documentElement.clientWidth ||  document.body.clientWidth;
+		  var h = window.innerHeight || document.documentElement.clientHeight ||  document.body.clientHeight;
+			
+		  document.body.style.width = w + 'px';
+		  document.body.style.height = h + 'px';
+          //var scale = 750/1334;
+		  var scale = 1080/1920;
+		  
+		  h  -= 200;//加入 顶部100高度 底部100高度
+		 
+		  //var scale = 750/1334;
+		  var width = w;
+		  var height = h;
+		  
+          if (w/h > scale) 
+		  {		
+			if(w > h)
+			{
+				width = h*scale; 
+			}
+			//width = h*scale; //宽度就全屏
+		  }
+		  else
+		  {
+			//height = w/scale;
+		  }
+		 
+		  var top = 100;//顶部100高度 
+		   
+		  // 设置偏移量
+		  canvas.style.top = top + 'px'; // 距离容器顶部20像素
+		  canvas.style.left =  (w-width)/2 + 'px'; // 居中
+		  canvas.style.position = 'absolute';
+		      // 设置#content元素的宽度和高度为窗口大小
+		  canvas.style.width = width + 'px';
+		  canvas.style.height = height + 'px';
+		  
+		  /*
+		  var game_banner = document.getElementById("game_banner");//获取#canvas
+		  if(game_banner!= undefined)
+		  {
+			//adsbygoogle.style.margin-top = canvas.style.left;	
+			game_banner.style.marginTop = height + top + 'px';
+		  }
+		  */
+
+			
+	 }
+			
+		  
+	  //Reset();
+	 SetResolution();
+	 
+	</script>
+
+	
+    <div class="game-content" style="height:1000px;">
+    </div>
+	</div>
+	
+	<div id="loaderContainer2"></div>
+	
+	<div id = "game_banner">
+		
+	</div>
+
+<script>
+function closeLoading() {
+  var loaderContainer = document['getElementById']('loaderContainer');
+  if (loaderContainer)
+      loaderContainer['remove']();
+}
+</script>
+	<script>
+	MyUnityInstance = null;
+	TimeId = null;
+
+	
+	function IsLoadEnd()
+	{
+		return MyUnityInstance!=undefined&&MyUnityInstance!=null;
+	}
+
+
+	function PauseGame()
+	{
+		  if(MyUnityInstance!=null)
+          {
+            MyUnityInstance.SendMessage("GameManager","PauseGame");
+          }
+	
+	}
+
+	function ResumeGame()
+	{
+		  if(MyUnityInstance!=null)
+          {
+            MyUnityInstance.SendMessage("GameManager","ResumeGame");
+          }
+		  
+		  //RefreshAnchorAD();
+	}
+	
+		
+	var IsDocumentHidden = false;
+	
+	document.addEventListener('visibilitychange', function() {
+			if (document.visibilityState === 'visible') {
+				//console.log("页面可见");
+				ResumeGame();
+				if(IsDocumentHidden)
+				{
+					let rewardType = "browse";
+					BrowseAd(rewardType,null,null,rewardType);
+				}
+				IsDocumentHidden = false;
+			} else if (document.visibilityState === 'hidden') {
+				//console.log("页面关闭")
+				PauseGame();
+				IsDocumentHidden = true;
+			}
+	});
+	
+	
+	//插页广告广告 不能有多余的参数
+	function BrowseAd(rewardName,objName,callbackName,rewardType)
+	{	
+		
+		if(HasPreloadAD==false && typeof ShowAD !="undefined")
+		{	
+			PauseGame();
+			ShowAD(false,null,rewardType);
+			return;
+		}
+		
+		
+		if(!navigator.onLine)return;
+		adBreak({
+			type: rewardType,                     // The type of this placement
+			name: rewardName,                     // A descriptive name for this placement
+			beforeAd: () => 
+			{
+				PauseGame();
+			},                 // Prepare for the ad. Mute and pause the game flow
+			afterAd: () => {
+   
+				ResumeGame();
+			},                  // Resume the game and re-enable sound
+			adBreakDone: (placementInfo) => {
+		
+					//console.log("adBreakDone:" + placementInfo.breakStatus);
+					//ResumeGame();
+					//alert(message);
+			}, // Always called (if provided) even if an ad didn't show
+		});
+
+	}
+	 //函数声明到前面：
+	 ///定义一个函数，防止本地报错
+	 functionShowReward = function(rewardName,objName,callbackName,rewardType)
+	 {	
+	 
+		if('pause'==rewardType)
+		{
+			rewardType = 'browse';//改变插页广告
+			BrowseAd(rewardName,objName,callbackName,rewardType);
+			return;
+		}
+		
+		
+		
+		if(HasPreloadAD==false && typeof ShowAD !="undefined")
+		{	
+			ShowAD(true,callbackName,rewardType,objName);
+			return;
+		}
+		
+		
+		
+		if(!navigator.onLine)return;
+		
+		//console.error("adBreak rewardType:" + rewardType);
+		adBreak({
+			type: rewardType,                     // The type of this placement
+			name: rewardName,                     // A descriptive name for this placement
+			beforeAd: () => 
+			{
+				PauseGame();
+		
+			},                 // Prepare for the ad. Mute and pause the game flow
+			afterAd: () => {
+   
+				ResumeGame();
+			},                  // Resume the game and re-enable sound
+			beforeReward: (showAdFn) => {
+		
+				showAdFn();
+			},     // Show reward prompt (call showAdFn() if clicked)
+			adDismissed: () => {
+   
+				ResumeGame();
+			},              // Player dismissed the ad before completion
+			adViewed: () => {
+   
+				if(MyUnityInstance!=null)
+				{
+					MyUnityInstance.SendMessage(objName,callbackName);
+				}
+   
+			},                 // Ad was viewed and closed
+			adBreakDone: (placementInfo) => {
+		
+				//console.log("adBreakDone:" + placementInfo.breakStatus);
+				ResumeGame();
+				//alert(message);
+			}, // Always called (if provided) even if an ad didn't show
+		});
+			
+	 };
+	 
+	 var HasPreloadAD = false;
+	 
+	 functionPreloadAD = function()
+	{		
+			if(!navigator.onLine)return;
+			adConfig({
+				preloadAdBreaks: 'auto',  // Ad preloading strategy   'on|auto
+				sound: 'off',            // This game has sound   on|off  'on|off'    
+				onReady: () => {
+					
+					HasPreloadAD = true;
+					var rewardType = 'preroll';//游戏加载前的 'preroll'   ’start‘
+					BrowseAd("OnLoadGame",null,null,rewardType);
+					
+				},   // Called when API has initialised and adBreak() is ready
+			});
+	};
+	
+	function ShowStartAD()
+	{
+		
+		var rewardType = 'start';//游戏加载前的 'preroll'   ’start‘
+		BrowseAd("OnStart",null,null,rewardType);
+		
+	}
+		
+    //埋点函数
+	functionAthenaSend = function(name,tip){
+		
+
+	};
+	
+	var hasCallLoadCompleted  = false;
+	functionLoadCompleted = function()
+	{	
+		if(hasCallLoadCompleted) return;
+		hasCallLoadCompleted = true;
+
+	};
+	//functionPreloadAD();	 //预加载广告 暂时不需要  这里没有用到adbreak广告了
+	
+	setTimeout(functionPreloadAD,1200);
+
+	</script>
+	<script>
+		function GoogleTagEvent(objParems)
+		{	
+			if(true)return;//注释google分析
+			if(!navigator.onLine)return;
+			if(typeof dataLayer=="undefined")
+			{	
+				//dataLayer = window.dataLayer = {};
+			   return;
+			}
+			
+			dataLayer.push(objParems);
+		}
+	</script>
+	<script>//广告相关配置
+		
+		var time_fresh_top_banner  = 20000;//顶部锚定广告刷新时间 20秒
+	
+		var time_fresh_banner = 40000;//bannaer广告刷新时间 40秒
+	
+		var is_fresh_bottom_banner = false;//是否需要刷新底部广告
+	
+		var is_show_top_banner = true;//是否显示顶部广告
+		
+	
+		// 域名 game.drawdream.online/的广告配置
+		var AdObj_game_drawdream_online = {
+			
+			//google adScene JS
+			google_adScene_js : "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8888888888888888",
+			
+			//加载页的250 AD  
+			loading_AD_250:'<ins id="loadingAD2" class="adsbygoogle"  style="display:inline-block;height:280px"  data-ad-client="ca-pub-8888888888888888" data-ad-slot="1820964386" ></ins>',
+			
+			///bannaer广告 
+			bottom_banner_Ad:'<ins class="adsbygoogle" id="bottom_banner_Ad"  style="display:inline-block;width:100%;height:50px" data-ad-client="ca-pub-8888888888888888" data-ad-slot="5445294876"></ins>',
+			
+			//模拟顶部锚定广告
+			top_banner_Ad:'<ins class="adsbygoogle" id="top_banner_Ad" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-8888888888888888" data-ad-slot="2930812175"></ins>',
+			
+			//插页广告
+			insert_Ad_1: '<ins class="adsbygoogle" style="display:inline-block;width:100%;height:280px" data-ad-client="ca-pub-8888888888888888" data-ad-slot="1617730507" ></ins>',
+			
+			//激励广告
+			award_AD_1 :'<ins class="adsbygoogle" style="display:inline-block;width:100%;height:280px" data-ad-client="ca-pub-8888888888888888" data-ad-slot="5040641203" ></ins>',
+        };
+		
+	
+		//默认的AdObj对象 用game.drawdream.online
+		AdObj_default = AdObj_game_drawdream_online;
+	  
+		//当前的ad 对象
+		var AdObj_Current = AdObj_default;
+	
+		var AdObj_domain_name = "AdObj_" + document.domain.replaceAll(".","_").trim();
+		//window.alert("AdObj_domain_name:" + AdObj_domain_name);
+		if(window[AdObj_domain_name] != undefined)
+		{
+		   AdObj_Current = window[AdObj_domain_name];		
+		}
+		//window.alert("Obj_ AdObj_domain:" + window[AdObj_domain_name]);
+		
+		//let hostName = "game1.matchfirst.vip";
+		//AdObj_domain_name = "AdObj_" + hostName.replaceAll(".","_").trim();
+		//window.alert("22 AdObj_domain_name:" + AdObj_domain_name);
+		//window.alert("22 Obj_ AdObj_domain:" + window[AdObj_domain_name]);
+		//获取域名
+		//let host = window.location.host;
+		//let host2=document.domain;
+
+		//获取页面完整地址
+		//let url = window.location.href;
+
+		for (let key in AdObj_Current) {
+			if (AdObj_Current.hasOwnProperty(key)) {
+				window[key] = AdObj_Current[key];
+			}
+		}
+		
+		<!-- 正式模式    //测试模式加入 data-adbreak-test="on" 
+		function loadGoogleADJS()
+		{	
+			if(google_adScene_js != undefined)
+			{
+				let script = document.createElement("script");
+				script.async = true;//"async"
+				script.src = google_adScene_js;
+				//script.crossorigin = "anonymous";
+				script.setAttribute("data-ad-frequency-hint","20s");
+				script.setAttribute("crossorigin","anonymous");
+				//script.setAttribute("data-adbreak-test","on");  // 测试模式
+				document.head.appendChild(script);
+			}
+			
+			//window.alert("google_adScene_js:" + google_adScene_js);
+		}
+		
+		loadGoogleADJS();
+		
+		var loadingADElement = document.querySelector("#loadingAD");
+		if(loadingADElement!=undefined&&loading_AD_250!=undefined)
+		{	
+			loadingADElement.innerHTML = loading_AD_250;
+			//window.alert("loading_AD_250:"+loading_AD_250);
+		}
+	  
+		function LoadAd()
+		{	
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		}
+		 
+
+		function DelayLoadAd()
+		{
+			if(window.adsbygoogle == undefined)
+			{
+				setTimeout(DelayLoadAd, 2000);
+			}
+			else
+			{
+				LoadAd();
+			}
+		}
+			  
+		DelayLoadAd();
+		
+	</script>
+    <script>
+		
+	// 记录游戏的加载开始的时间
+	 var loadStartTime = performance.now();
+	
+	  GoogleTagEvent({'event':'loading_begin'});
+	  var app = document.querySelector("#app");
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+     // var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#loading-bar");
+	  var loadingText = document.querySelector("#loadingText");
+	  var loaderContainer = document.querySelector("#loaderContainer");
+	  
+	 var lessTime = 120;//最少12秒  加载晚了就可以跳过了   单位是100毫秒   12秒 120 * 100毫秒
+	var loadTime = 200;//15秒 200 * 100毫秒  单位是100毫秒
+	var timeLoadJs_1 = loadTime * 0.8;
+	 function LoadEnd()
+	 {
+		GoogleTagEvent({'event':'loading_end','load_time_s': loadTime/10});
+		loadingText.textContent  = "Play";
+		progressBarFull.style.width = "70%";;
+		loaderContainer.onclick = () => {
+						
+					closeLoading();
+					app.style.height = "100%"
+					
+					GoogleTagEvent({'event':'game_page'});
+					
+					//开始点击play时弹出广告  暂时先关闭
+					//var rewardType = 'start';
+					//BrowseAd("OnStart",null,null,rewardType);
+					
+					//DelayLoadAd();//刷新banner广告
+					
+					function Try_Yuan_startGame()
+					{
+						if(Yuan_startGame!=undefined)
+						{
+							setTimeout(Yuan_startGame,2000);
+						}else 
+						{
+							setTimeout(Try_Yuan_startGame,1000);
+						}
+					}
+
+					Try_Yuan_startGame();
+		};
+	 }
+	 
+	 var hasLoadJs_1 = false;
+	 var hasLoadJs_2 = false;
+	 function LoadJs_1()
+	 {	
+		  if(hasLoadJs_1)return;
+		  hasLoadJs_1 = true;		  
+		  let script = document.createElement("script");
+		  script.src = "js/jquery.min.js";
+		  document.body.appendChild(script);
+		  
+	 }
+	 
+	 function LoadJs_2()
+	 {	
+		  if(hasLoadJs_2)return;
+		  hasLoadJs_2 = true;	
+		  let script = document.createElement("script");
+		  script.src = "js/boyuanAd_80.js";
+		  document.body.appendChild(script);
+		 
+	 }
+		
+	 
+	 var hasLoadUnityEnd = false;
+	 function LoadVersionPercent(index)
+	{		
+		if(index > lessTime && hasLoadUnityEnd)
+		{
+			LoadEnd();
+			return;
+		}
+		
+		if(index > loadTime)
+		{	
+			if(!hasLoadJs_2)
+			{
+				LoadJs_2();
+			}
+			
+
+			if(hasLoadUnityEnd)
+			{
+				LoadEnd();
+			}
+			else
+			{
+				setTimeout(()=>{
+					LoadVersionPercent(index);
+				},100);
+			}
+			return;
+		}
+		
+		if(index > timeLoadJs_1)
+		{
+			LoadJs_1();
+		}
+		
+		setTimeout(()=>{
+			
+			var progress = 99.9;
+			if(index < loadTime)
+			{
+				progress = (index/loadTime) * 100;
+			}
+			//var progress = index;
+			var text = progress * 0.7 + "%";
+			progressBarFull.style.width = text;
+		    var num = parseFloat(progress).toFixed(1);
+		    text = num + "%";
+			loadingText.textContent  = text;
+			LoadVersionPercent(index+1);
+		},100);
+	}
+		
+		LoadVersionPercent(1);
+	
+		
+			
+		var buildUrl = "Build";
+		var loaderUrl = buildUrl + "/BubblePop8.loader.js";
+		var config = {
+			dataUrl: buildUrl + "/BubblePop8.data.unityweb",
+			frameworkUrl: buildUrl + "/BubblePop8.framework.js.unityweb",
+			codeUrl: buildUrl + "/BubblePop8.wasm.unityweb",
+			streamingAssetsUrl: "StreamingAssets",
+			companyName: "DefaultCompany",
+			productName: "IceCreamRush",
+			productVersion: "1.0.1",
+			showBanner: null,
+		};
+
+
+		var script = document.createElement("script");
+		script.src = loaderUrl;
+		script.onload = () => {
+			createUnityInstance(canvas, config, (progress) => {
+			/*
+			var text = (70*0.9) * progress + "%";
+			progressBarFull.style.width = text;
+			var num = parseFloat(90 * progress).toFixed(1);
+			text = num + "%";
+			loadingText.textContent  = text;*/
+        }).then((unityInstance) => {
+
+			MyUnityInstance = unityInstance;
+			hasLoadUnityEnd = true;
+			/*
+			setTimeout(()=>{
+				hasLoadUnityEnd = true;
+			},2000);*/
+			
+        }).catch((message) => {
+          //alert(message);
+        });
+      };
+      document.body.appendChild(script);
+	
+	
+
+    </script>
+	</div>
+  </body>
+</html>
