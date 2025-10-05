@@ -8,7 +8,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Tube Connect</title>
-	<link href="TemplateData/styleStart78.css" rel="stylesheet">
+	<link href="TemplateData/styleStart80.css" rel="stylesheet">
 	 	<style type="text/css">
 
 		body,html{
@@ -645,7 +645,7 @@ function closeLoading() {
 			var text = progress * 0.7 + "%";
 			progressBarFull.style.width = text;
 		    var num = parseFloat(progress).toFixed(1);
-		    text = num + "%";
+		    text = "Loading...   " + num + "%";
 			loadingText.textContent  = text;
 			LoadVersionPercent(index+1);
 		},100);

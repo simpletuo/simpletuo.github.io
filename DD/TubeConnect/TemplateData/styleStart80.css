@@ -81,7 +81,7 @@ ul,li{
     line-height: 30px;
     text-align: center;
     background: #d7d7d7;/**#d7d7d7 #808080 **/
-    border-radius: 5px;
+    border-radius: 16px;
     margin-top: 10px;
     margin-left: 15%;
     margin-bottom: 10px;
@@ -111,7 +111,7 @@ ul,li{
     text-align: center;
 	background: #73e548;
 	position: absolute;
-	border-radius: 5px;
+	border-radius: 16px;
 	
 
 }
