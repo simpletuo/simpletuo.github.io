@@ -1,11 +1,11 @@
 
 访问地址：
 
-https://simpletuo.github.io/game/res/project_5/web-mobile/index.html
+https://simpletuo.github.io/res/project_5/web-mobile/index.html
 
-https://simpletuo.github.io/game/res/project_7/web-mobile/index.html
+https://simpletuo.github.io/res/project_7/web-mobile/index.html
 
-https://simpletuo.github.io/game/
+https://simpletuo.github.io/
 
-https://simpletuo.github.io/game/DD/ubeConnect-new/game.html
+https://simpletuo.github.io/DD/TubeConnect-new/game.html
 
