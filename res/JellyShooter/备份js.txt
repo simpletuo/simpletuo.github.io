@@ -1,0 +1,34 @@
+再adBreak({前添加：
+
+
+这个是激励视频
+
+			if(typeof ShowADForLayaGame != "undefined")
+			{	
+				de.inst.stopMusic();
+				ShowADForLayaGame(true,"reward",()=>{
+                    de.inst.resumeMusic();
+                    t && t();
+                });
+				return;
+			}
+			
+			
+			
+
+这个是插页广告
+
+            var i = e.toString(); //再这个句后面添加
+			if(typeof ShowADForLayaGame != "undefined")
+			{	
+				de.inst.stopMusic();
+				ShowADForLayaGame(false,i,()=>{
+                    de.inst.resumeMusic(),
+                    t && t();
+                });
+				return;
+			}
+			
+			
+			
+

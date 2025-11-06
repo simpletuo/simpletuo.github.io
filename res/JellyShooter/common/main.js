@@ -1,0 +1,1 @@
+console.log("MyOPPOAD:main.js");

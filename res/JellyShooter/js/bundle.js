@@ -1,0 +1,11604 @@
+!function() {
+    "use strict";
+    var e, t = Laya.View, s = Laya.Dialog, i = Laya.ClassUtils.regClass;
+    !function(e) {
+        !function(e) {
+            class n extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/NativeAdDialog")
+                }
+            }
+            e.NativeAdDialogUI = n,
+            i("ui.commonUI.NativeAdDialogUI", n);
+            class a extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/SettingDialog")
+                }
+            }
+            e.SettingDialogUI = a,
+            i("ui.commonUI.SettingDialogUI", a);
+            class o extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/TryUseDialog")
+                }
+            }
+            e.TryUseDialogUI = o,
+            i("ui.commonUI.TryUseDialogUI", o);
+            class r extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/UIAdwardBox")
+                }
+            }
+            e.UIAdwardBoxUI = r,
+            i("ui.commonUI.UIAdwardBoxUI", r);
+            class l extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/UIAdwardEnergy")
+                }
+            }
+            e.UIAdwardEnergyUI = l,
+            i("ui.commonUI.UIAdwardEnergyUI", l);
+            class h extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/UISelectBox")
+                }
+            }
+            e.UISelectBoxUI = h,
+            i("ui.commonUI.UISelectBoxUI", h);
+            class d extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/UISign")
+                }
+            }
+            e.UISignUI = d,
+            i("ui.commonUI.UISignUI", d);
+            class c extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("commonUI/UnlockNewDialog")
+                }
+            }
+            e.UnlockNewDialogUI = c,
+            i("ui.commonUI.UnlockNewDialogUI", c)
+        }(e.commonUI || (e.commonUI = {}))
+    }(e || (e = {})),
+    function(e) {
+        !function(e) {
+            !function(e) {
+                class t extends s {
+                    constructor() {
+                        super()
+                    }
+                    createChildren() {
+                        super.createChildren(),
+                        this.loadScene("commonUI/zs/MoneyGet")
+                    }
+                }
+                e.MoneyGetUI = t,
+                i("ui.commonUI.zs.MoneyGetUI", t)
+            }(e.zs || (e.zs = {}))
+        }(e.commonUI || (e.commonUI = {}))
+    }(e || (e = {})),
+    function(e) {
+        !function(e) {
+            class n extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/BgLayer")
+                }
+            }
+            e.BgLayerUI = n,
+            i("ui.gameUI.BgLayerUI", n);
+            class a extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/GameMain")
+                }
+            }
+            e.GameMainUI = a,
+            i("ui.gameUI.GameMainUI", a);
+            class o extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/GameStartView")
+                }
+            }
+            e.GameStartViewUI = o,
+            i("ui.gameUI.GameStartViewUI", o);
+            class r extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/LoadSceneView")
+                }
+            }
+            e.LoadSceneViewUI = r,
+            i("ui.gameUI.LoadSceneViewUI", r);
+            class l extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/MainLayer")
+                }
+            }
+            e.MainLayerUI = l,
+            i("ui.gameUI.MainLayerUI", l);
+            class h extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/ResultView")
+                }
+            }
+            e.ResultViewUI = h,
+            i("ui.gameUI.ResultViewUI", h);
+            class d extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/ShopView")
+                }
+            }
+            e.ShopViewUI = d,
+            i("ui.gameUI.ShopViewUI", d);
+            class c extends t {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/ShowOffView")
+                }
+            }
+            e.ShowOffViewUI = c,
+            i("ui.gameUI.ShowOffViewUI", c);
+            class g extends s {
+                constructor() {
+                    super()
+                }
+                createChildren() {
+                    super.createChildren(),
+                    this.loadScene("gameUI/TryShopView")
+                }
+            }
+            e.TryShopViewUI = g,
+            i("ui.gameUI.TryShopViewUI", g)
+        }(e.gameUI || (e.gameUI = {}))
+    }(e || (e = {}));
+    const n = !0
+      , a = {
+        name: "吃鸡果冻人",
+        title: "吃鸡果冻人",
+        desc: "吃鸡果冻人 操控果冻人左右移动，击败敌人。",
+        templateId: "ml3hnu5d9i429numk7",
+        imageUrl: "res/atlas/share.jpg",
+        imageUrlId: ""
+    };
+    var o, r, l;
+    !function(e) {
+        e[e.None = 0] = "None",
+        e[e.TT = 1] = "TT",
+        e[e.WX = 2] = "WX",
+        e[e.QQ = 3] = "QQ",
+        e[e.VV = 4] = "VV",
+        e[e.OP = 5] = "OP",
+        e[e.BD = 6] = "BD"
+    }(o || (o = {})),
+    function(e) {
+        e[e.NONE = 0] = "NONE",
+        e[e.BANNER = 1] = "BANNER",
+        e[e.VIDEO = 2] = "VIDEO",
+        e[e.INTERSTITIAL = 3] = "INTERSTITIAL",
+        e[e.GRID = 4] = "GRID",
+        e[e.APP_BOX = 5] = "APP_BOX",
+        e[e.BLOCK = 6] = "BLOCK",
+        e[e.NATIVE_INSTIL = 7] = "NATIVE_INSTIL",
+        e[e.NATIVE_BANNER = 8] = "NATIVE_BANNER",
+        e[e.NATIVE_VIDEO = 9] = "NATIVE_VIDEO",
+        e[e.NATIVE_INSTIL_VIVO = 10] = "NATIVE_INSTIL_VIVO",
+        e[e.BANNER_WX_START = 11] = "BANNER_WX_START",
+        e[e.BANNER_WX_RESULT = 12] = "BANNER_WX_RESULT",
+        e[e.BANNER_WX_FULL1 = 13] = "BANNER_WX_FULL1",
+        e[e.BANNER_WX_FULL2 = 14] = "BANNER_WX_FULL2",
+        e[e.BANNER_WX_TAP = 15] = "BANNER_WX_TAP",
+        e[e.GAME_PORTAL = 16] = "GAME_PORTAL",
+        e[e.CUSTOMAD = 17] = "CUSTOMAD"
+    }(r || (r = {})),
+    function(e) {
+        e[e.SCREEN_START = 0] = "SCREEN_START",
+        e[e.SCREEN_RESULT = 1] = "SCREEN_RESULT",
+        e[e.SCREEN_FULL1 = 2] = "SCREEN_FULL1",
+        e[e.SCREEN_FULL2 = 3] = "SCREEN_FULL2",
+        e[e.SCREEN_TAP = 4] = "SCREEN_TAP",
+        e[e.SCREEN_NONE = 5] = "SCREEN_NONE"
+    }(l || (l = {}));
+    const h = {
+        version: "2.7",
+        appid: "wx1c2307042c9cef40",
+        serviceUrl: "https://cp.game.7to.cn/api/login/weixin",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/weixin",
+        bannerIds: ["adunit-8de1fbd283920ad7", "adunit-c0d99075d03cc2a8", "adunit-6ac62820534b200b", "adunit-d93de84e5b012fec", "adunit-8b2eb9c23d8264e0"],
+        VideoId: ["adunit-4f433332626b1598", "adunit-3e17458d682780f2"],
+        InterstitialId: ["adunit-e7c8738a0c57f3c6"],
+        GridId: [],
+        CustomAdId: [],
+        usePromise: !0,
+        destroyInstl: !0,
+        adIntervals: 30,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: .8,
+            height: 100
+        },
+        gridStyle: {
+            mp: 1,
+            width: 1,
+            height: 100,
+            top: 0
+        },
+        customAdStyle: {
+            pos: [{
+                top: 650,
+                left: 20
+            }, {
+                top: 650,
+                left: 580
+            }, {
+                top: 790,
+                left: 20
+            }, {
+                top: 790,
+                left: 580
+            }]
+        }
+    }
+      , d = {
+        version: "1.0",
+        appid: "1111740979",
+        serviceUrl: "https://cp.game.7to.cn/api/login/qq",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/qq",
+        bannerIds: ["8220287af694146d9d2de8f4db690a47", "5b1f72c7e5d1621bd9f0f94b082dfecb", "578eefdf236deb2a3e03e27cc4e3c911"],
+        VideoId: ["d269c8ff8c1e5559873891f903949744"],
+        InterstitialId: ["f8d40f6b1cc16bc585bcf4972e02867c"],
+        appBoxId: ["b76654e2a360984e7db7df2ab9d6946f"],
+        BlockId: ["125c2acbbce35e3ae7082423dbe7eab0"],
+        usePromise: !0,
+        destroyInstl: !0,
+        adIntervals: 60,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: 350,
+            height: 84.5
+        }
+    }
+      , c = {
+        version: "1.0",
+        appid: "ttb9dacf6726e2396d02",
+        serviceUrl: "https://cp.game.7to.cn/api/login/toutiao",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/toutiao",
+        bannerIds: ["145ei71bfejm7ieoq6", "1o4t1hc4h4l3i4a9l2"],
+        VideoId: ["eeiqg7efr3gk2k0hci"],
+        InterstitialId: ["596ek9chdc2g2173b8"],
+        usePromise: !0,
+        destroyInstl: !0,
+        adIntervals: 60,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: .8,
+            height: 100
+        }
+    }
+      , g = {
+        version: "1.1",
+        appid: "30519663",
+        serviceUrl: "https://cp.game.7to.cn/api/login/oppo",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/oppo",
+        bannerIds: ["314158", "314159"],
+        VideoId: ["314163"],
+        InterstitialId: [""],
+        nativeIds: ["314161", "314162"],
+        GamePortalId: ["314157"],
+        usePromise: !1,
+        destroyInstl: !0,
+        adIntervals: 60,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: 1,
+            height: 100
+        }
+    }
+      , u = {
+        version: "1.0",
+        appid: "105478024",
+        serviceUrl: "https://cp.game.7to.cn/api/login/vivo",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/vivo",
+        bannerIds: ["b4154f4a3db3443e89f4393b0447fe02"],
+        VideoId: ["14bf581d9a7243d1b219bcd2b570121a"],
+        InterstitialId: [""],
+        nativeIds: ["a5ec97106a9047a59a62681b0a3e315f", "28ad33d1329a42c381cf99b771ef04c3"],
+        usePromise: !1,
+        destroyInstl: !0,
+        adIntervals: 60,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: 1,
+            height: 100
+        }
+    }
+      , _ = {
+        version: "1.0",
+        appid: "",
+        serviceUrl: "https://cp.game.7to.cn/api/login/baidu",
+        serviceBackupUrl: "https://cp2.game.7to.cn/api/login/baidu",
+        bannerIds: ["", ""],
+        VideoId: [""],
+        InterstitialId: [""],
+        nativeIds: ["", "", ""],
+        usePromise: !1,
+        destroyInstl: !0,
+        adIntervals: 60,
+        error_count: 5,
+        style: {
+            top: 0,
+            isCenter: !0,
+            left: 100,
+            mp: 1,
+            width: 1,
+            height: 100
+        }
+    };
+    class m {
+        constructor(e) {
+            this.caller = null,
+            this._cbShow = null,
+            this._cbClose = null,
+            this.isShow = !1,
+            this.isbannerSee = !1,
+            this.bannerShowCount = 0,
+            this.bannerExposureTime = 0,
+            this.bannerMistake = !1,
+            this.data = null,
+            this.adInstance = null,
+            this.adType = r.NONE,
+            this.isLoaded = !1,
+            this.adData = null,
+            this.adsId = "",
+            this.adsIndex = l.SCREEN_NONE,
+            this.neespreLoad = !0,
+            this.loadCount = 0,
+            this.nativeShowed = !1,
+            this.style = {
+                width: 600,
+                height: 100,
+                realWidth: 600,
+                realHeight: 100,
+                top: 0,
+                left: 0
+            },
+            this.adType = e
+        }
+        setAds(e, t, s, i) {
+            this._cbShow = e,
+            this._cbClose = t,
+            this.data = s,
+            this.caller = i
+        }
+        setAdsData(e) {
+            this.adData = e
+        }
+        show(e, t) {
+            this._cbShow && (this.caller ? this._cbShow.call(this.caller, e, t) : this._cbShow(e, t),
+            e ? this.isShow = !0 : (this._cbClose = null,
+            this.isLoaded = !1,
+            this.isShow = !1),
+            this._cbShow = null)
+        }
+        close(e, t) {
+            this.isShow = !1,
+            this._cbClose && (this.caller ? this._cbClose.call(this.caller, e, t) : this._cbClose(e, t),
+            this.isLoaded = !1,
+            this._cbClose = null)
+        }
+        setShowCall(e) {
+            this._cbShow = e
+        }
+        setCloseCall(e) {
+            this._cbClose = e
+        }
+        adsLoad(e) {
+            this.isLoaded = e
+        }
+        destroyAdsIns() {
+            return !(!this.adInstance || void 0 === this.adInstance.destroy) && (this.adInstance.destroy(),
+            this.adInstance = null,
+            !0)
+        }
+    }
+    class p {
+        constructor() {
+            this._adsList = {},
+            this.version = "1.0",
+            this.cfg = null,
+            this.openId = "",
+            this.bannerhided = !0,
+            this._isUseZS = !1
+        }
+        init(e) {}
+        get ver() {
+            return this.version
+        }
+        getLaunchOptionsSync() {
+            return {}
+        }
+        getSystemInfoSync() {
+            return {}
+        }
+        getRightMenuRectInfo() {
+            return {
+                width: 0,
+                height: 0,
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            }
+        }
+        share(e, t) {}
+        playVibrative(e=!0) {}
+        loadSubpackage(e, t, s) {
+            for (let t = 0; t < e.length; t++)
+                s(t);
+            t && t()
+        }
+        navigateToMiniProgram(e, t=null, s=null, i=null) {
+            i && i()
+        }
+        showMoreGamesModal(e, t=null, s=null, i=null, n=null, a=null) {
+            n && n(2)
+        }
+        startRecord() {}
+        shareRecordVideo(e) {}
+        stopRecording() {}
+        reportMonitor() {}
+        reportMonitorEx(e) {}
+        getNativeData() {
+            return null
+        }
+        reportAdClick(e, t=r.NATIVE_INSTIL) {}
+        reportAdShow(e, t=r.NATIVE_INSTIL) {}
+        installShortcut(e, t, s) {}
+        showGamePortal(e) {}
+        supportGamePortal() {
+            return !1
+        }
+        enterGameScene() {}
+        exitGameScene() {}
+        createNative_OPPO() {}
+        setKeepScreenOn() {}
+        startLevel(e) {}
+        endLevel(e, t="complete") {}
+        initAdsCfg(e=null) {}
+        getAdsData(e, t=0) {
+            if (!this._adsList[e]) {
+                let t = new m(e);
+                this._adsList[e] = [],
+                this._adsList[e].push(t)
+            }
+            return this._adsList[e][t]
+        }
+        createAdsData(e) {
+            let t = new m(e);
+            return !this._adsList[e] && (this._adsList[e] = []),
+            this._adsList[e].push(t),
+            t
+        }
+        createVideoAds() {}
+        preloadVedioAds() {}
+        showVideo(e) {
+            e && e.close(!1)
+        }
+        createInstalAds() {}
+        preloadInstalAds() {}
+        showInstal(e) {
+            e && e.close(!1)
+        }
+        showBanner(e) {}
+        hideBanner(e=!0, t) {}
+        showSpecialBanner() {}
+        showBannerzs(e) {}
+        hideBannerzs(e=!1) {}
+        beginMistake() {}
+        endMistake() {}
+        hide_banner() {}
+        bannerMoveBy(e=80, t=0) {}
+        bannerMoveTo(e=0, t=0) {}
+        showGridAd(e) {}
+        hideGridAd(e=!0, t) {}
+        hide_gridAd() {}
+        gridMoveBy(e=80, t=0) {}
+        gridMoveTo(e=0, t=0) {}
+        showAppBoxAd(e) {}
+        showBlockAd(e=!0, t=0) {
+            return !1
+        }
+        hideBlockAd() {}
+        destroyBlockAd() {}
+        showCustomAd(e=0, t) {}
+        hideCustomAd(e=0, t=!0, s) {}
+        hide_CustomAd(e=0) {}
+        showAds(e, t, s, i) {
+            let n = this.getAdsData(e);
+            n.setAds(t, s, i),
+            n.isShow = !0,
+            r.VIDEO == e ? this.showVideo(n) : r.INTERSTITIAL == e ? this.showInstal(n) : r.GAME_PORTAL == e && (console.log("MyOPPOAD:showAds-Game_portal"),
+            this.showGamePortal(n))
+        }
+        getappId() {
+            return "wxa8b94c906ddbe9dc"
+        }
+        get userId() {
+            return this.openId
+        }
+        setUserId(e) {
+            this.openId = e
+        }
+        getopenId(e) {
+            e && e()
+        }
+        get isUseZS() {
+            return this._isUseZS
+        }
+        setUseZS() {
+            this._isUseZS = !0
+        }
+    }
+    class y extends p {
+        constructor() {
+            super(),
+            this._tt = null,
+            this._adsCfg = null,
+            this._isVideoAlreadyShared = !1,
+            this._recordRes = null,
+            this._tt = Laya.Browser.window.tt,
+            this.version = c.version,
+            this.cfg = c
+        }
+        init(e) {
+            this._tt.onShareAppMessage(function() {
+                return {
+                    title: a.name,
+                    desc: a.desc,
+                    path: "",
+                    imageUrl: a.imageUrl,
+                    templateId: a.templateId,
+                    success: ()=>{
+                        console.log("转发发布器已调起，并不意味着用户转发成功，微头条不提供这个时机的回调")
+                    }
+                    ,
+                    fail: ()=>{
+                        console.log("转发发布器调起失败")
+                    }
+                }
+            }),
+            this.initAds()
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._tt.getMenuButtonLayout ? p.prototype.getRightMenuRectInfo.call(this) : this._tt.getMenuButtonLayout()
+        }
+        getLaunchOptionsSync() {
+            return this._tt.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._tt.getSystemInfoSync()
+        }
+        share(e, t) {
+            e = e || a.name,
+            this._tt.onShareAppMessage(function(e) {
+                return {
+                    title: a.name,
+                    desc: a.desc,
+                    templateId: a.templateId,
+                    imageUrl: a.imageUrl,
+                    query: "k1=v1&k2=v2",
+                    success() {
+                        t && t(!0)
+                    },
+                    fail(e) {
+                        console.log("分享失败", e),
+                        t && t(!1)
+                    }
+                }
+            })
+        }
+        playVibrative(e=!0) {
+            e ? this._tt.vibrateShort() : this._tt.vibrateLong()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            let t = this;
+            this.login((s,i)=>{
+                s && i.code ? this._tt.request({
+                    method: "POST",
+                    url: t.cfg.serviceUrl,
+                    data: {
+                        code: i.code,
+                        appid: t.cfg.appid
+                    },
+                    success: s=>{
+                        t.openId = s.data.data.openid,
+                        e && e(!0, t.openId)
+                    }
+                    ,
+                    fail: t=>{
+                        console.log("头条获取 openid 失败", t),
+                        e && e(!1)
+                    }
+                }) : e && e(!1)
+            }
+            )
+        }
+        login(e=null) {
+            this._tt.login({
+                force: !1,
+                success: t=>{
+                    e && e(!0, t)
+                }
+                ,
+                fail: t=>{
+                    console.log("头条 登录失败 ", t),
+                    e && e(!1)
+                }
+                ,
+                complete: e=>{}
+            })
+        }
+        showMoreGamesModal(e, t=null, s=null, i=null, n=null, a=null) {
+            if (void 0 === this._tt.showMoreGamesModal)
+                return;
+            if (e || (e = []),
+            this._tt.getSystemInfoSync().platform.indexOf("ios") >= 0)
+                return this._tt.showToast({
+                    title: "ios 暂不支持"
+                }),
+                void (n && n(2));
+            void 0 !== this._tt.onMoreGamesModalClose && this._tt.onMoreGamesModalClose(function(e) {
+                a && a()
+            }),
+            void 0 !== this._tt.onNavigateToMiniProgram && this._tt.onNavigateToMiniProgram(function(e) {
+                e && (0 == e.errCode ? t && t(e.errCode, e.errMsg, e.from) : s && s())
+            }),
+            void 0 !== this._tt.onNavigateToMiniGameBox && this._tt.onNavigateToMiniGameBox(e=>{}
+            );
+            let o = [];
+            for (let t = 0; t < e.length; t++)
+                o.push({
+                    appId: e[t].app_id,
+                    query: e[t].path,
+                    extraData: {}
+                });
+            this._tt.showMoreGamesModal({
+                appLaunchOptions: o,
+                success(e) {
+                    n && n(0)
+                },
+                fail(e) {
+                    console.log("showMoreGamesModal fail", e.errMsg),
+                    n && n(1)
+                }
+            })
+        }
+        initAdsCfg(e=null) {
+            this._adsCfg = e
+        }
+        initAds() {
+            this._adsCfg = {
+                ver: "0.0",
+                switch: 0
+            },
+            this.createBanner(),
+            this.preloadInstalAds(),
+            this.preloadVedioAds()
+        }
+        createVideoAds() {
+            if (void 0 === this._tt.createRewardedVideoAd)
+                return void console.log("头条 不存在激励视频广告 api");
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance)
+                return;
+            let t = e.adsIndex
+              , s = c.VideoId[t % c.VideoId.length]
+              , i = this._tt.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                console.log("tt  视频广告错误=>", t),
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(function(t) {
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            .bind(this)),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && c.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    console.log("tt video fail=>", t),
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (c.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("头条  视屏广告加载失败"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createInstalAds() {
+            if (void 0 === this._tt.createInterstitialAd)
+                return void console.log("tt 不存在插屏广告 api");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = c.InterstitialId[t % c.InterstitialId.length]
+              , i = this._tt.createInterstitialAd({
+                adUnitId: s
+            });
+            i.onError(t=>{
+                console.log("tt 插屏广告 错误", t),
+                e.isLoaded = !1
+            }
+            ),
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onClose(t=>{
+                console.log("关闭插屏广告=>", t),
+                e.close(!0),
+                c.destroyInstl && (e.adInstance.destroy(),
+                e.adInstance = null),
+                e.neespreLoad && this.preloadInstalAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadInstalAds() {
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (e.adInstance) {
+                if (!e.isLoaded && e.adInstance) {
+                    let t = e.adInstance.load();
+                    t && c.usePromise && t.then(()=>{
+                        e.isLoaded = !0
+                    }
+                    ).catch(t=>{
+                        console.log("tt 插屏广告加载失败", t),
+                        e.isLoaded = !1
+                    }
+                    )
+                }
+            } else
+                this.createInstalAds()
+        }
+        showInstal(e) {
+            let t = e.adInstance;
+            if (t) {
+                if (c.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("tt  插屏广告显示失败"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadInstalAds()
+                    }
+                    )
+                }
+                e.isLoaded ? (e.adInstance.show(),
+                e.show(!0)) : (e.show(!1),
+                e.neespreLoad && this.preloadInstalAds())
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadInstalAds() : this.createInstalAds()
+        }
+        createBanner(e) {
+            if (void 0 === this._tt.createBannerAd)
+                return void console.log("头条 不存在 createBanner 函数");
+            let t = this.getSystemInfoSync()
+              , s = t.screenWidth
+              , i = t.screenHeight
+              , n = this.getAdsData(r.BANNER);
+            n.adInstance && (n.adInstance.destroy(),
+            n.adInstance = null),
+            e = e || {};
+            for (let t in c.style)
+                e[t] = c.style[t];
+            let a = e.width;
+            a <= 1 && (a *= s);
+            let o = e.height
+              , l = e.mp || 1
+              , h = n.adsIndex
+              , d = c.bannerIds[h % c.bannerIds.length]
+              , g = 1 == l ? i - o : 2 == l ? 0 : e.top
+              , u = e.isCenter ? s / 2 - a / 2 : e.left
+              , _ = this._tt.createBannerAd({
+                adUnitId: d,
+                adIntervals: c.adIntervals,
+                style: {
+                    left: u,
+                    top: g,
+                    width: a
+                }
+            });
+            n.style.height = o,
+            n.style.width = a,
+            n.style.left = u,
+            n.style.top = g,
+            n.style.realWidth = a,
+            n.style.realHeight = o,
+            _.onResize(t=>{
+                var a = t.height
+                  , o = t.width;
+                _.style.top = 1 == l ? i - a : 2 == l ? 0 : e.top,
+                _.style.left = e.isCenter ? s / 2 - o / 2 : e.left,
+                n.style.realWidth = o,
+                n.style.realHeight = a,
+                n.style.left = _.left,
+                n.style.top = _.top
+            }
+            );
+            _.onLoad(()=>{
+                n.isLoaded = !0
+            }
+            ),
+            _.onError(e=>{
+                console.log("头条 banner 加载错误=>", e),
+                n.isLoaded = !1
+            }
+            ),
+            n.adInstance = _,
+            _ && _.hide()
+        }
+        reLoadBanner() {
+            let e = this.getAdsData(r.BANNER);
+            e.loadCount < c.error_count && (e.adsIndex++,
+            e.adInstance && (e.adInstance.hide(),
+            e.adInstance.destroy(),
+            e.adInstance = null),
+            this.createBanner())
+        }
+        showBanner(e) {
+            if (!n)
+                return;
+            if (!this._adsCfg.switch || this._adsCfg.ver == this.version)
+                return;
+            this.bannerhided = !1;
+            let t = this.getAdsData(r.BANNER);
+            if (t.adInstance) {
+                if (this.bannerhided)
+                    return;
+                t.adInstance.show()
+            } else
+                this.createBanner(e)
+        }
+        hideBanner(e=!0, t) {
+            this.bannerhided = !0;
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.hide(),
+            s.adInstance.destroy(),
+            s.adInstance = null)
+        }
+        hide_banner() {
+            this.bannerhided = !0;
+            let e = this.getAdsData(r.BANNER);
+            e.adInstance && e.adInstance.hide()
+        }
+        bannerMoveBy(e=80, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        bannerMoveTo(e=0, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            if (s.adInstance) {
+                let t = this.getSystemInfoSync()
+                  , i = (t.screenWidth,
+                t.screenHeight);
+                0 == e ? s.adInstance.style.top = i - s.style.realHeight : (e = i * e / Laya.stage.height,
+                s.adInstance.style.top = e)
+            }
+        }
+        startRecord() {
+            if (void 0 === this._tt.getGameRecorderManager)
+                return void console.log("头条 startRecord 不存在录屏 api");
+            console.log("recording~~~"),
+            this._isVideoAlreadyShared = !1,
+            this._recordRes = null;
+            const e = this._tt.getGameRecorderManager();
+            e.start({
+                duration: 60
+            }),
+            e.onStart(e=>{
+                console.log("头条 录屏开始")
+            }
+            );
+            var t = (new Date).getTime();
+            e.onStop(e=>{
+                console.log("recording onstop!!"),
+                ((new Date).getTime() - t) / 1e3 < 3 ? console.log("头条 录屏时间过短!") : this._recordRes = e
+            }
+            )
+        }
+        shareRecordVideo(e) {
+            if (!this._recordRes)
+                return void this._tt.showToast({
+                    title: "录屏时间过短 无法分享!!!"
+                });
+            let t = this;
+            this._tt.shareAppMessage({
+                channel: "video",
+                title: a.name,
+                desc: a.desc,
+                imageUrl: a.imageUrl,
+                query: "",
+                extra: {
+                    videoPath: this._recordRes.videoPath,
+                    videoTopics: [a.desc]
+                },
+                success() {
+                    e && e(!0),
+                    t._recordRes = null,
+                    t._isVideoAlreadyShared = !0
+                },
+                fail(t) {
+                    e && e(!1)
+                }
+            })
+        }
+        stopRecording() {
+            if (void 0 === this._tt.getGameRecorderManager)
+                return void console.log("头条 stopRecording 不存在录屏 api");
+            this._tt.getGameRecorderManager().stop()
+        }
+    }
+    class f {
+        static getSdk() {
+            return void 0 !== Laya.Browser.window.wx ? Laya.Browser.window.wx : null
+        }
+        static startLevel(e) {
+            let t = this.getSdk();
+            t && void 0 !== t.aldStage && t.aldStage.onStart({
+                stageId: `${e}`,
+                stageName: `第 ${e} 关`
+            })
+        }
+        static runingLevel(e) {
+            let t = this.getSdk();
+            t && void 0 !== t.aldStage && t.aldStage.onRunning({
+                stageId: `${e}`,
+                stageName: `第 ${e} 关`,
+                event: "game"
+            })
+        }
+        static endLevel(e, t="complete") {
+            let s = this.getSdk();
+            s && void 0 !== s.aldStage && s.aldStage.onEnd({
+                stageId: `${e}`,
+                stageName: `第 ${e} 关`,
+                event: t
+            })
+        }
+    }
+    class C extends Laya.EventDispatcher {
+        constructor() {
+            super()
+        }
+        static get Ins() {
+            return this._instance || (this._instance = new C),
+            this._instance
+        }
+    }
+    C.EVENT_SHOW_NATIVE = "EVENT_SHOW_NATIVE";
+    const I = {
+        name: "game-userdata"
+    }
+      , v = {
+        game: "LayaScene_GameScene/Conventional/GameScene.ls"
+    }
+      , w = {
+        GameMain: "gameUI/GameMain.scene",
+        GameStartView: "gameUI/GameStartView.scene",
+        LoadSceneView: "gameUI/LoadSceneView.scene",
+        ResultView: "gameUI/ResultView.scene",
+        fullscreenad1: "commonUI/zs/FullAd.scene",
+        fullscreenad2: "commonUI/zs/FullAd_1.scene",
+        floatAd: "commonUI/zs/FloatAd.scene",
+        UseDialog: "commonUI/TryUseDialog.scene",
+        ShowOffView: "gameUI/ShowOffView.scene",
+        UnlockView: "commonUI/UnlockNewDialog.scene",
+        NativeAd: "commonUI/NativeAdDialog.scene",
+        QQBox: "commonUI/UIAdwardBox.scene",
+        QQEnergy: "commonUI/UIAdwardEnergy.scene",
+        MoneyGet: "commonUI/zs/MoneyGet.scene"
+    }
+      , b = {
+        bgm: "image/sound/bgm.mp3",
+        success: "image/sound/success.mp3",
+        fail: "sound/image/fail.mp3",
+        coin: "image/sound/coin.mp3",
+        collect: "image/sound/collect.mp3",
+        hit: "image/sound/hit.mp3",
+        hit1: "image/sound/hit1.mp3",
+        msg: "image/sound/msg.mp3"
+    }
+      , L = {
+        EVENT_SHOW_EXPORTGAME: "EVENT_SHOW_EXPORTGAME",
+        EVENT_BG_TO_GAME: "EVENT_BG_TO_GAME",
+        EVENT_GAME_TO_BG: "EVENT_GAME_TO_BG",
+        EVENT_SHOP_CLOSED: "EVENT_SHOP_CLOSED",
+        EVENT_NATIVE_PREFAB_CLOSE: "EVENT_NATIVE_PREFAB_CLOSE"
+    }
+      , S = {
+        LOAD_SCENE: "load_scene",
+        START_SCENE: "start_scene",
+        GAME_SCENE: "game_scene",
+        RESULT_SCENE: "result_scene",
+        SET_SCENE: "set_scene",
+        SHOP_SCENE: "shop_scene",
+        SIGN_SCENE: "sign_scene"
+    }
+      , A = {
+        namelist: ["WhiteInte", "一杯月", "caryon-蜡笔", "归来。", "Lomo", "Moonmen", "Happy的楠姐", "Mum乖乖!", "Enteral丶不朽", "Rose life", "楼梯口的女孩", "[Jessica]", "采薇", "给我养乐多", "你是我的唯一", "╮(╯▽╰)╭", "鱼骨头", "点点客小宇", "Simpo Chiu", "挽笙々落影"]
+    };
+    class B extends p {
+        constructor() {
+            super(),
+            this._wx = null,
+            this._adsCfg = null,
+            this.showingbanner = l.SCREEN_NONE,
+            this.creatingbanner = l.SCREEN_NONE,
+            this.mistakeTouch = !1,
+            this.bannerObj = {},
+            this.createBannerCount = 0,
+            this.creatingCount = 0,
+            this.detectTimerStart = !1,
+            this._wx = Laya.Browser.window.wx,
+            this.version = h.version,
+            this.cfg = h
+        }
+        FormatDateTime(e) {
+            var t = new Date;
+            return `${t.getHours()}:${t.getMinutes()}:${t.getSeconds()}`
+        }
+        compareVersion(e, t) {
+            e = e.split("."),
+            t = t.split(".");
+            const s = Math.max(e.length, t.length);
+            for (; e.length < s; )
+                e.push("0");
+            for (; t.length < s; )
+                t.push("0");
+            for (let i = 0; i < s; i++) {
+                const s = parseInt(e[i])
+                  , n = parseInt(t[i]);
+                if (s > n)
+                    return 1;
+                if (s < n)
+                    return -1
+            }
+            return 0
+        }
+        init(e) {
+            let t = this.getSystemInfoSync();
+            this.screenWidth = t.screenWidth,
+            this.screenHeight = t.screenHeight;
+            const s = this._wx.getSystemInfoSync().SDKVersion
+              , i = this._wx.getSystemInfoSync().platform;
+            this.compareVersion(s, "2.11.3") >= 0 && i.indexOf("android") >= 0 ? (this._wx.showShareMenu({
+                withShareTicket: !0,
+                menus: ["shareAppMessage", "shareTimeline"]
+            }),
+            this._wx.onShareTimeline(function() {
+                return {
+                    title: a.title,
+                    imageUrlId: a.imageUrlId,
+                    imageUrl: a.imageUrl
+                }
+            })) : this._wx.showShareMenu({
+                withShareTicket: !0
+            }),
+            this._wx.onShareAppMessage(function() {
+                return {
+                    title: a.title,
+                    imageUrlId: a.imageUrlId,
+                    imageUrl: a.imageUrl
+                }
+            }),
+            this._wx.onShow(e=>{
+                C.Ins.event(L.EVENT_BG_TO_GAME)
+            }
+            ),
+            this._wx.onHide(()=>{
+                C.Ins.event(L.EVENT_GAME_TO_BG)
+            }
+            ),
+            this.initAds()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            let t = this;
+            this.login((s,i)=>{
+                if (s && i.code) {
+                    var n = {
+                        code: i.code,
+                        appid: t.cfg.appid
+                    };
+                    t._wx.request({
+                        method: "POST",
+                        url: t.cfg.serviceUrl,
+                        data: n,
+                        success: s=>{
+                            t.openId = s.data.data.openid,
+                            e && e(!0, t.openId)
+                        }
+                        ,
+                        fail: s=>{
+                            t._wx.request({
+                                method: "POST",
+                                url: t.cfg.serviceBackupUrl,
+                                data: n,
+                                success: s=>{
+                                    t.openId = s.data.data.openid,
+                                    e && e(!0, t.openId)
+                                }
+                                ,
+                                fail: t=>{
+                                    e && e(!1)
+                                }
+                                ,
+                                complete: ()=>{}
+                            })
+                        }
+                        ,
+                        complete: ()=>{}
+                    })
+                } else
+                    e && e(!1)
+            }
+            )
+        }
+        share(e, t) {
+            e = e || a.title,
+            this._wx.shareAppMessage({
+                title: e,
+                imageUrlId: a.imageUrlId,
+                imageUrl: a.imageUrl
+            })
+        }
+        playVibrative(e=!0) {
+            e ? this._wx.vibrateShort() : this._wx.vibrateLong()
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._wx.getMenuButtonBoundingClientRect ? p.prototype.getRightMenuRectInfo.call(this) : this._wx.getMenuButtonBoundingClientRect()
+        }
+        login(e=null) {
+            this._wx.login({
+                force: !1,
+                success: t=>{
+                    e && e(!0, t)
+                }
+                ,
+                fail: t=>{
+                    e && e(!1)
+                }
+                ,
+                complete: e=>{}
+            })
+        }
+        loadSubpackage(e, t, s) {
+            let i = e.length
+              , n = i;
+            for (let a = 0; a < i; a++) {
+                this._wx.loadSubpackage({
+                    name: e[a],
+                    success: function(e) {
+                        s && s(a),
+                        --n <= 0 && t && t()
+                    },
+                    fail: function(e) {}
+                }).onProgressUpdate(e=>{}
+                )
+            }
+        }
+        navigateToMiniProgram(e, t=null, s=null, i=null) {
+            this._wx.navigateToMiniProgram({
+                appId: e.link_appid,
+                path: e.link_path,
+                extraData: e.extraData,
+                success: function(e) {
+                    t && t(e)
+                },
+                fail: function(e) {
+                    s && s(e)
+                },
+                complete: function(e) {
+                    i && i(e)
+                }
+            })
+        }
+        getLaunchOptionsSync() {
+            return this._wx.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._wx.getSystemInfoSync()
+        }
+        startLevel(e) {
+            f.startLevel(e)
+        }
+        endLevel(e, t="complete") {
+            f.endLevel(e, t)
+        }
+        initAdsCfg(e=null) {
+            e.bgbannershowcount = e.bgbannershowcount || 2,
+            this._adsCfg = e
+        }
+        initAds() {
+            if (this._adsCfg = {
+                ver: "0.0",
+                switch: 0,
+                bgbannershowcount: 4,
+                bgexposureduration: 8e3,
+                bgbannershow: !0,
+                bginterstitialshow: !1,
+                bggridshow: !1
+            },
+            !n)
+                return;
+            this.createBanner(l.SCREEN_START),
+            this.createBanner(l.SCREEN_RESULT),
+            this.createBanner(l.SCREEN_FULL1),
+            this.createBanner(l.SCREEN_FULL2),
+            this.getAdsData(r.VIDEO).neespreLoad && this.preloadVedioAds(),
+            this.getAdsData(r.INTERSTITIAL).neespreLoad && this.preloadInstalAds()
+        }
+        createVideoAds() {
+            if (!n)
+                return;
+            if (void 0 === this._wx.createRewardedVideoAd)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = h.VideoId[t % h.VideoId.length]
+              , i = this._wx.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(t=>{
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            if (!n)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && h.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (h.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createInstalAds() {
+            if (!n || 0 == h.InterstitialId.length)
+                return void console.log("createInstallAds return 0");
+            if (void 0 === this._wx.createInterstitialAd)
+                return void console.log("createInstallAds return 1");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (!e)
+                return void console.log("createInstallAds return 2");
+            let t = e.adsIndex
+              , s = h.InterstitialId[t % h.InterstitialId.length]
+              , i = this._wx.createInterstitialAd({
+                adUnitId: s
+            });
+            i.onError(t=>{
+                console.log("插屏广告出错", t),
+                e.isLoaded = !1
+            }
+            ),
+            i.onLoad(()=>{
+                console.log("插屏广告加载成功"),
+                e.isLoaded = !0
+            }
+            ),
+            i.onClose(t=>{
+                console.log("插屏广告关闭"),
+                e.close(!0),
+                h.destroyInstl && (e.adInstance.destroy(),
+                e.adInstance = null),
+                e.neespreLoad && this.preloadInstalAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadInstalAds() {
+            if (!n || 0 == h.InterstitialId.length)
+                return void console.log("preloadInstalAds return 0");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (e.adInstance)
+                if (!e.isLoaded && e.adInstance) {
+                    let t = e.adInstance.load();
+                    t && h.usePromise && t.then(()=>{
+                        console.log("preloadInstalAds load then"),
+                        e.isLoaded = !0
+                    }
+                    ).catch(t=>{
+                        console.log("preloadInstalAds load catch"),
+                        e.isLoaded = !1
+                    }
+                    )
+                } else
+                    console.log("pre loadnistalAds 走了个寂寞");
+            else
+                this.createInstalAds()
+        }
+        showInstal(e) {
+            if (console.log("showInstal Enter"),
+            !n || !this._adsCfg.bginterstitialshow)
+                return void console.log("showInstal return 0");
+            let t = e.adInstance;
+            if (t)
+                if (h.usePromise) {
+                    console.log("usePormise is true"),
+                    t.show().then(()=>{
+                        console.log("show then"),
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("show catch"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadInstalAds()
+                    }
+                    )
+                } else
+                    console.log("usePormise is false"),
+                    e.isLoaded ? (console.log("show"),
+                    e.adInstance.show(),
+                    e.show(!0)) : (console.log("preloadInstalAds"),
+                    e.show(!1),
+                    e.neespreLoad && this.preloadInstalAds());
+            else
+                console.log("adsInstance is null"),
+                e.show(!1),
+                e.neespreLoad ? (console.log("preloadInstalAds"),
+                this.preloadInstalAds()) : (console.log("createInstalAds"),
+                this.createInstalAds())
+        }
+        beginMistake() {
+            this.mistakeTouch = !0
+        }
+        endMistake() {
+            this.mistakeTouch = !1
+        }
+        getBannerScene(e) {
+            return e - (r.BANNER_WX_START - l.SCREEN_START)
+        }
+        getBannerType(e) {
+            return e + (r.BANNER_WX_START - l.SCREEN_START)
+        }
+        showBannerEx(e) {
+            h.usePromise ? e.adInstance.show().then(()=>{
+                e.isShow = !0
+            }
+            ).catch(t=>{
+                console.log("时钟显示banner的时候出现错误:", t),
+                e.isShow = !1
+            }
+            ) : (e.adInstance.show(),
+            e.isShow = !0)
+        }
+        detectBannerPos() {
+            let e = this;
+            if (e.creatingbanner != l.SCREEN_NONE && (e.creatingCount++,
+            e.creatingCount < 4))
+                return;
+            let t = null
+              , s = null
+              , i = l.SCREEN_NONE;
+            for (let n = r.BANNER_WX_START; n < r.BANNER_WX_TAP; n++) {
+                let a = e.getAdsData(n)
+                  , o = e.getBannerScene(n);
+                if (a && a.isLoaded && a.adInstance)
+                    a.isShow ? a.isbannerSee ? (a.bannerExposureTime += 1e3,
+                    a.bannerExposureTime > e._adsCfg.bgexposureduration && (t = a)) : a.bannerExposureTime < e._adsCfg.bgexposureduration && (s = a,
+                    i = o) : (e.movebanner(a, !1),
+                    e.showBannerEx(a));
+                else if (e.createBannerCount++,
+                e.createBannerCount < 4)
+                    return console.log("发现有问题的banner,需要重新创建索引值为:" + o + "的banner"),
+                    a && e.clearBannerInfo(a),
+                    void e.createBanner(o)
+            }
+            e.mistakeTouch || (e.createBannerCount = 0,
+            e.creatingCount = 0,
+            s && t && (e.movebanner(t, !1),
+            e.movebanner(s, !0),
+            e.showingbanner = i))
+        }
+        clearBannerInfo(e) {
+            e.adInstance && (e.adInstance.destroy(),
+            e.adInstance = null),
+            e.isShow = !1,
+            e.isbannerSee = !1,
+            e.bannerShowCount = 0,
+            e.bannerExposureTime = 0,
+            e.isLoaded = !1,
+            e.adsId = "",
+            e.adsIndex = l.SCREEN_NONE,
+            e.bannerMistake = !1
+        }
+        createBanner(e, t) {
+            if (!n)
+                return;
+            let s = this;
+            if (e < l.SCREEN_START || e > l.SCREEN_TAP)
+                return void console.log("XWX-LOG:create Banner() return 1, 进入了一个理论上不会走入的返回");
+            if (s.creatingbanner == e)
+                return void console.log("XWX-LOG:正在创建相同的banner,返回");
+            s.creatingbanner = e;
+            let i = s.getAdsData(s.getBannerType(e));
+            if (!i)
+                return void console.log("XWX-LOG:create Banner() return 2, 进入了一个理论上不会走入的返回");
+            i.adInstance && (console.log("XWX-LOG:create Banner() 进入了一个理论上不会走入的清理逻辑"),
+            s.clearBannerInfo(i));
+            let a = h.bannerIds[e];
+            i.adsIndex = e,
+            i.adsId = a,
+            t = t || {};
+            for (let e in h.style)
+                t[e] = t[e] || h.style[e];
+            let o = t.width;
+            o <= 1 && (o = s.screenWidth * o);
+            let r = t.height
+              , d = t.mp || 1
+              , c = 1 == d ? s.screenHeight - r : 2 == d ? 0 : t.top
+              , g = t.isCenter ? s.screenWidth / 2 - o / 2 : t.left
+              , u = s._wx.createBannerAd({
+                adUnitId: a,
+                style: {
+                    left: g,
+                    top: c,
+                    width: o
+                }
+            });
+            i.adInstance = u,
+            u.onResize(e=>{
+                let t = e.height
+                  , n = e.width;
+                i.style.realWidth = n,
+                i.style.realHeight = t,
+                i.isbannerSee ? s.movebanner(i, !0) : (i.adInstance.style.top = this.screenHeight - 1,
+                i.adInstance.style.left = this.screenWidth - 1),
+                i.isShow || s.showBannerEx(i)
+            }
+            ),
+            u.onLoad(()=>{
+                i.isLoaded = !0,
+                s.creatingbanner = l.SCREEN_NONE
+            }
+            ),
+            u.onError(t=>{
+                console.log("WX-LOG:banner onError", t, e),
+                i.isLoaded = !1,
+                s.creatingbanner = l.SCREEN_NONE,
+                s.clearBannerInfo(i)
+            }
+            )
+        }
+        isEmpty(e) {
+            if (null == e)
+                return !0;
+            for (let t in e)
+                return !1;
+            return !0
+        }
+        randombannerWithType(e) {
+            let t = [];
+            for (let s in e)
+                t.push(s);
+            let s = Math.floor(Math.random() * t.length);
+            return console.log("随机得到需要显示的banner是:", this.getBannerScene(t[s])),
+            t[s]
+        }
+        showBannerzs(e) {
+            if (!n || !this._adsCfg.bgbannershow)
+                return;
+            if (this.detectTimerStart || (this.detectTimerStart = !0,
+            this._adsCfg.bgbannershow && this._adsCfg.bgexposureduration > 0 ? Laya.timer.loop(1e3, this, this.detectBannerPos) : console.log("不用启动banner轮替时钟")),
+            this.showingbanner != l.SCREEN_NONE)
+                return;
+            let t, s = this, i = 0, a = l.SCREEN_NONE, o = null;
+            s.bannerObj = {};
+            for (let e = r.BANNER_WX_START; e < r.BANNER_WX_TAP; e++) {
+                let n = s.getAdsData(e);
+                if (n && n.isLoaded && n.adInstance) {
+                    if (s.bannerObj[e] = e,
+                    !this._isUseZS)
+                        if (s.mistakeTouch)
+                            n.bannerExposureTime > i && !n.bannerMistake && (t = e,
+                            o = n,
+                            i = n.bannerExposureTime);
+                        else if (0 == i)
+                            t = e,
+                            o = n,
+                            i = n.bannerExposureTime;
+                        else if (n.bannerExposureTime < i) {
+                            t = e,
+                            o = n;
+                            break
+                        }
+                } else
+                    this._isUseZS && this.createBanner(this.getBannerScene(e))
+            }
+            if (console.log("banner合集:", s.bannerObj),
+            o)
+                ;
+            else {
+                if (s.isEmpty(s.bannerObj))
+                    return;
+                t = s.randombannerWithType(s.bannerObj),
+                o = s.getAdsData(t)
+            }
+            if (a = s.getBannerScene(t),
+            this.movebanner(o, !0),
+            s.mistakeTouch && (o.bannerMistake = !0),
+            h.usePromise) {
+                let e = o.adInstance.show();
+                e && e.then(()=>{
+                    s.showingbanner = a,
+                    o.isShow = !0
+                }
+                ).catch(e=>{
+                    console.log("XWX-LOG:bnner显示失败，错误原因：", e),
+                    o.isShow = !1
+                }
+                )
+            } else
+                s.showingbanner = a,
+                o.adInstance.show(),
+                o.isShow = !0
+        }
+        showSpecialBanner() {
+            let e = this.getAdsData(r.BANNER_WX_TAP);
+            e && e.adInstance && e.isLoaded || (e && this.clearBannerInfo(e),
+            this.createBanner(l.SCREEN_TAP))
+        }
+        movebanner(e, t) {
+            n && (t ? (console.log("WX-LOG:将banner移入屏幕:", e.adsIndex),
+            e.adInstance.style.top = this.screenHeight - e.style.realHeight,
+            e.adInstance.style.left = (this.screenWidth - e.style.realWidth) / 2,
+            e.isbannerSee || (e.isbannerSee = !0)) : (console.log("WX-LOG:将banner移出屏幕:", e.adsIndex),
+            e.adInstance.style.top = this.screenHeight - 5,
+            e.adInstance.style.left = this.screenWidth - 5,
+            e.isbannerSee = !1))
+        }
+        FindBannerLoadState() {
+            let e = 0;
+            for (let t = r.BANNER_WX_START; t < r.BANNER_WX_TAP; t++) {
+                let s = this.getAdsData(t);
+                s && s.adInstance && s.isLoaded && e++
+            }
+            return e > 1
+        }
+        hideAllbanner() {
+            if (!n)
+                return;
+            let e = this.getAdsData(r.BANNER_WX_START)
+              , t = this.getAdsData(r.BANNER_WX_RESULT)
+              , s = this.getAdsData(r.BANNER_WX_FULL1)
+              , i = this.getAdsData(r.BANNER_WX_FULL2);
+            e && e.adInstance && this.movebanner(e, !1),
+            t && t.adInstance && this.movebanner(t, !1),
+            s && s.adInstance && this.movebanner(s, !1),
+            i && i.adInstance && this.movebanner(i, !1)
+        }
+        hideBannerzs(e=!1) {
+            if (!n)
+                return;
+            let t, s = this.showingbanner;
+            if (this.showingbanner = l.SCREEN_NONE,
+            this.hideAllbanner(),
+            s != l.SCREEN_NONE) {
+                switch (s) {
+                case l.SCREEN_START:
+                    t = this.getAdsData(r.BANNER_WX_START);
+                    break;
+                case l.SCREEN_RESULT:
+                    t = this.getAdsData(r.BANNER_WX_RESULT);
+                    break;
+                case l.SCREEN_FULL1:
+                    t = this.getAdsData(r.BANNER_WX_FULL1);
+                    break;
+                case l.SCREEN_FULL2:
+                    t = this.getAdsData(r.BANNER_WX_FULL2)
+                }
+                if (t && t.adInstance) {
+                    if (t.bannerShowCount++,
+                    this._adsCfg.bgexposureduration > 0) {
+                        t.bannerExposureTime < this._adsCfg.bgexposureduration && t.bannerShowCount--
+                    }
+                    (t.bannerShowCount >= this._adsCfg.bgbannershowcount || e) && (this.FindBannerLoadState() ? this.clearBannerInfo(t) : console.log("WX-LOG:只有当前这个banner可用,不能销毁"))
+                } else
+                    console.log("WX-LOG:隐藏banner时候还出现问题了????")
+            }
+        }
+        bannerMoveBy(e=80, t=0) {
+            let s;
+            switch (this.showingbanner) {
+            case l.SCREEN_START:
+                s = this.getAdsData(r.BANNER_WX_START);
+                break;
+            case l.SCREEN_RESULT:
+                s = this.getAdsData(r.BANNER_WX_RESULT);
+                break;
+            case l.SCREEN_FULL1:
+                s = this.getAdsData(r.BANNER_WX_FULL1);
+                break;
+            case l.SCREEN_FULL2:
+                s = this.getAdsData(r.BANNER_WX_FULL2)
+            }
+            s && s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        bannerMoveTo(e=0, t=0) {
+            console.log("banner误触,位置移动到:", e, t);
+            let s = this.getAdsData(this.getBannerType(this.showingbanner));
+            s && s.adInstance && s.isLoaded && (0 == e && 0 == t ? this.movebanner(s, !0) : (s.adInstance.style.left = 0 == t ? (this.screenWidth - s.style.realWidth) / 2 : t,
+            0 != e && (s.adInstance.style.top = e)))
+        }
+        reLoadGrid() {
+            if (!n || 0 == h.GridId.length)
+                return;
+            let e = this.getAdsData(r.GRID);
+            e.loadCount < h.error_count && (e.adsIndex++,
+            e.adInstance && (e.adInstance.hide(),
+            e.adInstance.destroy(),
+            e.adInstance = null),
+            this.createGridAds()),
+            e.loadCount++
+        }
+        createGridAds(e) {
+            if (!n || 0 == h.GridId.length)
+                return;
+            if (void 0 === this._wx.createGridAd)
+                return;
+            let t = this.getSystemInfoSync()
+              , s = t.screenWidth
+              , i = t.screenHeight
+              , a = this.getAdsData(r.GRID);
+            e = e || {};
+            for (let t in h.gridStyle)
+                e[t] = h.gridStyle[t];
+            let o = a.adsIndex
+              , l = h.GridId[o % h.GridId.length]
+              , d = e.width;
+            d <= 1 && (d *= s);
+            let c = e.height
+              , g = e.mp || 1
+              , u = 1 == g ? i - c : 2 == g ? 0 : e.top
+              , _ = s / 2 - d / 2
+              , m = this._wx.createGridAd({
+                adUnitId: l,
+                adIntervals: h.adIntervals,
+                adTheme: "white",
+                gridCount: 5,
+                style: {
+                    left: _,
+                    top: u,
+                    width: d
+                }
+            });
+            a.style.height = e.height,
+            a.style.width = d,
+            a.style.top = u,
+            a.style.left = _,
+            a.style.realWidth = e.gridWidth,
+            a.style.realHeight = e.height,
+            m.onResize(t=>{
+                var n = t.height
+                  , o = t.width;
+                m.style.top = 1 == g ? i - n : 2 == g ? 0 : e.top,
+                m.style.left = e.isCenter ? s / 2 - o / 2 : e.left,
+                a.style.realWidth = o,
+                a.style.realHeight = n,
+                a.style.top = m.style.top,
+                a.style.left = m.style.left
+            }
+            ),
+            m.onLoad(()=>{
+                a.isLoaded = !0,
+                a.loadCount = 0
+            }
+            ),
+            m.onError(e=>{
+                a.isLoaded = !1,
+                this.reLoadGrid()
+            }
+            ),
+            a.adInstance = m,
+            m && m.hide()
+        }
+        showGridAd(e) {
+            if (!n || !this._adsCfg.bggridshow)
+                return;
+            let t = this.getAdsData(r.GRID);
+            if (t.adInstance || this.createGridAds(e),
+            h.usePromise) {
+                let e = t.adInstance.show();
+                e && e.then(()=>{
+                    t.loadCount = 0
+                }
+                ).catch(()=>{
+                    t.loadCount = 0
+                }
+                )
+            } else
+                t.adInstance.show()
+        }
+        hideGridAd(e=!0, t) {
+            if (!n)
+                return;
+            let s = this.getAdsData(r.GRID);
+            s.adInstance && (s.adInstance.hide(),
+            s.adInstance.destroy(),
+            s.adInstance = null,
+            s.loadCount = 0,
+            s.neespreLoad && this.createGridAds(t))
+        }
+        hide_gridAd() {
+            if (!n)
+                return;
+            let e = this.getAdsData(r.GRID);
+            e.adInstance && e.adInstance.hide()
+        }
+        gridMoveBy(e=80, t=0) {
+            if (!n || !this._adsCfg.bggridshow)
+                return;
+            let s = this.getAdsData(r.GRID);
+            s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        gridMoveTo(e=0, t=0) {
+            if (!n || !this._adsCfg.bggridshow)
+                return;
+            let s = this.getAdsData(r.GRID);
+            s.adInstance && (s.adInstance.style.top = e,
+            s.adInstance.style.left = t)
+        }
+        preloadCustomAds() {
+            if (!n || 0 == h.CustomAdId.length)
+                return;
+            let e = h.customAdStyle.pos.length;
+            for (let t = 0; t < e; t++)
+                this.createAdsData(r.CUSTOMAD),
+                this.createCustomAds(t)
+        }
+        createCustomAds(e=0, t) {
+            if (!n || 0 == h.CustomAdId.length)
+                return;
+            if (void 0 === this._wx.createCustomAd)
+                return;
+            let s = this.getAdsData(r.CUSTOMAD, e);
+            if (!s)
+                return;
+            let i = e
+              , a = h.CustomAdId[i % h.CustomAdId.length]
+              , o = 0
+              , l = 0;
+            t ? (o = t.top || h.customAdStyle.pos[e].top,
+            l = t.left || h.customAdStyle.pos[e].left) : (o = h.customAdStyle.pos[e].top,
+            l = h.customAdStyle.pos[e].left),
+            o = this.screenHeight * o / Laya.stage.height,
+            l = this.screenWidth * l / Laya.stage.width;
+            let d = this._wx.createCustomAd({
+                adUnitId: a,
+                style: {
+                    top: o,
+                    left: l,
+                    fixed: !0
+                }
+            });
+            d.onError(e=>{
+                s.isLoaded = !1
+            }
+            ),
+            d.onLoad(()=>{
+                s.isLoaded = !0
+            }
+            ),
+            d.onClose(e=>{
+                s.close(!0),
+                s.adInstance && (s.adInstance.destroy(),
+                s.adInstance = null)
+            }
+            ),
+            s.adInstance = d
+        }
+        showCustomAd(e=0, t) {
+            if (!n || !this._adsCfg.bggridshow)
+                return;
+            if (0 == h.CustomAdId.length)
+                return;
+            let s = this.getAdsData(r.CUSTOMAD, e);
+            if (s.adInstance || this.createCustomAds(e, t),
+            h.usePromise) {
+                let e = s.adInstance.show();
+                e && e.then(()=>{
+                    s.loadCount = 0
+                }
+                ).catch(()=>{
+                    s.loadCount = 0
+                }
+                )
+            } else
+                s.adInstance.show()
+        }
+        hideCustomAd(e=0, t=!0, s) {
+            if (!n)
+                return;
+            let i = this.getAdsData(r.CUSTOMAD, e);
+            i.adInstance && (i.adInstance.hide(),
+            i.adInstance.destroy(),
+            i.adInstance = null,
+            i.loadCount = 0)
+        }
+        hide_CustomAd(e=0) {
+            if (!n)
+                return;
+            let t = this.getAdsData(r.CUSTOMAD, e);
+            t.adInstance && t.adInstance.hide()
+        }
+    }
+    var k, E;
+    !function(e) {
+        e[e.INITCREATE = 0] = "INITCREATE",
+        e[e.NATIVEONE = 1] = "NATIVEONE",
+        e[e.NATIVETWO = 2] = "NATIVETWO"
+    }(k || (k = {})),
+    function(e) {
+        e[e.INITSHOW = 0] = "INITSHOW",
+        e[e.NATIVEONE = 1] = "NATIVEONE",
+        e[e.NATIVETWO = 2] = "NATIVETWO"
+    }(E || (E = {}));
+    class T extends p {
+        constructor() {
+            super(),
+            this._vivo = null,
+            this._adsCfg = null,
+            this._vivo = Laya.Browser.window.qg,
+            this.version = u.version,
+            this.cfg = u,
+            this._nativeCreateIndex = k.INITCREATE,
+            this._nativeShowIndex = E.INITSHOW,
+            this._nativedelay = 15,
+            this._nativeloadresult1 = !1,
+            this._nativeloadresult2 = !1
+        }
+        init(e) {
+            this.initAds(),
+            this._vivo.onShow && this._vivo.onShow(e=>{}
+            ),
+            this._vivo.onHide && this._vivo.onHide(()=>{}
+            )
+        }
+        getLaunchOptionsSync() {
+            return this._vivo.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._vivo.getSystemInfoSync()
+        }
+        playVibrative(e=!0) {
+            e ? this._vivo.vibrateShort() : this._vivo.vibrateLong()
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._vivo.getMenuButtonBoundingClientRect ? p.prototype.getRightMenuRectInfo.call(this) : this._vivo.getMenuButtonBoundingClientRect()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            let t = this;
+            this.login((s,i)=>{
+                if (s) {
+                    if (i.data.token) {
+                        let s = new Laya.HttpRequest;
+                        s.http.timeout = 1e4,
+                        s.once(Laya.Event.COMPLETE, this, s=>{
+                            t.openId = s.data.user_id,
+                            e && e(!0, t.openId)
+                        }
+                        ),
+                        s.once(Laya.Event.ERROR, this, t=>{
+                            e && e(!1)
+                        }
+                        );
+                        let n = {
+                            appid: t.cfg.appid,
+                            code: i.data.token
+                        };
+                        s.send(t.cfg.serviceUrl, JSON.stringify(n), "post", "json", ["content-type", "application/json"])
+                    }
+                } else
+                    e && e(!1)
+            }
+            )
+        }
+        login(e=null) {
+            this._vivo.login && console.log("login is not null"),
+            this._vivo.login().then(t=>{
+                t.data.token && e && e(!0, t)
+            }
+            , t=>{
+                console.log("登录失败" + JSON.stringify(t)),
+                e && e(!1, t)
+            }
+            )
+        }
+        loadSubpackage(e, t, s) {
+            let i = e.length
+              , n = i;
+            for (let a = 0; a < i; a++) {
+                this._vivo.loadSubpackage({
+                    name: e[a],
+                    success: function(e) {
+                        s && s(a),
+                        --n <= 0 && t && t()
+                    },
+                    fail: function(e) {}
+                }).onProgressUpdate(e=>{}
+                )
+            }
+        }
+        navigateToMiniProgram(e, t=null, s=null, i=null) {
+            this._vivo.navigateToMiniGame({
+                pkgName: e.link_pkgname,
+                path: e.link_path,
+                extraData: e.extraData,
+                success: function(e) {
+                    t && t(e)
+                },
+                fail: function(e) {
+                    s && s(e)
+                },
+                complete: function(e) {
+                    i && i(e)
+                }
+            })
+        }
+        installShortcut(e, t, s) {
+            if (void 0 === this._vivo.hasShortcutInstalled || void 0 === this._vivo.installShortcut)
+                return;
+            let i = this;
+            this._vivo.hasShortcutInstalled({
+                success: function(n) {
+                    0 == n ? i._vivo.installShortcut({
+                        success: function() {
+                            e && e(!0)
+                        },
+                        fail: function(e) {
+                            t && t()
+                        },
+                        complete: function() {
+                            s && s()
+                        }
+                    }) : e && e(!1)
+                },
+                fail: function(e) {
+                    t && t()
+                },
+                complete: function() {}
+            })
+        }
+        initAdsCfg(e=null) {
+            this._adsCfg = e
+        }
+        initAds() {
+            this._adsCfg = {
+                ver: "0.0",
+                switch: 0
+            },
+            n && (this.preloadVedioAds(),
+            this.createNative(),
+            Laya.timer.loop(1e3, this, ()=>{
+                this._nativedelay++
+            }
+            ))
+        }
+        createVideoAds() {
+            if (void 0 === this._vivo.createRewardedVideoAd)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = u.VideoId[t % u.VideoId.length]
+              , i = this._vivo.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                console.log("MyOPPOAD:video error=>", JSON.stringify(t)),
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(t=>{
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && u.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    console.log("MyOPPOAD:video fail=>", JSON.stringify(t)),
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (u.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("MyOPPOAD:video show fail"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createInstalAds() {
+            if (void 0 === this._vivo.createInterstitialAd)
+                return void console.log("MyOPPOAD:createInterstitialAd api not exists");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = this.cfg.InterstitialId[t % this.cfg.InterstitialId.length]
+              , i = this._vivo.createInterstitialAd({
+                adUnitId: s
+            });
+            i.onError(t=>{
+                console.log("MyOPPOAD: InterstitialAd err", JSON.stringify(t)),
+                e.isLoaded = !1
+            }
+            ),
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onClose(t=>{
+                e.close(!0),
+                this.cfg.destroyInstl && (e.adInstance.destroy(),
+                e.adInstance = null),
+                e.neespreLoad && this.preloadInstalAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadInstalAds() {
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (e.adInstance) {
+                if (!e.isLoaded && e.adInstance) {
+                    let t = e.adInstance.load();
+                    t && this.cfg.usePromise && t.then(()=>{
+                        e.isLoaded = !0
+                    }
+                    ).catch(t=>{
+                        console.log("MyOPPOAD:InterstitialAd load fail", t),
+                        e.isLoaded = !1
+                    }
+                    )
+                }
+            } else
+                this.createInstalAds()
+        }
+        showInstal(e) {
+            let t = e.adInstance;
+            if (t) {
+                if (this.cfg.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("MyOPPOAD:showInstal fail"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadInstalAds()
+                    }
+                    )
+                }
+                e.isLoaded ? (e.adInstance.show(),
+                e.show(!0)) : (e.show(!1),
+                e.neespreLoad && this.preloadInstalAds())
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadInstalAds() : this.createInstalAds()
+        }
+        createBanner(e) {
+            let t = this.getSystemInfoSync()
+              , s = t.screenWidth
+              , i = t.screenHeight
+              , n = this.getAdsData(r.BANNER);
+            n.adInstance && (n.adInstance.destroy(),
+            n.adInstance = null),
+            e = e || {};
+            for (let t in u.style)
+                e[t] = u.style[t];
+            let a = e.width;
+            a <= 1 && (a *= s);
+            let o = e.height
+              , l = e.mp || 1
+              , h = n.adsIndex
+              , d = u.bannerIds[h % u.bannerIds.length]
+              , c = 1 == l ? i - o : 2 == l ? 0 : e.top
+              , g = e.isCenter ? s / 2 - a / 2 : e.left
+              , _ = this._vivo.createBannerAd({
+                posId: d,
+                style: {}
+            });
+            n.style.height = o,
+            n.style.width = a,
+            n.style.left = g,
+            n.style.top = c,
+            n.style.realHeight = o,
+            n.style.realWidth = a,
+            _.onSize(e=>{}
+            ),
+            _.onLoad(()=>{
+                n.isLoaded = !0,
+                n.loadCount = 0
+            }
+            ),
+            _.onError(e=>{
+                console.log("MyOPPOAD:banner error=>", JSON.stringify(e)),
+                n.isLoaded = !1
+            }
+            ),
+            n.adInstance = _,
+            _.show().then(()=>{}
+            ).catch(e=>{
+                console.log("banner广告展示失败", JSON.stringify(e))
+            }
+            )
+        }
+        reLoadBanner() {
+            let e = this.getAdsData(r.BANNER);
+            e.loadCount < u.error_count && (e.adsIndex++,
+            e.adInstance && (e.adInstance.hide(),
+            e.adInstance.destroy(),
+            e.adInstance = null),
+            this.createBanner(),
+            this.showBanner()),
+            e.loadCount++
+        }
+        showBanner(e) {
+            if (!n)
+                return;
+            let t = this.getAdsData(r.BANNER);
+            if (t.adInstance || this.createBanner(e),
+            u.usePromise) {
+                let e = t.adInstance.show();
+                e && e.then(()=>{
+                    t.loadCount = 0
+                }
+                ).catch(()=>{
+                    t.loadCount = 0
+                }
+                )
+            } else
+                t.adInstance.show();
+            t.adsIndex++
+        }
+        hideBanner(e=!0, t) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.hide(),
+            s.adInstance.destroy(),
+            s.adInstance = null,
+            s.loadCount = 0,
+            s.neespreLoad && this.createBanner(t))
+        }
+        hide_banner() {
+            let e = this.getAdsData(r.BANNER);
+            e.adInstance && e.adInstance.hide()
+        }
+        bannerMoveBy(e=80, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        bannerMoveTo(e=0, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top = e,
+            s.adInstance.style.left = t)
+        }
+        loadNativeData(e, t, s) {
+            if (!e)
+                return;
+            let i = this;
+            e.adInstance && (e.adInstance.destroy && e.adInstance.destroy(),
+            e.adInstance = null,
+            e.adData = null);
+            let n = this._vivo.createNativeAd({
+                adUnitId: t
+            });
+            e.adInstance = n,
+            n.onLoad(n=>{
+                console.log("MyOPPOAD:loadNativeData() onLoad()", t, JSON.stringify(n)),
+                i._nativeCreateIndex == k.INITCREATE ? (i._nativeCreateIndex = k.NATIVEONE,
+                i._nativeloadresult1 = !0) : i._nativeCreateIndex == k.NATIVEONE ? i._nativeloadresult1 = !0 : i._nativeCreateIndex == k.NATIVETWO && (i._nativeloadresult2 = !0),
+                e.adData = n.adList,
+                s(n.adList)
+            }
+            ),
+            n.onError(n=>{
+                console.log("MyOPPOAD:loadNativeData() onError()", t, JSON.stringify(n)),
+                i._nativeCreateIndex == k.INITCREATE || (i._nativeCreateIndex == k.NATIVEONE ? i._nativeloadresult1 = !1 : i._nativeCreateIndex == k.NATIVETWO && (i._nativeloadresult2 = !1)),
+                e && e.adInstance && e.adInstance.destroy && e.adInstance.destroy(),
+                e && e.adInstance && (e.adInstance = null),
+                e && e.adData && (e.adData = null),
+                s(null)
+            }
+            ),
+            n.load()
+        }
+        getNativeAdId(e=0) {
+            return this.cfg.nativeIds[e]
+        }
+        getNativeAd(e, t=1) {
+            if (void 0 === this._vivo.createNativeAd)
+                return;
+            let s = this.getNativeAdId(t);
+            if (!s)
+                return void e(null);
+            let i = this._vivo.createNativeAd({
+                posId: s
+            });
+            i.load(),
+            i.onLoad(t=>{
+                e(t.adList)
+            }
+            ),
+            i.onError(t=>{
+                console.log("MyOPPOAD:getNativeAd->onError", JSON.stringify(t)),
+                e(null)
+            }
+            )
+        }
+        createNative(e=0, t=r.NATIVE_INSTIL) {
+            if (this._nativedelay < 15)
+                return void console.log("MyOPPOAD:createNative time less then 15s");
+            let s;
+            this._nativedelay = 0,
+            this._nativeCreateIndex == k.INITCREATE ? (t = r.NATIVE_INSTIL,
+            s = u.nativeIds[0]) : this._nativeCreateIndex == k.NATIVEONE ? this._nativeloadresult1 ? (this._nativeCreateIndex = k.NATIVETWO,
+            t = r.NATIVE_INSTIL_VIVO,
+            s = u.nativeIds[1]) : (t = r.NATIVE_INSTIL,
+            s = u.nativeIds[0]) : this._nativeCreateIndex == k.NATIVETWO && (this._nativeloadresult2 ? (this._nativeCreateIndex = k.NATIVEONE,
+            t = r.NATIVE_INSTIL,
+            s = u.nativeIds[0]) : (t = r.NATIVE_INSTIL_VIVO,
+            s = u.nativeIds[1]));
+            let i = this.getAdsData(t);
+            this.loadNativeData(i, s, e=>{}
+            )
+        }
+        getNativeData() {
+            let e;
+            if (this._nativeCreateIndex == k.INITCREATE)
+                return console.log("MyOPPOAD:getNativeData()---never success"),
+                this.createNative(),
+                null;
+            if (this._nativeCreateIndex == k.NATIVEONE) {
+                if (this._nativeloadresult1) {
+                    e = u.nativeIds[0];
+                    let t = this.getAdsData(r.NATIVE_INSTIL);
+                    return t && t.adInstance && t.adData ? (this._nativeShowIndex = E.NATIVEONE,
+                    console.log("MyOPPOAD:getNativeData()---return 1", e),
+                    t.adData[0]) : (console.log("MyOPPOAD:getNativeData()---return 2, wrong way"),
+                    null)
+                }
+                {
+                    e = u.nativeIds[1];
+                    let t = this.getAdsData(r.NATIVE_INSTIL_VIVO);
+                    return t && t.adInstance && t.adData ? (this._nativeShowIndex = E.NATIVETWO,
+                    console.log("MyOPPOAD:getNativeData()---return 3", e),
+                    t.adData[0]) : (console.log("MyOPPOAD:getNativeData()---return 4, wrong way"),
+                    null)
+                }
+            }
+            if (this._nativeCreateIndex == k.NATIVETWO) {
+                if (this._nativeloadresult2) {
+                    e = u.nativeIds[1];
+                    let t = this.getAdsData(r.NATIVE_INSTIL_VIVO);
+                    return t && t.adInstance && t.adData ? (this._nativeShowIndex = E.NATIVETWO,
+                    console.log("MyOPPOAD:getNativeData()---return 5", e),
+                    t.adData[0]) : (console.log("MyOPPOAD:getNativeData()---return 6, wrong way"),
+                    null)
+                }
+                {
+                    e = u.nativeIds[0];
+                    let t = this.getAdsData(r.NATIVE_INSTIL);
+                    return t && t.adInstance && t.adData ? (this._nativeShowIndex = E.NATIVEONE,
+                    console.log("MyOPPOAD:getNativeData()---return 7", e),
+                    t.adData[0]) : (console.log("MyOPPOAD:getNativeData()---return 8, wrong way"),
+                    null)
+                }
+            }
+        }
+        reportAdClick(e, t=r.NATIVE_INSTIL) {
+            this._nativeShowIndex == E.NATIVETWO ? t = r.NATIVE_INSTIL_VIVO : this._nativeShowIndex == E.NATIVEONE && (t = r.NATIVE_INSTIL);
+            let s = this.getAdsData(t);
+            s.adInstance && s.adInstance.reportAdClick({
+                adId: e.adId.toString()
+            })
+        }
+        reportAdShow(e, t=r.NATIVE_INSTIL) {
+            let s;
+            this._nativeShowIndex == E.NATIVEONE ? (t = r.NATIVE_INSTIL,
+            this._nativeloadresult2 = !1,
+            s = u.nativeIds[0]) : this._nativeShowIndex == E.NATIVETWO && (t = r.NATIVE_INSTIL_VIVO,
+            this._nativeloadresult1 = !1,
+            s = u.nativeIds[1]);
+            let i = this.getAdsData(t);
+            console.log("MyOPPOAD:reportAdShow()", e.adId, s),
+            i.adInstance && i.adInstance.reportAdShow({
+                adId: e.adId.toString()
+            }),
+            this.createNative()
+        }
+        setKeepScreenOn() {
+            this._vivo.setKeepScreenOn({
+                keepScreenOn: !0,
+                success: function() {},
+                fail: function(e, t) {
+                    console.log(`handling fail, code = ${t}`)
+                }
+            })
+        }
+    }
+    class N extends p {
+        constructor() {
+            super(),
+            this._oppo = null,
+            this._adsCfg = null,
+            this._adcanshow = !1,
+            this.fakeNativeShow = 0,
+            this.fakeNativeLoop = 4,
+            this.loadRealNative = !1,
+            this.breportbegin = !1,
+            this._oppo = Laya.Browser.window.qg,
+            this.version = g.version,
+            this.cfg = g
+        }
+        init(e) {
+            this.initAds(),
+            this._oppo.onShow && this._oppo.onShow(e=>{}
+            ),
+            this._oppo.onHide && this._oppo.onHide(()=>{}
+            ),
+            Laya.timer.once(6e4, this, ()=>{
+                this._adcanshow = !0
+            }
+            )
+        }
+        getLaunchOptionsSync() {
+            return this._oppo.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._oppo.getSystemInfoSync()
+        }
+        playVibrative(e=!0) {
+            e ? this._oppo.vibrateShort() : this._oppo.vibrateLong()
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._oppo.getMenuButtonBoundingClientRect ? p.prototype.getRightMenuRectInfo.call(this) : this._oppo.getMenuButtonBoundingClientRect()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            let t = this;
+            this.login((s,i)=>{
+                if (s) {
+                    if (i.token) {
+                        let s = new Laya.HttpRequest;
+                        s.http.timeout = 1e4,
+                        s.once(Laya.Event.COMPLETE, this, s=>{
+                            t.openId = s.data.user_id,
+                            e && e(!0, t.openId)
+                        }
+                        ),
+                        s.once(Laya.Event.ERROR, this, t=>{
+                            console.log("MyOPPOAD:OPPO get openid fail", JSON.stringify(t)),
+                            e && e(!1)
+                        }
+                        );
+                        let n = {
+                            appid: t.cfg.appid,
+                            code: i.token
+                        };
+                        s.send(t.cfg.serviceUrl, JSON.stringify(n), "post", "json", ["content-type", "application/json"])
+                    }
+                } else
+                    e && e(!1)
+            }
+            )
+        }
+        login(e=null) {
+            this._oppo.login && console.log("MyOPPOAD:login is not null"),
+            this._oppo.login({
+                success: t=>{
+                    e && e(!0, t)
+                }
+                ,
+                fail: t=>{
+                    console.log("MyOPPOAD:OPPO login fail ", JSON.stringify(t)),
+                    e && e(!1)
+                }
+                ,
+                complete: e=>{}
+            })
+        }
+        loadSubpackage(e, t, s) {
+            let i = e.length
+              , n = i;
+            for (let a = 0; a < i; a++) {
+                this._oppo.loadSubpackage({
+                    name: e[a],
+                    success: function(e) {
+                        s && s(a),
+                        --n <= 0 && t && t()
+                    },
+                    fail: function(t) {
+                        console.log("MyOPPOAD:loadSubpackage fail=>", e[a], JSON.stringify(t))
+                    }
+                }).onProgressUpdate(e=>{}
+                )
+            }
+        }
+        navigateToMiniProgram(e, t=null, s=null, i=null) {
+            this._oppo.navigateToMiniGame({
+                pkgName: e.link_pkgname,
+                path: e.link_path,
+                extraData: e.extraData,
+                success: function(e) {
+                    t && t(e)
+                },
+                fail: function(e) {
+                    console.log("MyOPPOAD:navigateToMiniProgram fail=>", JSON.stringify(e)),
+                    s && s(e)
+                },
+                complete: function(e) {
+                    i && i(e)
+                }
+            })
+        }
+        reportMonitor() {
+            this._oppo.reportMonitor("game_scene", 0)
+        }
+        reportMonitorEx(e) {
+            if (!(this._oppo.getSystemInfoSync().platformVersionCode < 1076)) {
+                if ("begin_click_btn" == e) {
+                    if (this.breportbegin)
+                        return;
+                    this.breportbegin = !0
+                }
+                this._oppo.reportMonitor(e)
+            }
+        }
+        installShortcut(e, t, s) {
+            if (void 0 === this._oppo.hasShortcutInstalled || void 0 === this._oppo.installShortcut)
+                return;
+            let i = this;
+            this._oppo.hasShortcutInstalled({
+                success: function(n) {
+                    0 == n ? i._oppo.installShortcut({
+                        success: function() {
+                            e && e(!0)
+                        },
+                        fail: function(e) {
+                            console.log("MyOPPOAD:installShortcut fail"),
+                            t && t()
+                        },
+                        complete: function() {
+                            s && s()
+                        }
+                    }) : e && e(!1)
+                },
+                fail: function(e) {
+                    console.log("MyOPPOAD:hasShortcutInstalled fail"),
+                    t && t()
+                },
+                complete: function() {}
+            })
+        }
+        initAdsCfg(e=null) {
+            this._adsCfg = e
+        }
+        initAds() {
+            this._adsCfg = {
+                ver: "0.0",
+                switch: 0,
+                bgshowad_inonemin: 0,
+                bgnative_exposure_num: 1
+            },
+            this.createNative(r.NATIVE_INSTIL),
+            this.preloadVedioAds(),
+            this.createBanner(),
+            this.preloadGamePortal(),
+            this._oppo.getSystemInfoSync().platformVersionCode < 1076 || this._oppo.onReportMonitor(function(e) {
+                0 == e.code ? console.log("MyOPPOAD:onReportMonitor success") : console.log("MyOPPOAD:onReportMonitor fail")
+            })
+        }
+        createVideoAds() {
+            if (void 0 === this._oppo.createRewardedVideoAd)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = g.VideoId[t % g.VideoId.length]
+              , i = this._oppo.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                console.log("MyOPPOAD:video error=>", JSON.stringify(t)),
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(t=>{
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && g.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    console.log("MyOPPOAD:video fail=>", JSON.stringify(t)),
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (g.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("MyOPPOAD:video show fail"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createInstalAds() {
+            if (void 0 === this._oppo.createInterstitialAd)
+                return void console.log("MyOPPOAD:createInterstitialAd api not exists");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = this.cfg.InterstitialId[t % this.cfg.InterstitialId.length]
+              , i = this._oppo.createInterstitialAd({
+                adUnitId: s
+            });
+            i.onError(t=>{
+                console.log("MyOPPOAD: InterstitialAd err", JSON.stringify(t)),
+                e.isLoaded = !1
+            }
+            ),
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onClose(t=>{
+                e.close(!0),
+                this.cfg.destroyInstl && (e.adInstance.destroy(),
+                e.adInstance = null),
+                e.neespreLoad && this.preloadInstalAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadInstalAds() {
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (e.adInstance) {
+                if (!e.isLoaded && e.adInstance) {
+                    let t = e.adInstance.load();
+                    t && this.cfg.usePromise && t.then(()=>{
+                        e.isLoaded = !0
+                    }
+                    ).catch(t=>{
+                        console.log("MyOPPOAD:InterstitialAd load fail", t),
+                        e.isLoaded = !1
+                    }
+                    )
+                }
+            } else
+                this.createInstalAds()
+        }
+        showInstal(e) {
+            let t = e.adInstance;
+            if (t) {
+                if (this.cfg.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("MyOPPOAD:showInstal fail"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadInstalAds()
+                    }
+                    )
+                }
+                e.isLoaded ? (e.adInstance.show(),
+                e.show(!0)) : (e.show(!1),
+                e.neespreLoad && this.preloadInstalAds())
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadInstalAds() : this.createInstalAds()
+        }
+        createBanner(e) {
+            let t = this.getSystemInfoSync()
+              , s = t.screenWidth
+              , i = t.screenHeight
+              , n = this.getAdsData(r.BANNER);
+            n.adInstance && (n.adInstance.destroy(),
+            n.adInstance = null),
+            e = e || {};
+            for (let t in g.style)
+                e[t] = g.style[t];
+            let a = e.width;
+            a <= 1 && (a *= s);
+            let o = e.height
+              , l = e.mp || 1
+              , h = n.adsIndex
+              , d = g.bannerIds[h % g.bannerIds.length]
+              , c = 1 == l ? i - o : 2 == l ? 0 : e.top
+              , u = e.isCenter ? s / 2 - a / 2 : e.left
+              , _ = this._oppo.createBannerAd({
+                adUnitId: d,
+                adIntervals: g.adIntervals,
+                style: {
+                    left: u,
+                    top: c,
+                    width: a,
+                    height: o
+                }
+            });
+            n.style.height = o,
+            n.style.width = a,
+            n.style.left = u,
+            n.style.top = c,
+            n.style.realHeight = o,
+            n.style.realWidth = a,
+            _.onResize(t=>{
+                var a = t.height
+                  , o = t.width;
+                _.style.top = 1 == l ? i - a : 2 == l ? 0 : e.top,
+                _.style.left = e.isCenter ? s / 2 - o / 2 : e.left,
+                n.style.realWidth = o,
+                n.style.realHeight = a,
+                n.style.left = _.style.left,
+                n.style.top = _.style.top
+            }
+            ),
+            _.onLoad(()=>{
+                n.isLoaded = !0,
+                n.loadCount = 0
+            }
+            ),
+            _.onError(e=>{
+                console.log("MyOPPOAD:banner error=>", JSON.stringify(e)),
+                n.isLoaded = !1,
+                this.reLoadBanner()
+            }
+            ),
+            n.adInstance = _,
+            _ && _.hide()
+        }
+        reLoadBanner() {
+            let e = this.getAdsData(r.BANNER);
+            e.loadCount < g.error_count && (e.adsIndex++,
+            e.adInstance && (e.adInstance.hide(),
+            e.adInstance.destroy(),
+            e.adInstance = null),
+            this.createBanner(),
+            this.showBanner()),
+            e.loadCount++
+        }
+        showBanner(e) {
+            if (!n)
+                return;
+            if (this._adsCfg.bgshowad_inonemin && (console.log("MyOPPOAD:sdk-oppo.ts--showBanner() zs_showad_inonemin"),
+            !this._adcanshow))
+                return void console.log("MyOPPOAD:sdk-oppo.ts--showBanner() in 60 return");
+            let t = this.getAdsData(r.BANNER);
+            if (t.adInstance || this.createBanner(e),
+            g.usePromise) {
+                let e = t.adInstance.show();
+                e && e.then(()=>{
+                    t.loadCount = 0
+                }
+                ).catch(()=>{
+                    t.loadCount = 0
+                }
+                )
+            } else
+                t.adInstance.show();
+            t.adsIndex++
+        }
+        hideBanner(e=!0, t) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.hide(),
+            s.adInstance.destroy(),
+            s.adInstance = null,
+            s.loadCount = 0,
+            s.neespreLoad && this.createBanner(t))
+        }
+        hide_banner() {
+            let e = this.getAdsData(r.BANNER);
+            e.adInstance && e.adInstance.hide()
+        }
+        bannerMoveBy(e=80, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        bannerMoveTo(e=0, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top = e,
+            s.adInstance.style.left = t)
+        }
+        enterGameScene() {
+            this.fakeNativeShow = 0,
+            this.loadRealNative = !1,
+            Laya.timer.loop(1e3 * this.fakeNativeLoop, this, this.fakeNativeTimer)
+        }
+        exitGameScene() {
+            Laya.timer.clear(this, this.fakeNativeTimer)
+        }
+        fakeNativeTimer() {
+            if (this.cfg.version != this._adsCfg.ver)
+                return;
+            if (this.fakeNativeShow >= this._adsCfg.bgnative_exposure_num) {
+                if (!this.loadRealNative)
+                    return this.loadRealNative = !0,
+                    void this.createNative(r.NATIVE_INSTIL);
+                {
+                    let e = this.getAdsData(r.NATIVE_INSTIL);
+                    if (e && e.adInstance && e.adData)
+                        return;
+                    this.createNative(r.NATIVE_INSTIL)
+                }
+            }
+            let e = this.getAdsData(r.NATIVE_INSTIL);
+            e && e.adInstance && e.adData && !e.nativeShowed ? (this.fakeNativeShow++,
+            this.reportAdShow(e.adData[0])) : (console.log("MyOPPOAD:auto report show in timer"),
+            this.createNative(r.NATIVE_INSTIL, !0))
+        }
+        loadNativeData(e, t, s) {
+            let i = this._oppo.createNativeAd({
+                adUnitId: t
+            });
+            e.adInstance = i,
+            i.load(),
+            i.onLoad(t=>{
+                e.adData = t.adList,
+                e.isLoaded = !0,
+                console.log("MyOPPOAD:load NativeData->onLoad", JSON.stringify(t.adList[0].adId)),
+                i.offLoad(),
+                s(t.adList)
+            }
+            ),
+            i.onError(t=>{
+                e.adData = null,
+                e.isLoaded = !1,
+                console.log("MyOPPOAD:load NativeData->onError", JSON.stringify(t)),
+                i.offError(),
+                s(null)
+            }
+            )
+        }
+        createNative(e, t=!1) {
+            let s, i = this, n = this.getAdsData(e);
+            n && (n.adInstance && (n.adInstance.destroy(),
+            n.adInstance = null,
+            n.adData = null,
+            n.isLoaded = !1,
+            n.nativeShowed = !1),
+            s = e == r.NATIVE_INSTIL ? g.nativeIds[0] : g.nativeIds[1],
+            this.loadNativeData(n, s, e=>{
+                e ? t && (i.fakeNativeShow++,
+                i.reportAdShow(e[0])) : console.log("MyOPPOAD:load NativeData ret is null")
+            }
+            ))
+        }
+        createNative_OPPO() {
+            this.createNative(r.NATIVE_INSTIL)
+        }
+        getNativeData() {
+            if (this._adsCfg.bgshowad_inonemin && !this._adcanshow)
+                return console.log("MyOPPOAD:getNativeData return"),
+                null;
+            let e = this.getAdsData(r.NATIVE_INSTIL);
+            return e ? e.adInstance && e.adData && e.isLoaded ? e.adData[0] : (this.createNative(r.NATIVE_INSTIL),
+            null) : null
+        }
+        reportAdClick(e, t=r.NATIVE_INSTIL) {
+            let s = this.getAdsData(t);
+            s.adInstance && (console.log("MyOPPOAD:reportAdClick:", e.adId),
+            s.adInstance.reportAdClick({
+                adId: e.adId
+            }))
+        }
+        reportAdShow(e, t=r.NATIVE_INSTIL) {
+            let s = this.getAdsData(t);
+            s.adInstance ? (s.nativeShowed = !0,
+            console.log("MyOPPOAD:reportAdShow:", e.adId),
+            s.adInstance.reportAdShow({
+                adId: e.adId
+            })) : console.log("MyOPPOAD:ads.adINstance is null:", JSON.stringify(s))
+        }
+        supportGamePortal() {
+            return this._oppo.getSystemInfoSync().platformVersionCode >= 1076
+        }
+        createGamePortal() {
+            if (void 0 === this._oppo.createGamePortalAd)
+                return;
+            let e = this.getAdsData(r.GAME_PORTAL)
+              , t = g.GamePortalId[0]
+              , s = this._oppo.createGamePortalAd({
+                adUnitId: t
+            });
+            e.adInstance = s,
+            s.onLoad(function() {
+                console.log("MyOPPOAD:PortalAd onLoad"),
+                e.isLoaded = !0
+            }),
+            s.onError(function(t) {
+                console.log("MyOPPOAD:PortalAd onError:", JSON.stringify(t)),
+                e.isLoaded = !1
+            }),
+            s.onClose(function() {
+                e.isLoaded = !1,
+                e.close(!0),
+                console.log("MyOPPOAD:PortalAd onClose"),
+                s.load().then(function() {
+                    console.log("MyOPPOAD:PortalAd load success")
+                }).catch(function(e) {
+                    console.log("MyOPPOAD:PortalAd load fail with:" + e.errCode + "," + e.errMsg)
+                })
+            })
+        }
+        preloadGamePortal() {
+            this.getAdsData(r.GAME_PORTAL).adInstance || this.createGamePortal()
+        }
+        showGamePortal(e) {
+            if (!e.isLoaded)
+                return e.show(!1),
+                void e.adInstance.load();
+            e.adInstance ? e.adInstance.show().then(function() {
+                e.show(!0),
+                console.log("MyOPPOAD:PortalAd show success")
+            }).catch(function(t) {
+                console.log("MyOPPOAD:PortalAd show fail with:" + t.errCode + "," + t.errMsg),
+                e.show(!1),
+                e.adInstance.load()
+            }) : e.show(!1)
+        }
+    }
+    class P {
+        constructor(e, t, s, i, n=null) {
+            this.adUnitId = null,
+            this.isLoad = !1,
+            this.isShow = !1,
+            this.isWait = !1,
+            this.pos = null,
+            this.loadFunc = null,
+            this.showLong = 0,
+            this.loadTimer = null,
+            this.showTime = 0,
+            this.birthTime = 0,
+            this.inErr = !1,
+            this.bannerAd = null,
+            this.bannerShowNumber = 0,
+            this.bannerIndex = 0,
+            this.adUnitId = e,
+            this.isLoad = !1,
+            this.isShow = !1,
+            this.isWait = t,
+            this.pos = s,
+            this.loadFunc = n,
+            this.bannerShowNumber = i,
+            this.showLong = 0,
+            this.initBanner();
+            var a = this;
+            this.loadTimer = setTimeout(function() {
+                console.log("banner加载超时"),
+                a.destroy()
+            }, 15e3),
+            this.showTime = 0,
+            this.birthTime = 0,
+            this.inErr = !1
+        }
+        get liveTime() {
+            return this.birthTime ? (new Date).getTime() - this.birthTime : 0
+        }
+        get showEd() {
+            var e = this.bannerShowNumber
+              , t = e || 0;
+            return t = Math.max(t, 3e3),
+            this.showLong > t
+        }
+        initBanner() {
+            if (!window.qq || !window.qq.createBannerAd)
+                return void console.log("环境异常,无法创建");
+            console.log("进入banner初始化" + this.adUnitId);
+            var e = this;
+            let t = window.qq
+              , s = window.screen.availWidth / Laya.stage.width
+              , i = window.screen.availHeight / Laya.stage.height
+              , n = this.pos ? null != this.pos.left ? this.pos.left * s : null != this.pos.right ? (Laya.stage.width - this.pos.right) * s - 350 : null != this.pos.centerX ? (Laya.stage.width / 2 + this.pos.centerX) * s - 175 : (window.screen.availWidth - 350) / 2 : (window.screen.availWidth - 350) / 2
+              , a = this.pos ? null != this.pos.top ? this.pos.top * i : null != this.pos.bottom ? (Laya.stage.height - this.pos.bottom) * i - 86 : null != this.pos.centerY ? (Laya.stage.height / 2 + this.pos.centerY) * i - 43 : window.screen.availHeight - 86 : window.screen.availHeight - 86;
+            null == this.bannerAd && (this.bannerAd = t.createBannerAd({
+                adUnitId: e.adUnitId,
+                style: {
+                    left: n,
+                    top: a,
+                    width: 350
+                }
+            })),
+            this.bannerAd ? (this.bannerAd.onLoad(function() {
+                e.isLoad = !0,
+                e.loadTimer && clearTimeout(e.loadTimer),
+                e.loadFunc && e.loadFunc(),
+                e.birthTime = (new Date).getTime(),
+                e.isWait || e.show()
+            }),
+            this.bannerAd.onError(function(t) {
+                console.error("Banner err:", t),
+                x.Instance.inErr(),
+                e.inErr = !0
+            }),
+            this.bannerAd.onResize(this.onResize.bind(this))) : console.error("Banner 创建失败???环境？")
+        }
+        onResize(e) {
+            x.Instance.realSize = {
+                w: e.width,
+                h: e.height
+            }
+        }
+        getOffsetY() {
+            return 750 * window.screen.availHeight > 1600 * window.screen.availWidth ? 15 * window.screen.availHeight * 750 / 1600 / window.screen.availWidth : 0
+        }
+        show() {
+            if (null != this.bannerAd && this.isLoad && this.bannerAd.show) {
+                this.isShow = !0,
+                this.isWait = !1;
+                var e = this;
+                this.updatePosition();
+                try {
+                    this.bannerAd.show().then(function() {
+                        console.warn("banner标号" + e.bannerIndex + "展示成功,当前已展示时间" + e.showLong),
+                        e.showTime = (new Date).getTime(),
+                        e.isWait && e.hide()
+                    })
+                } catch (e) {
+                    console.log("banner报错了")
+                }
+            }
+        }
+        updatePosition() {
+            if (!this.bannerAd || !x.Instance.realSize)
+                return;
+            let e = window.screen.availWidth / Laya.stage.width
+              , t = window.screen.availHeight / Laya.stage.height
+              , s = this.pos ? this.pos.left ? this.pos.left * e : this.pos.right ? (Laya.stage.width - this.pos.right) * e - x.Instance.realSize.w : this.pos.centerX ? (Laya.stage.width / 2 + this.pos.centerX) * e - x.Instance.realSize.width / 2 : (window.screen.availWidth - x.Instance.realSize.w) / 2 : (window.screen.availWidth - x.Instance.realSize.w) / 2
+              , i = this.pos ? this.pos.top ? this.pos.top * t : this.pos.bottom ? (Laya.stage.height - this.pos.bottom) * t - x.Instance.realSize.h : this.pos.centerY ? (Laya.stage.height / 2 + this.pos.centerY) * t - x.Instance.realSize.height / 2 : window.screen.availHeight - x.Instance.realSize.h : window.screen.availHeight - x.Instance.realSize.h;
+            this.bannerAd.style.top = i,
+            this.bannerAd.style.left = s
+        }
+        hide() {
+            this.isWait = !0,
+            this.bannerAd && this.bannerAd.hide(),
+            this.showTime && (this.showLong += (new Date).getTime() - this.showTime),
+            this.showTime = null,
+            this.isShow && console.warn("banner标号" + this.bannerIndex + "调用隐藏,当前已展示时间" + this.showLong),
+            this.isShow = !1
+        }
+        destroy() {
+            this.bannerAd && this.bannerAd.destroy(),
+            this.bannerAd = null,
+            this.adUnitId = null,
+            this.isLoad = null,
+            this.isShow = null,
+            this.isWait = null,
+            this.loadTimer && clearTimeout(this.loadTimer),
+            this.pos = null,
+            this.loadFunc = null,
+            this.showLong = null,
+            this.birthTime = null,
+            this.loadTimer = null,
+            this.showTime = null,
+            this.inErr = null
+        }
+        updateY(e) {
+            this.bannerAd && x.Instance.realSize && (this.bannerAd.style.top = e * window.screen.availHeight / Laya.stage.height)
+        }
+        updateX(e) {
+            this.bannerAd && x.Instance.realSize && (this.bannerAd.style.left = e * window.screen.availWidth / Laya.stage.width)
+        }
+    }
+    class x {
+        constructor() {
+            this.qqbannerArray = [],
+            this.bannerIds = [],
+            this.isWait = !1,
+            this.pos = {},
+            this.lastFreshTime = 0,
+            this.length = 0,
+            this.inErrTime = !1,
+            this.errTimer = null,
+            this.bannerIndex = 0,
+            this.idCdArr = [],
+            this.realSize = null,
+            this.bannerShowNumber = 0,
+            this.currShowBannerObj = null,
+            this.qqbannerArray = [],
+            this.bannerIds = [],
+            this.isWait = !1,
+            this.pos = {},
+            this.lastFreshTime = 0,
+            this.length = 0,
+            this.inErrTime = !1,
+            this.errTimer = null,
+            this.bannerIndex = 0,
+            this.idCdArr = [],
+            this.realSize = null,
+            this.currShowBannerObj = null
+        }
+        static get Instance() {
+            return this._ins || (this._ins = new x),
+            this._ins
+        }
+        setAdUnitId(e) {
+            this.bannerIds = e,
+            this.checkNull()
+        }
+        init(e=7e3, t=5e3) {
+            console.log("QQBannerMgr", e, t),
+            this.bannerShowNumber = t,
+            e < 3e3 && (e = 3e3);
+            var s = this;
+            Laya.timer.loop(1e3, this, function() {
+                let t = (new Date).getTime();
+                var i = e;
+                !s.isWait && s.lastFreshTime && i && t - s.lastFreshTime > i && (console.log("自动刷新"),
+                s.updateBanner(s.isWait, s.pos))
+            })
+        }
+        inErr() {
+            this.errTimer && clearTimeout(this.errTimer),
+            this.inErrTime = !0;
+            var e = this;
+            this.errTimer = setTimeout(function() {
+                e.inErrTime = !1
+            }, 3e4)
+        }
+        checkNull() {
+            this.bannerIds || (this.bannerIds = []);
+            for (let e = this.bannerIds.length - 1; e >= 0; e--)
+                this.bannerIds[e] && this.bannerIds[e].length || this.bannerIds.splice(e, 1)
+        }
+        updateBanner(e, t) {
+            if (!this.bannerIds)
+                return void console.log("未设置bannerID");
+            if (!this.bannerIds.length)
+                return void console.log("bannerID呢？？？");
+            this.hideAll(),
+            this.lastFreshTime = (new Date).getTime(),
+            this.isWait = e,
+            this.pos = t;
+            let s = 0;
+            for (let e = this.qqbannerArray.length - 1; e >= 0; e--) {
+                let t = this.qqbannerArray[e];
+                if (t.inErr && (t.destroy(),
+                console.log("banner" + t.bannerIndex + "报错了")),
+                this.qqbannerArray.length > 5 && t.showEd && t.liveTime > 3e4 && (console.log("banner" + t.bannerIndex + "生存时长超30s并已展示时长" + t.showLong),
+                t.destroy()),
+                t.bannerAd)
+                    if (t.isLoad) {
+                        if (t.isLoad && !t.showEd && !t.isShow) {
+                            console.log("存在加载完成但未展示的banner"),
+                            s++;
+                            break
+                        }
+                    } else
+                        s++;
+                else
+                    console.log("banner" + t.bannerIndex + "已销毁"),
+                    this.qqbannerArray.splice(e, 1)
+            }
+            if (s >= 1 || this.inErrTime)
+                return console.log("存在拉取中的banner或为报错状态,暂停拉取"),
+                void (this.isWait || this.showBanner(t));
+            this.createBanner()
+        }
+        createBanner() {
+            if (this.inErrTime && console.log("处于报错状态取消创建"),
+            this.inErrTime)
+                return;
+            let e = Math.floor(Math.random() * this.bannerIds.length)
+              , t = new P(this.bannerIds[e],this.isWait,this.pos,this.bannerShowNumber);
+            t.bannerIndex = this.bannerIndex,
+            this.bannerIndex++,
+            this.qqbannerArray.push(t),
+            this.isWait || (this.currShowBannerObj = t)
+        }
+        showBanner(e) {
+            for (let t = 0; t < this.qqbannerArray.length; t++) {
+                let s = this.qqbannerArray[t];
+                if (s.isLoad && !s.showEd && !s.isShow)
+                    return s.pos = e,
+                    s.show(),
+                    this.isWait = !1,
+                    void (this.currShowBannerObj = s)
+            }
+            let t = null;
+            for (let e = 0; e < this.qqbannerArray.length; e++) {
+                let s = this.qqbannerArray[e];
+                s.isLoad && !s.isShow && (!t || s.showLong < t.showLong) && (t = s)
+            }
+            t ? (t.pos = e,
+            t.show(),
+            this.isWait = !1,
+            this.currShowBannerObj = t) : (this.currShowBannerObj = null,
+            console.log("不存在加载完并且没有正在展示的banner"))
+        }
+        moveBy(e) {
+            this.currShowBannerObj && this.currShowBannerObj.pos.left && this.currShowBannerObj.pos.top && e.left && e.top && (this.currShowBannerObj.pos.left += e.left,
+            this.currShowBannerObj.pos.top += e.top,
+            this.currShowBannerObj.updatePosition())
+        }
+        moveTo(e) {
+            this.currShowBannerObj && (this.currShowBannerObj.pos = e,
+            this.currShowBannerObj.updatePosition())
+        }
+        hideAll() {
+            for (let e = 0; e < this.qqbannerArray.length; e++) {
+                this.qqbannerArray[e].hide()
+            }
+            this.isWait = !0,
+            this.currShowBannerObj = null
+        }
+    }
+    x._ins = null;
+    class D extends p {
+        constructor() {
+            super(),
+            this._qq = null,
+            this._adsCfg = null,
+            this.bblockadexists = !1,
+            this._qq = Laya.Browser.window.qq,
+            this.version = d.version,
+            this.cfg = d
+        }
+        compareVersion(e, t) {
+            e = e.split("."),
+            t = t.split(".");
+            const s = Math.max(e.length, t.length);
+            for (; e.length < s; )
+                e.push("0");
+            for (; t.length < s; )
+                t.push("0");
+            for (let i = 0; i < s; i++) {
+                const s = parseInt(e[i])
+                  , n = parseInt(t[i]);
+                if (s > n)
+                    return 1;
+                if (s < n)
+                    return -1
+            }
+            return 0
+        }
+        init(e) {
+            let t = this.getSystemInfoSync();
+            this.screenWidth = t.screenWidth,
+            this.screenHeight = t.screenHeight,
+            this._qq.showShareMenu({
+                withShareTicket: !0
+            }),
+            this._qq.onShareAppMessage(function() {
+                return {
+                    title: a.name,
+                    imageUrl: a.imageUrl
+                }
+            }),
+            this._qq.onShow(e=>{}
+            ),
+            this._qq.onHide(()=>{}
+            ),
+            this.initAds()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            let t = this;
+            this.login((s,i)=>{
+                s && i.code ? t._qq.request({
+                    method: "POST",
+                    url: t.cfg.serviceUrl,
+                    data: {
+                        code: i.code,
+                        appid: t.cfg.appid
+                    },
+                    success: s=>{
+                        t.openId = s.data.data.openid,
+                        e && e(!0, t.openId)
+                    }
+                    ,
+                    fail: t=>{
+                        e && e(!1)
+                    }
+                    ,
+                    complete: ()=>{}
+                }) : e && e(!1)
+            }
+            )
+        }
+        share(e, t) {
+            e = e || a.name,
+            this._qq.shareAppMessage({
+                title: e,
+                imageUrlId: a.imageUrlId,
+                imageUrl: a.imageUrl
+            })
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._qq.getMenuButtonBoundingClientRect ? p.prototype.getRightMenuRectInfo.call(this) : this._qq.getMenuButtonBoundingClientRect()
+        }
+        playVibrative(e=!0) {
+            e ? this._qq.vibrateShort() : this._qq.vibrateLong()
+        }
+        login(e) {
+            this._qq.login({
+                success: t=>{
+                    e && e(!0, t)
+                }
+                ,
+                fail: t=>{
+                    e && e(!1)
+                }
+                ,
+                complete: ()=>{}
+            })
+        }
+        getLaunchOptionsSync() {
+            return this._qq.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._qq.getSystemInfoSync()
+        }
+        loadSubpackage(e, t, s) {
+            let i = e.length
+              , n = i;
+            for (let a = 0; a < i; a++)
+                this._qq.loadSubpackage({
+                    name: e[a],
+                    success: function(e) {
+                        s && s(a),
+                        --n <= 0 && t && t()
+                    },
+                    fail: function(e) {}
+                })
+        }
+        initAdsCfg(e=null) {
+            e.bgbannerrefreshtime = e.bgbannerrefreshtime || 8e3,
+            this._adsCfg = e
+        }
+        initAds() {
+            if (this._adsCfg = {
+                ver: "0.0",
+                switch: 0,
+                bgbannerrefreshtime: 3e4
+            },
+            !n)
+                return;
+            this.initBanner(),
+            this.getAdsData(r.VIDEO).neespreLoad && this.preloadVedioAds(),
+            this.getAdsData(r.INTERSTITIAL).neespreLoad && this.preloadInstalAds(),
+            this.getAdsData(r.APP_BOX).neespreLoad && this.preLoadAppBoxAd()
+        }
+        createVideoAds() {
+            if (void 0 === this._qq.createRewardedVideoAd)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = d.VideoId[t % d.VideoId.length]
+              , i = this._qq.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                console.log("qq  视频广告错误=>", t),
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(t=>{
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && d.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    console.log("qq video fail=>", t),
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (d.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("qq  视屏广告加载失败"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createInstalAds() {
+            if (void 0 === this._qq.createInterstitialAd)
+                return void console.log("qq 不存在插屏广告 api");
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = d.InterstitialId[t % d.InterstitialId.length]
+              , i = this._qq.createInterstitialAd({
+                adUnitId: s
+            });
+            i.onError(t=>{
+                console.log("qq 插屏广告 错误", t),
+                e.isLoaded = !1
+            }
+            ),
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onClose(t=>{
+                e.close(!0),
+                d.destroyInstl && (e.adInstance.destroy(),
+                e.adInstance = null),
+                e.neespreLoad && this.preloadInstalAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadInstalAds() {
+            let e = this.getAdsData(r.INTERSTITIAL);
+            if (e.adInstance) {
+                if (!e.isLoaded && e.adInstance) {
+                    let t = e.adInstance.load();
+                    t && d.usePromise && t.then(()=>{
+                        e.isLoaded = !0
+                    }
+                    ).catch(t=>{
+                        console.log("qq 插屏广告加载失败", t),
+                        e.isLoaded = !1
+                    }
+                    )
+                }
+            } else
+                this.createInstalAds()
+        }
+        showInstal(e) {
+            let t = e.adInstance;
+            if (t) {
+                if (d.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        console.log("qq  插屏广告显示失败"),
+                        e.show(!1),
+                        e.neespreLoad && this.preloadInstalAds()
+                    }
+                    )
+                }
+                e.isLoaded ? (e.adInstance.show(),
+                e.show(!0)) : (e.show(!1),
+                e.neespreLoad && this.preloadInstalAds())
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadInstalAds() : this.createInstalAds()
+        }
+        initBanner() {
+            x.Instance.setAdUnitId(d.bannerIds),
+            x.Instance.init(this._adsCfg.bgbannerrefreshtime, 5e3),
+            this.refreshBanner()
+        }
+        refreshBanner() {
+            let e = this.getBannerPos();
+            x.Instance.updateBanner(!0, e)
+        }
+        getBannerPos(e) {
+            e = e || {};
+            for (let t in d.style)
+                e[t] = e[t] || d.style[t];
+            let t = e.width;
+            t <= 1 && (t = this.screenWidth * t);
+            let s = e.height
+              , i = e.mp || 1
+              , n = 1 == i ? Laya.stage.height - s : 2 == i ? 0 : e.top
+              , a = e.isCenter ? this.screenWidth / 2 - t / 2 : e.left;
+            return 1 == i ? {
+                left: a,
+                bottom: 0
+            } : {
+                left: a,
+                top: n
+            }
+        }
+        showBanner(e) {
+            if (!n)
+                return;
+            let t = this.getBannerPos(e);
+            x.Instance.showBanner(t)
+        }
+        hideBanner(e=!0, t) {
+            x.Instance.hideAll(),
+            this.refreshBanner()
+        }
+        hide_banner() {
+            x.Instance.hideAll(),
+            this.refreshBanner()
+        }
+        bannerMoveBy(e=80, t=0) {
+            x.Instance.moveBy({
+                left: t,
+                top: e
+            })
+        }
+        bannerMoveTo(e=0, t=0) {
+            x.Instance.moveTo({
+                left: t,
+                top: e
+            })
+        }
+        createAppBoxAd() {
+            if (void 0 === this._qq.createAppBox)
+                return void console.log("qq  不存在盒子广告api");
+            let e = this.getAdsData(r.APP_BOX)
+              , t = e.adsIndex
+              , s = d.appBoxId[t % d.appBoxId.length]
+              , i = this._qq.createAppBox({
+                adUnitId: s
+            });
+            i.onClose(t=>{
+                e.close(!0),
+                e.neespreLoad && this.preLoadAppBoxAd()
+            }
+            ),
+            e.adInstance = i
+        }
+        preLoadAppBoxAd(e=!1) {
+            let t = this.getAdsData(r.APP_BOX);
+            t.adInstance || this.createAppBoxAd();
+            let s = t.adInstance.load();
+            s && s.then(()=>{
+                t.isLoaded = !0
+            }
+            ).catch(e=>{
+                console.log("qq 盒子加载失败=>", e),
+                t.isLoaded = !1
+            }
+            )
+        }
+        showAppBoxAd(e) {
+            if (!n)
+                return void p.prototype.showAppBoxAd.call(this, e);
+            let t = this.getAdsData(r.APP_BOX);
+            t.isLoaded && t.adInstance ? d.usePromise ? t.adInstance.show().then(()=>{
+                t.show(!0)
+            }
+            ).catch(()=>{
+                t.show(!1),
+                t.neespreLoad && this.preLoadAppBoxAd()
+            }
+            ) : t.isLoaded ? (t.adInstance.show(),
+            t.show(!0)) : (t.show(!1),
+            t.neespreLoad && this.preLoadAppBoxAd()) : (t.show(!1),
+            t.neespreLoad && this.preLoadAppBoxAd())
+        }
+        createBlockAd(e=!0, t=0) {
+            const s = this._qq.getSystemInfoSync().SDKVersion;
+            if (this.compareVersion(s, "1.15.0") < 0)
+                return console.log("积木广告版本过低"),
+                void (this.bblockadexists = !1);
+            if (void 0 === this._qq.createBlockAd)
+                return console.log("qq  不存在积木广告api"),
+                void (this.bblockadexists = !1);
+            this.bblockadexists = !0;
+            let i = this.getRightMenuRectInfo()
+              , n = this.getAdsData(r.BLOCK)
+              , a = n.adsIndex
+              , o = d.BlockId[a % d.BlockId.length]
+              , l = i.top - 15
+              , h = this._qq.createBlockAd({
+                adUnitId: o,
+                size: 3,
+                orientation: "landscape",
+                style: {
+                    left: 60,
+                    top: l
+                }
+            });
+            n.adInstance = h,
+            h.onLoad(()=>{
+                n.isLoaded = !0,
+                e && n.adInstance.show()
+            }
+            ),
+            h.onError(e=>{
+                console.log("qq 积木广告错误=>", e),
+                h.style.left = h.style.left - 5,
+                n.isLoaded = !1
+            }
+            ),
+            h.onResize(e=>{
+                h.style.left = (this.screenWidth - e.width) / 2,
+                h.style.top = l
+            }
+            )
+        }
+        preLoadBlockAd(e=!1, t=0) {
+            this.getAdsData(r.BLOCK).adInstance || this.createBlockAd(e, t)
+        }
+        showBlockAd(e=!0, t=0) {
+            if (!n)
+                return !1;
+            if (this.isUseZS) {
+                if (this._adsCfg.ver == this.version)
+                    return
+            } else if (!this._adsCfg.switch || this._adsCfg.ver == this.version)
+                return;
+            let s = this.getAdsData(r.BLOCK);
+            return s.adInstance ? s.adInstance.show() : this.preLoadBlockAd(e, t),
+            this.bblockadexists
+        }
+        hideBlockAd() {
+            let e = this.getAdsData(r.BLOCK);
+            e.adInstance && e.adInstance.hide()
+        }
+        destroyBlockAd() {
+            let e = this.getAdsData(r.BLOCK);
+            e.adInstance && (e.adInstance.destroy(),
+            e.adInstance = null)
+        }
+    }
+    class z extends p {
+        constructor() {
+            super(),
+            this._bd = null,
+            this._adsCfg = null,
+            this.bannershowcount = 0,
+            this._bd = Laya.Browser.window.swan,
+            this.version = _.version,
+            this.cfg = _
+        }
+        FormatDateTime(e) {
+            var t = new Date;
+            return `${t.getHours()}:${t.getMinutes()}:${t.getSeconds()}`
+        }
+        compareVersion(e, t) {
+            e = e.split("."),
+            t = t.split(".");
+            const s = Math.max(e.length, t.length);
+            for (; e.length < s; )
+                e.push("0");
+            for (; t.length < s; )
+                t.push("0");
+            for (let i = 0; i < s; i++) {
+                const s = parseInt(e[i])
+                  , n = parseInt(t[i]);
+                if (s > n)
+                    return 1;
+                if (s < n)
+                    return -1
+            }
+            return 0
+        }
+        init(e) {
+            console.log("sdk-bd.ts--init()"),
+            this.initAds()
+        }
+        getappId() {
+            return this.cfg.appid
+        }
+        getopenId(e) {
+            console.log("sdk-bd.ts--getopenId()");
+            let t = this;
+            this.login((s,i)=>{
+                s && i.code ? (console.log(`url=${t.cfg.serviceUrl}, code=${i.code}, appid=${t.cfg.appid}`),
+                t._bd.request({
+                    method: "POST",
+                    url: t.cfg.serviceUrl,
+                    data: {
+                        code: i.code,
+                        appid: t.cfg.appid
+                    },
+                    success: s=>{
+                        console.log("΢�Ż�ȡ openid �ɹ�", s),
+                        t.openId = s.data.data.openid,
+                        e && e(!0, t.openId)
+                    }
+                    ,
+                    fail: t=>{
+                        console.log("΢�Ż�ȡ openid ʧ��", t),
+                        e && e(!1)
+                    }
+                    ,
+                    complete: ()=>{}
+                })) : e && e(!1)
+            }
+            )
+        }
+        share(e, t) {
+            console.log("sdk-bd.ts---share()"),
+            e = e || a.title,
+            this._bd.shareAppMessage({
+                title: e,
+                imageUrlId: a.imageUrlId,
+                imageUrl: a.imageUrl
+            })
+        }
+        playVibrative(e=!0) {
+            e ? this._bd.vibrateShort() : this._bd.vibrateLong()
+        }
+        getRightMenuRectInfo() {
+            return void 0 === this._bd.getMenuButtonBoundingClientRect ? p.prototype.getRightMenuRectInfo.call(this) : this._bd.getMenuButtonBoundingClientRect()
+        }
+        login(e=null) {
+            console.log("sdk-bd.ts--login"),
+            this._bd.login({
+                force: !1,
+                success: t=>{
+                    console.log(`΢�ŵ�¼�ɹ� code = ${t.code}`),
+                    e && e(!0, t)
+                }
+                ,
+                fail: t=>{
+                    console.log(`΢�ŵ�¼ʧ�� ${t}`),
+                    e && e(!1)
+                }
+                ,
+                complete: e=>{}
+            })
+        }
+        loadSubpackage(e, t, s) {
+            console.log("LoadSubpackage Load");
+            let i = e.length
+              , n = i;
+            for (let a = 0; a < i; a++) {
+                this._bd.loadSubpackage({
+                    name: e[a],
+                    success: function(e) {
+                        s && s(a),
+                        --n <= 0 && t && t()
+                    },
+                    fail: function(e) {}
+                }).onProgressUpdate(e=>{}
+                )
+            }
+        }
+        navigateToMiniProgram(e, t=null, s=null, i=null) {
+            console.log("sdk-bd.ts--navigateToMiniProgram():data=", e),
+            this._bd.navigateToMiniProgram({
+                appId: e.link_appid,
+                path: e.link_path,
+                extraData: e.extraData,
+                success: function(e) {
+                    console.log("΢��С��Ϸ��ת�ɹ�", e),
+                    t && t(e)
+                },
+                fail: function(e) {
+                    console.log("΢��С��Ϸ��תʧ��", e),
+                    s && s(e)
+                },
+                complete: function(e) {
+                    i && i(e)
+                }
+            })
+        }
+        getLaunchOptionsSync() {
+            return this._bd.getLaunchOptionsSync()
+        }
+        getSystemInfoSync() {
+            return this._bd.getSystemInfoSync()
+        }
+        initAdsCfg(e=null) {
+            this._adsCfg = e
+        }
+        initAds() {
+            console.log("sdk-bd.ts--initAds()"),
+            this._adsCfg = {
+                ver: "0.0",
+                switch: 0
+            }
+        }
+        createVideoAds() {
+            if (console.log("sdk-bd.ts--createVideoAds()"),
+            void 0 === this._bd.createRewardedVideoAd)
+                return;
+            let e = this.getAdsData(r.VIDEO);
+            if (!e)
+                return;
+            let t = e.adsIndex
+              , s = _.VideoId[t % _.VideoId.length]
+              , i = this._bd.createRewardedVideoAd({
+                adUnitId: s
+            });
+            i.onLoad(()=>{
+                e.isLoaded = !0
+            }
+            ),
+            i.onError(t=>{
+                e.isLoaded = !1
+            }
+            ),
+            i.onClose(t=>{
+                t && t.isEnded || void 0 === t ? e.close(!0) : e.close(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            }
+            ),
+            e.adInstance = i
+        }
+        preloadVedioAds() {
+            let e = this.getAdsData(r.VIDEO);
+            if (e.adInstance || this.createVideoAds(),
+            !e.isLoaded && e.adInstance) {
+                let t = e.adInstance.load();
+                t && _.usePromise && t.then(function() {
+                    e.isLoaded = !0
+                }
+                .bind(this)).catch(function(t) {
+                    e.isLoaded = !1
+                }
+                .bind(this))
+            }
+        }
+        showVideo(e) {
+            if (!n)
+                return void p.prototype.showVideo.call(this, e);
+            let t = e.adInstance;
+            if (t) {
+                if (_.usePromise) {
+                    return void t.show().then(()=>{
+                        e.show(!0)
+                    }
+                    ).catch(()=>{
+                        e.show(!1),
+                        e.neespreLoad && this.preloadVedioAds()
+                    }
+                    )
+                }
+                if (e.isLoaded)
+                    return e.show(!0),
+                    void t.show();
+                e.show(!1),
+                e.neespreLoad && this.preloadVedioAds()
+            } else
+                e.show(!1),
+                e.neespreLoad ? this.preloadVedioAds() : this.createVideoAds()
+        }
+        createBanner(e) {
+            let t = this.getSystemInfoSync()
+              , s = t.screenWidth
+              , i = t.screenHeight
+              , n = this.getAdsData(r.BANNER);
+            n.adInstance && (n.adInstance.destroy(),
+            n.adInstance = null),
+            e = e || {};
+            for (let t in _.style)
+                e[t] = _.style[t];
+            let a = e.width;
+            a <= 1 && (a *= s);
+            let o = e.height
+              , l = e.mp || 1
+              , h = n.adsIndex
+              , d = _.bannerIds[h % _.bannerIds.length]
+              , c = 1 == l ? i - o : 2 == l ? 0 : e.top
+              , g = e.isCenter ? s / 2 - a / 2 : e.left
+              , u = this._bd.createBannerAd({
+                adUnitId: d,
+                adIntervals: _.adIntervals,
+                style: {
+                    left: g,
+                    top: c,
+                    width: a
+                }
+            });
+            n.style.height = o,
+            n.style.width = a,
+            n.style.realHeight = o,
+            n.style.realWidth = a,
+            n.style.top = c,
+            n.style.left = g,
+            u.onResize(t=>{
+                var a = t.height
+                  , o = t.width;
+                u.style.top = 1 == l ? i - a : 2 == l ? 0 : e.top,
+                u.style.left = e.isCenter ? s / 2 - o / 2 : e.left,
+                n.style.realWidth = o,
+                n.style.realHeight = a,
+                n.style.top = u.style.top,
+                n.style.left = u.style.left
+            }
+            ),
+            u.onLoad(()=>{
+                n.isLoaded = !0
+            }
+            ),
+            u.onError(e=>{
+                n.isLoaded = !1,
+                this.reLoadBanner()
+            }
+            ),
+            n.adInstance = u,
+            u && u.hide()
+        }
+        reLoadBanner() {
+            let e = this.getAdsData(r.BANNER);
+            e.adInstance && (e.adInstance.hide(),
+            e.adInstance.destroy(),
+            e.adInstance = null),
+            e.loadCount < _.error_count && (e.adsIndex++,
+            this.createBanner(),
+            this.bannerhided || this.showBanner())
+        }
+        showBanner(e) {
+            if (!n)
+                return;
+            this.bannerhided = !1;
+            let t = this.getAdsData(r.BANNER);
+            if (t.adInstance || this.createBanner(e),
+            _.usePromise) {
+                if (this.bannerhided)
+                    return;
+                this.bannershowcount++;
+                let e = t.adInstance.show();
+                e && e.then(()=>{}
+                ).catch(e=>{
+                    t.adInstance.show()
+                }
+                )
+            } else {
+                if (this.bannerhided)
+                    return;
+                this.bannershowcount++,
+                t.adInstance.show()
+            }
+        }
+        hideBanner(e=!0, t) {
+            this.bannerhided = !0;
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.hide(),
+            s.adInstance.destroy(),
+            s.adInstance = null,
+            s.neespreLoad && this.createBanner(t))
+        }
+        hide_banner() {
+            this.bannerhided = !0;
+            let e = this.getAdsData(r.BANNER);
+            e.adInstance && e.adInstance.hide()
+        }
+        bannerMoveBy(e=80, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top += e,
+            s.adInstance.style.left += t)
+        }
+        bannerMoveTo(e=0, t=0) {
+            let s = this.getAdsData(r.BANNER);
+            s.adInstance && (s.adInstance.style.top = e,
+            s.adInstance.style.left = t)
+        }
+    }
+    const O = new class {
+        constructor() {
+            this._ptype = o.None,
+            this.sdk = null
+        }
+        init(e) {
+            Laya.Browser.onPC ? (this.sdk = new p,
+            this._ptype = o.None) : void 0 !== Laya.Browser.window.tt ? (this.sdk = new y,
+            this._ptype = o.TT) : Laya.Browser.onMiniGame && void 0 === Laya.Browser.window.qq ? (this.sdk = new B,
+            this._ptype = o.WX) : Laya.Browser.onVVMiniGame ? (this.sdk = new T,
+            this._ptype = o.VV) : Laya.Browser.onQGMiniGame ? (this.sdk = new N,
+            this._ptype = o.OP) : Laya.Browser.onQQMiniGame && void 0 !== Laya.Browser.window.qq ? (this.sdk = new D,
+            this._ptype = o.QQ) : Laya.Browser.onBDMiniGame ? (this.sdk = new z,
+            this._ptype = o.BD) : (this.sdk = new p,
+            this._ptype = o.None),
+            this.sdk.init(e)
+        }
+        get isWX() {
+            return this._ptype == o.WX
+        }
+        get isQQ() {
+            return this._ptype == o.QQ
+        }
+        get isVV() {
+            return this._ptype == o.VV
+        }
+        get isOP() {
+            return this._ptype == o.OP
+        }
+        get isTT() {
+            return this._ptype == o.TT
+        }
+        get isBD() {
+            return this._ptype == o.BD
+        }
+        isSDK(e) {
+            return this._ptype == e
+        }
+        isNotSdk(e) {
+            return this._ptype != e
+        }
+        get pType() {
+            return this._ptype
+        }
+    }
+    ;
+    var M;
+    !function(e) {
+        e[e.None = 0] = "None",
+        e[e.QT = 1] = "QT",
+        e[e.ZS = 2] = "ZS",
+        e[e.HL = 3] = "HL"
+    }(M || (M = {}));
+    const R = {
+        [o.WX]: {
+            cp: M.QT
+        },
+        [o.OP]: {
+            cp: M.ZS
+        },
+        [o.QQ]: {
+            cp: M.ZS
+        },
+        [o.TT]: {
+            cp: M.QT
+        },
+        [o.VV]: {
+            cp: M.ZS
+        },
+        [o.BD]: {
+            cp: M.QT
+        },
+        [o.None]: {
+            cp: M.QT
+        }
+    };
+    var V;
+    !function(e) {
+        e[e.default = 1] = "default",
+        e[e.endPage = 2] = "endPage",
+        e[e.float = 3] = "float",
+        e[e.full1Page = 4] = "full1Page",
+        e[e.full2Page = 5] = "full2Page",
+        e[e.scroll = 6] = "scroll",
+        e[e.more = 7] = "more",
+        e[e.sidebar = 8] = "sidebar",
+        e[e.fakeMsg = 9] = "fakeMsg"
+    }(V || (V = {}));
+    class U {
+        constructor() {}
+        init(e) {}
+        get isLoadGameFinish() {
+            return !0
+        }
+        get isLoadCtrlFinish() {
+            return !0
+        }
+        get adConfig() {
+            return null
+        }
+        getAdType(e=V.default) {
+            return "defaultData"
+        }
+        getAdList(e="defaultData", t) {
+            return []
+        }
+        navigateToMiniProgram(e, t, s=null, i=null, n=null) {}
+        getNavigateSuccessObj() {
+            return {}
+        }
+        clickGameReq(e, t, s) {}
+    }
+    class G {
+        constructor() {
+            this._data = {},
+            this._localName = "game-storage",
+            this._isLoginSecondDay = !1
+        }
+        static getJson(e) {
+            let t = Laya.LocalStorage.getItem(e);
+            return t && 0 != t.length ? JSON.parse(t) : {}
+        }
+        static getItem(e) {
+            let t = Laya.LocalStorage.getItem(e);
+            return t && 0 != t.length ? t : null
+        }
+        static getInt(e) {
+            let t = Laya.LocalStorage.getItem(e);
+            return t && 0 != t.length ? parseInt(t) : 0
+        }
+        static getFloat(e) {
+            let t = Laya.LocalStorage.getItem(e);
+            return t && 0 != t.length ? parseFloat(t) : 0
+        }
+        static setItem(e, t) {
+            Laya.LocalStorage.setItem(e, t)
+        }
+        static setJson(e, t) {
+            let s = JSON.stringify(t);
+            Laya.LocalStorage.setItem(e, s)
+        }
+        init(e) {
+            (e = e || {}).name = e.name || this._localName,
+            this._localName = e.name,
+            this._data = G.getJson(this._localName)
+        }
+        save() {
+            G.setJson(this._localName, this._data)
+        }
+        clear() {
+            this._data = {}
+        }
+        get(e, t=0) {
+            return void 0 === this._data[e] && (this._data[e] = t,
+            this.save()),
+            this._data[e]
+        }
+        set(e, t) {
+            this._data[e] = t,
+            this.save()
+        }
+        use(e, t) {
+            let s = this.get(e, 0);
+            return s + t >= 0 ? (s += t,
+            this.set(e, s),
+            s) : -1
+        }
+        isUse(e, t) {
+            return this.get(e, 0) >= t
+        }
+        login() {
+            let e = this._data.login || {
+                loginTime: 0,
+                loginCount: 0,
+                loginTodayCount: 0,
+                loginDay: 0,
+                interval: 0
+            }
+              , t = (new Date).getTime();
+            this.dayDiff(new Date(e.loginTime), new Date(t)) > 0 && (e.loginTodayCount = 0,
+            e.loginDay++,
+            this._isLoginSecondDay = !0),
+            e.loginTodayCount++,
+            e.loginCount++,
+            e.interval = t - e.loginTime,
+            e.loginTime = t,
+            this._data.login = e
+        }
+        dayDiff(e, t) {
+            var s = e.getMonth() + 1
+              , i = e.getDate()
+              , n = e.getFullYear()
+              , a = t.getMonth() + 1
+              , o = t.getDate()
+              , r = t.getFullYear()
+              , l = (Date.parse(a + "/" + o + "/" + r) - Date.parse(s + "/" + i + "/" + n)) / 864e5;
+            return l < 0 ? -1 : parseInt(l.toString())
+        }
+    }
+    class W extends G {
+        constructor() {
+            super(),
+            this.videounlockon = !1,
+            this.videonoadcount = 0,
+            this.nativebtnswitch = !0
+        }
+        static get inst() {
+            return null == this._instance && (this._instance = new W),
+            this._instance
+        }
+        getvideounlockon() {
+            return this.videonoadcount < 1 ? (this.videonoadcount++,
+            this.videounlockon) : this.videounlockon = !this.videounlockon
+        }
+        getnativebtnswitch() {
+            return this.nativebtnswitch = !this.nativebtnswitch
+        }
+        getData() {
+            this.clear(),
+            this.init({
+                name: "game-control"
+            }),
+            this.initDatas(),
+            this.save()
+        }
+        initDatas() {
+            this._data.zs_click_award_num = this._data.zs_click_award_num || 0,
+            this._data.zs_ready_click_num = this._data.zs_ready_click_num || 0,
+            this._data.zs_click_award_num1 = this._data.zs_click_award_num1 || 0
+        }
+        getValByToday(e, t=0) {
+            if (void 0 === this._data[e])
+                return this._data[e] = t,
+                this._data[e];
+            let s = e + "_time";
+            return this._data[s] = this._data[s] || 0,
+            this.dayDiff(new Date(this._data[s]), new Date) > 0 && (this._data[e] = 0),
+            this._data[e]
+        }
+        setValByToday(e, t) {
+            t ? this._data[e] = t : this._data[e]++,
+            this._data[e + "_time"] = (new Date).getTime(),
+            this.save()
+        }
+    }
+    W._instance = null;
+    class H {
+        randomInt(e, t) {
+            return Math.round(Math.random() * (t - e) + e)
+        }
+        randomNumber(e, t) {
+            return e + (t - e) * Math.random()
+        }
+        randomBetween(e) {
+            return e - this.randomNumber(0, 2 * e)
+        }
+        static randRange(e, t) {
+            return Math.random() * (t - e) + e
+        }
+        static randRangeInt(e, t) {
+            let s = Math.random() * (t - e + 1) + e;
+            return Math.floor(s)
+        }
+        static randRangeArray(e) {
+            if (0 == e.length)
+                return null;
+            return e[H.randRangeInt(0, e.length - 1)]
+        }
+        sin(e) {
+            return Math.sin(e * Math.PI / 180)
+        }
+        cos(e) {
+            return Math.cos(e * Math.PI / 180)
+        }
+        tan(e) {
+            return Math.tan(e * Math.PI / 180)
+        }
+        angle2Radian(e) {
+            return e * Math.PI / 180
+        }
+        radian2Angle(e) {
+            return 180 * e / Math.PI
+        }
+        angle(e, t) {
+            return 180 * Math.atan2(t.y - e.y, t.x - e.x) / Math.PI
+        }
+        angle1(e, t, s, i) {
+            return 180 * Math.atan2(i - t, s - e) / Math.PI
+        }
+        randomCircle(e) {
+            let t = this.angle2Radian(360 * Math.random());
+            return {
+                x: e * Math.cos(t),
+                y: e * Math.sin(t)
+            }
+        }
+        rnd(e) {
+            return (e = (9301 * e + 49297) % 233280) / 233280
+        }
+        seedRandom(e, t) {
+            if (!t) {
+                t = (new Date).getTime()
+            }
+            return Math.ceil(this.rnd(t) * e)
+        }
+        static getRandNumForRange(e, t, s) {
+            let i, n = [], a = [];
+            for (let s = e; s <= t; s++)
+                n.push(s);
+            for (let e = 0; e < s; e++)
+                i = Math.floor(Math.random() * n.length),
+                a.push(n[i]),
+                n.splice(i, 1);
+            return a
+        }
+        static Clamp(e, t, s) {
+            return e < t ? t : e > s ? s : e
+        }
+    }
+    function _adjust_bit_value(e) {
+        for (var t = 0; t < e.length; t++)
+            for (; e[t] >= 1e3; )
+                e[t] -= 1e3,
+                t + 1 >= e.length && this.value_set.push(0),
+                e[t + 1] = e[t + 1] + 1
+    }
+    function large_number(e) {
+        this.value_set = e,
+        _adjust_bit_value(this.value_set)
+    }
+    large_number.prototype.large_add = function(e) {
+        for (; this.value_set.length < e.value_set.length; )
+            this.value_set.push(0);
+        for (var t = 0; t < e.value_set.length; t++)
+            this.value_set[t] = this.value_set[t] + e.value_set[t];
+        _adjust_bit_value(this.value_set)
+    }
+    ,
+    large_number.prototype.format_string = function() {
+        for (var e, t = "" + this.value_set[this.value_set.length - 1], s = this.value_set.length - 2; s >= 0; s--)
+            t = t + " " + ((e = this.value_set[s]) < 10 ? "00" + e : e < 100 ? "0" + e : "" + e);
+        return t
+    }
+    ;
+    const F = {
+        Math: new H,
+        String: new class {
+            cutName(e, t=10, s=!0) {
+                const i = /[^\x00-\xff]/g;
+                if (e.replace(i, "mm").length <= t)
+                    return e;
+                for (let n = Math.floor(t / 2); n < e.length; n++)
+                    if (e.substr(0, n).replace(i, "mm").length >= t)
+                        return e.substr(0, n) + (s ? "..." : "");
+                return e
+            }
+            numInsertComma(e) {
+                const t = e.toString()
+                  , s = t.length;
+                if (s <= 4)
+                    return t;
+                const i = s % 3;
+                return i > 0 ? t.slice(0, i) + "," + t.slice(i, s).match(/\d{3}/g).join(",") : t.slice(i, s).match(/\d{3}/g).join(",")
+            }
+            dropRepeat(e) {
+                for (var t, s = [], i = {}, n = 0; n < e.length; n++)
+                    i[t = e[n]] || (i[t] = !0,
+                    s += t);
+                return s.toString()
+            }
+            isChinese(e) {
+                return !/^([u4E00-u9FA5]|[uFE30-uFFA0])*$/.test(e)
+            }
+            str2Code(e) {
+                let t = "";
+                for (let s = 0; s < e.length; s++)
+                    t += e[s] + "=" + e.charCodeAt(s) + "\n";
+                return t
+            }
+            isBlank(e) {
+                return null == e || "" == this.trim(e)
+            }
+            isNotBlank(e) {
+                return !1 === this.isBlank(e)
+            }
+            isEmpty(e) {
+                return null == e || "" == e
+            }
+            isNotEmpty(e) {
+                return !this.isEmpty(e)
+            }
+            nullToStr(e) {
+                return this.isEmpty(e) ? "" : e
+            }
+            trim(e) {
+                return null == e ? "" : e.toString().replace(/(^\s*)|(\s*$)|\r|\n/g, "")
+            }
+            equals(e, t) {
+                return e == t
+            }
+            equalsIgnoreCase(e, t) {
+                return String(e).toUpperCase() === String(t).toUpperCase()
+            }
+            split(e, t, s) {
+                if (this.isEmpty(e))
+                    return null;
+                var i = String(e).split(t);
+                return s ? i.slice(0, s - 1) : i
+            }
+            sprintf(e) {
+                var t = arguments
+                  , s = !0
+                  , i = 1;
+                return e = e.replace(/%s/g, function() {
+                    var e = t[i++];
+                    return void 0 === e ? (s = !1,
+                    "") : e
+                }),
+                s ? e : ""
+            }
+            startWith(e, t) {
+                return new RegExp("^" + t).test(e)
+            }
+            endWith(e, t) {
+                return new RegExp(t + "$").test(e)
+            }
+        }
+        ,
+        Time: new class {
+            timeToStamp(e, t=!0) {
+                let s = Math.floor(e / 3600)
+                  , i = s < 10 ? "0" + s : "" + s
+                  , n = Math.floor(e % 3600 / 60)
+                  , a = n < 10 ? "0" + n : "" + n
+                  , o = Math.floor(e % 60)
+                  , r = o < 10 ? "0" + o : "" + o;
+                return s <= 0 ? (t ? i + ":" : "") + a + ":" + r : i + ":" + a + ":" + r
+            }
+            timeToStampDay(e) {
+                let t = Math.floor(e / 86400)
+                  , s = Math.floor(e % 86400 / 3600)
+                  , i = Math.floor(e % 3600 / 60)
+                  , n = Math.floor(e % 60)
+                  , a = "";
+                return t > 0 && (a += t + "天 "),
+                a + s.toString() + ":" + i + ":" + n
+            }
+            dayDiff(e, t) {
+                var s = new Date(e)
+                  , i = new Date(t);
+                return this.dayDiff2(s, i)
+            }
+            dayDiff2(e, t) {
+                var s = e.getMonth() + 1
+                  , i = e.getDate()
+                  , n = e.getFullYear()
+                  , a = t.getMonth() + 1
+                  , o = t.getDate()
+                  , r = t.getFullYear()
+                  , l = (Date.parse(a + "/" + o + "/" + r) - Date.parse(s + "/" + i + "/" + n)) / 864e5;
+                return l < 0 ? -1 : parseInt(l.toString())
+            }
+            timeDayDiff(e, t) {
+                var s = Math.floor((t - e) / 864e5);
+                if (!(s < 0))
+                    return s
+            }
+            surplusTime(e, t) {
+                return t - ((new Date).getTime() - e) / 1e3
+            }
+            intervalNowTime(e) {
+                let t = 0;
+                return ((new Date).getTime() - (t = e instanceof Date ? e.getTime() : e)) / 1e3
+            }
+            rnd(e) {
+                return (e = (9301 * e + 49297) % 233280) / 233280
+            }
+            seedRandom(e, t) {
+                return t || (t = (new Date).getTime()),
+                Math.ceil(this.rnd(t) * e)
+            }
+        }
+        ,
+        Array: new class {
+            map(e, t) {
+                if (null != e)
+                    for (let s = 0; s < e.length; s++)
+                        t && t(e[s], s)
+            }
+            randomArray(e) {
+                if (null === e)
+                    return;
+                let t = [-1, 0, 1];
+                e.sort(function(e, s) {
+                    let i = Math.round(2 * Math.random() + 0);
+                    return t[i]
+                })
+            }
+            remove(e, t) {
+                if (null === e)
+                    return;
+                let s = 0;
+                for (let i of e)
+                    t && t(i) && e.splice(s, 1),
+                    s++
+            }
+            unique(e, t) {
+                t = t || function(e, t) {
+                    return e == t
+                }
+                ;
+                for (var s = 0; s < e.length; s++)
+                    for (var i = s + 1; i < e.length; i++)
+                        t(e[s], e[i]) && (e.splice(i, 1),
+                        i--);
+                return !0
+            }
+        }
+        ,
+        Object: new class {
+            merge(e, t) {
+                if (e && t)
+                    for (const s in t)
+                        ({}).hasOwnProperty.call(t, s) && (e[s] = t[s])
+            }
+            cloneDeep(e) {
+                let t;
+                if (null == e || "object" != typeof e)
+                    return e;
+                if (e instanceof Date)
+                    return (t = new Date).setTime(e.getTime()),
+                    t;
+                if (e instanceof Array) {
+                    t = [];
+                    for (let s = 0, i = e.length; s < i; s++)
+                        t[s] = this.cloneDeep(e[s]);
+                    return t
+                }
+                if (e instanceof Object) {
+                    t = {};
+                    for (let s in e)
+                        e.hasOwnProperty(s) && (t[s] = this.cloneDeep(e[s]));
+                    return t
+                }
+                throw new Error("Unable to copy obj! Its type isn't supported.")
+            }
+            copyObject(e) {
+                if (null === e)
+                    return null;
+                if ("object" != typeof e)
+                    return e;
+                if (e.constructor === Date)
+                    return new Date(e);
+                if (e.constructor === RegExp)
+                    return new RegExp(e);
+                var t = new e.constructor;
+                for (var s in e)
+                    if (e.hasOwnProperty(s)) {
+                        var i = e[s];
+                        t[s] = "object" == typeof i ? arguments.callee(i) : i
+                    }
+                return t
+            }
+            copyObject2(e, t) {
+                for (var s in t = t || {},
+                e)
+                    "object" == typeof e[s] ? (t[s] = e[s].constructor === Array ? [] : {},
+                    this.copyObject2(e[s], t[s])) : t[s] = e[s];
+                return t
+            }
+            extend(e, t) {
+                var s = function() {};
+                s.prototype = t.prototype,
+                e.prototype = new s,
+                e.prototype.constructor = e,
+                e.uber = t.prototype
+            }
+        }
+        ,
+        Schedule: new class {
+            constructor() {
+                this._onceList = {},
+                this._intervalList = {}
+            }
+            once(e, t) {
+                let s = setTimeout(e, t);
+                return this._onceList[s] = s,
+                s
+            }
+            stopOnce(e) {
+                clearTimeout(e)
+            }
+            stopAllOnce() {
+                for (let e in this._onceList)
+                    this._onceList[e] && clearTimeout(this._onceList[e])
+            }
+            interval(e, t) {
+                let s = setInterval(e, t);
+                return this._intervalList[s] = s,
+                s
+            }
+            stopInterval(e) {
+                for (let e in this._intervalList)
+                    this._intervalList[e] && clearInterval(this._intervalList[e]);
+                this._intervalList = {}
+            }
+            stopAllInterval() {
+                for (let e in this._intervalList)
+                    clearInterval(this._intervalList[e]);
+                this._intervalList = {}
+            }
+        }
+        ,
+        LargeNum: large_number
+    };
+    var X;
+    !function(e) {
+        e[e.TAP_ENERGY = 0] = "TAP_ENERGY",
+        e[e.TAP_CHEST = 1] = "TAP_CHEST",
+        e[e.TAP_BOSS = 2] = "TAP_BOSS"
+    }(X || (X = {}));
+    class j {
+        constructor() {}
+        initAdSetting(e, t) {}
+        isSwitchOn() {
+            return !1
+        }
+        isElectOn() {
+            return !1
+        }
+        isSameVersion() {
+            return !1
+        }
+        electControl(e) {
+            return null
+        }
+        checkControl(e, t=!1) {
+            return null
+        }
+        isReviveTypeEnable(e) {
+            return null
+        }
+        updateReviveTypeInfo(e) {}
+        enableClickRevive() {
+            return null
+        }
+        updateClickRevive() {
+            return null
+        }
+        enableVideoRevive() {
+            return null
+        }
+        updateVideoRevive() {
+            return null
+        }
+        enableShareRevive() {
+            return null
+        }
+        updateShareRevive() {
+            return null
+        }
+        isBeforeGameAccount() {
+            return null
+        }
+        isAfterGameAccount() {
+            return null
+        }
+        isCanFullJump() {
+            return null
+        }
+        isBannerMistake() {
+            return null
+        }
+        boxCanShow() {
+            return !1
+        }
+        energyCanShow() {
+            return !1
+        }
+        isCrazyTap(e, t) {
+            return !1
+        }
+        GetCrazyPercent() {
+            return .7
+        }
+        CrazyTapVideo() {
+            return !1
+        }
+    }
+    class q {
+        static compareVersion(e, t) {
+            e = e.split("."),
+            t = t.split(".");
+            for (var s = Math.max(e.length, t.length); e.length < s; )
+                e.push("0");
+            for (; t.length < s; )
+                t.push("0");
+            for (var i = 0; i < s; i++) {
+                var n = parseInt(e[i])
+                  , a = parseInt(t[i]);
+                if (n > a)
+                    return 1;
+                if (n < a)
+                    return -1
+            }
+            return 0
+        }
+        static isToday(e) {
+            var t = new Date(Date.now())
+              , s = new Date(e);
+            return t.getFullYear() == s.getFullYear() && t.getMonth() == s.getMonth() && t.getDate() == s.getDate()
+        }
+        static random(e, t) {
+            return Math.random() * (t - e) + e << 0
+        }
+        static IsNumber(e) {
+            return !(!/^\d+(\.\d+)?$/.test(e) && !/^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/.test(e))
+        }
+    }
+    class Q extends j {
+        constructor() {
+            super(),
+            this.response = null,
+            this.zs_share_title = "",
+            this.zs_share_image = "",
+            this.zs_switch = !1,
+            this.zs_version = "1.0.0",
+            this.zs_video_adunit = "",
+            this.zs_banner_adunit = "",
+            this.zs_banner_rotate_id1 = "",
+            this.zs_banner_rotate_id2 = "",
+            this.zs_banner_rotate_id3 = "",
+            this.zs_full_screen_adunit = "",
+            this.zs_full_screen_ad_enable = !1,
+            this.zs_banner_text_time = 0,
+            this.zs_banner_banner_time = 0,
+            this.zs_banner_refresh_time = 0,
+            this.zs_banner_move_time = 500,
+            this.zs_full_screen_banner_time = 3,
+            this.zs_banner_vertical_enable = !1,
+            this.zs_banner_horizontal_enable = !1,
+            this.zs_jump_switch = !1,
+            this.zs_revive_type = 0,
+            this.zs_revive_click_num = 0,
+            this.zs_revive_video_num = 0,
+            this.zs_revive_share_num = 0,
+            this.zs_continue_auto_share = !1,
+            this.zs_full_screen_jump = !1,
+            this.zs_history_list_jump = !1,
+            this.zs_finish_jump = !1,
+            this.zs_revive_countdown = 10,
+            this.zs_jump_style = 1,
+            this.zs_shield_gdt_export = !0,
+            this.zs_full_screen_rotate = !1,
+            this.zs_button_delay_switch = !1,
+            this.zs_button_delay_time = 2e3,
+            this.zs_game_banner_show_switch = 0,
+            this.zs_before_finsh_jump_switch = !1,
+            this.zs_slide_jump_swich = !1,
+            this.zs_auto_pop_ups_switch = !0,
+            this.zs_click_award_system = !1,
+            this.zs_native_click_switch = !1,
+            this.zs_native_delay = !1,
+            this.zs_native_next_limit = !1,
+            this.zs_native_limit = !1,
+            this.zs_native_touch_switch = !1,
+            this.zs_onemin_show_ad_switch = !1,
+            this.zs_jump_time = 0,
+            this.zs_full_screen_ad = !1,
+            this.zs_start_exposure_num = 1,
+            this.zs_click_award_percent = "",
+            this.zs_reminder_switch = !1,
+            this.zs_skin_push_switch = !1,
+            this.zs_Fakerjump = !1,
+            this.zs_auto_jump_switch = !1,
+            this.zs_auto_witch = !1,
+            this.zs_horizontal_export = !0,
+            this.zs_table_screen = !1,
+            this.zs_click_video_switch = !1,
+            this.zs_click_video_time = !1,
+            this.zs_click_video_city = !1,
+            this.zs_tryuse_switch = !1
+        }
+        initAdSetting(e, t) {
+            console.log("后端配置>>>", t),
+            this.current_version = e,
+            this.response = t;
+            var s = t.zs_banner_system ? String(t.zs_banner_system).toUpperCase() : null;
+            this.zs_version = t.zs_version ? t.zs_version : "0.0";
+            var i = !s || !Laya.Browser.onMobile || !(-1 != s.indexOf("ANDROID") && Laya.Browser.onAndroid || -1 != s.indexOf("IOS") && !Laya.Browser.onAndroid);
+            this.zs_switch = 1 == t.zs_switch && i && this.isSameVersion(),
+            this.zs_auto_witch = 1 == t.zs_auto_witch && this.zs_switch,
+            this.zs_auto_pop_ups_switch = 1 == t.zs_auto_pop_ups_switch && this.zs_auto_witch,
+            this.zs_jump_switch = 1 == t.zs_jump_switch && this.isSameVersion(),
+            this.zs_video_adunit = t.zs_video_adunit,
+            this.zs_banner_adunit = t.zs_banner_adunit,
+            this.zs_full_screen_adunit = t.zs_full_screen_adunit,
+            this.zs_full_screen_ad_enable = 1 == t.zs_full_screen_ad_enable,
+            this.zs_banner_text_time = t.zs_banner_text_time ? Number(t.zs_banner_text_time) : 1e3,
+            this.zs_banner_banner_time = t.zs_banner_banner_time ? Number(t.zs_banner_banner_time) : 1e3,
+            this.zs_banner_refresh_time = t.zs_banner_refresh_time ? Number(t.zs_banner_refresh_time) : 8e3,
+            this.zs_banner_move_time = t.zs_banner_move_time ? Number(t.zs_banner_move_time) : 1e3,
+            this.zs_full_screen_banner_time = t.zs_full_screen_banner_time ? Number(t.zs_full_screen_banner_time) : 3,
+            this.zs_banner_vertical_enable = 1 == t.zs_banner_vertical_enable && this.zs_switch,
+            this.zs_banner_horizontal_enable = 1 == t.zs_banner_horizontal_enable,
+            this.zs_share_title = t.zs_share_title,
+            this.zs_share_image = t.zs_share_img,
+            this.zs_shield_gdt_export = 1 == t.zs_shield_gdt_export,
+            this.zs_revive_type = t.zs_revive_type,
+            this.zs_revive_click_num = t.zs_revive_click_num,
+            this.zs_revive_video_num = t.zs_revive_video_num,
+            this.zs_revive_share_num = t.zs_revive_share_num,
+            this.zs_full_screen_jump = 1 == t.zs_full_screen_jump,
+            this.zs_history_list_jump = 1 == t.zs_history_list_jump && this.isSameVersion(),
+            this.zs_finish_jump = 1 == t.zs_finish_jump;
+            var n = t.zs_click_award_system ? String(t.zs_click_award_system).toUpperCase() : null
+              , a = !n || !Laya.Browser.onMobile || !(-1 != n.indexOf("ANDROID") && Laya.Browser.onAndroid || -1 != n.indexOf("IOS") && !Laya.Browser.onAndroid);
+            this.zs_click_award_percent = t.zs_click_award_percent || [.4, .7],
+            this.zs_click_award_add = t.zs_click_award_add ? Number(t.zs_click_award_add) : .1,
+            this.zs_click_award_back = t.zs_click_award_back ? Number(t.zs_click_award_back) : .005,
+            this.zs_click_award_num = t.zs_click_award_num || "0",
+            a && this.zs_switch || (this.zs_click_award_num = "0"),
+            this.zs_ready_click_num = t.zs_ready_click_num || "0",
+            a && this.zs_switch || (this.zs_ready_click_num = "0"),
+            this.zs_click_award_num1 = t.zs_click_award_num1 || "0",
+            a && this.zs_switch || (this.zs_click_award_num1 = "0"),
+            this.zs_revive_countdown = t.zs_revive_countdown ? Number(t.zs_revive_countdown) : 10,
+            this.zs_jump_style = t.zs_jump_style ? Number(t.zs_jump_style) : 0,
+            this.zs_banner_rotate_id1 = t.zs_banner_rotate_id1,
+            this.zs_banner_rotate_id2 = t.zs_banner_rotate_id2,
+            this.zs_banner_rotate_id3 = t.zs_banner_rotate_id3,
+            this.zs_click_award_system = t.zs_click_award_system,
+            this.zs_banner_show_number = this.getNumberVal(t.zs_banner_show_number, 2),
+            this.zs_full_screen_rotate = 1 == this.getNumberVal(t.zs_full_screen_rotate, 0),
+            this.zs_unmiss_text_time = this.getNumberVal(t.zs_unmiss_text_time, 0),
+            this.zs_button_delay_time = this.getNumberVal(t.zs_button_delay_time, 2e3),
+            this.zs_button_delay_switch = 1 == this.getNumberVal(t.zs_button_delay_switch, 0),
+            this.zs_game_banner_show_switch = t.zs_game_banner_show_switch ? Number(t.zs_game_banner_show_switch) : 0,
+            this.zs_before_finsh_jump_switch = 1 == this.getNumberVal(t.zs_before_finsh_jump_switch, 0),
+            this.zs_slide_jump_switch = 1 == this.getNumberVal(t.zs_slide_jump_switch, 0),
+            this.zs_start_video_switch = 1 == t.zs_start_video_switch && this.zs_switch,
+            this.zs_native_click_switch = 1 == t.zs_native_click_switch && this.isSameVersion(),
+            this.zs_native_delay = 1 == t.zs_native_delay && this.isSameVersion(),
+            this.zs_native_next_limit = 1 == t.zs_native_next_limit,
+            this.zs_native_limit = 1 == t.zs_native_limit && this.isSameVersion(),
+            this.zs_reminder_switch = 1 == t.zs_reminder_switch && this.isSameVersion(),
+            this.zs_onemin_show_ad_switch = 1 == t.zs_onemin_show_ad_switch,
+            this.zs_jump_time = t.zs_jump_time ? Number(t.zs_jump_time) : 0,
+            this.zs_native_touch_switch = 1 == t.zs_native_touch_switch && this.isSameVersion(),
+            this.zs_full_screen_ad = 1 == t.zs_full_screen_ad && this.isSameVersion(),
+            this.zs_skin_push_switch = 1 == t.zs_skin_push_switch && this.isSameVersion(),
+            this.zs_Fakerjump = 1 == t.zs_Fakerjump && this.isSameVersion(),
+            this.zs_auto_jump_switch = 1 == t.zs_auto_jump_switch && this.isSameVersion(),
+            this.zs_click_video_switch = 1 == t.zs_click_video_switch && this.isSameVersion(),
+            this.zs_click_video_time = 1 == t.zs_click_video_time && this.isSameVersion(),
+            this.zs_click_video_city = 1 == t.zs_click_video_city && this.isSameVersion(),
+            this.zs_table_screen = 1 == t.zs_table_screen && this.zs_auto_witch,
+            this.zs_start_exposure_num = t.zs_start_exposure_num ? Number(t.zs_start_exposure_num) : 1,
+            this.zs_tryuse_switch = 1 == t.zs_tryuse_switch && this.isSameVersion()
+        }
+        isSwitchOn() {
+            return this.isSameVersion()
+        }
+        isElectOn() {
+            return this.isSameVersion() && this.zs_jump_switch
+        }
+        isSameVersion() {
+            return O.isVV || O.isOP ? this.current_version == this.zs_version : this.current_version != this.zs_version
+        }
+        electControl(e) {
+            return this[e]
+        }
+        checkControl(e, t=!1) {
+            let s = 1 == this[e];
+            if (t) {
+                let e = this.isSwitchOn()
+                  , t = this.isSameVersion();
+                return s && e && t
+            }
+            return s
+        }
+        getNumberVal(e, t) {
+            return t = q.IsNumber(t) ? Number(t) : 0,
+            q.IsNumber(e) ? Number(e) : t
+        }
+        enableClickRevive() {
+            return this.isReviveTypeEnable("zs_revive_click_num")
+        }
+        updateClickRevive() {
+            this.updateReviveTypeInfo("zs_revive_click_num")
+        }
+        enableVideoRevive() {
+            return this.isReviveTypeEnable("zs_revive_video_num")
+        }
+        updateVideoRevive() {
+            this.updateReviveTypeInfo("zs_revive_video_num")
+        }
+        enableShareRevive() {
+            return this.isReviveTypeEnable("zs_revive_share_num")
+        }
+        updateShareRevive() {
+            this.updateReviveTypeInfo("zs_revive_share_num")
+        }
+        isReviveTypeEnable(e) {
+            if (0 == this[e])
+                return !1;
+            if (-1 == this[e])
+                return !0;
+            var t = Laya.LocalStorage.getItem(e + "_time_stamp");
+            if (null == t || "" == t || 0 == q.isToday(Number(t)))
+                return !0;
+            var s = Laya.LocalStorage.getItem(e);
+            return (null == s || "" == s ? 0 : Number(s)) < this[e]
+        }
+        updateReviveTypeInfo(e) {
+            Laya.LocalStorage.setItem(e + "_time_stamp", Date.now().toString());
+            var t = Laya.LocalStorage.getItem(e)
+              , s = null == t || "" == t ? 0 : Number(t);
+            s++,
+            Laya.LocalStorage.setItem(e, s.toString())
+        }
+        isBeforeGameAccount() {
+            return this.isSameVersion() && this.zs_jump_switch && this.zs_before_finsh_jump_switch
+        }
+        isAfterGameAccount() {
+            return this.isSameVersion() && this.zs_jump_switch && this.zs_full_screen_jump
+        }
+        isCrazyTap(e, t) {
+            let s, i;
+            switch (t) {
+            case X.TAP_CHEST:
+                s = "zs_click_award_num",
+                i = this.zs_click_award_num;
+                break;
+            case X.TAP_ENERGY:
+                s = "zs_ready_click_num",
+                i = this.zs_ready_click_num;
+                break;
+            case X.TAP_BOSS:
+                s = "zs_click_award_num1",
+                i = this.zs_click_award_num1;
+                break;
+            default:
+                return !1
+            }
+            if (q.IsNumber(i)) {
+                let e = Number(i);
+                return 0 != e && (e < 0 || W.inst.getValByToday(s) < e && (W.inst.setValByToday(s),
+                !0))
+            }
+            return i.substr(1, i.length - 2).split(",").indexOf(`${e}`) > -1
+        }
+        GetCrazyPercent() {
+            let e = this.zs_click_award_percent
+              , t = e.substr(1, e.length - 2).split(",");
+            return H.randRange(Number(t[0]), Number(t[1]))
+        }
+        CrazyTapVideo() {
+            let e = this.zs_click_video_time
+              , t = this.zs_click_video_city;
+            return !(!e || !t) && this.zs_click_video_switch
+        }
+        isBannerMistake() {
+            return this.zs_banner_vertical_enable
+        }
+    }
+    class K {
+    }
+    K.EVENT_NAVIGATE_SUCCESS = "NAVIGATE_SUCCESS",
+    K.EVENT_NAVIGATE_FAILED = "NAVIGATE_FAILED",
+    K.EVENT_NAVIGATE_COMPLETED = "NAVIGATE_COMPLETED",
+    K.EVENT_NAVIGATE_FAILED_WX = "NAVIGATE_FAILED_WX",
+    K.SCROLL_NONE = 0,
+    K.SCROLL_VERTICAL = 1,
+    K.SCROLL_HORIZONTAL = 2,
+    K.SPE_RANK_TOP = 0,
+    K.SPE_RANK_BOTTOM = 1,
+    K.SPE_FRIEND = 2,
+    K.IS_START_GAME = !1,
+    K.IS_AUTO_CLICK = !1;
+    class Z {
+        constructor(e, t) {
+            this.ver = e,
+            this.switch = t
+        }
+    }
+    class Y extends Z {
+    }
+    class J extends Z {
+    }
+    class $ extends Z {
+    }
+    class ee extends U {
+        constructor() {
+            super(),
+            this.config = null,
+            this.adData = [],
+            this.isGameFinish = !1,
+            this.isCtrlFinish = !1,
+            this.referrerAppId = "",
+            this.sceneValue = 0,
+            this.loginDT = 0,
+            this.navigateSuccessObj = {},
+            this.clickGameReqUrl = "https://zsad.zxmn2018.com/api/adlog/update_log",
+            this.config = new Q,
+            this.loginDT = (new Date).getTime()
+        }
+        init(e) {
+            let t = this;
+            this.navigateSuccessObj = {};
+            var s = window.zs.sdk;
+            if (s.loadCfg(function(e) {
+                t.config.initAdSetting(O.sdk.ver, e),
+                t.initAdsCfg(),
+                t.isCtrlFinish = !0
+            }, function(e) {
+                console.log("MyOPPOAD:zs ad config err：", JSON.stringify(e))
+            }),
+            O.isWX) {
+                s.init(1);
+                let e = O.sdk.getLaunchOptionsSync();
+                if (e) {
+                    let t = e.referrerInfo;
+                    t && (this.referrerAppId = t.appId ? t.appId : ""),
+                    this.sceneValue = e.scene || 0
+                }
+            }
+            s.login(function(e) {
+                O.sdk.setUserId(e),
+                O.isWX ? t.clickGameReq({}, 1037, 1) : O.isQQ && s.init(e)
+            }, function(e) {
+                console.log("MyOPPOAD:login fail:" + e)
+            }),
+            s.loadAd(function(e) {
+                t.adData = e,
+                t.isGameFinish = !0
+            })
+        }
+        initAdsCfg() {
+            let e = null
+              , t = this.adConfig.electControl("zs_version")
+              , s = this.adConfig.electControl("zs_switch");
+            if (O.isWX) {
+                let i = new Y(t,s);
+                i.bgbannershow = !0,
+                i.bgbannershowcount = this.adConfig.electControl("zs_banner_show_number"),
+                i.bginterstitialshow = this.adConfig.electControl("zs_table_screen"),
+                i.bggridshow = !1,
+                i.bgexposureduration = 0,
+                e = i
+            } else if (O.isOP) {
+                let i = new J(t,s);
+                i.bgshowad_inonemin = this.adConfig.electControl("zs_onemin_show_ad_switch"),
+                i.bgnative_exposure_num = this.adConfig.electControl("zs_start_exposure_num"),
+                e = i
+            } else if (O.isQQ) {
+                let i = new $(t,s);
+                i.bgbannerrefreshtime = this.adConfig.electControl("zs_banner_refresh_time"),
+                e = i,
+                console.log("isQQ 广告配置》》》", e)
+            } else
+                e = new Z(t,s);
+            O.sdk.initAdsCfg(e)
+        }
+        get isLoadGameFinish() {
+            return this.isGameFinish
+        }
+        get isLoadCtrlFinish() {
+            return this.isCtrlFinish
+        }
+        get adConfig() {
+            return this.config
+        }
+        getAdType(e=V.default) {
+            return "endPage"
+        }
+        getAdList(e="default", t) {
+            if (void 0 === this.adData)
+                return console.log("getAdList adData is undefined, return"),
+                [];
+            let s = this.adData[e.toString()];
+            if (!s)
+                return [];
+            let i = (new Date).getTime();
+            if (F.Time.dayDiff(this.loginDT, i) > 0 && (this.loginDT = i,
+            this.navigateSuccessObj = {}),
+            null != t)
+                if (s.length < t)
+                    for (; s.length < t; )
+                        s.push(s[Math.floor(Math.random() * s.length)]);
+                else if (s.length > t)
+                    for (; s.length > t; )
+                        s.splice(Math.floor(Math.random() * s.length), 1);
+            return s
+        }
+        setGamePlayed(e) {
+            e && e.appid && (this.navigateSuccessObj[e.appid] = 1)
+        }
+        navigateToMiniProgram(e, t, s=null, i=null, n=null) {
+            let a = this;
+            window.zs.sdk.navigate2Mini(e, O.sdk.userId, function() {
+                a.setGamePlayed(e),
+                s && s(),
+                O.isWX && a.clickGameReq({}, 1, 3),
+                Laya.stage.event(K.EVENT_NAVIGATE_SUCCESS)
+            }, function() {
+                i && i(),
+                O.isWX && Laya.stage.event(K.EVENT_NAVIGATE_FAILED)
+            }, function() {
+                n && n(),
+                Laya.stage.event(K.EVENT_NAVIGATE_COMPLETED)
+            })
+        }
+        getNavigateSuccessObj() {
+            return this.navigateSuccessObj
+        }
+        clickGameReq(e, t, s) {
+            let i = O.sdk.userId
+              , n = O.sdk.getappId();
+            if (i) {
+                let e = new Laya.HttpRequest;
+                e.http.timeout = 1e4,
+                e.once(Laya.Event.COMPLETE, this, e=>{}
+                );
+                let t = {
+                    appid: n,
+                    from_appid: this.referrerAppId,
+                    user_id: i,
+                    scene: this.sceneValue,
+                    type: s
+                };
+                e.send(this.clickGameReqUrl, t, "post", "json", ["content-type", "application/json"])
+            }
+        }
+    }
+    class te extends j {
+        constructor() {
+            super(),
+            this._serConfig = {},
+            this._serConfig = {
+                zs_switch: 0,
+                zs_version: "1.0",
+                zs_nulock_gate: 0,
+                zs_result_get: 0,
+                zs_tap_banner: 0,
+                zs_tap_video: 0,
+                zs_game_banner_ad: 0,
+                zs_complete_version: 0,
+                zs_over_chest_layer: 0,
+                zs_tryuse_close_delay: 0,
+                zs_native_tryuse_show: 0,
+                zs_click_award_num: 0,
+                zs_tool_video: 0,
+                zs_showad_inonemin: 0,
+                zs_click_award_city: 0,
+                zs_native_click_switch: 0,
+                zs_native_limit: 0,
+                zs_native_touch_switch: 0,
+                zs_full_screen_ad: 0,
+                zs_jump_time: 0,
+                zs_onemin_show_ad_switch: 0,
+                zs_start_exposure_num: 1,
+                zs_banner_vertical_enable: 0,
+                zs_banner_text_time: 1e3,
+                zs_banner_move_time: 1e3,
+                zs_banner_banner_time: 1e3,
+                zs_banner_click_show_time: 1e3,
+                zs_banner_click_hide_time: 1e3,
+                zs_banner_show_number: 2,
+                zs_banner_show: 1,
+                zs_banner_exposure_duration: 8e3,
+                zs_interstitial_show: 1,
+                zs_grid_show: 0,
+                zs_history_list_jump: 0,
+                zs_auto_witch: 0,
+                zs_horizontal_export: 0,
+                zs_jump_switch: 0,
+                zs_before_finish_jump_switch: 0,
+                zs_full_screen_jump: 0,
+                zs_auto_pop_ups_switch: 0,
+                zs_slide_jump_switch: 1,
+                zs_gdt_full_screen_1: 0,
+                zs_gdt_full_screen_2: 0,
+                zs_banner_gameend_enable: 0,
+                zs_start_video_switch: 0,
+                zs_auto_jump_switch_1: 0,
+                zs_auto_jump_switch_2: 0,
+                zs_false_news_switch: 0,
+                zs_play_other_game: 0,
+                zs_tryuse_switch: 0,
+                zs_ad_jump_num: 2,
+                zs_banner_adunit: "",
+                zs_banner_city: 1,
+                zs_banner_horizontal_enable: 1,
+                zs_banner_refresh_time: 3e4,
+                zs_banner_rotate_id1: "",
+                zs_banner_rotate_id2: "",
+                zs_banner_rotate_id3: "",
+                zs_banner_show_time: 1,
+                zs_banner_system: "",
+                zs_click_award_add: "0.1",
+                zs_click_award_back: "0.05",
+                zs_click_award_percent: "[0.4,0.7]",
+                zs_click_award_since: "1",
+                zs_click_award_system: "ios",
+                zs_click_award_time: "00:00-23:59",
+                zs_finish_city: 1,
+                zs_finish_jump: 1,
+                zs_finish_time: 1,
+                zs_full_screen_city: 1,
+                zs_full_screen_time: 1,
+                zs_revive_click_num: 0,
+                zs_revive_share_num: 0,
+                zs_revive_video_num: -1,
+                zs_video_adunit: "",
+                zs_box_yc: "1000"
+            }
+        }
+        initAdSetting(e, t) {
+            void 0 !== t && (this._serConfig = Object.assign({}, this._serConfig, t),
+            this._serConfig.zs_banner_text_time = this._serConfig.zs_banner_text_time ? Number(this._serConfig.zs_banner_text_time) : 1e3,
+            this._serConfig.zs_banner_move_time = this._serConfig.zs_banner_move_time ? Number(this._serConfig.zs_banner_move_time) : 1e3,
+            this._serConfig.zs_banner_banner_time = this._serConfig.zs_banner_banner_time ? Number(this._serConfig.zs_banner_banner_time) : 1e3,
+            this._serConfig.zs_banner_click_show_time = this._serConfig.zs_banner_click_show_time ? Number(this._serConfig.zs_banner_click_show_time) : 1e3,
+            this._serConfig.zs_banner_click_hide_time = this._serConfig.zs_banner_click_hide_time ? Number(this._serConfig.zs_banner_click_hide_time) : 1e3,
+            this._serConfig.zs_banner_show_number = this._serConfig.zs_banner_show_number ? Number(this._serConfig.zs_banner_show_number) : 2,
+            this._serConfig.zs_banner_exposure_duration = this._serConfig.zs_banner_exposure_duration ? Number(this._serConfig.zs_banner_exposure_duration) : 8e3,
+            this._serConfig.zs_box_yc = this._serConfig.zs_box_yc ? Number(this._serConfig.zs_box_yc) : 1e3,
+            this._serConfig.zs_click_award_add = this._serConfig.zs_click_award_add ? Number(this._serConfig.zs_click_award_add) : .1,
+            this._serConfig.zs_click_award_back = this._serConfig.zs_click_award_back ? Number(this._serConfig.zs_click_award_back) : .05,
+            this._serConfig.zs_click_award_percent = this._serConfig.zs_click_award_percent || "[0.4, 0.7]",
+            O.isWX ? (this.isSameVersion() ? this._serConfig.zs_banner_show = 1 == this._serConfig.zs_banner_show : this._serConfig.zs_banner_show = !1,
+            this.isSameVersion() && this.isSwitchOn() ? (this._serConfig.zs_banner_vertical_enable = 1 == this._serConfig.zs_banner_vertical_enable,
+            this._serConfig.zs_history_list_jump = 1 == this._serConfig.zs_history_list_jump,
+            this._serConfig.zs_auto_witch = 1 == this._serConfig.zs_auto_witch,
+            this._serConfig.zs_horizontal_export = 1 == this._serConfig.zs_horizontal_export,
+            this._serConfig.zs_jump_switch = 1 == this._serConfig.zs_jump_switch,
+            this._serConfig.zs_gdt_full_screen_1 = 1 == this._serConfig.zs_gdt_full_screen_1,
+            this._serConfig.zs_gdt_full_screen_2 = 1 == this._serConfig.zs_gdt_full_screen_2,
+            this._serConfig.zs_banner_gameend_enable = 1 == this._serConfig.zs_banner_gameend_enable,
+            this._serConfig.zs_interstitial_show = 1 == this._serConfig.zs_interstitial_show,
+            this._serConfig.zs_grid_show = 1 == this._serConfig.zs_grid_show,
+            this._serConfig.zs_auto_jump_switch_1 = 1 == this._serConfig.zs_auto_jump_switch_1,
+            this._serConfig.zs_auto_jump_switch_2 = 1 == this._serConfig.zs_auto_jump_switch_2,
+            this._serConfig.zs_false_news_switch = 1 == this._serConfig.zs_false_news_switch,
+            this._serConfig.zs_play_other_game = 1 == this._serConfig.zs_play_other_game,
+            this._serConfig.zs_auto_witch ? (this._serConfig.zs_auto_pop_ups_switch = 1 == this._serConfig.zs_auto_pop_ups_switch,
+            this._serConfig.zs_start_video_switch = 1 == this._serConfig.zs_start_video_switch) : (this._serConfig.zs_auto_pop_ups_switch = !1,
+            this._serConfig.zs_start_video_switch = !1)) : (this._serConfig.zs_banner_vertical_enable = !1,
+            this._serConfig.zs_history_list_jump = !1,
+            this._serConfig.zs_auto_witch = !1,
+            this._serConfig.zs_horizontal_export = !1,
+            this._serConfig.zs_jump_switch = !1,
+            this._serConfig.zs_auto_pop_ups_switch = !1,
+            this._serConfig.zs_gdt_full_screen_1 = !1,
+            this._serConfig.zs_gdt_full_screen_2 = !1,
+            this._serConfig.zs_banner_gameend_enable = !1,
+            this._serConfig.zs_interstitial_show = !1,
+            this._serConfig.zs_grid_show = !1,
+            this._serConfig.zs_start_video_switch = !1,
+            this._serConfig.zs_auto_jump_switch_1 = !1,
+            this._serConfig.zs_auto_jump_switch_2 = !1,
+            this._serConfig.zs_false_news_switch = !1,
+            this._serConfig.zs_play_other_game = !1)) : O.isOP && (this._serConfig.zs_tryuse_close_delay = 0 != t.zs_tryuse_close_delay,
+            this._serConfig.zs_native_tryuse_show = 0 != t.zs_native_tryuse_show,
+            this._serConfig.zs_click_award_num = 0 != t.zs_click_award_num,
+            this._serConfig.zs_tool_video = 0 != t.zs_tool_video,
+            this._serConfig.zs_showad_inonemin = 0 != t.zs_showad_inonemin,
+            this._serConfig.zs_click_award_city = 0 != t.zs_click_award_city,
+            this._serConfig.zs_start_exposure_num = t.zs_start_exposure_num ? Number(this._serConfig.zs_start_exposure_num) : 1,
+            this.isSameVersion() ? (this._serConfig.zs_native_click_switch = 0 != t.zs_native_click_switch,
+            this._serConfig.zs_native_limit = 0 != t.zs_native_limit,
+            this._serConfig.zs_native_touch_switch = 0 != t.zs_native_touch_switch,
+            this._serConfig.zs_full_screen_ad = 0 != t.zs_full_screen_ad,
+            this._serConfig.zs_onemin_show_ad_switch = 0 != t.zs_onemin_show_ad_switch,
+            this._serConfig.zs_jump_time = t.zs_jump_time ? Number(this._serConfig.zs_jump_time) : 0) : (this._serConfig.zs_onemin_show_ad_switch = !0,
+            this._serConfig.zs_native_click_switch = !1,
+            this._serConfig.zs_native_limit = !1,
+            this._serConfig.zs_native_touch_switch = !1,
+            this._serConfig.zs_full_screen_ad = !1,
+            this._serConfig.zs_jump_time = 0)))
+        }
+        isSwitchOn() {
+            return 1 == (this._serConfig.zs_switch || 0)
+        }
+        isSameVersion() {
+            let e = "0.0"
+              , t = O.sdk.ver;
+            return O.isWX ? "0.0" != (e = this._serConfig.zs_version || "0.0") && t != e : O.isQQ ? "0.0" != (e = this._serConfig.zs_version || "0.0") && t != e : O.isOP ? "0.0" != (e = this._serConfig.zs_version || "0.0") && t == e : O.isTT ? "0.0" != (e = this._serConfig.zs_version || "0.0") && t != e : O.isVV ? "0.0" != (e = this._serConfig.zs_version || "0.0") && t == e : void 0
+        }
+        isElectOn() {
+            let e = 0;
+            return O.isWX ? e = this._serConfig.zs_jump_switch || 0 : O.isQQ ? e = this._serConfig.zs_jump_switch || 0 : O.isOP && (e = this._serConfig.zs_switch || 0),
+            this.isSameVersion() && 1 == e
+        }
+        electControl(e) {
+            return this._serConfig[e]
+        }
+        checkControl(e, t=!1) {
+            let s = 1 == this._serConfig[e];
+            if (t) {
+                let e = this.isSwitchOn()
+                  , t = this.isSameVersion();
+                return s && e && t
+            }
+            return s
+        }
+        isCanFullJump() {
+            let e = 0;
+            return O.isWX ? e = this.electControl.zs_full_screen_jump : O.isQQ && (e = this.electControl.full_screen_jump),
+            !(!this.isElectOn() || 1 != e)
+        }
+        isBannerMistake() {
+            let e = 0
+              , t = 0;
+            return O.isWX ? (e = this._serConfig.zs_switch,
+            t = this._serConfig.zs_banner_vertical_enable || 0) : O.isQQ && (e = this._serConfig.zs_switch,
+            t = this._serConfig.zs_banner_vertical_enable || 0),
+            this.isSameVersion() && 1 == e && 1 == t
+        }
+        energyCanShow() {
+            let e = this.isSwitchOn()
+              , t = this.isSameVersion();
+            if (!e || !t)
+                return !1;
+            if (0 == (parseInt(this._serConfig.zs_energy_layer) || 0))
+                return !1;
+            if (O.isWX)
+                return !0;
+            if (!this.isReviveTypeEnable("zs_energy_click_num"))
+                return !1;
+            this.updateReviveTypeInfo("zs_energy_click_num");
+            let s = (this._serConfig.zs_award_box_time || "0-23").split("-")
+              , i = (new Date).getHours();
+            return i >= parseInt(s[0]) && i <= parseInt(s[1])
+        }
+        boxCanShow() {
+            let e = this.isSwitchOn()
+              , t = this.isSameVersion();
+            if (!e || !t)
+                return !1;
+            if (0 == (parseInt(this._serConfig.zs_over_chest_layer) || 0))
+                return !1;
+            if (O.isTT || O.isWX)
+                return !0;
+            if (!this.isReviveTypeEnable("zs_ready_click_num"))
+                return !1;
+            this.updateReviveTypeInfo("zs_ready_click_num");
+            let s = (this._serConfig.zs_award_box_time || "0-23").split("-")
+              , i = (new Date).getHours();
+            return i >= parseInt(s[0]) && i <= parseInt(s[1])
+        }
+        isReviveTypeEnable(e) {
+            return 0 != this._serConfig[e] && (-1 == this._serConfig[e] || W.inst.getValByToday(e) < this._serConfig[e])
+        }
+        updateReviveTypeInfo(e) {
+            W.inst.setValByToday(e)
+        }
+        isBeforeGameAccount() {
+            let e = 1 == this._serConfig.zs_before_finish_jump_switch
+              , t = this.isSwitchOn()
+              , s = this.isSameVersion();
+            return e && t && s
+        }
+        isAfterGameAccount() {
+            let e = 1 == this._serConfig.zs_full_screen_jump
+              , t = this.isSwitchOn()
+              , s = this.isSameVersion();
+            return e && t && s
+        }
+        isCrazyTap(e, t) {
+            return this._serConfig.zs_banner_gameend_enable
+        }
+        GetCrazyPercent() {
+            let e = this._serConfig.zs_click_award_percent
+              , t = e.substr(1, e.length - 2).split(",");
+            return H.randRange(Number(t[0]), Number(t[1]))
+        }
+    }
+    class se extends U {
+        constructor() {
+            super(),
+            this.config = null,
+            this.adData = [],
+            this.isGameFinish = !1,
+            this.isCtrlFinish = !1,
+            this.loadAdDataUrl = "https://cp.game.7to.cn/api/export/list",
+            this.loadAdDataBackupUrl = "https://cp2.game.7to.cn/api/export/list",
+            this.loadCtrCfgUrl = "https://cp.game.7to.cn/api/cfg/getcfg",
+            this.loadCtrCfgBackupUrl = "https://cp2.game.7to.cn/api/cfg/getcfg",
+            this.clickGameReqQiTuUrl = "https://cp.game.7to.cn/api/export/report",
+            this.clickGameReqQiTuBackupUrl = "https://cp2.game.7to.cn/api/export/report",
+            this.loadCtrErrorCount = 0,
+            this.loadDataErrorCount = 0,
+            this.referrerAppId = "",
+            this.sceneValue = 0,
+            this.loginDT = 0,
+            this.navigateSuccessObj = {},
+            this.AdTypeObj = {
+                [V.default]: "defaultData",
+                [V.endPage]: "endPage",
+                [V.float]: "floatData",
+                [V.full1Page]: "full1Page",
+                [V.full2Page]: "full2Page",
+                [V.scroll]: "scrollData",
+                [V.more]: "defaultData",
+                [V.sidebar]: "defaultData",
+                [V.fakeMsg]: "defaultData"
+            },
+            this.config = new te,
+            this.loginDT = (new Date).getTime()
+        }
+        init(e) {
+            let t = this;
+            if (this.navigateSuccessObj = {},
+            O.isWX || O.isTT || O.isQQ) {
+                let e = O.sdk.getLaunchOptionsSync();
+                if (e) {
+                    let t = e.referrerInfo;
+                    t && (this.referrerAppId = t.appId ? t.appId : ""),
+                    this.sceneValue = e.scene || 0
+                }
+            }
+            t.loadCtrErrorCount = 0,
+            t.loadCtrCfg(function(e) {
+                t.config.initAdSetting(O.sdk.ver, e),
+                t.initAdsCfg(),
+                t.isCtrlFinish = !0
+            }),
+            t.loadDataErrorCount = 0,
+            t.loadAdData(function(e) {
+                t.adData = e,
+                t.isGameFinish = !0
+            }),
+            O.sdk.getopenId((e,t)=>{}
+            )
+        }
+        initAdsCfg() {
+            let e = null
+              , t = this.adConfig.electControl("zs_version")
+              , s = this.adConfig.electControl("zs_switch");
+            if (O.isWX) {
+                let i = new Y(t,s);
+                i.bgbannershow = this.adConfig.electControl("zs_banner_show"),
+                i.bgbannershowcount = this.adConfig.electControl("zs_banner_show_number"),
+                i.bginterstitialshow = this.adConfig.electControl("zs_interstitial_show"),
+                i.bggridshow = this.adConfig.electControl("zs_grid_show"),
+                i.bgexposureduration = this.adConfig.electControl("zs_banner_exposure_duration"),
+                e = i
+            } else if (O.isOP) {
+                let i = new J(t,s);
+                i.bgshowad_inonemin = this.adConfig.electControl("zs_onemin_show_ad_switch"),
+                i.bgnative_exposure_num = this.adConfig.electControl("zs_start_exposure_num"),
+                e = i
+            } else if (O.isQQ) {
+                let i = new $(t,s);
+                i.bgbannerrefreshtime = 8e3,
+                e = i
+            } else
+                e = new Z(t,s);
+            O.sdk.initAdsCfg(e)
+        }
+        get isLoadGameFinish() {
+            return this.isGameFinish
+        }
+        get isLoadCtrlFinish() {
+            return this.isCtrlFinish
+        }
+        get adConfig() {
+            return this.config
+        }
+        getAdType(e=V.default) {
+            let t = this.AdTypeObj[e];
+            return t || (t = "defaultData"),
+            t
+        }
+        getAdList(e="defaultData", t) {
+            if (void 0 === this.adData)
+                return console.log("getAdList adData is undefined, return"),
+                [];
+            let s = this.adData[e.toString()];
+            if (!s) {
+                if ("defaultData" == e.toString())
+                    return [];
+                if (!(s = this.adData.defaultData))
+                    return []
+            }
+            let i = (new Date).getTime();
+            if (F.Time.dayDiff(this.loginDT, i) > 0 && (this.loginDT = i,
+            this.navigateSuccessObj = {}),
+            null != t) {
+                if (s.length < t) {
+                    let e = t - s.length;
+                    for (let t = 0; t < e; t++)
+                        s.push(s[t])
+                } else if (s.length > t)
+                    for (; s.length > t; )
+                        s.splice(Math.floor(Math.random() * s.length), 1)
+            } else
+                for (let e = 0; e < 8; e++) {
+                    let e = Math.floor(Math.random() * s.length)
+                      , t = Math.floor(Math.random() * s.length);
+                    if (e != t) {
+                        let i = s[e];
+                        s[e] = s[t],
+                        s[t] = i
+                    }
+                }
+            return s
+        }
+        setGamePlayed(e) {
+            e && e.id && (this.navigateSuccessObj[e.id] = 1)
+        }
+        navigateToMiniProgram(e, t, s=null, i=null, n=null) {
+            let a = this;
+            O.sdk.navigateToMiniProgram(e, i=>{
+                a.setGamePlayed(e),
+                a.clickGameReq(e, t, 3),
+                s && s(i)
+            }
+            , ()=>{
+                i && i(),
+                O.isWX && Laya.stage.event(K.EVENT_NAVIGATE_FAILED, {
+                    msgFrom: t
+                })
+            }
+            , n)
+        }
+        getNavigateSuccessObj() {
+            return this.navigateSuccessObj
+        }
+        loadAdData(e=null, t=3, s=null, i=!0) {
+            let n = this;
+            var a = s || n.loadAdDataUrl;
+            let o = O.sdk.getappId()
+              , r = Math.round((new Date).getTime() / 1e3).toString()
+              , l = {
+                appid: o,
+                scene: this.sceneValue,
+                referr_appid: this.referrerAppId,
+                timestamp: r,
+                sign: "",
+                game_ver: O.sdk.ver
+            }
+              , h = new Laya.HttpRequest;
+            h.http.timeout = 1e4,
+            h.once(Laya.Event.COMPLETE, n, t=>{
+                e && e(h.data.data)
+            }
+            ),
+            h.once(Laya.Event.ERROR, n, a=>(n.loadDataErrorCount++,
+            n.loadDataErrorCount < t ? (console.log("loadAdData 重试" + n.loadDataErrorCount),
+            void n.loadAdData(e, t, s, i)) : i ? (console.log("loadAdData 尝试备用"),
+            void n.loadCtrCfg(e, t, n.loadAdDataBackupUrl, !1)) : (console.log("request error", a),
+            void (e && e())))),
+            h.send(a, JSON.stringify(l), "post", "json", ["content-type", "application/json"])
+        }
+        loadCtrCfg(e=null, t=3, s=null, i=!0) {
+            let n = this;
+            var a = s || n.loadCtrCfgUrl;
+            let o = O.sdk.getappId()
+              , r = Math.round((new Date).getTime() / 1e3).toString()
+              , l = {
+                appid: o,
+                scene: this.sceneValue,
+                referr_appid: this.referrerAppId,
+                timestamp: r,
+                sign: "",
+                game_ver: O.sdk.ver
+            }
+              , h = new Laya.HttpRequest;
+            h.http.timeout = 1e4,
+            h.once(Laya.Event.COMPLETE, n, t=>{
+                e && e(h.data.data)
+            }
+            ),
+            h.once(Laya.Event.ERROR, n, a=>(n.loadCtrErrorCount++,
+            n.loadCtrErrorCount < t ? (console.log("loadCtrCfg 重试" + n.loadCtrErrorCount),
+            void n.loadCtrCfg(e, t, s, i)) : i ? (console.log("loadCtrCfg 尝试备用"),
+            void n.loadCtrCfg(e, t, n.loadCtrCfgBackupUrl, !1)) : (console.log("request error", a),
+            void (e && e())))),
+            h.send(a, JSON.stringify(l), "post", "json", ["content-type", "application/json"])
+        }
+        clickGameReq(e, t, s) {
+            this.clickGameReqQiTu(e, t)
+        }
+        clickGameReqQiTu(e, t, s=null, i=!0) {
+            if (Laya.Browser.window.conch)
+                return;
+            let n = this;
+            var a = s || n.clickGameReqQiTuUrl;
+            let o = O.sdk.userId
+              , r = O.sdk.getappId();
+            if (o) {
+                let s = new Laya.HttpRequest;
+                s.http.timeout = 1e4,
+                s.once(Laya.Event.COMPLETE, n, e=>{}
+                ),
+                i && s.once(Laya.Event.ERROR, n, s=>{
+                    n.clickGameReqQiTu(e, t, n.clickGameReqQiTuBackupUrl, !1)
+                }
+                );
+                let l = {
+                    appid: r,
+                    user_id: o,
+                    link_id: e.id,
+                    link_adv_appid: e.link_adv_appid || 0,
+                    nav_scene: t,
+                    scene: this.sceneValue,
+                    referr_appid: this.referrerAppId,
+                    game_ver: O.sdk.ver
+                };
+                s.send(a, JSON.stringify(l), "post", "json", ["content-type", "application/json"])
+            }
+        }
+    }
+    const ie = new class {
+        constructor() {
+            this.sdk = null,
+            this._ptype = M.None
+        }
+        init(e) {
+            R[O.pType].cp == M.ZS ? (this.sdk = new ee,
+            this._ptype = M.ZS,
+            O.sdk.setUseZS()) : (this.sdk = new se,
+            this._ptype = M.QT),
+            this.sdk.init(e)
+        }
+        get isQT() {
+            return this._ptype == M.QT
+        }
+        get isZS() {
+            return this._ptype == M.ZS
+        }
+    }
+    ;
+    class ne {
+        constructor() {}
+        isHave(e) {
+            let t = Laya.Scene.root;
+            for (let s = 0; s < t.numChildren; s++) {
+                if (t.getChildAt(s).url == e)
+                    return !0
+            }
+            return !1
+        }
+        sceneOpen(e, t=!1, s, i, n) {
+            this.isHave(e) || (C.Ins.event(ne.EVENT_SCENE_OPEN, e),
+            Laya.Scene.open(e, t, s, i, n))
+        }
+        sceneClose(e, t) {
+            return Laya.Scene.close(e, t)
+        }
+        showDialogByClass(e) {
+            let t = new e;
+            return Laya.stage.addChild(t),
+            t
+        }
+        removeSp(e, t=!1) {
+            e && (e.parent && e.parent.removeChild(e),
+            t && (e = null))
+        }
+        static get Ins() {
+            return this._ins || (this._ins = new ne),
+            this._ins
+        }
+    }
+    ne.EVENT_SCENE_OPEN = "EVENT_SCENE_OPEN";
+    class ae extends e.commonUI.NativeAdDialogUI {
+        constructor() {
+            if (super(),
+            this.closeShowBanner = !0,
+            this.popupEffect = null,
+            this.height = Laya.stage.height,
+            this.icon.on(Laya.Event.CLICK, this, this.nativeAdClick),
+            this.goBtn.on(Laya.Event.CLICK, this, this.goClick),
+            this.isPopupCenter = !1,
+            this.zOrder = 128,
+            this.goBtn.skin = ie.sdk.adConfig.electControl("zs_native_click_switch") ? O.isOP ? "zsRes/oppo_04.png" : "zsRes/vivo_04.png" : "zsRes/vivo_05.png",
+            ie.sdk.adConfig.electControl("zs_native_touch_switch")) {
+                if (O.isOP) {
+                    let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                    0 != e && ie.sdk.adConfig.isSameVersion() ? (this.closeBtn.visible = !1,
+                    Laya.timer.once(e, this, ()=>{
+                        this.closeBtn.visible = !0,
+                        this.subcloseBtn.visible = !0
+                    }
+                    )) : this.subcloseBtn.visible = !0
+                } else
+                    O.isVV && (this.subcloseBtn.visible = !0);
+                this.subcloseBtn && this.subcloseBtn.on(Laya.Event.CLICK, this, this.closeClick),
+                this.closeBtn && this.closeBtn.on(Laya.Event.CLICK, this, this.nativeAdClick)
+            } else {
+                if (O.isOP) {
+                    let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                    0 != e && ie.sdk.adConfig.isSameVersion() && (this.closeBtn.visible = !1,
+                    Laya.timer.once(e, this, ()=>{
+                        this.closeBtn.visible = !0
+                    }
+                    ))
+                }
+                this.closeBtn && this.closeBtn.on(Laya.Event.CLICK, this, this.closeClick)
+            }
+            O.isVV && ie.sdk.adConfig.electControl("zs_native_next_limit") && (this.nextBtn.visible = !0,
+            this.nextBtn.on(Laya.Event.CLICK, this, this.closeClick))
+        }
+        onEnable() {
+            O.isOP && O.sdk.hide_banner()
+        }
+        onOpened(e) {
+            if (e && e.fromscene && e.fromscene == S.SHOP_SCENE && (this.closeShowBanner = !1),
+            this.nativeData = O.sdk.getNativeData(),
+            this.nativeData) {
+                let e = "";
+                this.nativeData.imgUrlList && this.nativeData.imgUrlList.length > 0 ? e = this.nativeData.imgUrlList[0] : this.nativeData.iconUrlList && this.nativeData.iconUrlList.length > 0 ? e = this.nativeData.iconUrlList[0] : this.nativeData.icon && (e = this.nativeData.icon),
+                this.icon.skin = e,
+                this.titleTxt.text = this.nativeData.desc,
+                O.sdk.reportAdShow(this.nativeData)
+            }
+        }
+        nativeAdClick() {
+            O.sdk.reportAdClick(this.nativeData),
+            this.closeClick()
+        }
+        closeClick() {
+            this.closeShowBanner && O.sdk.showBanner(),
+            ne.Ins.sceneClose(this.url)
+        }
+        goClick() {
+            ie.sdk.adConfig.electControl("zs_native_click_switch") ? this.nativeAdClick() : this.closeClick()
+        }
+        onDisable() {
+            Laya.stage.event("NATIVE_AD_CLOSE")
+        }
+    }
+    var oe, re, le;
+    !function(e) {
+        e[e.Sound_Volume = 0] = "Sound_Volume",
+        e[e.Music_Volume = 1] = "Music_Volume",
+        e[e.Sound_Mute = 2] = "Sound_Mute",
+        e[e.Music_Mute = 3] = "Music_Mute",
+        e[e.Mute = 4] = "Mute",
+        e[e.Vibrator = 5] = "Vibrator"
+    }(oe || (oe = {}));
+    class he extends G {
+        constructor() {
+            super(),
+            this._audio = {
+                soundVolume: 1,
+                musicVolume: 1,
+                musicMute: 1,
+                soundMute: 1,
+                mute: 1,
+                vibrator: 1
+            },
+            this._localName = "game-audio";
+            let e = he.getJson(this._localName);
+            for (let t in e)
+                this._audio[t] = e[t];
+            this.save()
+        }
+        save() {
+            he.setJson(this._localName, this._audio)
+        }
+        set soundVolume(e) {
+            this._audio.soundVolume = e,
+            this.save()
+        }
+        get soundVolume() {
+            return this._audio.soundVolume
+        }
+        set musicVolume(e) {
+            this._audio.musicVolume = e,
+            this.save()
+        }
+        get musicVolume() {
+            return this._audio.musicVolume
+        }
+        set soundMute(e) {
+            this._audio.soundMute = e,
+            this.save()
+        }
+        get soundMute() {
+            return this._audio.soundMute
+        }
+        set musicMute(e) {
+            this._audio.musicMute = e,
+            this.save()
+        }
+        get musicMute() {
+            return this._audio.musicMute
+        }
+        set mute(e) {
+            this._audio.mute = e,
+            this.save()
+        }
+        get mute() {
+            return this._audio.mute
+        }
+        set vibrator(e) {
+            this._audio.vibrator = e,
+            this.save()
+        }
+        get vibrator() {
+            return this._audio.vibrator
+        }
+    }
+    class de {
+        constructor() {
+            this._audioData = null,
+            this._musicChannel = null,
+            this._musicUrl = null,
+            this._audioData = new he
+        }
+        static get inst() {
+            return null == this._instance && (this._instance = new de),
+            this._instance
+        }
+        update(e, t=1) {
+            e == oe.Sound_Volume ? (this._audioData.soundVolume = t,
+            Laya.SoundManager.musicVolume = t) : e == oe.Music_Volume ? (this._audioData.soundVolume = t,
+            Laya.SoundManager.soundVolume = t) : e == oe.Music_Mute ? (this._audioData.musicMute = 0 == this._audioData.musicMute ? 1 : 0,
+            Laya.SoundManager.musicMuted = 1 == this._audioData.musicMute) : e == oe.Sound_Mute ? (this._audioData.soundMute = 0 == this._audioData.soundMute ? 1 : 0,
+            Laya.SoundManager.soundMuted = 1 == this._audioData.soundMute) : e == oe.Mute ? (this._audioData.mute = 0 == this._audioData.mute ? 1 : 0,
+            0 == this._audioData.mute ? Laya.SoundManager.stopMusic() : this.playMusic(this._musicUrl)) : e == oe.Vibrator && (this._audioData.vibrator = 0 == this._audioData.vibrator ? 1 : 0)
+        }
+        getState(e) {
+            return e == oe.Sound_Volume ? this._audioData.soundVolume : e == oe.Music_Volume ? this._audioData.musicVolume : e == oe.Music_Mute ? this._audioData.musicMute : e == oe.Sound_Mute ? this._audioData.soundMute : e == oe.Mute ? this._audioData.mute : e == oe.Vibrator ? this._audioData.vibrator : void 0
+        }
+        playSound(e, t, s, i) {
+            this._audioData.mute && this._audioData.soundMute ? Laya.SoundManager.playSound(e, t, s, null, i) : s && s.runWith(null)
+        }
+        playMusic(e, t, s, i) {
+            this._musicUrl = e,
+            this._audioData.mute && this._audioData.soundMute && (this._musicUrl = e,
+            this._musicChannel = Laya.SoundManager.playMusic(e, 0))
+        }
+        stopMusic() {
+            this._audioData.mute && this._audioData.soundMute && (this._musicChannel ? this._musicChannel.pause() : Laya.SoundManager.stopMusic())
+        }
+        resumeMusic() {
+            this._audioData.mute && this._audioData.soundMute && (this._musicChannel ? this._musicChannel.resume() : this._musicUrl && Laya.SoundManager.playMusic(this._musicUrl))
+        }
+        playVibrator(e=!0) {
+            this._audioData.vibrator && O.sdk.playVibrative(e)
+        }
+    }
+    de._instance = null;
+    class ce extends e.commonUI.SettingDialogUI {
+        constructor() {
+            super(),
+            this.musicBtn.on(Laya.Event.CLICK, this, this.clickHanlder, [1]),
+            this.rockBtn.on(Laya.Event.CLICK, this, this.clickHanlder, [2]),
+            this.isPopupCenter = !1
+        }
+        clickHanlder(e) {
+            1 == e ? de.inst.update(oe.Mute) : 2 == e && de.inst.update(oe.Vibrator),
+            this.updateUI()
+        }
+        onEnable() {
+            this.closeBtn.once(Laya.Event.CLICK, this, this.close),
+            this.updateUI()
+        }
+        updateUI() {
+            this.labVer.text = "v" + O.sdk.ver,
+            this.musicBtn.skin = 1 == de.inst.getState(oe.Mute) ? "common/other-05.png" : "common/other-06.png",
+            this.rockBtn.skin = 1 == de.inst.getState(oe.Vibrator) ? "common/other-05.png" : "common/other-06.png"
+        }
+        onDisable() {}
+    }
+    class ge {
+        constructor() {}
+        showMsgTip(e, t=null, s=null, i=null, n=null, a=100) {
+            let o = t || Laya.stage
+              , r = null == s ? o.width / 2 : s
+              , l = null == i ? o.height / 2 : i
+              , h = Laya.Pool.getItemByCreateFun("tiptxt", this.createTxt);
+            h.x = r,
+            h.y = l,
+            this.initFont(h, n),
+            h.text = e,
+            o.addChild(h),
+            Laya.Tween.clearTween(h),
+            Laya.Tween.to(h, {
+                y: l - a
+            }, 1e3, null, Laya.Handler.create(this, this.oncomplete, [h]))
+        }
+        oncomplete(e) {
+            e.removeSelf(),
+            Laya.Pool.recover("tiptxt", e)
+        }
+        initFont(e, t) {
+            e.fontSize = 30,
+            e.color = "#ffffff",
+            e.strokeColor = "#ff0000",
+            t && (t.color && (e.color = t.color),
+            t.fontSize && (e.fontSize = t.fontSize),
+            t.strokeColor && (e.strokeColor = t.strokeColor),
+            t.font && (e.font = t.font),
+            t.width && (e.width = t.width),
+            null != t.stroke && (e.stroke = t.stroke))
+        }
+        createTxt() {
+            let e = new Laya.Label;
+            return e.anchorX = e.anchorY = .5,
+            e.bold = !0,
+            e.width = 300,
+            e.height = 100,
+            e.wordWrap = !0,
+            e.align = "center",
+            e.stroke = 3,
+            e
+        }
+        static get Ins() {
+            return this._ins || (this._ins = new ge),
+            this._ins
+        }
+    }
+    !function(e) {
+        e[e.SCENE_START = 0] = "SCENE_START",
+        e[e.SCENE_GAME = 1] = "SCENE_GAME",
+        e[e.SCENE_RESULT = 2] = "SCENE_RESULT"
+    }(re || (re = {})),
+    function(e) {
+        e.start = "start",
+        e.browse = "browse",
+        e.pause = "pause",
+        e.next = "next"
+    }(le || (le = {}));
+    class ue {
+        constructor() {
+            this._customAdHide = {}
+        }
+        playVideo(e="Please watch the full video to receive the reward", t=null, s=null, i=null, n=1037) {
+			if(typeof ShowADForLayaGame != "undefined")
+			{	
+				de.inst.stopMusic();
+				ShowADForLayaGame(true,"reward",()=>{
+                    de.inst.resumeMusic();
+                    t && t();
+                });
+				return;
+			}
+            let a = s || Laya.stage;
+            O.isVV && 1 == de.inst.getState(oe.Mute) && de.inst.stopMusic(),
+            adBreak({
+                type: "reward",
+                name: "rewardAd",
+                beforeReward: e=>{
+                    e && e()
+                }
+                ,
+                beforeAd: ()=>{
+                    de.inst.stopMusic()
+                }
+                ,
+                adDismissed: ()=>{
+                    ge.Ins.showMsgTip(e, a),
+                    i && i(),
+                    de.inst.resumeMusic()
+                }
+                ,
+                adViewed: ()=>{
+                    de.inst.resumeMusic(),
+                    t && t()
+                }
+                ,
+                afterAd: ()=>{
+                    de.inst.resumeMusic()
+                }
+                ,
+                adBreakDone: ()=>{
+                    de.inst.resumeMusic()
+                }
+            })
+        }
+        playInsertAd(e, t, s) {
+            var i = e.toString();
+			if(typeof ShowADForLayaGame != "undefined")
+			{	
+				de.inst.stopMusic();
+				ShowADForLayaGame(false,i,()=>{
+                    de.inst.resumeMusic(),
+                    t && t();
+                });
+				return;
+			}
+            adBreak({
+                type: i,
+                name: "insertAd",
+                beforeAd: ()=>{}
+                ,
+                afterAd: ()=>{
+                    t && t()
+                }
+                ,
+                adBreakDone: ()=>{
+                    s && s()
+                }
+            })
+        }
+        getCustomAdPosIndex(e) {
+            var t = {
+                ads1: -1,
+                ads2: -1
+            };
+            return e == re.SCENE_START ? (t.ads1 = 0,
+            t.ads2 = 1) : e == re.SCENE_GAME ? (t.ads1 = 0,
+            t.ads2 = 1) : e == re.SCENE_RESULT && (t.ads1 = 2,
+            t.ads2 = 3),
+            t
+        }
+        showCustomAd(e) {
+            var t = this.getCustomAdPosIndex(e);
+            this._customAdHide[e] = !1,
+            t.ads1 > -1 && O.sdk.showCustomAd(t.ads1),
+            t.ads2 > -1 && O.sdk.showCustomAd(t.ads2)
+        }
+        hideCustomAd(e) {
+            var t = this.getCustomAdPosIndex(e);
+            this._customAdHide[e] || (this._customAdHide[e] = !0,
+            t.ads1 > -1 && O.sdk.hide_CustomAd(t.ads1),
+            t.ads2 > -1 && O.sdk.hide_CustomAd(t.ads2))
+        }
+        static get Ins() {
+            return this._ins || (this._ins = new ue),
+            this._ins
+        }
+    }
+    const _e = new class {
+        constructor() {
+            this.desginEvent = null,
+            this.canvasEvent = null,
+            this.designSize = new Laya.Size(720,1280),
+            this.frameSize = new Laya.Size(640,1134),
+            this.visibleSize = new Laya.Size(720,1280)
+        }
+        init(e) {
+            this.designSize = new Laya.Size(Laya.stage.designWidth,Laya.stage.designHeight),
+            this.frameSize = new Laya.Size(Laya.Browser.clientWidth,Laya.Browser.clientHeight),
+            this.visibleSize = new Laya.Size(Laya.stage.width,Laya.stage.height)
+        }
+        getFixScale() {
+            return {
+                x: this.frameSize.width / this.visibleSize.width,
+                y: this.frameSize.height / this.visibleSize.height
+            }
+        }
+        screenToDesign(e, t) {
+            let s = this.getFixScale();
+            return {
+                x: e / s.x,
+                y: t / s.y
+            }
+        }
+        designToScreen(e, t) {
+            let s = this.getFixScale();
+            return {
+                x: e * s.x,
+                y: t * s.y
+            }
+        }
+        sizeToDesign(e, t) {
+            let s = this.getFixScale();
+            return {
+                width: e / s.x,
+                height: t / s.y
+            }
+        }
+        sizeToScreen(e, t) {
+            let s = this.getFixScale();
+            return {
+                width: e * s.x,
+                height: t * s.y
+            }
+        }
+        getHeight(e) {
+            return e * this.frameSize.height / this.frameSize.width
+        }
+        getWidth(e) {
+            return e * this.frameSize.width / this.frameSize.height
+        }
+        largeScreen() {
+            return Laya.Browser.clientWidth / Laya.Browser.clientHeight <= 1170 / 2532
+        }
+        bigScreen() {
+            return Laya.Browser.clientWidth / Laya.Browser.clientHeight < 375 / 667
+        }
+    }
+    ;
+    class me {
+        constructor() {}
+        static showTips(e, t=!0, s=200) {
+            Laya.stage.getChildByName("XnhdTips") && (console.log("XnhdTips  "),
+            Laya.stage.getChildByName("XnhdTips").destroy());
+            let i = Laya.stage.getChildByName("XnhdTips");
+            i ? Laya.Tween.clearAll(i) : i = new Laya.Label,
+            i.width = 800,
+            i.color = "#ffffff",
+            t && (i.bgColor = "#000000"),
+            i.strokeColor = "#120bcf",
+            i.fontSize = 35,
+            i.stroke = 3,
+            i.bold = !0,
+            i.align = "center",
+            i.padding = "20,35,20,35",
+            i.wordWrap = !0,
+            i.text = e,
+            i.cacheAs = "bitmap",
+            i.centerX = 0,
+            i.centerY = 0,
+            i.alpha = .9,
+            i.name = "XnhdTips",
+            Laya.stage.addChild(i),
+            i.zOrder = 1e3,
+            Laya.Tween.to(i, {
+                alpha: 0
+            }, 1e3, null, Laya.Handler.create(this, ()=>{
+                i.destroy()
+            }
+            ), s)
+        }
+        static playAnimations(e, t, s=1, i=null, n=0) {
+            if (e) {
+                var a = e.getComponent(Laya.Animator);
+                a && (a.play(t, 0, n),
+                a.speed = 1 != s ? s : 1,
+                i && (e.transform.position = i))
+            }
+        }
+        static AniCrossFade(e, t, s=.2, i=0) {
+            var n = e.getComponent(Laya.Animator);
+            n && n.crossFade(t, s, i)
+        }
+        static playIntervalAni(e, t, s, i) {
+            var n = e.getComponent(Laya.Animator);
+            n && (this.state1.name = t + s,
+            this.state1.clipStart = s / 220,
+            this.state1.clipEnd = i / 220,
+            this.state1.clip = n.getDefaultState().clip,
+            this.state1.clip.islooping = !1,
+            n.addState(this.state1),
+            n.play(this.state1.name))
+        }
+        static playParticle(e, t, s, i=null) {
+            if (null != e) {
+                var n = e.getChildAt(s);
+                n && n.particleSystem && (t ? (me.bParticling = !0,
+                n.active = !0,
+                n.particleSystem.play(),
+                i && (n.transform.position = i)) : (me.bParticling = !1,
+                n.particleSystem.stop(),
+                n.active = !1))
+            }
+        }
+        static playParticleSys(e, t, s=null) {
+            null != e && e.particleSystem && (t ? (me.bParticling = !0,
+            e.particleSystem.play(),
+            s && (e.transform.position = s)) : (me.bParticling = !1,
+            e.particleSystem.stop()))
+        }
+        static PlaySound(e) {
+            var t = "res/music/" + e;
+            Laya.SoundManager.playSound(t)
+        }
+        static vibration() {
+            navigator.vibrate && navigator.vibrate(100)
+        }
+        static dayDiff(e, t) {
+            var s = e.getMonth() + 1
+              , i = e.getDate()
+              , n = e.getFullYear()
+              , a = t.getMonth() + 1
+              , o = t.getDate()
+              , r = t.getFullYear()
+              , l = (Date.parse(a + "/" + o + "/" + r) - Date.parse(s + "/" + i + "/" + n)) / 864e5;
+            return l < 0 ? -1 : parseInt(l.toString())
+        }
+        static getUseLevel() {
+            if (me.nTryUseCount < 6)
+                var e = 20 - me.nTryUseCount + 1;
+            else
+                e = Math.floor(10 * Math.random()) + 10;
+            return e == me.nCurScene && (e -= 1),
+            e
+        }
+        static findNode(e, t) {
+            if (!e || "" == t)
+                return null;
+            let s = t.split("/")
+              , i = 0
+              , n = null;
+            for (; i < s.length; )
+                n = null == n ? e.getChildByName(s[i]) : n.getChildByName(s[i]),
+                i++;
+            return n
+        }
+        static GetCacheData() {
+            let e = Laya.LocalStorage.getItem("PassGame");
+            e && (me.nPassGame = Number(e));
+            let t = Laya.LocalStorage.getJSON("ShopItems");
+            t && (me.shopTools = t);
+            let s = Laya.LocalStorage.getJSON("ShopItemSelect");
+            s && (me.shopSelect = s);
+            var i = Laya.LocalStorage.getItem("CurScene");
+            i && 0 == me.nPassGame && (me.nCurScene = Number(i));
+            var n = Laya.LocalStorage.getItem("ShowScene");
+            n ? me.nShowScene = Number(n) : me.nCurScene <= me.nTotalScene && (me.nShowScene = me.nCurScene)
+        }
+        static onShocking(e=30, t=!0) {
+            Laya.timer.currTimer - me._Intervals >= e && (de.inst.playVibrator(t),
+            me._Intervals = Laya.timer.currTimer,
+            60 == e && de.inst.playSound(b.hit, 1))
+        }
+        static tweenMove(e, t, s, i=null, n) {
+            if (null == e)
+                return null;
+            let a = e.transform.position;
+            return Laya.Tween.to(a, {
+                x: a.x,
+                y: t.transform.position.y,
+                z: a.z,
+                update: new Laya.Handler(e,function() {
+                    t && me.bStart && (e.transform.localPositionX = t.transform.position.x,
+                    e.transform.localPositionY = a.y + .4,
+                    e.transform.localPositionZ = t.transform.position.z)
+                }
+                )
+            }, s, null, i, n)
+        }
+        static tweenTo(e, t, s, i=null, n) {
+            if (null == e || null == e.transform.position)
+                return null;
+            let a = e.transform.position;
+            if (e.transform) {
+                return Laya.Tween.to(a, {
+                    x: t.x,
+                    y: t.y,
+                    z: t.z,
+                    update: new Laya.Handler(e,function() {
+                        me.bStart && e.transform && (this.transform.position = a)
+                    }
+                    )
+                }, s, null, i, n)
+            }
+        }
+        static tweenToY(e, t, s, i, n=null, a) {
+            if (null == e)
+                return null;
+            let o = e.transform.position;
+            Number(Laya.Ease.strongOut(0, 0, 200, 1e3)),
+            Laya.Ease.strongOut;
+            return Laya.Tween.to(o, {
+                z: t.z,
+                y: t.y,
+                update: new Laya.Handler(e,function() {
+                    this.transform.position = o
+                }
+                )
+            }, s, i, n, a)
+        }
+        static random(e, t) {
+            return Math.random() * (t - e) + e << 0
+        }
+        static goldEffect(e, t=10, s=null, i=500, n=null) {
+            let a, o = s || Laya.stage, r = new Laya.Sprite;
+            r.loadImage("image/coin.png"),
+            r.x = e.x,
+            r.y = e.y,
+            r.scaleX,
+            r.scale(1.4, 1.4),
+            o.addChild(r),
+            a = O.isWX ? {
+                x: Laya.stage.width - 200,
+                y: 10
+            } : {
+                x: 20,
+                y: 90
+            },
+            Laya.Tween.to(r, a, i, null, Laya.Handler.create(this, ()=>{
+                r.removeSelf(),
+                n && n()
+            }
+            )),
+            Laya.Tween.to(r, {
+                scaleX: .8,
+                scaleY: .8
+            }, i)
+        }
+    }
+    me.nCurScene = 1,
+    me.nTotalScene = 20,
+    me.nShowScene = 1,
+    me.nTryuseScene = 1,
+    me.bStart = !1,
+    me.bGameWin = !1,
+    me.nTotalCoins = 1e3,
+    me.bMouseMoving = !1,
+    me.bParticling = !1,
+    me.bPlayingAni = !1,
+    me._curData = null,
+    me.bTryUse = !1,
+    me.nLookSelect = -1,
+    me.shopSelect = {
+        1: 0,
+        2: 0
+    },
+    me.shopTools = {
+        1: [1, 0, 0, 0, 0, 0],
+        2: [1, 0, 0, 0, 0, 0]
+    },
+    me.bBtnClicked = !1,
+    me.nPassGame = 0,
+    me.state1 = new Laya.AnimatorState,
+    me.taskScore = 100,
+    me.curPlayer = null,
+    me.curWeapon = null,
+    me.nTryUseCount = 1,
+    me.curIndex = 1,
+    me._Intervals = 0,
+    me.pointArray = [],
+    me.bLoadedComplete = !1,
+    me.bJumping = !1,
+    me.bOpenShop = !1,
+    me.nChangeX = 0,
+    me.bRunning = !1,
+    me.sAniState = "Run",
+    me.nAniPriority = 0,
+    me.nWaistColor = 0,
+    me.nBodyScale = 1,
+    me.playerBodies = [],
+    me.realBodies = [],
+    me.bodyOrnaments = [],
+    me.BodySkin = [],
+    me.weaponAni = null,
+    me.nMissBody = [],
+    me.nMoveDir = 0,
+    me.nDirection = 0,
+    me.proCount = 0,
+    me.bFalling = !1,
+    me.nEndCoins = 0,
+    me.bulletNum = 0,
+    me.bHurt = !1,
+    me.nMaxdx = 3.2,
+    me.nMaxLeftx = 3.2,
+    me.nMaxRightx = -3.2,
+    me.attackXuli = null,
+    me._speedZ = -.08,
+    me.bOpenClick = !1,
+    me.bEndClick = !1;
+    class pe extends Laya.Script3D {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.scene = null
+        }
+        onEnable() {}
+        onTriggerEnter(e) {
+            if (me.bStart) {
+                var t = e.owner.name
+                  , s = e.owner;
+                if ("zhangai2" != t && "zhangai3" != t && "zhangai1" != t || me.bHurt || (s.bHit = !1),
+                "0" == t && Laya.timer.once(1500, this, function() {
+                    s && (s.bHit = !1)
+                }),
+                !s.bHit && s) {
+                    s.bHit = !0;
+                    var i = this.owner;
+                    "zhangai1" == t || "zhangai2" == t || "zhangai3" == t ? (1 == s.hitCount && "zhangai3" != t && (s.hitCount = 2),
+                    this.onHitObstacles(s, i)) : "danyao" == t ? this.onHitSupply(s, i) : "0" == t ? "zidan" == i.name && (me.onShocking(),
+                    de.inst.playSound(b.hit, 1),
+                    this._gameScene._Road.onHitEnemy(s)) : "zidan2" == t && "00" == i.name && 3 != me.nDirection ? (s.active = !1,
+                    this._gameScene.onHitBullet()) : "GameEnd" == t ? ("00" == i.name && this._gameScene.onGameEnd(),
+                    s.bHit = !1) : "edge" == t ? (me.bHurt = !0,
+                    s.bHit = !1) : "changeX1" == t || "changeX2" == t ? (me.nMaxLeftx = "changeX1" == t ? .5 : 3.2,
+                    me.nMaxRightx = "changeX1" == t ? -.5 : -3.2,
+                    s.active = !1) : "di3" == t ? (me.nMaxLeftx = 3.2,
+                    me.nMaxRightx = -3.2,
+                    me.nDirection = 3,
+                    me.AniCrossFade(me.curPlayer, "hua", .5, 0),
+                    me.AniCrossFade(me.curPlayer, "hua", .5, 1),
+                    me.playParticle(me.curPlayer, !0, 13)) : "EndAttack" == t || ("di6" == t ? (me.nMaxLeftx = 3.2,
+                    me.nMaxRightx = -2.2) : "di7" == t ? (me.nMaxLeftx = 2,
+                    me.nMaxRightx = -3.2) : "di1" == t ? (me.nMaxLeftx = 3.2,
+                    me.nMaxRightx = -3.2) : "di9" == t ? (me.nMaxLeftx = 1.7,
+                    me.nMaxRightx = -1.7) : "di8" == t ? (me.nMaxLeftx = 3.2,
+                    me.nMaxRightx = -.5) : "di10" == t && (me.nMaxLeftx = .5,
+                    me.nMaxRightx = -3.2))
+                }
+            }
+        }
+        onHitCoins(e) {
+            var t = e.owner;
+            t && (me.onShocking(),
+            e.owner.bHit = !0,
+            t.active = !1,
+            de.inst.playSound(b.coin, 1),
+            this._gameScene.updateLvUI(1, t))
+        }
+        onHitSupply(e, t) {
+            "zidan" == t.name || "zidan2" == t.name ? e.bHit = !1 : (e.active = !1,
+            this._gameScene.onHitSupply(),
+            me.onShocking())
+        }
+        onHitObstacles(e, t) {
+            e && t && ("00" == t.name ? (me.bHurt = !0,
+            me.onShocking(60, !1),
+            2 == e.hitCount && (e.active = !1,
+            de.inst.playSound(b.hit, 1),
+            this._gameScene.onHitObstacles(e, e)),
+            e.hitCount = 1) : (t.active = !1,
+            de.inst.playSound(b.hit, 1),
+            this._gameScene.onHitObstacles(e, t)))
+        }
+        onTriggerExit(e) {
+            var t = e.owner.name;
+            "di3" == t ? (me.nDirection = 0,
+            me.bRunning = !1,
+            me.playParticle(me.curPlayer, !1, 13)) : "di4" != t && "di5" != t || (me._speedZ = -.08)
+        }
+        onTriggerStay(e) {
+            var t = e.owner.name;
+            if (("di4" == t || "di5" == t) && "00" == this.owner.name)
+                return me._speedZ = "di4" == t ? -.02 : -.16,
+                void me.onShocking()
+        }
+        onCollisionEnter(e) {
+            var t = e.other.owner.name
+              , s = e.other.owner;
+            console.log("开始碰撞 onCollisionEnter  name = " + t),
+            s && !e.other.owner.bHit && (e.other.owner.bHit = !0,
+            me.curPlayer.transform.position.y = s.transform.position.y + 3)
+        }
+        nextGame() {
+            Laya.timer.clearAll(this),
+            me.nAniPriority = 0,
+            me.sAniState = "Run",
+            me.nMissBody = []
+        }
+    }
+    class ye {
+    }
+    ye.TypeManual = 1,
+    ye.TypeAuto = 2,
+    ye.WashArea = 1,
+    ye.CuppingArea = 2,
+    ye.TurnFront = 1,
+    ye.TurnBack = 2,
+    ye.TurnLeft = 3,
+    ye.TurnRight = 4,
+    ye.Run = 0,
+    ye.Lame = 1,
+    ye.Leg = 2,
+    ye.Creep = 3,
+    ye.ToolType = {
+        1: [1, 1, 1, 1, 1, 1],
+        2: [1, 1, 1, 1, 1, 1]
+    },
+    ye.ManAni = {
+        Run: "Run",
+        Leg: "Leg",
+        LameR: "LameR",
+        LameL: "LameL",
+        Creep: "Creep"
+    },
+    ye.str1 = "Man001/Bip001/Bip001 Pelvis",
+    ye.str11 = ye.str1 + "/Bip001 L Thigh",
+    ye.str21 = ye.str1 + "/Bip001 R Thigh",
+    ye.str31 = ye.str1 + "/Bip001 Spine",
+    ye.str32 = ye.str31 + "/Bip001 Spine1",
+    ye.str34 = ye.str32 + "/Bip001 Neck",
+    ye.str35 = ye.str32 + "/Bip001 R Clavicle/Bip001 R UpperArm",
+    ye.str36 = ye.str32 + "/Bip001 L Clavicle/Bip001 L UpperArm",
+    ye.BodyResPath = [ye.str31, ye.str11 + "/Bip001 L Calf", ye.str21 + "/Bip001 R Calf", ye.str36 + "/Bip001 L Forearm", ye.str35 + "/Bip001 R Forearm/Bip001 R Hand/Dummy001", ye.str34 + "/Bip001 Head", ye.str35 + "/Bip001 R Forearm/Bip001 R Hand/Dummy001/Dummy002/danjia", ye.str35 + "/Bip001 R Forearm/Bip001 R Hand/Dummy001/pingdiguo"],
+    ye.BodyCollectPrior = [5, 0, 1, 2, 3, 4],
+    ye.HandFootCollect = [9, 6, 15, 12],
+    ye.BodyColor = {
+        0: new Laya.Vector4(46 / 255,184 / 255,230 / 255,1),
+        1: new Laya.Vector4(20 / 255,.8,20 / 255,1),
+        2: new Laya.Vector4(1,108 / 255,0,1),
+        3: new Laya.Vector4(230 / 255,92 / 255,230 / 255,1),
+        4: new Laya.Vector4(192 / 255,192 / 255,192 / 255,1),
+        5: new Laya.Vector4(64 / 255,64 / 255,64 / 255,1)
+    },
+    ye.ShipinColor = {
+        0: new Laya.Vector4(1,108 / 255,0,1),
+        1: new Laya.Vector4(.6,122 / 255,92 / 255,1),
+        2: new Laya.Vector4(.6,.6,.6,1),
+        3: new Laya.Vector4(230 / 255,230 / 255,230 / 255,1),
+        4: new Laya.Vector4(1,.8,.2,1),
+        5: new Laya.Vector4(163 / 255,81 / 255,25 / 255,1)
+    },
+    ye.LineColor = {
+        0: [190, 190, 190],
+        1: [229, 46, 46],
+        2: [229, 230, 46],
+        3: [46, 138, 229],
+        4: [46, 229, 46],
+        5: [229, 138, 46],
+        6: [138, 46, 229],
+        7: [0, 0, 0]
+    },
+    ye.Sound = {
+        button: "Button.mp3",
+        qitiao: "qitiao.mp3",
+        luodi: "luodi.mp3",
+        diejiaerren: "diejiaerren.mp3",
+        diejiasanren: "diejiasanren.mp3",
+        diejiayiren: "diejiayiren.mp3",
+        over: "over.mp3",
+        victory: "victory.mp3"
+    };
+    class fe {
+        constructor(e, t) {
+            this._gameScene = Le.getInstance(),
+            this._scene = null,
+            this.levelLh = null,
+            this.cameraNode = null,
+            this.trailLh = null,
+            this.bodyTrail = null,
+            this.playerPos = null,
+            this.bodyMat = [],
+            this.skinMat = [],
+            this.footYetiLh = null,
+            this.playerWeaps = [],
+            this.waistIndex = 0,
+            this._speedX = .04,
+            this.frameCount = 0,
+            this.stopCount = 1,
+            this.startCount = 1,
+            this.tempState = "",
+            this.intenCount = -1,
+            this.bIntensiting = !1,
+            this.playerZ = 0,
+            this.tempDir = -1,
+            this.hitCount = 0,
+            this._scene = e,
+            this.levelLh = t,
+            this.cameraNode = this._scene.getChildByName("CameraObject");
+            var s = this.cameraNode.getChildByName("Bip_jintou");
+            this.camera = s.getChildByName("Main Camera"),
+            this.footYetiLh = this._scene.getChildByName("luodi").getChildAt(0)
+        }
+        onKeyDown(e) {
+            var t = e.keyCode;
+            me.bRunning || (me.bRunning = !0,
+            me.playAnimations(me.curPlayer, me.sAniState)),
+            38 == t ? (me.curPlayer.transform.localPositionZ -= me._speedZ,
+            this.camera.transform.localPositionZ -= me._speedZ) : 37 == t ? (me.curPlayer.transform.localPositionX -= this._speedX,
+            this.camera.transform.localPositionX -= this._speedX / 2) : 39 == t && (me.curPlayer.transform.localPositionX += this._speedX,
+            this.camera.transform.localPositionX += this._speedX / 2)
+        }
+        onKeyUp(e) {
+            me.nChangeX = 0,
+            me.bMouseMoving = !1,
+            me.bRunning = !1
+        }
+        findPlayerBody() {
+            me.AniCrossFade(me.curPlayer, "tiaowu", .5, 0),
+            me.AniCrossFade(me.curPlayer, "tiaowu", .5, 1),
+            me.realBodies = [];
+            for (var e = 0; e < 6; e++)
+                me.realBodies[e] = me.curPlayer.getChildAt(e),
+                me.realBodies[e].skinnedMeshRenderer.castShadow = !0,
+                0 == e && me.realBodies[e].addComponent(pe);
+            me.weaponAni = me.findNode(me.curPlayer, ye.BodyResPath[6]),
+            me.weaponAni.active = !1,
+            me.attackXuli = me.findNode(me.curPlayer, ye.BodyResPath[7]),
+            me.attackXuli.active = !1,
+            me.bodyOrnaments = [];
+            for (var t = 0; t < 5; t++)
+                me.bodyOrnaments[t] = me.curPlayer.getChildAt(t + 8),
+                me.bodyOrnaments[t].skinnedMeshRenderer.castShadow = !0;
+            this.playerWeaps = [];
+            for (var s = me.findNode(me.curPlayer, ye.BodyResPath[4]), i = 0; i < 6; i++)
+                this.playerWeaps[i] = s.getChildAt(i + 3);
+            this.changeShipin(),
+            this.changeWeapon()
+        }
+        changeBodyColor(e=!1, t=0, s=-1) {
+            var i = 0 == e ? me.shopSelect[1] : t;
+            if (me.bTryUse && (i = me.nLookSelect - 1),
+            s >= 0)
+                i = s;
+            else {
+                me.nWaistColor = i,
+                this.skinMat = [];
+                for (var n = 0; n < 5; n++)
+                    this.skinMat[n] = me.BodySkin[n].skinnedMeshRenderer.material,
+                    this.skinMat[n].albedoColor = ye.BodyColor[i]
+            }
+            this.bodyMat = [];
+            for (var a = 0; a < 8; a++)
+                this.bodyMat[a] = me.realBodies[a].skinnedMeshRenderer.material,
+                this.bodyMat[a].albedoColor = ye.BodyColor[i]
+        }
+        changeColor(e) {
+            this._scene.getChildByName("Pick").getChildAt(0).skinnedMeshRenderer.material.albedoColor = ye.BodyColor[e];
+            var t = this._scene.getChildByName("yeti");
+            t.meshRenderer.material.albedoColor = ye.BodyColor[e],
+            t.getChildAt(0).particleSystem.startColorConstant = ye.BodyColor[e],
+            t.getChildAt(1).particleSystem.startColorConstant = ye.BodyColor[e],
+            this._scene.getChildByName("feijian").getChildAt(0).meshRenderer.material.albedoColor = ye.BodyColor[e]
+        }
+        changeWeapon(e=!1, t=0) {
+            for (var s = 0 == e ? me.shopSelect[1] : t, i = 0; i < 6; i++)
+                this.playerWeaps[i].active = !1;
+            s < 6 && (this.playerWeaps[s].active = !0),
+            0 == e && (me.curWeapon = null,
+            me.curWeapon = this.playerWeaps[s],
+            me.curWeapon.meshRenderer.castShadow = !0),
+            me.bTryUse && this._gameScene.initMainLayer()
+        }
+        changeShipin(e=!1, t=0) {
+            for (var s = 0 == e ? me.shopSelect[2] : t, i = 0; i < 5; i++)
+                me.bodyOrnaments[i].active = !1;
+            s > 0 && (me.bodyOrnaments[s - 1].active = !0)
+        }
+        gameBegin() {
+            Laya.Tween.to(me.curPlayer.transform, {
+                localRotationEulerY: 0
+            }, 1e3),
+            me.AniCrossFade(me.curPlayer, "daiji", .2, 1),
+            me.AniCrossFade(me.curPlayer, "kaiqiang", .2, 0)
+        }
+        repairBody(e) {
+            me.onShocking(30, !1);
+            for (var t = 0; t < e.length; t++)
+                e[t]
+        }
+        repairBodyBox(e, t) {
+            me.playerBodies[e].active = !0,
+            me.realBodies[e].active = !0;
+            var s = Number(t.name.substr(4, 5));
+            (5 == e ? me.shopSelect[2] > 0 && (me.bodyOrnaments[me.shopSelect[2] - 1].active = !0) : 0 == e && (me.realBodies[7].active = !1,
+            me.nWaistColor = s,
+            this.changeBodyColor(!1, 0, s)),
+            e > 0) && (me.BodySkin[e - 1].active = !0,
+            me.BodySkin[e - 1].skinnedMeshRenderer.material.albedoColor = ye.BodyColor[s])
+        }
+        createBombsAni(e) {
+            var t = this._scene.getChildByName("qiu").clone()
+              , s = me.curPlayer.transform.position
+              , i = new Laya.Vector3(s.x + .3,s.y + 1.2,s.z);
+            1 == e && (i = new Laya.Vector3(s.x + .2,s.y + .6,s.z)),
+            t.transform.position = new Laya.Vector3(i.x,i.y,i.z),
+            this.levelLh.addChild(t),
+            t.active = !0,
+            me.playAnimations(t, "Take 001");
+            Number(i.y.toFixed(1));
+            Laya.timer.once(200 + 40 * e, this, function() {
+                var e = this._scene.getChildByName("luodi").clone();
+                e.transform.position = new Laya.Vector3(i.x,s.y,i.z),
+                this.levelLh.addChild(e),
+                e.active = !0;
+                var t = Math.floor(36 * Math.random());
+                e.transform.localRotationEulerY += 10 * t;
+                var n = me.random(8, 16) / 10;
+                e.transform.localScale = new Laya.Vector3(n,n,n)
+            })
+        }
+        changeIntensity(e) {
+            for (var t = 0; t < 5; t++)
+                this.skinMat[t].albedoIntensity += e;
+            for (var s = 0; s < 8; s++)
+                this.bodyMat[s].albedoIntensity += e
+        }
+        loopIntensity() {
+            this.intenCount++,
+            this.intenCount >= 0 && this.intenCount < 15 ? this.changeIntensity(.03) : this.intenCount >= 15 && this.intenCount < 30 ? this.changeIntensity(-.03) : (this.intenCount = -1,
+            this.bIntensiting = !1,
+            Laya.timer.clear(this, this.loopIntensity))
+        }
+        updating() {
+            if (me.bStart)
+                if (0 != me.nChangeX && (this.moveLeftR(),
+                me.nDirection < 3 && this.changeMoveAni()),
+                me.bHurt) {
+                    if (this.stopCount <= 30) {
+                        0 == this.stopCount && (me.bRunning = !1,
+                        3 != me.nDirection && (me.AniCrossFade(me.curPlayer, "hou", .2, 1),
+                        me.AniCrossFade(me.curPlayer, "shoushang", .2, 0)));
+                        var e = me._speedZ;
+                        this.stopCount <= 15 && (e = me._speedZ - this.stopCount * (me._speedZ / 20)),
+                        me.curPlayer.transform.localPositionZ += e,
+                        this.cameraNode.transform.localPositionZ += e,
+                        30 == this.stopCount && (me.bHurt = !1)
+                    }
+                    this.stopCount++,
+                    this.startCount = 0
+                } else if (me.bRunning || 3 == me.nDirection || (me.bRunning = !0,
+                me.nDirection = 0,
+                this.tempDir = -1,
+                me.AniCrossFade(me.curPlayer, "qian", .5, 1)),
+                this.stopCount = 0,
+                this.frameCount++,
+                this.startCount <= 20 ? (me.curPlayer.transform.localPositionZ -= this.startCount * (me._speedZ / 20),
+                this.cameraNode.transform.localPositionZ -= this.startCount * (me._speedZ / 20)) : (me.curPlayer.transform.localPositionZ -= me._speedZ,
+                this.cameraNode.transform.localPositionZ -= me._speedZ),
+                this.startCount++,
+                this.playerPos = me.curPlayer.transform.position,
+                3 != me.nDirection && this.frameCount % 40 == 0) {
+                    var t = this.frameCount % 80 == 0 ? 1 : 2;
+                    this.createFootprints(t)
+                }
+        }
+        moveLeftR() {
+            me.curPlayer.transform.localPositionX <= me.nMaxLeftx && me.curPlayer.transform.localPositionX >= me.nMaxRightx ? (me.curPlayer.transform.localPositionX -= me.nChangeX,
+            this.camera.transform.localPositionX -= me.nChangeX) : me.curPlayer.transform.localPositionX < 0 ? me.nChangeX < 0 && (me.curPlayer.transform.localPositionX += this._speedX,
+            this.camera.transform.localPositionX += this._speedX) : me.nChangeX > 0 && (me.curPlayer.transform.localPositionX -= this._speedX,
+            this.camera.transform.localPositionX -= this._speedX)
+        }
+        changeMoveAni() {
+            me.nChangeX < 0 ? (me.nDirection = 1,
+            me.nDirection != this.tempDir && (this.tempDir = me.nDirection,
+            me.AniCrossFade(me.curPlayer, "zuo", .2, 1))) : (me.nDirection = 2,
+            me.nDirection != this.tempDir && (this.tempDir = me.nDirection,
+            me.AniCrossFade(me.curPlayer, "you", .2, 1)))
+        }
+        createFootprints(e) {
+            if ((2 != e || me.realBodies[2].active) && (1 != e || me.realBodies[1].active)) {
+                var t = 1 == e ? -.2 : .2
+                  , s = this.footYetiLh.clone();
+                s.transform.position = new Laya.Vector3(this.playerPos.x + t,this.playerPos.y,this.playerPos.z),
+                this.levelLh.addChild(s),
+                s.active = !0;
+                var i = Math.floor(36 * Math.random());
+                s.transform.localRotationEulerY += 10 * i;
+                s.transform.localScale = new Laya.Vector3(.15,.15,.15)
+            }
+        }
+        onHitBullet() {
+            this.hitCount++;
+            var e = this.cameraNode.getChildByName("Bip_jintou");
+            me.playAnimations(e, "shoushang"),
+            1 == this.hitCount ? (me.realBodies[3].active = !1,
+            me.AniCrossFade(me.curPlayer, "shoushang", .2, 0),
+            this.createBombsAni(3)) : 2 == this.hitCount ? (me.realBodies[1].active = !1,
+            me.AniCrossFade(me.curPlayer, "shoushang", .2, 0),
+            this.createBombsAni(1)) : 3 == this.hitCount && (this.hitCount = 0,
+            me.bStart = !1,
+            me.AniCrossFade(me.curPlayer, "si", .2, 0),
+            me.AniCrossFade(me.curPlayer, "si", .2, 1),
+            this._gameScene.playerDeath(),
+            Laya.timer.once(1e3, this, function() {
+                me.bGameWin = !1,
+                this._gameScene.GameFinish()
+            })),
+            me.onShocking(60, !1),
+            me.playParticle(me.curPlayer, !0, 7)
+        }
+        onMouseUp() {
+            if (me.bStart && !(me.nMoveDir > 2)) {
+                me.sAniState;
+                me.sAniState == ye.ManAni.Run && "Ready"
+            }
+        }
+        nextGame() {
+            Laya.timer.clearAll(this),
+            this.startCount = 0,
+            this.stopCount = 0,
+            me.bRunning = !1,
+            me.nChangeX = 0,
+            me.nMoveDir = 0,
+            me.curPlayer.transform.position = new Laya.Vector3(0,0,-6),
+            me.bJumping = !1,
+            me.nBodyScale = 1,
+            this.frameCount = 0,
+            this.intenCount = -1,
+            this.bIntensiting = !1,
+            me.bHurt = !1,
+            me.nMaxdx = 3.2,
+            me.nMaxLeftx = 3.2,
+            me.nMaxRightx = -3.2,
+            this.tempDir = -1,
+            me.nDirection = 0,
+            me._speedZ = -.08,
+            me.playParticle(me.curPlayer, !1, 13)
+        }
+        set PlayerSx(e) {
+            me.curPlayer.transform.localScaleX = e
+        }
+        get PlayerSx() {
+            return me.curPlayer.transform.localScaleX
+        }
+        set PlayerSy(e) {
+            me.curPlayer.transform.localScaleY = e
+        }
+        get PlayerSy() {
+            return me.curPlayer.transform.localScaleY
+        }
+        set PlayerSz(e) {
+            me.curPlayer.transform.localScaleZ = e
+        }
+        get PlayerSz() {
+            return me.curPlayer.transform.localScaleZ
+        }
+        set PlayerRy(e) {
+            me.curPlayer.transform.localRotationEulerY = e
+        }
+        get PlayerRy() {
+            return me.curPlayer.transform.localRotationEulerY
+        }
+    }
+    class Ce extends G {
+        constructor() {
+            super()
+        }
+        static get inst() {
+            return null == this._instance && (this._instance = new Ce),
+            this._instance
+        }
+        getData() {
+            this.clear(),
+            this.init(I),
+            this.login(),
+            this.initDatas(),
+            this.save()
+        }
+        initDatas() {
+            this._data.gold = this._data.gold || 0,
+            this._data.level = this._data.level || 1,
+            this._data.skins = this._data.skins || "1",
+            this._data.useSkin = this._data.useSkin || "1",
+            this._data.singTime = this._data.singTime || 0
+        }
+        get level() {
+            return this._data.level
+        }
+        setLevel(e) {
+            e ? this._data.level = e : this._data.level++,
+            this.save()
+        }
+        setGold(e) {
+            let t = this._data.gold + e;
+            return t >= 0 && (this._data.gold = t,
+            this.save()),
+            t
+        }
+        get gold() {
+            return this._data.gold
+        }
+        get useSkin() {
+            return this._data.useSkin
+        }
+        changeSkin(e) {
+            return this._data.useSkin != e && (this._data.useSkin = e,
+            this.save(),
+            !0)
+        }
+        unlockSkin(e) {
+            return !this.isUnlockSkin(e) && (this._data.skins ? this._data.skins += "|" + e : this._data.skins = e,
+            this.save(),
+            !0)
+        }
+        isUnlockSkin(e) {
+            if (this._data.skins) {
+                let t = this._data.skins.split("|");
+                for (let s = 0; s < t.length; s++)
+                    if (t[s] == e)
+                        return !0
+            }
+            return !1
+        }
+        getUnlockSkins() {
+            let e = [];
+            for (let t = 1; t <= 9; t++)
+                this.isUnlockSkin(t + "") || e.push(t);
+            return e
+        }
+        get singTime() {
+            return this._data.singTime
+        }
+        setSingTime(e) {
+            this._data.singTime = e || Date.now(),
+            this.save()
+        }
+    }
+    Ce._instance = null;
+    class Ie {
+        constructor(e) {
+            this._gameScene = Le.getInstance(),
+            this._scene = null,
+            this.Level_lh = null,
+            this.lihua = null,
+            this.baozha = null,
+            this.cameraNode = null,
+            this.camera = null,
+            this.pObject = null,
+            this.targets = [],
+            this.xuli = null,
+            this.yetiLh = null,
+            this.fei = null,
+            this.dafei = null,
+            this.lvFinish = null,
+            this.endParticles = [],
+            this.boss = null,
+            this.bossNode = null,
+            this.finishPosZ = 0,
+            this.pingdiguo = null,
+            this.bShowEffect = !1,
+            this.jumpCount = -1,
+            this.startCpos = null,
+            this.startY = 4,
+            this.startZ = -4,
+            this.pointArray = [],
+            this.targetIndex = 0,
+            this.count = 0,
+            this._scene = e,
+            this.cameraNode = this._scene.getChildByName("CameraObject");
+            var t = this.cameraNode.getChildByName("Bip_jintou");
+            this.camera = t.getChildByName("Main Camera")
+        }
+        onLevelLoaded(e) {
+            this.lvFinish && (this.lvFinish.destroy(),
+            this.lvFinish = null),
+            this.Level_lh = e;
+            var t = this._scene.getChildByName("end")
+              , s = e.getChildByName("end");
+            s.active = !1,
+            this.lvFinish = t.clone(),
+            this.finishPosZ = s.transform.localPositionZ,
+            this.lvFinish.transform.localPositionZ = this.finishPosZ,
+            e.addChild(this.lvFinish),
+            this.lvFinish.active = !0,
+            this.bossNode = this.lvFinish.getChildByName("boss"),
+            this.boss = this.bossNode.getChildByName("boss"),
+            this.fei = this.boss.getChildByName("fei"),
+            this.fei.active = !1,
+            this.dafei = this.lvFinish.getChildByName("dafei"),
+            me.playParticle(this.dafei, !1, 0),
+            me.playParticle(this.dafei, !1, 1),
+            me.playAnimations(this.boss, "daiji");
+            var i = this.lvFinish.getChildByName("biaoba");
+            i.active = !1;
+            for (var n = 0; n < i.numChildren; n++)
+                this.targets[n] = i.getChildAt(n);
+            this.yetiLh = this._scene.getChildByName("yeti"),
+            this.yetiLh.active = !1;
+            var a = me.findNode(me.curPlayer, ye.BodyResPath[0]);
+            this.pingdiguo = a.getChildByName("pingdiguo1"),
+            this.lvFinish.getChildByName("Box006").meshRenderer.receiveShadow = !0
+        }
+        EndJumping() {
+            this.jumpCount > this.pointArray.length - 1 ? (me.bJumping = !1,
+            this.jumpCount = -1,
+            Laya.timer.clear(this, this.EndJumping),
+            this.jumpOver()) : (this.bossNode.transform.position = new Laya.Vector3(this.pointArray[this.jumpCount].x,this.pointArray[this.jumpCount].y,this.pointArray[this.jumpCount].z),
+            this.cameraNode.transform.position = new Laya.Vector3(this.cameraNode.transform.position.x,this.pointArray[this.jumpCount].y,this.pointArray[this.jumpCount].z),
+            this.jumpCount++)
+        }
+        jumpOver() {
+            de.inst.playSound(b.hit1, 1);
+            var e = this.yetiLh.clone();
+            e.transform.localPosition = new Laya.Vector3(0,0,-.5),
+            e.transform.localRotationEulerX = 0,
+            e.active = !0,
+            me.playAnimations(e, "zha"),
+            me.playParticle(this.targets[this.targetIndex], !0, 1),
+            this.targets[this.targetIndex].addChild(e),
+            this.bossNode.active = !1,
+            me.onShocking(60, !1),
+            Laya.timer.once(1e3, this, function() {
+                this.targets[this.targetIndex].active = !1,
+                Laya.Scene.open(w.UnlockView, !1),
+                me.bGameWin = !0,
+                this._gameScene.GameFinish(3e3)
+            })
+        }
+        setGuoScale(e) {
+            e < 0 && me.attackXuli.transform.localScaleX <= 1 || (me.attackXuli.transform.localScaleX += e,
+            me.attackXuli.transform.localScaleY += e,
+            me.attackXuli.transform.localScaleZ += e)
+        }
+        runToBoss() {
+            me.AniCrossFade(me.curPlayer, "pao", .5, 1),
+            me.AniCrossFade(this.boss, "jiqi", .5, 0),
+            Laya.Tween.to(this.bossNode.transform, {
+                localPositionZ: 22
+            }, 500);
+            var e = this.camera.transform.localRotationEulerY;
+            Laya.Tween.to(this, {
+                PlayerPx: 0,
+                PlayerPz: this.finishPosZ + 19,
+                CameraPx: -2.54,
+                CameraPz: this.finishPosZ + 17 + 5.5,
+                CameraRy: e + 8,
+                CameraRx: -26
+            }, 1500, null, Laya.Handler.create(this, function() {
+                me.AniCrossFade(me.curPlayer, "jiqi", 1, 1),
+                this.targetIndex = me.random(5, 10),
+                this.calBezier(120),
+                this.lvFinish.getChildByName("biaoba").active = !0,
+                me.attackXuli.getChildAt(0).active = !0,
+                me.onShocking(60, !1),
+                me.playAnimations(me.curPlayer, "dafei", .5, null, 1),
+                me.playAnimations(me.curPlayer, "dafei", .5)
+            })),
+            Laya.timer.once(1600, this, function() {
+                this.fei.active = !0,
+                me.AniCrossFade(this.boss, "dafei", .2, 0),
+                this.jumpCount = 0,
+                me.attackXuli.active = !1,
+                Laya.timer.frameLoop(1, this, this.EndJumping)
+            })
+        }
+        onGameEnd() {
+            3 == me.nDirection && (me.AniCrossFade(me.curPlayer, "qian", .5, 1),
+            me.playParticle(me.curPlayer, !1, 13)),
+            me.AniCrossFade(me.curPlayer, "jiqi", .5, 0),
+            me.curWeapon.active = !1,
+            me.attackXuli.active = !0,
+            me.attackXuli.getChildAt(0).active = !1,
+            this.pingdiguo.active = !1
+        }
+        calBezier(e=60, t=!1) {
+            this.pointArray = [];
+            let s = []
+              , i = this.boss.transform.position
+              , n = this.targets[this.targetIndex].transform.position
+              , a = new Laya.Vector3(i.x,n.y,n.z / 2)
+              , o = new Laya.Vector3(n.x,n.y + 10 * (this.targetIndex + 1),n.z - 3 * this.targetIndex)
+              , r = new Laya.Vector3(n.x,n.y,n.z);
+            s.push(i),
+            s.push(a),
+            s.push(o),
+            s.push(r);
+            let l = this.CreateBezierPoints(s, e);
+            this.pointArray = l
+        }
+        CreateBezierPoints(e, t) {
+            for (var s = [], i = 0; i <= t; i++) {
+                var n = this.MultiPointBezier(e, i / t);
+                s.push(n)
+            }
+            return s
+        }
+        MultiPointBezier(e, t) {
+            let s = e.length
+              , i = 0
+              , n = 0
+              , a = 0
+              , o = null;
+            for (let r = 0; r < s; r++)
+                i += (o = e[r]).x * Math.pow(1 - t, s - 1 - r) * Math.pow(t, r) * this.erxiangshi(s - 1, r),
+                n += o.y * Math.pow(1 - t, s - 1 - r) * Math.pow(t, r) * this.erxiangshi(s - 1, r),
+                a += o.z * Math.pow(1 - t, s - 1 - r) * Math.pow(t, r) * this.erxiangshi(s - 1, r);
+            return {
+                x: i,
+                y: n,
+                z: a
+            }
+        }
+        erxiangshi(e, t) {
+            let s = 1
+              , i = 1;
+            for (; t > 0; )
+                s *= e,
+                i *= t,
+                e--,
+                t--;
+            return s / i
+        }
+        createEndPar() {
+            for (var e = null, t = 0; t < 6 - me.nMissBody.length; t++)
+                this.endParticles[t].active = !0,
+                0 == t ? this.endParticles[t].particleSystem.startColorConstant = ye.BodyColor[me.nWaistColor] : (e = me.BodySkin[t - 1].skinnedMeshRenderer.material,
+                this.endParticles[t].particleSystem.startColorConstant = e.albedoColor)
+        }
+        nextGame() {
+            this.jumpCount = -1,
+            this.bShowEffect = !1,
+            me.bFalling = !1,
+            this.count = 0,
+            me.nEndCoins = 0,
+            Laya.Tween.clearAll(this),
+            this.camera.transform.localPosition = new Laya.Vector3(0,3.5,-11.5),
+            this.cameraNode.transform.position = new Laya.Vector3(0,0,0),
+            this.camera.transform.localRotationEulerX = -30,
+            this.camera.transform.localRotationEulerY = 180,
+            Laya.timer.clearAll(this),
+            this.targetIndex = 0
+        }
+        set PlayerPx(e) {
+            me.curPlayer.transform.localPositionX = e
+        }
+        get PlayerPx() {
+            return me.curPlayer.transform.localPositionX
+        }
+        set PlayerPy(e) {
+            me.curPlayer.transform.localPositionY = e
+        }
+        get PlayerPy() {
+            return me.curPlayer.transform.localPositionY
+        }
+        set PlayerPz(e) {
+            me.curPlayer.transform.localPositionZ = e
+        }
+        get PlayerPz() {
+            return me.curPlayer.transform.localPositionZ
+        }
+        set CameraPx(e) {
+            this.camera.transform.localPositionX = e
+        }
+        get CameraPx() {
+            return this.camera.transform.localPositionX
+        }
+        set CameraPy(e) {
+            this.cameraNode.transform.localPositionY = e
+        }
+        get CameraPy() {
+            return this.cameraNode.transform.localPositionY
+        }
+        set CameraPz(e) {
+            this.cameraNode.transform.localPositionZ = e
+        }
+        get CameraPz() {
+            return this.cameraNode.transform.localPositionZ
+        }
+        set CameraRy(e) {
+            this.camera.transform.localRotationEulerY = e
+        }
+        get CameraRy() {
+            return this.camera.transform.localRotationEulerY
+        }
+        set CameraRx(e) {
+            this.camera.transform.localRotationEulerX = e
+        }
+        get CameraRx() {
+            return this.camera.transform.localRotationEulerX
+        }
+    }
+    class ve {
+        constructor() {
+            this.edit_url_write = "http://192.168.1.118/LevelEdits/write.php",
+            this.edit_url_read = "http://192.168.1.118/LevelEdits/read.php"
+        }
+        static get Ins() {
+            return null == this._instance && (this._instance = new ve),
+            this._instance
+        }
+        sendHttpPost(e, t, s) {
+            let i = new Laya.HttpRequest;
+            i.http.timeout = 1e4,
+            i.once(Laya.Event.COMPLETE, this, e=>{
+                let t = i.data;
+                s && s(!0, t)
+            }
+            ),
+            i.once(Laya.Event.ERROR, this, e=>{
+                s && s(!1)
+            }
+            ),
+            i.send(e, JSON.stringify(t), "post", "txt", ["content-type", "application/json"])
+        }
+        sendHttpGet(e, t, s) {
+            let i = new Laya.HttpRequest;
+            i.http.timeout = 1e4,
+            i.once(Laya.Event.COMPLETE, this, e=>{
+                let t = i.data;
+                s && s(!0, t)
+            }
+            ),
+            i.once(Laya.Event.ERROR, this, e=>{
+                console.log("http error:", e),
+                s && s(!1)
+            }
+            ),
+            i.send(e, JSON.stringify(t), "get", "txt", ["content-type", "application/json"])
+        }
+        readHttpData(e, t, s) {
+            this.sendHttpPost(e || this.edit_url_read, t, (e,t)=>{
+                if (e) {
+                    let e = JSON.parse(t);
+                    e.state ? s && s(!0, e.data) : s && s(!1, null)
+                } else
+                    s && s(!1, t)
+            }
+            )
+        }
+        writeHttpData(e, t, s) {
+            this.sendHttpPost(e || this.edit_url_write, t, (e,t)=>{
+                e ? s && s(t) : (console.log("error:", t),
+                s && s(null))
+            }
+            )
+        }
+    }
+    ve._instance = null;
+    class we {
+        constructor(e, t) {
+            this._gameScene = Le.getInstance(),
+            this._scene = null,
+            this.levelLh = null,
+            this.playerPos = new Laya.Vector3,
+            this.blh = null,
+            this.camera = null,
+            this.bulletNode = null,
+            this.bulletsAni = [],
+            this.endNode = null,
+            this.ray = new Laya.Ray(new Laya.Vector3,new Laya.Vector3),
+            this.mousePos = new Laya.Vector2,
+            this.hitResult = new Laya.HitResult,
+            this.count = 0,
+            this.aniLoopC = 0,
+            this.bullets = [],
+            this.aniCount = 0,
+            this.seriesC = 0,
+            this.from = null,
+            this.to = null,
+            this._scene = e,
+            this.levelLh = t,
+            this.camera = this._gameScene._camera,
+            this.blh = this._scene.getChildByName("zidan"),
+            this.blh.active = !1,
+            this.bulletNode = me.curWeapon.getChildAt(1),
+            this.bulletsAni = [];
+            for (var s = 0; s < me.weaponAni.numChildren - 1; s++)
+                this.bulletsAni[s] = me.weaponAni.getChildAt(s);
+            this.endNode = t.getChildByName("end")
+        }
+        createBullet() {
+            var e = this.blh.clone();
+            return e.active = !0,
+            e.transform.position = this.from,
+            e.getChildAt(0).trailFilter.alignment = 1,
+            e
+        }
+        gameBegin() {
+            me.bulletNum = 20
+        }
+        updating() {
+            me.bStart && (this.count++,
+            this.aniLoopC++,
+            this.showBullet())
+        }
+        showBullet() {
+            if (me.bulletNum > 0) {
+                if (this.count % 10 == 0 && (3 == me.nDirection ? me.AniCrossFade(me.curPlayer, "hua", .2, 0) : me.AniCrossFade(me.curPlayer, "kaiqiang", .2, 0),
+                this.count % 20 == 0)) {
+                    this.playerPos = me.curPlayer.transform.position,
+                    this.count = 0,
+                    me.bulletNum--,
+                    this.from = this.bulletNode.transform.position;
+                    var e = this.createBullet();
+                    e.addComponent(pe),
+                    this.levelLh.addChild(e),
+                    this.bullets.push(e),
+                    this.to = new Laya.Vector3(this.from.x,this.from.y,this.from.z + 20),
+                    me.tweenTo(e, this.to, 1e3, Laya.Handler.create(this, function() {
+                        e && (e.destroy(),
+                        this.bullets.length > 0 && this.bullets.splice(0, 1))
+                    })),
+                    me.playParticle(me.curWeapon, !0, 0),
+                    this._gameScene.updateBnum(me.bulletNum)
+                }
+                this.updateBulletAni()
+            }
+        }
+        updateBulletAni() {
+            if (50 == this.aniLoopC) {
+                if (this.seriesC++,
+                this.aniLoopC = 0,
+                this.aniCount < 10 && (this.bulletsAni[this.aniCount].active = !1,
+                this.aniCount++),
+                8 == this.seriesC) {
+                    this.seriesC = 0;
+                    var e = 10;
+                    me.bulletNum < 20 && (e = Math.floor(me.bulletNum / 2)),
+                    this.showAtNumBullet(e)
+                }
+                me.bulletNum <= 3 && this.showAtNumBullet(0)
+            }
+        }
+        showAtNumBullet(e) {
+            me.playAnimations(me.weaponAni, "Take 001"),
+            this.aniCount = 0,
+            this.aniLoopC = 0;
+            for (var t = 0; t < 10; t++)
+                this.bulletsAni[t].active = t < e
+        }
+        onHitSupply() {
+            this.seriesC = 0,
+            this.showAtNumBullet(10)
+        }
+        onGameEnd() {
+            me.bulletNum = 0,
+            this.showAtNumBullet(0);
+            for (var e = 0; e < this.bullets.length; e++)
+                this.bullets && (this.bullets[e].active = !1)
+        }
+        onShoot(e) {
+            if (this.hitResult.succeeded)
+                this.hitResult.collider.owner
+        }
+        onTouchDown() {}
+        nextGame() {
+            me.bulletNum = 0,
+            this.count = 0,
+            this.aniCount = 0,
+            this.aniLoopC = 0,
+            this.seriesC = 0,
+            this.bullets = []
+        }
+    }
+    class be {
+        constructor(e, t) {
+            this._gameScene = Le.getInstance(),
+            this._scene = null,
+            this.levelLh = null,
+            this.playerPos = new Laya.Vector3,
+            this.obstLh1 = null,
+            this.obstLh2 = null,
+            this.clouds = null,
+            this.enemyLh = null,
+            this.enemies = [],
+            this.bulletNode = null,
+            this.blh = null,
+            this.enemyNum = 1,
+            this.dyLh = null,
+            this.effectLh = null,
+            this.bObst3Fall = !1,
+            this.obstacle3 = null,
+            this.curObstNum = 5,
+            this.effectObs = null,
+            this.curEnemyNum = 1,
+            this.ePos = null,
+            this.count = 0,
+            this.from = null,
+            this.to = null,
+            this.bbbs = [],
+            this.curShootNum = 0,
+            this._scene = e,
+            this.levelLh = t,
+            this.obstLh1 = this._scene.getChildByName("zhangai1_sui"),
+            this.obstLh1.active = !1,
+            this.obstLh2 = this._scene.getChildByName("zhangai2_sui"),
+            this.obstLh2.active = !1;
+            var s = this._scene.getChildByName("bgs");
+            this.clouds = s.getChildByName("yun"),
+            this.blh = this._scene.getChildByName("zidan2"),
+            this.blh.active = !1,
+            this.dyLh = this._scene.getChildByName("danyao");
+            Laya.loader.create("LayaScene_PlayerMode/Conventional/renwu2.lh", Laya.Handler.create(this, function(e) {
+                this.onLevelLoaded(e)
+            })),
+            this.effectLh = this._scene.getChildByName("tx_daqiang");
+            for (var i = this.levelLh.getChildByName("road"), n = 0; n < i.numChildren; n++) {
+                var a = i.getChildAt(n);
+                "di4" != a.name && "di5" != a.name && "edge" != a.name && (a.meshRenderer.receiveShadow = !0)
+            }
+        }
+        onLevelLoaded(e) {
+            this.enemyNum = me._curData.enemy.length,
+            this.curEnemyNum = this.enemyNum;
+            var t = null;
+            this.enemies = [];
+            for (var s = 0; s < this.enemyNum; s++) {
+                (t = e.clone()).active = !0,
+                t.name = s,
+                t.bullet = 100,
+                t.bShooting = !1,
+                t.bInDistance = !1;
+                let i = me._curData.enemy[s].pos;
+                t.transform.position = new Laya.Vector3(i.x,i.y,i.z),
+                this.levelLh.addChild(t),
+                this.enemies.push(t),
+                me.AniCrossFade(t, "daiji", .2),
+                t.getChildAt(0).skinnedMeshRenderer.castShadow = !0
+            }
+            for (var i = me._curData.danyao.length, n = null, a = 0; a < i; a++) {
+                (n = this.dyLh.clone()).active = !0;
+                let e = me._curData.danyao[a].pos;
+                n.transform.position = new Laya.Vector3(e.x,e.y,e.z),
+                this.levelLh.addChild(n),
+                n.getChildAt(0).meshRenderer.castShadow = !0
+            }
+            var o = this.levelLh.getChildByName("zhangai3");
+            if (o) {
+                var r = o.getChildByName("yuan");
+                for (s = 2; s < 5; s++)
+                    r.getChildAt(s).active = !1
+            }
+        }
+        onHitObstacles(e, t) {
+            if (this.effectObs && (this.effectObs.destroy(),
+            this.effectObs = null),
+            this.effectObs = this.effectLh.clone(),
+            this.effectObs.transform.position = t.transform.position,
+            this.levelLh.addChild(this.effectObs),
+            this.effectObs.active = !0,
+            "zhangai3" == e.name)
+                if (this.curObstNum > 1) {
+                    this.curObstNum--;
+                    for (var s = e.getChildByName("yuan"), i = 1; i < 6; i++)
+                        s.getChildAt(i).active = !1;
+                    var n = s.getChildAt(this.curObstNum);
+                    n.active = !0,
+                    n.transform.localPositionY = 1,
+                    e.getChildAt(6 - this.curObstNum).active = !1,
+                    Laya.timer.once(500, this, function() {
+                        e.bHit = !1
+                    })
+                } else
+                    this.obstacle3 = e,
+                    this.bObst3Fall = !0;
+            else {
+                e.active = !1;
+                var a = "zhangai1" == e.name ? this.obstLh1.clone() : this.obstLh2.clone();
+                a.transform.position = e.transform.position,
+                this.levelLh.addChild(a),
+                a.active = !0,
+                Laya.timer.once(1e3, this, function() {
+                    a.active = !1
+                })
+            }
+        }
+        updating() {
+            this.clouds.transform.localPositionX <= 135 && (this.clouds.transform.localPositionX += .02),
+            this.count++,
+            this.showBullet(),
+            this.bObst3Fall && (this.obstacle3.transform.localPositionY > -4 ? this.obstacle3.transform.localPositionY -= .1 : (this.bObst3Fall = !1,
+            this.obstacle3.active = !1))
+        }
+        createBullet() {
+            var e = this.blh.clone();
+            return e.active = !0,
+            e.transform.position = this.from,
+            e.addComponent(pe),
+            e.getChildAt(0).trailFilter.alignment = 1,
+            e
+        }
+        showBullet() {
+            var e = me.curPlayer.transform.position.z;
+            if (this.curEnemyNum > 0 && e > 0) {
+                if (this.count % 20 == 0)
+                    for (var t = 0; t < this.enemyNum; t++)
+                        this.enemies[t].transform.position.z < e + 20 && !this.enemies[t].bInDistance && (this.enemies[t].bInDistance = !0),
+                        e >= this.enemies[t].transform.position.z && this.enemies[t].bShooting && (this.enemies[t].bShooting = !1,
+                        this.enemies[t].bullet = 0,
+                        this.curEnemyNum--,
+                        this.curShootNum--);
+                if (this.count % 100 == 0)
+                    for (t = 0; t < this.enemyNum; t++)
+                        this.enemies[t].bullet > 0 && this.enemies[t].bInDistance && !this.enemies[t].bShooting && (me.AniCrossFade(this.enemies[t], "d_kaiqiang1", .2),
+                        this.curShootNum++,
+                        this.enemies[t].bShooting = !0);
+                else if (this.count % 120 == 0)
+                    for (t = 0; t < this.enemyNum; t++)
+                        if (this.enemies[t].bullet > 0 && this.enemies[t].bInDistance && this.enemies[t].bShooting) {
+                            this.ePos = this.enemies[t].transform.position,
+                            this.count = 0,
+                            this.enemies[t].bullet--,
+                            this.from = new Laya.Vector3(this.ePos.x,this.ePos.y + 1.6,this.ePos.z - 1);
+                            var s = this.createBullet();
+                            this.bbbs.push(s),
+                            this.levelLh.addChild(s),
+                            this.to = new Laya.Vector3(this.from.x,this.from.y,this.from.z - 10),
+                            me.tweenTo(s, this.to, 2e3, Laya.Handler.create(this, function() {
+                                for (var e = this.bbbs.length, t = e == this.curShootNum ? this.curShootNum : e - this.curShootNum, s = 0; s < t; s++)
+                                    this.bbbs[s] && (this.bbbs[s].destroy(),
+                                    this.bbbs.splice(s, 1))
+                            }))
+                        }
+            }
+        }
+        onHitEnemy(e) {
+            if (e.parent) {
+                this.effectObs && (this.effectObs.destroy(),
+                this.effectObs = null),
+                this.effectObs = this.effectLh.clone(),
+                this.effectObs.transform.position = e.parent.transform.position,
+                this.levelLh.addChild(this.effectObs),
+                this.effectObs.active = !0,
+                this.curEnemyNum--,
+                this.curShootNum--;
+                var t = "si" + me.random(1, 4);
+                me.AniCrossFade(e.parent, t, .2, 0),
+                me.playParticle(e.parent, !0, 3);
+                var s = e.parent.name;
+                this.enemies[s].bullet = 0,
+                this.enemies[s].bShooting = !1,
+                Laya.timer.once(1500, this, function() {
+                    e.parent && (e.parent.active = !1)
+                })
+            }
+        }
+        nextGame() {
+            this.clouds.transform.localPositionX = 0,
+            this.bbbs = [],
+            this.curShootNum = 0
+        }
+    }
+    class Le {
+        constructor() {
+            this._scene = null,
+            this.JsonPath = "res/level/leveldata.json",
+            this._JsonData = null,
+            this.Level_lh = null,
+            this.mainLayer = null,
+            this.bRestart = !1,
+            this._Player = null,
+            this._GameView = null,
+            this._BgLayer = null,
+            this._End = null,
+            this._Bullet = null,
+            this._Road = null,
+            this._Enemy = null,
+            this.shopNode = null,
+            this.finishPosZ = 0,
+            this.chips = []
+        }
+        static getInstance() {
+            return this._instance || (this._instance = new Le)
+        }
+        static get instance() {
+            return null == Le._instance && (Le._instance = new Le),
+            Le._instance
+        }
+        static create() {
+            null == Le._instance && (Le._instance = new Le)
+        }
+        initScene(e=!1) {
+            e ? (this.reLoadData(),
+            this.loadLevel()) : (me.GetCacheData(),
+            Laya.Scene.open("gameUI/LoadSceneView.scene"))
+        }
+        onLoadedJosn() {
+            var e;
+            e = Laya.Loader.getRes(this.JsonPath),
+            this._JsonData = e,
+            me._curData = e[me.nCurScene.toString()]
+        }
+        onLoadedComplete(e) {
+            this._scene = e,
+            this.onLoadedJosn(),
+            Laya.stage.addChildAt(e, 0),
+            Laya.Scene.open(w.GameStartView, !1, {
+                fromscene: S.LOAD_SCENE
+            });
+            var t = this._scene.getChildByName("CameraObject").getChildByName("Bip_jintou");
+            this._camera = t.getChildByName("Main Camera"),
+            this._camera.farPlane = 150,
+            this._camera.enableHDR = !1,
+            this.resetCamera(),
+            this._GameView = new pe,
+            this._End = new Ie(this._scene),
+            this.loadLevel(),
+            Laya.MouseManager.multiTouchEnabled = !1,
+            this.shopNode = this._scene.getChildByName("shop"),
+            this.shopNode.transform.localPositionZ = -6,
+            this.shopNode.active = !1,
+            this.receiveShadows()
+        }
+        loadPlayer(e=!1, t=0) {
+            0 == e && me.shopSelect[1];
+            Laya.loader.create("LayaScene_PlayerMode/Conventional/renwu1.lh", Laya.Handler.create(this, function(e) {
+                me.curPlayer && (me.curPlayer.destroy(),
+                me.curPlayer = null),
+                me.curPlayer = e.clone(),
+                me.curPlayer.active = !0,
+                this._scene.addChild(me.curPlayer),
+                this._Player = new fe(this._scene,this.Level_lh),
+                this._Player.findPlayerBody(),
+                me.curPlayer.transform.localRotationEulerY = 180,
+                this._Bullet = new we(this._scene,this.Level_lh),
+                this._End.onLevelLoaded(this.Level_lh)
+            }))
+        }
+        loadLevel() {
+            console.log("loadLevel  nCurScene === ", me.nCurScene);
+            var e = "LayaScene_LevelMode/Conventional/" + me.nCurScene.toString() + ".lh";
+            Laya.loader.create(e, Laya.Handler.create(this, this.onLevelLoaded))
+        }
+        onLevelInfo(e) {
+            let t = {}
+              , s = e.numChildren;
+            var i = null
+              , n = null;
+            for (let r = 0; r < s; r++) {
+                let s = {}
+                  , l = e.getChildAt(r);
+                i = l.getChildByName("Enemy"),
+                n = l.getChildByName("danyao"),
+                s.enemy = [];
+                let h = i.numChildren;
+                for (let e = 0; e < h; e++) {
+                    let t = {};
+                    var a = i.getChildAt(e);
+                    t.name = a.name,
+                    t.pos = a.transform.localPosition,
+                    s.enemy.push(t)
+                }
+                s.danyao = [];
+                for (let e = 0; e < n.numChildren; e++) {
+                    let t = {};
+                    var o = n.getChildAt(e);
+                    t.name = o.name,
+                    t.pos = o.transform.localPosition,
+                    s.danyao.push(t)
+                }
+                t[l.name] = s
+            }
+            console.log("data ==========  ", t),
+            ve.Ins.writeHttpData(null, {
+                file: "games/leveldata.json",
+                data: t
+            }, e=>{
+                e ? (ge.Ins.showMsgTip("上传关卡数据成功"),
+                console.log(e)) : ge.Ins.showMsgTip("上传关卡数据失败")
+            }
+            )
+        }
+        onLevelLoaded(e) {
+            this.Level_lh && (this.Level_lh.destroy(),
+            this.Level_lh = null),
+            this.Level_lh = e.clone(),
+            this.Level_lh.active = !0,
+            this._scene.addChild(this.Level_lh),
+            this._Road = new be(this._scene,this.Level_lh),
+            this.loadPlayer(),
+            me.bLoadedComplete = !0,
+            me.bTryUse && this.initMainLayer()
+        }
+        receiveShadows() {
+            var e = this._scene.getChildByName("Directional Light");
+            e.shadow = !0,
+            e.shadowDistance = 30,
+            e.shadowResolution = 2048,
+            e.shadowPCFType = 1,
+            e.shadowPSSMCount = 1
+        }
+        onTouchDown() {
+            this._Bullet.onTouchDown()
+        }
+        onMouseUp() {
+            this._Player.onMouseUp()
+        }
+        reLoadData() {
+            me._curData = null,
+            me._curData = this._JsonData[me.nCurScene.toString()],
+            this._BgLayer && this._BgLayer.changeBg(),
+            Laya.Scene.open(w.GameStartView, !0, {
+                fromscene: S.RESULT_SCENE
+            })
+        }
+        resetCamera(e=!1, t=!0) {
+            var s = new Laya.Vector3(0,3.5,-11.5);
+            e ? (s = new Laya.Vector3(0,1.48,-12.5),
+            this._camera.transform.localRotationEulerY = 180,
+            this._camera.fieldOfView = 80,
+            me.curPlayer && (me.AniCrossFade(me.curPlayer, "kaiqiang", .5, 0),
+            me.AniCrossFade(me.curPlayer, "daiji", .5, 1))) : (this._camera.transform.localRotationEulerY = 180,
+            this._camera.fieldOfView = 60,
+            me.curPlayer && me.AniCrossFade(me.curPlayer, "daiji", .5, 1)),
+            this._camera.transform.localPosition = s,
+            this._camera.transform.localRotationEulerX = -30
+        }
+        onDestroy() {
+            console.log("GameScene 退出程序")
+        }
+        initMainLayer() {
+            this.mainLayer && (this.mainLayer.destroy(),
+            this.mainLayer = null),
+            null == this.mainLayer && Laya.Scene.open("gameUI/MainLayer.scene", !1, null, Laya.Handler.create(this, e=>{
+                this.mainLayer = e,
+                this.gameBegin()
+            }
+            ))
+        }
+        tryUseCallF() {
+            me.bTryUse ? this._Player.changeWeapon(!0, me.nLookSelect - 1) : this.initMainLayer()
+        }
+        gameBegin() {
+            this.bRestart = !1,
+            me.bTryUse || O.sdk.startLevel(me.nShowScene),
+            this._Bullet.gameBegin(),
+            this._Player.gameBegin(),
+            Laya.Tween.to(this._camera.transform, {
+                localRotationEulerX: -12,
+                localPositionX: -1.7,
+                localPositionY: 3.5,
+                localPositionZ: -11.5,
+                localRotationEulerY: 188
+            }, 1e3, null, Laya.Handler.create(this, function() {
+                Laya.timer.once(1e3, this, ()=>{
+                    me.bStart = !0,
+                    me.weaponAni.active = !0
+                }
+                ),
+                this.mainLayer.gameBegin(),
+                Laya.timer.frameLoop(1, this, this.updating)
+            }))
+        }
+        updating() {
+            me.bStart && (this._Player.updating(),
+            this._Bullet.updating(),
+            this._Road.updating())
+        }
+        get2DPoint(e=2, t=null) {
+            var s = new Laya.Vector3(0,0,0)
+              , i = me.curPlayer.transform.position
+              , n = 0;
+            2 != e && (n = -.5);
+            let a = new Laya.Vector3(i.x + n,i.y + e,i.z);
+            return this._camera.viewport.project(a, this._camera.projectionViewMatrix, s),
+            s
+        }
+        updateLvUI(e=0, t=null) {
+            if (this.mainLayer) {
+                if (1 == e) {
+                    this.addGold(1);
+                    var s = this.get2DPoint();
+                    this.mainLayer.showImgTips(s.x, s.y, 0);
+                    var i = this.get2DPoint(0, t);
+                    this.mainLayer.showCoinAciton(i.x - 20, i.y - 20)
+                }
+                this.mainLayer.updateLvUI(Math.abs(29 / this.finishPosZ), e)
+            }
+        }
+        updateBnum(e) {
+            this.mainLayer.updateBnum(e)
+        }
+        onHitSupply() {
+            me.bulletNum += 20,
+            me.bulletNum > 40 && (me.bulletNum = 40),
+            this.updateBnum(me.bulletNum),
+            this._Bullet.onHitSupply(),
+            this.showImgTips(0, 0),
+            Laya.timer.once(1e3, this, function() {
+                this.showImgTips(1, 5)
+            })
+        }
+        onHitObstacles(e, t) {
+            this._Road.onHitObstacles(e, t)
+        }
+        onHitBullet() {
+            this._Player.onHitBullet(),
+            this.mainLayer.onHitBullet(),
+            this.showImgTips(5, 9)
+        }
+        playerDeath() {
+            me.bulletNum = 0,
+            this._Bullet.showAtNumBullet(0)
+        }
+        addGold(e, t=1) {
+            let s = Math.floor(e * t);
+            Ce.inst.setGold(s),
+            C.Ins.event("changeGold")
+        }
+        onGameEnd(e=!0) {
+            e && (me.bStart = !1,
+            this._End.onGameEnd(),
+            this.mainLayer.showEndClick(),
+            this._Bullet.onGameEnd(),
+            this.mainLayer.onGameEnd())
+        }
+        onShoping() {
+            me.bOpenShop = !0,
+            this.shopNode.active = !0,
+            this.resetCamera(!0),
+            C.Ins.event("Shopping")
+        }
+        closeShop(e=!1) {
+            this.shopNode.active = !1,
+            this.resetCamera(!1, !1),
+            this.changeWeapon(),
+            this.changeShipin(),
+            C.Ins.event("Shopping"),
+            me.AniCrossFade(me.curPlayer, "tiaowu", .5, 0),
+            me.AniCrossFade(me.curPlayer, "tiaowu", .5, 1)
+        }
+        changeShipin(e=!1, t=0) {
+            this._Player.changeShipin(e, t)
+        }
+        changeWeapon(e=!1, t=0) {
+            this._Player.changeWeapon(e, t)
+        }
+        showImgTips(e, t) {
+            var s = this.get2DPoint();
+            0 == e && (s = this.get2DPoint(1.5));
+            var i = me.random(e, t);
+            this.mainLayer && this.mainLayer.showImgTips(s.x, s.y, i)
+        }
+        GameFinish(e=1e3) {
+            O.isTT ? O.sdk.stopRecording() : O.isOP && O.sdk.exitGameScene();
+            let t = this;
+            if (me.bStart = !1,
+            me.bMouseMoving = !1,
+            0 == me.bGameWin && (me.curPlayer.active = !1,
+            this.showImgTips(9, 13)),
+            O.isTT && ie.sdk.adConfig.boxCanShow())
+                return Laya.stage.once("QQ_CLICK_BOX", t, function() {
+                    t.onCloseFullAd(me.bGameWin)
+                }),
+                void Laya.timer.once(400, t, function() {
+                    Laya.Scene.open(w.QQBox, !1)
+                });
+            Laya.timer.once(e, this, function() {
+                if (Laya.timer.clearAll(this),
+                this.mainLayer && (this.mainLayer.destroy(),
+                this.mainLayer = null),
+                O.isWX)
+                    t.tapBox();
+                else {
+                    if (O.isQQ && ie.sdk.adConfig.isCrazyTap(Ce.inst.level, X.TAP_CHEST))
+                        return Laya.stage.once("QQ_CLICK_BOX", t, function() {
+                            t.onCloseFullAd(me.bGameWin)
+                        }),
+                        void Laya.Scene.open(w.QQBox, !1);
+                    ue.Ins.playInsertAd(le.start, ()=>{
+                        console.log("afterAd")
+                    }
+                    , ()=>{
+                        console.log("adBreakDone")
+                    }
+                    ),
+                    ne.Ins.sceneOpen(w.ResultView, !1, {
+                        gameresult: me.bGameWin
+                    })
+                }
+            })
+        }
+        tapBox() {
+            let e = this;
+            ie.sdk.adConfig.boxCanShow() ? (Laya.stage.once("QQ_CLICK_BOX", e, function() {
+                e.showFull1()
+            }),
+            Laya.Scene.open(w.QQBox, !1)) : e.showFull1()
+        }
+        showFull1() {
+            let e = this;
+            ie.sdk.adConfig.isBeforeGameAccount() ? (Laya.stage.once("FULL_SCREEN_AD1_CLOSE", e, e.onCloseFullAd, [me.bGameWin]),
+            K.IS_AUTO_CLICK = !0,
+            ne.Ins.sceneOpen(w.fullscreenad1, !1)) : ne.Ins.sceneOpen(w.ResultView, !1, {
+                gameresult: me.bGameWin
+            })
+        }
+        onCloseFullAd(e) {
+            ne.Ins.sceneOpen(w.ResultView, !1, {
+                gameresult: me.bGameWin
+            })
+        }
+        nextGame(e) {
+            e ? (me.bTryUse || O.sdk.endLevel(me.nShowScene, "complete"),
+            0 == me.nPassGame ? (me.nCurScene++,
+            me.nShowScene = me.nCurScene,
+            me.nCurScene > me.nTotalScene && (me.nCurScene = me.random(10, me.nTotalScene),
+            me.nPassGame = 1,
+            Laya.LocalStorage.setItem("PassGame", "1")),
+            Laya.LocalStorage.setItem("CurScene", me.nCurScene.toString())) : (me.nShowScene++,
+            me.nCurScene = me.random(10, me.nTotalScene)),
+            Laya.LocalStorage.setItem("ShowScene", me.nShowScene.toString())) : me.bTryUse || O.sdk.endLevel(me.nShowScene, "fail"),
+            this._camera.active = !0,
+            me.bLoadedComplete = !1,
+            Laya.timer.clearAll(this),
+            this._GameView.nextGame(),
+            this._Player.nextGame(),
+            this._End.nextGame(),
+            this._Bullet.nextGame(),
+            me.bParticling = !1,
+            me.bStart = !1,
+            me.bGameWin = !1,
+            me.bMouseMoving = !1,
+            me.bPlayingAni = !1,
+            this.bRestart = !0,
+            me.taskScore = 0,
+            me._Intervals = 0,
+            me.bTryUse = !1,
+            this.initScene(this.bRestart)
+        }
+    }
+    Le._instance = null;
+    class Se extends Laya.Script {
+        constructor() {
+            super()
+        }
+        onAwake() {}
+        onEnable() {
+            if (this.imgNativeLayer = this.owner,
+            this.adBg = this.owner.getChildByName("adBg"),
+            this.icon = this.adBg.getChildByName("icon"),
+            this.nativeCloseBtn = this.adBg.getChildByName("nativeCloseBtn"),
+            this.subnativeCloseBtn = this.adBg.getChildByName("subnativeCloseBtn"),
+            this.titleTxt = this.adBg.getChildByName("titleTxt"),
+            this.goBtn = this.owner.getChildByName("goBtn"),
+            this.nextBtn = this.owner.getChildByName("nextBtn"),
+            this.imgNativeLayer || console.log("MyOPPOAD:imgNativeLayer is null"),
+            this.goBtn || console.log("MyOPPOAD:goBtn is null"),
+            this.nextBtn || console.log("MyOPPOAD:nextBtn is null"),
+            O.isOP ? (this.imgNativeLayer.skin = "",
+            "imgNativeLayer" == this.owner.name && (this.imgNativeLayer.height = 720,
+            this.imgNativeLayer.y = Laya.stage.height - this.imgNativeLayer.height - 150)) : O.isVV && (this.imgNativeLayer.skin = "common/tips-01.png",
+            this.imgNativeLayer.height = Laya.stage.height,
+            this.adBg.y = Laya.stage.height - 150 - this.adBg.height,
+            this.goBtn.y = this.adBg.y - 280,
+            ie.sdk.adConfig.electControl("zs_native_next_limit") && (this.nextBtn.visible = !0,
+            this.nextBtn.on(Laya.Event.CLICK, this, this.CloseNative),
+            this.nextBtn.y = this.adBg.y - 80)),
+            ie.sdk.adConfig.electControl("zs_native_touch_switch")) {
+                if (O.isOP) {
+                    let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                    0 != e && ie.sdk.adConfig.isSameVersion() ? (this.nativeCloseBtn.visible = !1,
+                    Laya.timer.once(e, this, ()=>{
+                        this.nativeCloseBtn.visible = !0,
+                        this.subnativeCloseBtn.visible = !0
+                    }
+                    )) : this.subnativeCloseBtn.visible = !0
+                } else
+                    O.isVV && (this.subnativeCloseBtn.visible = !0);
+                this.subnativeCloseBtn && this.subnativeCloseBtn.on(Laya.Event.CLICK, this, this.CloseNative),
+                this.nativeCloseBtn && this.nativeCloseBtn.on(Laya.Event.CLICK, this, this.ViewNative)
+            } else {
+                if (O.isOP) {
+                    let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                    0 != e && ie.sdk.adConfig.isSameVersion() && (this.nativeCloseBtn.visible = !1,
+                    Laya.timer.once(e, this, ()=>{
+                        this.nativeCloseBtn.visible = !0
+                    }
+                    ))
+                }
+                this.nativeCloseBtn && this.nativeCloseBtn.on(Laya.Event.CLICK, this, this.CloseNative)
+            }
+            this.icon && this.icon.on(Laya.Event.CLICK, this, this.ViewNative),
+            this.goBtn && this.goBtn.on(Laya.Event.CLICK, this, this.ViewOrClosenative),
+            this.goBtn && (this.goBtn.skin = ie.sdk.adConfig.electControl("zs_native_click_switch") ? O.isOP ? "zsRes/oppo_04.png" : "zsRes/vivo_04.png" : "zsRes/vivo_05.png"),
+            this.onEnableADControl()
+        }
+        onStart() {}
+        onEnableADControl() {
+            this.nativeData = O.sdk.getNativeData(),
+            this.nativeData && (O.isVV ? ie.sdk.adConfig.electControl("zs_native_delay") ? Laya.timer.once(800, this, ()=>{
+                this.imgNativeLayer.visible = !0,
+                this.ShowNative()
+            }
+            ) : (this.imgNativeLayer.visible = !0,
+            this.ShowNative()) : O.isOP && ie.sdk.adConfig.isSameVersion() && (this.imgNativeLayer.visible = !0,
+            this.ShowNative()))
+        }
+        ShowNative() {
+            let e = "";
+            this.nativeData.imgUrlList && this.nativeData.imgUrlList.length > 0 ? e = this.nativeData.imgUrlList[0] : this.nativeData.iconUrlList && this.nativeData.iconUrlList.length > 0 ? e = this.nativeData.iconUrlList[0] : this.nativeData.icon && (e = this.nativeData.icon),
+            this.icon && (this.icon.skin = e),
+            this.titleTxt && (this.titleTxt.text = this.nativeData.desc),
+            O.sdk.reportAdShow(this.nativeData)
+        }
+        CloseNative() {
+            this.imgNativeLayer.visible = !1,
+            O.isOP && "imgNativeLayer" == this.owner.name && C.Ins.event(L.EVENT_NATIVE_PREFAB_CLOSE)
+        }
+        ViewNative() {
+            O.sdk.reportAdClick(this.nativeData),
+            this.CloseNative()
+        }
+        ViewOrClosenative() {
+            ie.sdk.adConfig.electControl("zs_native_click_switch") && O.sdk.reportAdClick(this.nativeData),
+            this.CloseNative()
+        }
+        onDisable() {
+            O.isOP && O.sdk.createNative_OPPO()
+        }
+    }
+    class Ae extends e.commonUI.TryUseDialogUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.isGateSelect = !0,
+            this.gate = 0,
+            this.height = Laya.stage.height,
+            this.videoBtn.on(Laya.Event.CLICK, this, this.videoClick),
+            this.selectImg.on(Laya.Event.CLICK, this, this.selectClick),
+            this.passBtn.on(Laya.Event.CLICK, this, this.closeClick),
+            this.Btn_OPClose.on(Laya.Event.CLICK, this, this.closeClick),
+            this.btnOPPOPass.on(Laya.Event.CLICK, this, this.closeClick),
+            O.isOP || (_e.largeScreen() ? this.spLayertop.y += 240 : this.spLayertop.y += 120,
+            this.spLayertop.height = Laya.stage.height - this.spLayertop.y)
+        }
+        onEnable() {
+            O.isQQ && O.sdk.hideBlockAd(),
+            this.gate = Math.floor(40 * Math.random()),
+            this.showItem(),
+            this.onEnableUIInit(),
+            this.onEnableADControl()
+        }
+        onEnableUIInit() {
+            O.isQQ && (O.sdk.showBanner(),
+            this.selectImg.visible = !1,
+            this.btnOPPOPass.visible = !1,
+            this.Btn_OPClose.visible = !1,
+            ie.sdk.adConfig.electControl("zs_banner_vertical_enable") && (this.passBtn.visible = !1,
+            Laya.timer.once(2e3, this, ()=>{
+                this.passBtn.visible = !0
+            }
+            )),
+            this.passBtn.bottom = 240,
+            this.videoBtn.visible = !0,
+            this.videoBtn.bottom = 280)
+        }
+        onEnableADControl() {
+            if (O.isTT)
+                O.sdk.hideBanner(),
+                this.videoBtn.skin = "platform_pics/pic_001.png",
+                ie.sdk.adConfig.checkControl("zs_nulock_gate", !0) ? (this.Btn_OPClose.visible = !0,
+                this.selectImg.visible = !0,
+                this.selectImg.y = this.spLayertop.height - 130,
+                this.videoBtn.x = 218,
+                this.passBtn.visible = !1,
+                this.unlockcontrol = W.inst.getvideounlockon(),
+                this.changeSelectGateSt()) : (this.Btn_OPClose.visible = !1,
+                this.selectImg.visible = !1,
+                this.unlockcontrol = !1,
+                this.videoBtn.x = 50,
+                this.passBtn.skin = "platform_pics/pic_002.png",
+                this.passBtn.x = 386,
+                this.passBtn.y = this.videoBtn.y);
+            else if (O.isQQ)
+                ie.sdk.adConfig.electControl("zs_banner_vertical_enable") && (this.passBtn.visible = !1,
+                this.timer.once(2e3, this, ()=>{
+                    this.passBtn.visible = !0
+                }
+                ));
+            else if (O.isOP) {
+                O.sdk.hide_banner(),
+                this.passBtn.visible = !1;
+                let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                0 != e && ie.sdk.adConfig.isSameVersion() ? (this.btnOPPOPass.visible = !1,
+                Laya.timer.once(e, this, ()=>{
+                    this.btnOPPOPass.visible = !0
+                }
+                )) : this.btnOPPOPass.visible = !0;
+                let t = Laya.stage.height / 2;
+                t > this.spLayertop.height && (this.spLayertop.y = (t - this.spLayertop.height) / 2),
+                this.InitNativeLayer()
+            }
+        }
+        InitNativeLayer() {
+            let e = this.getChildByName("tryNativeLayer");
+            if (e) {
+                let t = Laya.stage.height / 2;
+                t - 105 - 535 > 0 && (e.y = (t - 105 - 535) / 2 + t),
+                e.getComponent(Se) || e.addComponent(Se)
+            }
+            return !0
+        }
+        videoClick(e) {
+            ue.Ins.playVideo("Please Watch the full video to unlock!", ()=>{
+                C.Ins.event("cut", this.gate),
+                me.bTryUse = !0,
+                this._gameScene.tryUseCallF(),
+                this.close()
+            }
+            , this),
+            e && e.stopPropagation()
+        }
+        selectClick(e) {
+            this.isGateSelect = !this.isGateSelect,
+            this.changeSelectGateSt(),
+            e.stopPropagation()
+        }
+        changeSelectGateSt() {
+            this.unlockcontrol ? this.selectImg.skin = this.isGateSelect ? "common/tips-37.png" : "common/tips-36.png" : this.selectImg.skin = this.isGateSelect ? "common/tips-35.png" : "common/tips-34.png"
+        }
+        closeClick(e) {
+            "common/tips-34.png" != this.selectImg.skin && "common/tips-37.png" != this.selectImg.skin ? (this.close(),
+            me.bTryUse = !1,
+            this._gameScene.tryUseCallF(),
+            e.stopPropagation()) : this.videoClick(null)
+        }
+        onDisable() {
+            O.isOP && (O.sdk.showBanner(),
+            O.sdk.createNative_OPPO()),
+            Laya.stage.event("TRYUSE_CLOSE")
+        }
+        showItem() {
+            me.nLookSelect = me.nCurScene % 3,
+            1 == me.nLookSelect ? me.nLookSelect = 3 : 0 == me.nLookSelect && (me.nLookSelect = 1),
+            this.icon.skin = "image/shop/1_" + me.nLookSelect + ".png"
+        }
+    }
+    class Be {
+        constructor() {}
+        goldEffect(e, t=10, s=null, i=null) {
+            let n = s || Laya.stage
+              , a = t;
+            for (let s = 0; s < t; s++) {
+                let t = new Laya.Sprite;
+                t.loadImage("common/tips-09.png");
+                let o, r = F.Math.randomCircle(10);
+                t.x = e.x + r.x,
+                t.y = e.y + r.y,
+                t.scale(.8, .8),
+                n.addChild(t),
+                o = O.isWX ? {
+                    x: Laya.stage.width - 200,
+                    y: 10
+                } : {
+                    x: 20,
+                    y: 90
+                },
+                Laya.Tween.to(t, o, 500, Laya.Ease.bounceIn, Laya.Handler.create(this, ()=>{
+                    t.removeSelf(),
+                    --a <= 0 && i && i()
+                }
+                ), 50 * s)
+            }
+        }
+        createButton(e=null, t, s) {
+            let i = e || Laya.stage
+              , n = new Laya.Button;
+            return n.clickHandler = s,
+            n.stateNum = 1,
+            n.skin = t,
+            n.anchorX = .5,
+            n.anchorY = .5,
+            i.addChild(n),
+            n
+        }
+        static get Ins() {
+            return this._ins || (this._ins = new Be),
+            this._ins
+        }
+    }
+    class ke extends Laya.Script {
+        constructor() {
+            super(),
+            C.Ins.on("changeGold", this, this.updateUI)
+        }
+        onEnable() {
+            this.updateUI()
+        }
+        updateUI() {
+            this.owner.getChildByName("txt").text = Ce.inst.gold
+        }
+        onDisable() {}
+        onDestroy() {
+            C.Ins.off("changeGold", this, this.updateUI)
+        }
+    }
+    class Ee extends Laya.Script {
+        constructor() {
+            super(),
+            this.adType = null,
+            this.navScene = V.default,
+            this.autoScroll = !1,
+            this.scrollDir = K.SCROLL_NONE,
+            this.dragSleep = 5e3,
+            this.scrollSpeed = 1,
+            this.waitTime = 1e3,
+            this.passedTime = 0,
+            this.inAutoScroll = !1,
+            this.adData = [],
+            this.iosFilterAppIds = [],
+            this.otherGames = [],
+            this.otherCount = 10,
+            this.moreGameIconObj = {},
+            this.list = null,
+            this.hotIds = [],
+            this.maxNum = null,
+            this.isDataUpdate = !1,
+            this.touchIndex = -1,
+            this.isRandomSelect = !1,
+            this.changeValue = 0,
+            this.unitValue = 0,
+            this.isEnd = !1,
+            this.isClockPendulum = !1
+        }
+        requestAdData(e, t, s, i, n, a, o) {
+            this.navScene = e,
+            this.adType = ie.sdk.getAdType(e),
+            this.autoScroll = t,
+            this.scrollDir = s,
+            this.iosFilterAppIds = i || [],
+            this.maxNum = n,
+            this.isRandomSelect = a,
+            this.isClockPendulum = o,
+            this.scrollDir == K.SCROLL_VERTICAL ? this.list.vScrollBarSkin = "" : this.scrollDir == K.SCROLL_HORIZONTAL && (this.list.hScrollBarSkin = "");
+            var r = this;
+            ie.isZS ? window.zs.sdk.loadAd(function(e) {
+                r.adData = e[r.adType.toString()],
+                r.freshAdList(),
+                r.initHotIds(),
+                r.scrollDir != K.SCROLL_VERTICAL || r.isClockPendulum || (r.freshFinger(),
+                Laya.timer.loop(3e3, r, r.freshFinger))
+            }) : r.list && (r.adData = ie.sdk.getAdList(r.adType),
+            r.freshAdList(),
+            r.initHotIds(),
+            r.scrollDir != K.SCROLL_VERTICAL || r.isClockPendulum || (r.freshFinger(),
+            Laya.timer.loop(3e3, r, r.freshFinger)))
+        }
+        freshFinger() {
+            let e = this.list.cells
+              , t = []
+              , s = this.list.scrollBar
+              , i = s.value
+              , n = (s.min,
+            s.max,
+            i)
+              , a = n + this.list.height;
+            for (let s = 0; s < e.length; s++) {
+                let i = e[s];
+                i.y >= n && i.y <= a - i.height && t.push(i);
+                let o = i.getChildByName("fingertap");
+                o && (o.visible = !1)
+            }
+            if (t.length > 0) {
+                let e = t[Math.floor(Math.random() * t.length)].getChildByName("fingertap");
+                e && (e.visible = !0)
+            }
+        }
+        getExcludeRepeatData() {
+            let e = []
+              , t = {};
+            for (let s = 0; s < this.adData.length; s++) {
+                let i = this.adData[s].appid || this.adData[s].id;
+                if (t[i])
+                    if (this.moreGameIconObj[i]) {
+                        this.moreGameIconObj[i].push(this.adData[s])
+                    } else
+                        this.moreGameIconObj[i] = [this.adData[s]];
+                else
+                    t[i] = 1,
+                    e.push(this.adData[s])
+            }
+            return e
+        }
+        freshAdList() {
+            var e = this;
+            if (this.adData = this.adData.filter(function(t) {
+                return Laya.Browser.onAndroid || -1 == e.iosFilterAppIds.indexOf(t.appid)
+            }),
+            ie.isZS && (this.adData = this.getExcludeRepeatData()),
+            null != this.maxNum)
+                if (this.adData.length < this.maxNum)
+                    for (; this.adData.length < this.maxNum; )
+                        this.adData.push(this.adData[Math.floor(Math.random() * this.adData.length)]);
+                else if (this.adData.length > this.maxNum)
+                    for (; this.adData.length > this.maxNum; )
+                        this.adData.splice(Math.floor(Math.random() * this.adData.length), 1);
+            if (ie.isQT)
+                for (let t = 0; t < e.adData.length; t++)
+                    0 == e.adData[t].is_inside && e.otherGames.push(e.adData[t]);
+            this.list.array = this.adData;
+            var t = 0
+              , s = this.list.getCell(0);
+            s && (this.scrollDir == K.SCROLL_VERTICAL ? (t = Math.ceil(this.list.array.length / this.list.repeatX),
+            this.unitValue = (s.height + this.list.spaceY) / (t * s.height + this.list.spaceY * (t - 1) - this.list.height) * this.list.scrollBar.max) : this.scrollDir == K.SCROLL_HORIZONTAL && (t = Math.ceil(this.list.array.length / this.list.repeatY),
+            this.unitValue = (s.width + this.list.spaceX) / (t * s.width + this.list.spaceX * (t - 1) - this.list.width) * this.list.scrollBar.max),
+            this.autoScroll && Laya.stage.frameOnce(1, this, this.startAutoScrollAd))
+        }
+        autoclick() {
+            let e = this;
+            if (this.list.array.length > 0)
+                if (ie.isQT) {
+                    let t = this.otherGames.length >= this.otherCount ? this.otherGames : this.adData
+                      , s = Math.floor(Math.random() * t.length)
+                      , i = this.processGamePlayed(t[s], !0);
+                    ie.sdk.navigateToMiniProgram(i, e.navScene, ()=>{}
+                    , ()=>{}
+                    , ()=>{}
+                    )
+                } else {
+                    let e = Math.floor(Math.random() * this.list.array.length);
+                    this.onSelectAd(e, !0),
+                    console.log("调用了自动跳转游戏", e)
+                }
+        }
+        initHotIds() {
+            for (var e = Math.random() < .5 ? 3 : 4, t = Math.floor(this.adData.length / e), s = 0; s < e; s++)
+                this.hotIds.push(Math.floor(t * Math.random()) + s * t)
+        }
+        startAutoScrollAd() {
+            this.list && (this.inAutoScroll = !0)
+        }
+        onItemRender(e, t) {
+            var s = this.list.array[t];
+            if (s) {
+                if (i = e.getChildByName("icon"))
+                    i.loadImage(s.app_icon || s.link_img, null);
+                else {
+                    var i, n = e.getChildByName("iconBox");
+                    if (n)
+                        (i = n.getChildByName("icon")) && (i.skin = s.app_icon || s.link_img)
+                }
+                var a = e.getChildByName("name");
+                a && (a.text = s.app_title || s.link_name);
+                var o = e.getChildByName("desc");
+                if (o && (o.text = s.app_desc || s.link_des),
+                1 != this.isDataUpdate) {
+                    var r = e.getChildByName("titleBg");
+                    r && (r.index = Math.floor(r.clipY * Math.random()));
+                    var l = e.getChildByName("tag");
+                    if (l)
+                        this.hotIds.indexOf(t) > 0 ? (l.visible = !0,
+                        l.index = Math.floor(l.clipY * Math.random())) : l.visible = !1;
+                    else {
+                        var h = e.getChildByName("hot")
+                          , d = e.getChildByName("new");
+                        h && (h.visible = !1),
+                        d && (d.visible = !1),
+                        this.hotIds.indexOf(t) > 0 && (h && d ? Math.random() < .5 ? h.visible = !0 : d.visible = !0 : h && !d ? h.visible = !0 : d && !h && (d.visible = !0))
+                    }
+                }
+            } else
+                e.visible = !1
+        }
+        onTouchEnd(e) {
+            this.list && this.list.array && (ie.sdk.adConfig.electControl("zs_slide_jump_switch") && this.isRandomSelect && -1 == this.touchIndex && (this.touchIndex = Math.floor(Math.random() * this.list.array.length)),
+            this.onSelectAd(this.touchIndex, !1),
+            this.touchIndex = -1)
+        }
+        onMouseAd(e, t) {
+            e.type == Laya.Event.MOUSE_DOWN && (this.touchIndex = t)
+        }
+        processGamePlayed(e, t=!1) {
+            if (ie.isQT && !ie.sdk.adConfig.electControl("zs_play_other_game"))
+                return e;
+            var s = ie.sdk.getNavigateSuccessObj();
+            let i = e.appid || e.id;
+            if (s && s[i]) {
+                let e, n;
+                e = ie.isZS ? this.adData : t && this.otherGames.length >= this.otherCount ? this.otherGames : this.adData;
+                for (let t = 0; t < 3; t++)
+                    if (n = e[Math.floor(Math.random() * e.length)]) {
+                        let e = n.appid || n.id;
+                        if (!s[e]) {
+                            console.log("已跳转成功过", i, e);
+                            break
+                        }
+                    }
+                return n
+            }
+            return e
+        }
+        replaceGameIcon(e, t) {
+            let s = t.appid || t.id
+              , i = this.moreGameIconObj[s];
+            if (i) {
+                let t = i[Math.floor(Math.random() * i.length)];
+                console.log("替换图标", s),
+                this.list.array[e] = t,
+                this.list.refresh()
+            }
+        }
+        replaceRandGame(e, t) {
+            let s = Math.floor(Math.random() * this.list.length);
+            for (; s == e; )
+                s = Math.floor(Math.random() * this.list.length);
+            console.log("跳转成功,新游戏索引", s, this.list.array[s]),
+            this.list.array[e] = this.list.array[s],
+            this.list.array[s] = t,
+            this.list.refresh()
+        }
+        onSelectAd(e, t=!1) {
+            if (null == e || -1 == e)
+                return;
+            if (!this.list)
+                return;
+            if (!this.list.array)
+                return;
+            var s = this.list.array[e]
+              , i = this;
+            i.isDataUpdate = !0;
+            let n = this.processGamePlayed(s, t);
+            ie.sdk.navigateToMiniProgram(n, i.navScene, ()=>{
+                i.replaceRandGame(e, s)
+            }
+            , ()=>{
+                ie.isQT ? i.replaceRandGame(e, s) : i.replaceGameIcon(e, s)
+            }
+            , ()=>{
+                i.list.selectedIndex = -1
+            }
+            )
+        }
+        params2String(e) {
+            for (var t = e[0] + "=" + e[1], s = 2; s < e.length; s += 2)
+                t += "&" + e[s] + "=" + e[s + 1];
+            return t
+        }
+        onDragStateChanged(e) {
+            this.inAutoScroll = !1,
+            this.autoScroll && 0 == e && (this.passedTime = 0)
+        }
+        onAwake() {
+            this.list = this.owner,
+            this.list.selectEnable = !0,
+            this.list.renderHandler = Laya.Handler.create(this, this.onItemRender, null, !1),
+            this.list.mouseHandler = Laya.Handler.create(this, this.onMouseAd, null, !1)
+        }
+        onEnable() {
+            this.owner.on(Laya.Event.MOUSE_UP, this, this.onTouchEnd),
+            this.list.on(Laya.Event.MOUSE_UP, this, this.onDragStateChanged, [0]),
+            this.list.on(Laya.Event.MOUSE_OUT, this, this.onDragStateChanged, [0]),
+            this.list.on(Laya.Event.MOUSE_DOWN, this, this.onDragStateChanged, [1])
+        }
+        onDisable() {
+            this.owner.off(Laya.Event.MOUSE_UP, this, this.onTouchEnd),
+            this.list.off(Laya.Event.MOUSE_UP, this, this.onDragStateChanged),
+            this.list.off(Laya.Event.MOUSE_OUT, this, this.onDragStateChanged),
+            this.list.off(Laya.Event.MOUSE_DOWN, this, this.onDragStateChanged)
+        }
+        onUpdate() {
+            if (this.autoScroll && 1 == this.inAutoScroll && this.list && this.list.scrollBar && this.list.scrollBar.max) {
+                if (this.list.scrollBar.value >= this.list.scrollBar.max ? (this.list.scrollBar.value = this.list.scrollBar.max,
+                this.scrollSpeed = 0 - this.scrollSpeed,
+                this.isEnd = !0) : this.list.scrollBar.value <= 0 && (this.list.scrollBar.value = 0,
+                this.scrollSpeed = 0 - this.scrollSpeed,
+                this.isEnd = !0),
+                this.list.scrollBar.value += this.scrollSpeed,
+                !this.unitValue || !this.isClockPendulum)
+                    return;
+                this.isEnd = this.isEnd && 0 != this.changeValue,
+                this.changeValue += Math.abs(this.scrollSpeed),
+                (this.changeValue >= this.unitValue || this.isEnd) && (this.autoScroll = !1,
+                this.isEnd = !1,
+                this.changeValue = 0,
+                Laya.timer.once(this.waitTime, this, function() {
+                    this.autoScroll = !0
+                }))
+            }
+            this.autoScroll && 0 == this.inAutoScroll && (this.passedTime += Laya.timer.delta,
+            this.passedTime > this.dragSleep && this.startAutoScrollAd())
+        }
+    }
+    class Te extends e.commonUI.UIAdwardBoxUI {
+        constructor() {
+            super(),
+            this._isRunning = !1,
+            this._up_step = .1,
+            this._down_step = .02,
+            this._progress = 0,
+            this._endpercent = .85,
+            this._click_time = 0,
+            this._index = 0,
+            this._callback = null,
+            this._isHide = !1,
+            this._isClickComplete = !1,
+            this._isAppShow = !1,
+            this._isClosed = !1,
+            this.bShowVideo = !1,
+            this.height = Laya.stage.height,
+            this.closeBtn.on(Laya.Event.MOUSE_DOWN, this, this.closeDown),
+            this.closeBtn.on(Laya.Event.MOUSE_UP, this, this.closeUp),
+            O.isQQ ? (this.boxIcon.on(Laya.Event.MOUSE_DOWN, this, this.boxDown),
+            this.boxIcon.on(Laya.Event.MOUSE_UP, this, this.boxUp),
+            this.boxIcon.y = Laya.stage.height / 2,
+            this.fingerImg.y = this.boxIcon.y + 20,
+            this.tipImg.y = this.boxIcon.y + 200,
+            this.boxBg.y = this.boxIcon.y,
+            this.Imgbgpro.y = this.boxIcon.y - 300,
+            this.ImgTitle.y = this.boxIcon.y - 400,
+            this.closeBtn.visible = !0,
+            this.clickBtn.on(Laya.Event.MOUSE_DOWN, this, this.boxDown),
+            this.clickBtn.on(Laya.Event.MOUSE_UP, this, this.boxUp),
+            this._endpercent = ie.sdk.adConfig.GetCrazyPercent(),
+            this._up_step = ie.sdk.adConfig.electControl("zs_click_award_add"),
+            this._down_step = ie.sdk.adConfig.electControl("zs_click_award_back")) : O.isTT ? (this.closeBtn.visible = !1,
+            this.ImgTitle.skin = "common/tt-08.png",
+            this.ImgTitle.x = 65,
+            this.ImgTitle.y = 190,
+            this.Imgbgpro.y = 755,
+            this.boxIcon.y = 527,
+            this.boxBg.y = this.boxIcon.y,
+            this.fingerImg.y = 880,
+            this.clickBtn.visible = !1,
+            this.Btn_tt_tap.visible = !0,
+            this.Chk_tt_tap.visible = !0,
+            this.Btn_tt_tap.on(Laya.Event.CLICK, this, this.OnCrazyTap),
+            this.Chk_tt_tap.on(Laya.Event.CLICK, this, this.OnChkTapClick)) : O.isWX && (this.taptip.visible = !0,
+            this.boxBg.visible = !1,
+            this.ImgTitle.skin = "common/QQ-46.png",
+            this.ImgTitle.x = 54,
+            this.ImgTitle.y = 96,
+            this.boxIcon.skin = "common/QQ-47.png",
+            this.boxIcon.x = 361,
+            this.boxIcon.y = 465,
+            this.Imgbgpro.skin = "common/QQ-48.png",
+            this.Imgbgpro.x = 207,
+            this.Imgbgpro.y = 894,
+            this.prossImg.skin = "common/QQ-49.png",
+            this.prossImg.x = 0,
+            this.prossImg.y = 0,
+            this.Btn_tt_tap.visible = !0,
+            this.Btn_tt_tap.skin = "common/QQ-50.png",
+            this.Btn_tt_tap.x = 186,
+            this._endpercent = ie.sdk.adConfig.GetCrazyPercent(),
+            this._up_step = ie.sdk.adConfig.electControl("zs_click_award_add"),
+            this._down_step = ie.sdk.adConfig.electControl("zs_click_award_back"),
+            this.Btn_tt_tap.y = Laya.stage.height - 150,
+            this.fingerImg.y = this.Btn_tt_tap.y + 65,
+            this.Btn_tt_tap.on(Laya.Event.MOUSE_DOWN, this, this.boxDown),
+            this.Btn_tt_tap.on(Laya.Event.MOUSE_UP, this, this.boxUp)),
+            O.isWX && (C.Ins.on(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.on(L.EVENT_GAME_TO_BG, this, this.gametoBg))
+        }
+        Bgtogame() {
+            console.log("能量界面从后台切换回游戏"),
+            this.complete()
+        }
+        gametoBg() {
+            console.log("能量界面切换到后台"),
+            this.timer.clearAll(this)
+        }
+        onGameShow() {
+            this._isAppShow || this._isClickComplete && this.timer.once(500, this, ()=>{
+                this.complete()
+            }
+            )
+        }
+        onGameHide() {
+            this._isHide = !0,
+            this._isClickComplete && this.timer.clearAll(this)
+        }
+        startRun() {
+            this.timerLoop(50, this, this.update),
+            this._isRunning = !0
+        }
+        stop() {
+            this.clearTimer(this, this.update),
+            this._isRunning = !1,
+            Laya.Tween.clearTween(this.boxIcon)
+        }
+        complete() {
+            O.isWX && (O.sdk.hideBannerzs(),
+            O.sdk.endMistake()),
+            Ce.inst.setGold(100),
+            this.getChildByName("GoldSp").getComponent(ke).updateUI();
+            let e = this.boxIcon.x
+              , t = this.boxIcon.y;
+            Be.Ins.goldEffect(new Laya.Vector2(e,t), 10, this, ()=>{
+                this.closeView()
+            }
+            )
+        }
+        onOpened(e) {}
+        closeView() {
+            this._isClosed || (this._isClosed = !0,
+            this.timer.clearAll(this),
+            this.close())
+        }
+        goldEffect(e, t=10, s=null) {
+            let i = t;
+            for (let n = 0; n < t; n++) {
+                let t = new Laya.Sprite;
+                t.loadImage("adwardbox/1-03.png");
+                let a, o = F.Math.randomCircle(10);
+                t.x = e.x + o.x,
+                t.y = e.y + o.y,
+                t.scale(.8, .8),
+                this.addChild(t),
+                a = O.isWX ? {
+                    x: Laya.stage.width - 200,
+                    y: 10
+                } : {
+                    x: 20,
+                    y: 90
+                },
+                Laya.Tween.to(t, a, 500, Laya.Ease.bounceIn, Laya.Handler.create(this, ()=>{
+                    t.removeSelf(),
+                    --i <= 0 && s && s()
+                }
+                ), 50 * n)
+            }
+        }
+        closeDown(e) {
+            e.stopPropagation(),
+            this.closeView()
+        }
+        closeUp(e) {
+            e.stopPropagation()
+        }
+        boxDown(e) {
+            e.stopPropagation(),
+            this._progress += this._up_step,
+            this._progress > 1 && (this._progress = 1),
+            this._isRunning || this.fresh(),
+            this._click_time = (new Date).getTime()
+        }
+        boxUp(e) {
+            e.stopPropagation()
+        }
+        update() {
+            this.fresh(),
+            (new Date).getTime() - this._click_time >= 50 && (this._progress -= this._down_step,
+            (this._progress < 0 || isNaN(this._progress)) && (this._progress = 0)),
+            this._index % 2 == 0 && (this.fingerImg.skin = "common/fingerup.png" == this.fingerImg.skin ? "common/fingerdown.png" : "common/fingerup.png"),
+            this._progress >= this._endpercent && (this.stop(),
+            O.isWX ? O.sdk.showBannerzs() : O.isQQ && (O.sdk.isUseZS ? O.sdk.showAppBoxAd() : ie.sdk.adConfig.checkControl("zs_over_cell_ad", !0) ? O.sdk.showAppBoxAd() : ie.sdk.adConfig.checkControl("zs_over_banner_ad", !0) && O.sdk.showBanner({
+                isCenter: !0,
+                left: 100,
+                mp: 2,
+                width: .8,
+                top: _e.designToScreen(0, this.boxIcon.y).y,
+                bh: 70
+            })),
+            this._isClickComplete = !0,
+            O.isQQ && (this.boxIcon.skin = "common/QQ-03.png"),
+            Laya.timer.once(1500, this, ()=>{
+                this.complete()
+            }
+            )),
+            this._index++
+        }
+        fresh() {
+            this.prossImg.scaleX = this._progress
+        }
+        shake() {
+            Laya.Tween.to(this.boxIcon, {
+                rotation: 30
+            }, 50, null, new Laya.Handler(this,()=>{
+                Laya.Tween.to(this.boxIcon, {
+                    rotation: -30
+                }, 100, null, new Laya.Handler(this,()=>{
+                    Laya.Tween.to(this.boxIcon, {
+                        rotation: 0
+                    }, 50, null, new Laya.Handler(this,()=>{
+                        this.shake()
+                    }
+                    ))
+                }
+                ))
+            }
+            ), 1e3)
+        }
+        onShow() {
+            this._isAppShow
+        }
+        onHide() {}
+        InitHorGames() {
+            let e = this.getChildByName("exportList1");
+            if (e && (e.visible = !0,
+            !e.getChildAt(0).getComponent(Ee))) {
+                e.getChildAt(0).addComponent(Ee).requestAdData(V.scroll, !0, K.SCROLL_HORIZONTAL, null, null, !1, !0)
+            }
+        }
+        onEnable() {
+            O.isQQ ? (O.sdk.hide_banner(),
+            this.startRun()) : O.isTT ? this._down_step = 0 : O.isWX && (O.sdk.hideBannerzs(),
+            O.sdk.beginMistake(),
+            this.getChildByName("GoldSp").y = 10,
+            this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.InitHorGames(),
+            this.startRun()),
+            this._progress = 0,
+            this._click_time = 0;
+            let e = O.isQQ;
+            O.isQQ ? this.closeBtn.visible = ie.sdk.adConfig.checkControl("zs_qq_close_show", !0) : this.closeBtn.visible = e,
+            this.fingerImg.visible = e,
+            this.tipImg.visible = e,
+            this.shake(),
+            this._isClickComplete = !1,
+            this._isHide = !1,
+            this._isAppShow = !1,
+            this._isClosed = !1
+        }
+        onDisable() {
+            O.isWX && (C.Ins.off(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.off(L.EVENT_GAME_TO_BG, this, this.gametoBg)),
+            this.stop(),
+            Laya.stage.event("QQ_CLICK_BOX")
+        }
+        OnCrazyTap() {
+            let e = this;
+            if ("common/tt-09.png" == e.Btn_tt_tap.skin)
+                e._progress += e._up_step,
+                e._progress >= .9 && (e.Btn_tt_tap.skin = "common/tt-10.png",
+                e.boxIcon.skin = "common/QQ-03.png",
+                e.Chk_tt_tap.visible = !0,
+                e._progress = 1),
+                e.prossImg.scaleX = e._progress;
+            else if ("common/tt-12.png" == this.Chk_tt_tap.skin) {
+                if (!e.bShowVideo) {
+                    e.bShowVideo = !0;
+                    let t = this.boxIcon.x
+                      , s = this.boxIcon.y;
+                    ue.Ins.playVideo("Please Watch the full video to get gold!", ()=>{
+                        Ce.inst.setGold(100),
+                        this.getChildByName("GoldSp").getComponent(ke).updateUI(),
+                        Be.Ins.goldEffect(new Laya.Vector2(t,s), 10, this, ()=>{
+                            this.close()
+                        }
+                        )
+                    }
+                    , e, ()=>{
+                        e.bShowVideo = !1,
+                        this.close()
+                    }
+                    )
+                }
+            } else
+                this.close()
+        }
+        OnChkTapClick() {
+            "common/tt-12.png" == this.Chk_tt_tap.skin ? this.Chk_tt_tap.skin = "common/tt-11.png" : this.Chk_tt_tap.skin = "common/tt-12.png"
+        }
+    }
+    class Ne extends Laya.Script {
+        constructor() {
+            super(),
+            this.intType = 1e3,
+            this.numType = 1e3,
+            this.strType = "hello laya",
+            this.boolType = !0,
+            this.elect_list = null,
+            this._curIdx = 0,
+            this.canshow = !1
+        }
+        onEnable() {
+            if (O.isWX && !ie.sdk.adConfig.electControl("zs_jump_switch"))
+                return;
+            let e = this;
+            e.InitData(),
+            e.owner.on(Laya.Event.CLICK, e, t=>{
+                ie.sdk.navigateToMiniProgram(e.getData(), V.float)
+            }
+            )
+        }
+        InitData() {
+            let e = this;
+            e.elect_list && 0 != e.elect_list.length || (O.sdk.isUseZS ? window.zs.sdk.loadAd(function(t) {
+                e.elect_list = t.endPage,
+                e.elect_list && 0 != e.elect_list.length ? (e.UpdateGame(),
+                e.owner.visible = !0,
+                e.canshow = !0,
+                Laya.timer.loop(3e3, e, e.itemShake)) : e.owner.visible = !1
+            }) : (e.elect_list = ie.sdk.getAdList(ie.sdk.getAdType(V.float)),
+            e.elect_list && 0 != e.elect_list.length ? (e.UpdateGame(),
+            e.owner.visible = !0,
+            e.canshow = !0,
+            Laya.timer.loop(3e3, e, e.itemShake)) : e.owner.visible = !1))
+        }
+        getData() {
+            return this.elect_list && 0 != this.elect_list.length ? this.elect_list[this._curIdx % this.elect_list.length] : null
+        }
+        UpdateGame() {
+            this._curIdx = Math.floor(Math.random() * this.elect_list.length);
+            let e = this.getData();
+            e && (this.owner.getChildByName("icon").skin = e.link_img || e.app_icon,
+            this.owner.getChildByName("nameTxt").text = e.link_name || e.app_title)
+        }
+        itemShake() {
+            Laya.Tween.to(this.owner, {
+                rotation: 10
+            }, 300, null, Laya.Handler.create(this, ()=>{
+                Laya.Tween.to(this.owner, {
+                    rotation: 0
+                }, 300, null, Laya.Handler.create(this, ()=>{
+                    Laya.Tween.to(this.owner, {
+                        rotation: -10
+                    }, 300, null, Laya.Handler.create(this, ()=>{
+                        Laya.Tween.to(this.owner, {
+                            rotation: 0
+                        }, 300, null, Laya.Handler.create(this, ()=>{
+                            this.UpdateGame()
+                        }
+                        ))
+                    }
+                    ))
+                }
+                ))
+            }
+            ))
+        }
+        setcanshow() {
+            this.canshow && (this.owner.visible = !0)
+        }
+        onDisable() {}
+    }
+    class Pe extends e.commonUI.UIAdwardEnergyUI {
+        constructor() {
+            super(),
+            this._isRunning = !1,
+            this._up_step = .1,
+            this._down_step = .02,
+            this._progress = 0,
+            this._endpercent = .85,
+            this._click_time = 0,
+            this._index = 0,
+            this._callback = null,
+            this._isHide = !1,
+            this._isClickComplete = !1,
+            this._isAppShow = !1,
+            this._isClosed = !1,
+            this._bblockad = !1,
+            this.height = Laya.stage.height,
+            O.isWX ? (this._endpercent = ie.sdk.adConfig.GetCrazyPercent(),
+            this._up_step = ie.sdk.adConfig.electControl("zs_click_award_add"),
+            this._down_step = ie.sdk.adConfig.electControl("zs_click_award_back"),
+            this.Btn_Crazy_tap.y = this.height - 150) : O.isTT ? this.Btn_Crazy_tap.y = this.height - 150 : O.isQQ ? (this._endpercent = ie.sdk.adConfig.GetCrazyPercent(),
+            this._up_step = ie.sdk.adConfig.electControl("zs_click_award_add"),
+            this._down_step = ie.sdk.adConfig.electControl("zs_click_award_back"),
+            this.Btn_Crazy_tap.y = this.height - 150 - 90) : this.Btn_Crazy_tap.y = this.height - 150,
+            this.Btn_Crazy_tap.on(Laya.Event.MOUSE_DOWN, this, this.boxDown),
+            this.Btn_Crazy_tap.on(Laya.Event.MOUSE_UP, this, this.boxUp),
+            this.closeBtn.on(Laya.Event.MOUSE_DOWN, this, this.closeDown),
+            this.closeBtn.on(Laya.Event.MOUSE_UP, this, this.closeUp),
+            O.isWX && (C.Ins.on(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.on(L.EVENT_GAME_TO_BG, this, this.gametoBg))
+        }
+        Bgtogame() {
+            console.log("能量界面从后台切换回游戏"),
+            this.complete()
+        }
+        gametoBg() {
+            console.log("能量界面切换到后台"),
+            this.timer.clearAll(this)
+        }
+        onGameShow() {
+            this._isAppShow || this._isClickComplete && this.timer.once(500, this, ()=>{
+                this.complete()
+            }
+            )
+        }
+        onGameHide() {
+            this._isHide = !0,
+            this._isClickComplete && this.timer.clearAll(this)
+        }
+        startRun() {
+            this.timerLoop(50, this, this.update),
+            this._isRunning = !0
+        }
+        stop() {
+            this.clearTimer(this, this.update),
+            this._isRunning = !1
+        }
+        complete() {
+            O.isWX && (O.sdk.hideBannerzs(),
+            O.sdk.endMistake()),
+            Ce.inst.setGold(100),
+            this.getChildByName("GoldSp").getComponent(ke).updateUI();
+            let e = this.Spnengliangtiao.y + 60;
+            Be.Ins.goldEffect(new Laya.Vector2(360,e), 10, this, ()=>{
+                this.closeView()
+            }
+            )
+        }
+        onOpened(e) {}
+        closeView() {
+            this._isClosed || (O.isWX && (C.Ins.off(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.off(L.EVENT_BG_TO_GAME, this, this.gametoBg)),
+            this._isClosed = !0,
+            this.timer.clearAll(this),
+            this.close())
+        }
+        goldEffect(e, t=10, s=null) {
+            let i = t;
+            for (let n = 0; n < t; n++) {
+                let t = new Laya.Sprite;
+                t.loadImage("adwardbox/1-03.png");
+                let a, o = F.Math.randomCircle(10);
+                t.x = e.x + o.x,
+                t.y = e.y + o.y,
+                t.scale(.8, .8),
+                this.addChild(t),
+                a = O.isWX ? {
+                    x: Laya.stage.width - 200,
+                    y: 10
+                } : {
+                    x: 20,
+                    y: 90
+                },
+                Laya.Tween.to(t, a, 500, Laya.Ease.bounceIn, Laya.Handler.create(this, ()=>{
+                    t.removeSelf(),
+                    --i <= 0 && s && s()
+                }
+                ), 50 * n)
+            }
+        }
+        closeDown(e) {
+            e.stopPropagation(),
+            this.closeView()
+        }
+        closeUp(e) {
+            e.stopPropagation()
+        }
+        boxDown(e) {
+            e.stopPropagation(),
+            this._progress += this._up_step,
+            this._progress > 1 && (this._progress = 1),
+            this._isRunning || this.fresh(),
+            this._click_time = (new Date).getTime()
+        }
+        boxUp(e) {
+            e.stopPropagation()
+        }
+        update() {
+            this.fresh(),
+            (new Date).getTime() - this._click_time >= 50 && (this._progress -= this._down_step,
+            (this._progress < 0 || isNaN(this._progress)) && (this._progress = 0)),
+            this._index % 2 == 0 && (this.fingerImg.skin = "common/fingerup.png" == this.fingerImg.skin ? "common/fingerdown.png" : "common/fingerup.png"),
+            this._progress >= this._endpercent && (this.stop(),
+            O.isWX ? O.sdk.showBannerzs() : O.isQQ && (O.sdk.isUseZS ? ie.sdk.adConfig.CrazyTapVideo() ? ue.Ins.playVideo("Please Watch the full video!", ()=>{}
+            , this, ()=>{}
+            ) : O.sdk.showBanner({
+                mp: 3,
+                isCenter: !0,
+                top: this.Btn_Crazy_tap.y
+            }) : ie.sdk.adConfig.checkControl("zs_over_banner_ad", !0) ? O.sdk.showBanner({
+                mp: 3,
+                isCenter: !0,
+                top: this.Btn_Crazy_tap.y
+            }) : ie.sdk.adConfig.checkControl("zs_energy_block_ad", !0) && (this._bblockad ? O.sdk.showBlockAd() : O.sdk.showBanner({
+                mp: 3,
+                isCenter: !0,
+                top: this.Btn_Crazy_tap.y
+            }))),
+            this._isClickComplete = !0,
+            Laya.timer.once(1500, this, ()=>{
+                this.complete()
+            }
+            )),
+            this._index++
+        }
+        fresh() {
+            this.prossImg.scaleY = this._progress
+        }
+        InitFloatGame() {
+            let e = this.getChildByName("fgame1");
+            e && (e.getComponent(Ne) || e.addComponent(Ne),
+            _e.largeScreen() && (e.y += 120));
+            let t = this.getChildByName("fgame2");
+            t && (t.getComponent(Ne) || t.addComponent(Ne),
+            _e.largeScreen() && (t.y += 120));
+            let s = this.getChildByName("fgame3");
+            s && (s.getComponent(Ne) || s.addComponent(Ne),
+            _e.largeScreen() && (s.y += 120));
+            let i = this.getChildByName("fgame4");
+            i && (i.getComponent(Ne) || i.addComponent(Ne),
+            _e.largeScreen() && (i.y += 120))
+        }
+        SetUI() {
+            _e.largeScreen() && (this.Sptitle.y += 120,
+            this.Spnengliangtiao.y += 120,
+            this.Sphuoshan.y += 120)
+        }
+        onEnable() {
+            O.isQQ ? (O.sdk.hideBlockAd(),
+            O.sdk.hide_banner()) : O.isWX && (this.taptip.visible = !0,
+            this.getChildByName("GoldSp").y = 10,
+            this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            O.sdk.hideBannerzs(),
+            O.sdk.beginMistake(),
+            this.InitFloatGame(),
+            this.SetUI()),
+            this._progress = 0,
+            this._click_time = 0,
+            this._isClickComplete = !1,
+            this._isHide = !1,
+            this._isAppShow = !1,
+            this._isClosed = !1,
+            O.isQQ ? this.closeBtn.visible = ie.sdk.adConfig.checkControl("zs_qq_close_show", !0) : this.closeBtn.visible = !1,
+            this.startRun()
+        }
+        onDisable() {
+            O.isWX && (C.Ins.off(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.off(L.EVENT_GAME_TO_BG, this, this.gametoBg)),
+            O.isQQ && O.sdk.hide_banner(),
+            this.stop(),
+            Laya.stage.event("QQ_CLICK_ENERGY"),
+            O.sdk.showBlockAd()
+        }
+    }
+    class xe extends e.commonUI.UISelectBoxUI {
+        constructor() {
+            super(),
+            this.box_golds = [25, 50, 75, 100, 125, 150, 175, 200, 300],
+            this.openedBoxs = [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            this.box_open_count = 0,
+            this.cur_open_count = 0,
+            this._callBack = null,
+            this._sumGold = 0,
+            this.height = Laya.stage.height,
+            this.bg.graphics.drawRect(0, 0, Laya.stage.width, Laya.stage.height, "#23a8ea"),
+            this.PlatformUIInit()
+        }
+        onOpened(e) {
+            e && (this._callBack = e.callback)
+        }
+        onAwake() {}
+        onEnable() {
+            F.Array.randomArray(this.box_golds),
+            this.threeBtn.clickHandler = new Laya.Handler(this,this.onThree),
+            this.closeBtn.clickHandler = Laya.Handler.create(this, this.closeView),
+            this.backBtn.clickHandler = Laya.Handler.create(this, this.closeView);
+            let e = this.main.getChildByName("boxs");
+            for (let t = 1; t <= 9; t++) {
+                e.getChildByName("item" + t).clickHandler = new Laya.Handler(this,this.onItem,[t])
+            }
+            this.box_open_count = 0,
+            this.cur_open_count = 0,
+            this.threeBtn.visible = !1,
+            this.closeBtn.visible = !1
+        }
+        onItem(e) {
+            if (this.cur_open_count >= 3 || 1 == this.openedBoxs[e - 1])
+                return;
+            let t = this.boxs.getChildByName(`item${e}`);
+            t.getChildByName("box").visible = !1;
+            let s = ()=>{
+                let e = new Laya.Image;
+                e.skin = "prefab/home-12.png",
+                e.x = t.width / 2 - e.width / 2,
+                e.y = 25;
+                let s = new Laya.Label(`+ ${this.box_golds[this.box_open_count]}`);
+                this._sumGold += this.box_golds[this.box_open_count],
+                s.color = "#ffffff",
+                s.fontSize = 35,
+                s.x = t.width / 2 - s.width / 2,
+                s.y = 102.5,
+                t.addChild(e),
+                t.addChild(s)
+            }
+            ;
+            if (8 == this.box_open_count) {
+                this.getRare().length > 0 ? t.skin = "box/tips-21.png" : (s(),
+                this.timer.once(2e3, this, ()=>{
+                    this.closeView()
+                }
+                ))
+            } else
+                s();
+            this.openedBoxs[e - 1] = 1,
+            this.box_open_count++,
+            this.cur_open_count++,
+            3 == this.cur_open_count && (this.threeBtn.visible = !0,
+            this.closeBtn.visible = !0)
+        }
+        getRare() {
+            return []
+        }
+        onThree() {
+            ue.Ins.playVideo("Please watch the full video to receive the reward!", ()=>{
+                this._sumGold = 3 * this._sumGold,
+                this.closeView()
+            }
+            , this)
+        }
+        closeView() {
+            Ce.inst.setGold(this._sumGold),
+            C.Ins.event("changeGold"),
+            this._callBack && this._callBack(),
+            ne.Ins.sceneClose(this.url)
+        }
+        PlatformUIInit() {
+            _e.largeScreen() && (this.main.y += 120),
+            O.isWX && (this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.getChildByName("GoldSp").y = 10)
+        }
+    }
+    class De extends G {
+        constructor() {
+            super(),
+            this._signed = !1
+        }
+        getData() {
+            this.init({
+                name: "game-singed"
+            }),
+            this._data.time = this._data.time || 0,
+            this._data.day = this._data.day || 0,
+            this.dayDiff(new Date(this._data.time), new Date) > 0 ? (this._data.day >= 7 && (this._data.day = 0),
+            this._signed = !1) : this._signed = !0,
+            this.save()
+        }
+        static get inst() {
+            return null == this._instance && (this._instance = new De),
+            this._instance
+        }
+        get isSigned() {
+            return this._signed
+        }
+        get signDay() {
+            return this._data.day
+        }
+        get signTime() {
+            return this._data.time
+        }
+        sign() {
+            this._signed || (this._data.day++,
+            this._data.time = (new Date).getTime(),
+            this._signed = !0,
+            this.save())
+        }
+    }
+    De._instance = null;
+    const ze = [100, 150, 200, 300, 400, 500, 600];
+    class Oe extends e.commonUI.UISignUI {
+        constructor() {
+            super(),
+            this.rareCream = null,
+            this.height = Laya.stage.height,
+            this.bg.graphics.drawRect(0, 0, Laya.stage.width, Laya.stage.height, "#23a8ea"),
+            Oe.onSignDay(),
+            this.PlatformUIInit()
+        }
+        onEnable() {
+            this.btnMove(),
+            De.inst.sign(),
+            O.isQQ && O.sdk.hideBlockAd()
+        }
+        btnMove() {
+            if (ie.sdk.adConfig.electControl("zs_banner_vertical_enable"))
+                if (O.isWX) {
+                    O.sdk.beginMistake(),
+                    O.sdk.hideBannerzs(),
+                    this.getBtn.y = Laya.stage.height - 150;
+                    let e = ie.sdk.adConfig.electControl("zs_banner_banner_time") || 2e3
+                      , t = ie.sdk.adConfig.electControl("zs_banner_text_time") || 2e3
+                      , s = ie.sdk.adConfig.electControl("zs_banner_move_time") || 2e3
+                      , i = this.getMoreBtn.y + this.getMoreBtn.height + 10;
+                    this.isHideBanner = !0,
+                    Laya.timer.once(e, this, ()=>{
+                        this.isHideBanner = !1,
+                        O.sdk.showBannerzs(),
+                        O.sdk.endMistake()
+                    }
+                    ),
+                    Laya.Tween.to(this.getBtn, {
+                        x: this.getBtn.x,
+                        y: i
+                    }, s, null, Laya.Handler.create(this, ()=>{}
+                    ), t)
+                } else if (O.isQQ && ie.sdk.adConfig.isBannerMistake()) {
+                    O.sdk.hide_banner(),
+                    this.getBtn.y = Laya.stage.height - 150;
+                    let e = ie.sdk.adConfig.electControl("zs_banner_text_time")
+                      , t = ie.sdk.adConfig.electControl("zs_banner_move_time")
+                      , s = e
+                      , i = this.getMoreBtn.y + this.getMoreBtn.height + 10;
+                    this.isHideBanner = !0,
+                    Laya.timer.once(s, this, ()=>{
+                        this.isHideBanner = !1,
+                        O.sdk.showBanner()
+                    }
+                    ),
+                    Laya.Tween.to(this.getBtn, {
+                        x: this.getBtn.x,
+                        y: i
+                    }, t, null, Laya.Handler.create(this, ()=>{}
+                    ), e)
+                }
+        }
+        static setMainSceneProped() {
+            Oe.signData.prop = 1,
+            Oe.saveSign(),
+            Oe.mianPoped = !0
+        }
+        static get mainProped() {
+            return Oe.mianPoped
+        }
+        static onSignDay() {
+            if (Oe.signData)
+                return Oe.isSigned;
+            if (null == Oe.signData) {
+                Oe.signData = {
+                    signTime: 0,
+                    signDay: 0,
+                    prop: 0
+                };
+                let e = Laya.LocalStorage.getItem("sign_time")
+                  , t = Laya.LocalStorage.getItem("sign_day");
+                e && "" != e && (Oe.signData.signTime = parseInt(e)),
+                t && "" != t && (Oe.signData.signDay = parseInt(t))
+            }
+            let e = F.Time.dayDiff(Oe.signData.signTime, (new Date).getTime())
+              , t = Oe.signData.signDay;
+            return e > 0 ? (t >= 7 && (Oe.signData.signDay = 0),
+            Oe.isSigned = !1) : Oe.isSigned = !0,
+            Oe.isSigned
+        }
+        static saveSign() {
+            Laya.LocalStorage.setItem("sign_time", `${Oe.signData.signTime}`),
+            Laya.LocalStorage.setItem("sign_day", `${Oe.signData.signDay}`)
+        }
+        onAwake() {
+            this.getMoreBtn.clickHandler = new Laya.Handler(this,this.ongetMore),
+            this.getBtn.clickHandler = new Laya.Handler(this,this.onGet),
+            this.closeBtn.clickHandler = new Laya.Handler(this,this.closeView),
+            Oe.isSigned && this.updateSigned();
+            for (let e = 0; e < 7; e++)
+                this.setSignedItem(e + 1)
+        }
+        onDisable() {
+            O.isQQ ? (O.sdk.showBlockAd(),
+            this.isHideBanner && O.sdk.showBanner()) : O.isWX && this.isHideBanner && O.sdk.showBannerzs()
+        }
+        updateSigned() {
+            this.getMoreBtn.visible = !1,
+            this.getBtn.label = "Signed in"
+        }
+        setSignedItem(e) {
+            let t = this.frame.getChildByName(`item${e}`);
+            if (Oe.signData.signDay >= e) {
+                if (t.getChildByName("daybg").getChildByName("day").text = "Signed",
+                e < 7) {
+                    t.getChildByName("goldIcon").visible = !1
+                }
+                t.getChildByName("gold").visible = !1;
+                let s = new Laya.Image("common/tips-10.png");
+                s.x = 7 != e ? t.width / 2 - s.width / 2 : 196,
+                s.y = 25,
+                t.addChild(s)
+            } else if (e < 7) {
+                t.getChildByName("gold").text = `${ze[e - 1]}`
+            }
+        }
+        signAdward(e=1) {
+            if (Oe.signData.signDay++,
+            Oe.signData.signTime = (new Date).getTime(),
+            Oe.saveSign(),
+            Oe.signData.signDay <= 6) {
+                let t = this.frame.getChildByName(`item${Oe.signData.signDay}`)
+                  , s = e * ze[Oe.signData.signDay - 1];
+                Ce.inst.setGold(s),
+                Be.Ins.goldEffect(new Laya.Vector2(t.x + this.frame.x + t.width / 2,t.y + this.frame.y + t.height / 2), 10, this)
+            } else {
+                let t = this.frame.getChildByName("item7").getChildByName("iconbg")
+                  , s = t.getChildByName("icon");
+                t.skin = "common/tips-11.png",
+                s.skin = "common/home-12.png";
+                let i = this.frame.getChildByName(`item${Oe.signData.signDay}`)
+                  , n = e * ze[Oe.signData.signDay - 1];
+                Ce.inst.setGold(n),
+                Be.Ins.goldEffect(new Laya.Vector2(i.x + this.frame.x + i.width / 2,i.y + this.frame.y + i.height / 2), 10, this)
+            }
+            C.Ins.event("changeGold"),
+            Oe.isSigned = !0,
+            this.setSignedItem(Oe.signData.signDay),
+            this.updateSigned(),
+            this.timer.once(2e3, this, ()=>{
+                this.closeView()
+            }
+            )
+        }
+        goldEffect(e, t=10, s=null) {
+            let i = t;
+            for (let n = 0; n < t; n++) {
+                let t = new Laya.Sprite;
+                t.loadImage("common/home-12.png");
+                let a = F.Math.randomCircle(10);
+                t.x = e.x + a.x,
+                t.y = e.y + a.y,
+                t.scale(.8, .8),
+                this.addChild(t),
+                Laya.Tween.to(t, {
+                    x: 20,
+                    y: 90
+                }, 500, Laya.Ease.bounceIn, Laya.Handler.create(this, ()=>{
+                    t.removeSelf(),
+                    --i <= 0 && s && s()
+                }
+                ), 50 * n)
+            }
+        }
+        ongetMore() {
+            ue.Ins.playVideo("Please Watch the full video to get gold!", ()=>{
+                this.signAdward(5)
+            }
+            , this)
+        }
+        onGet() {
+            0 != this.getMoreBtn.visible ? this.signAdward() : this.closeView()
+        }
+        closeView() {
+            O.isWX && O.sdk.endMistake(),
+            me.bBtnClicked = !1,
+            this.timer.clearAll(this),
+            ne.Ins.sceneClose(this.url)
+        }
+        PlatformUIInit() {
+            let e = [];
+            if (_e.largeScreen()) {
+                e.push(this.getChildByName("closeBtn")),
+                e.push(this.getChildByName("goldinfo")),
+                e.push(this.getChildByName("title")),
+                e.push(this.getChildByName("frame")),
+                e.push(this.getChildByName("getMoreBtn")),
+                e.push(this.getChildByName("getBtn"));
+                let t = this.getChildByName("sign-day-1");
+                t && (t.y += 120);
+                for (let t = 0; t < e.length; t++)
+                    e[t] && (e[t].y += 120)
+            }
+            O.isWX ? (this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.getChildByName("GoldSp").y = 10) : O.isTT && (this.getMoreBtn.skin = "platform_pics/pic_005.png",
+            this.getMoreBtn.x = 30,
+            this.getBtn.label = "Signed in",
+            this.getBtn.x = 374,
+            this.getBtn.y = this.getMoreBtn.y)
+        }
+    }
+    Oe.signData = null,
+    Oe.isSigned = !1,
+    Oe.mianPoped = !1;
+    class Me extends e.commonUI.UnlockNewDialogUI {
+        constructor() {
+            super(),
+            this.rareGateId = 0,
+            this.type = 0,
+            this._mask = null,
+            this.tempCount = 0,
+            this.textCount = 0,
+            this.cc = 0,
+            this.lvPercent = 0,
+            this.lockLv = 2,
+            this.iconH = 370,
+            this.height = Laya.stage.height
+        }
+        onEnable() {
+            let e = new Laya.Sprite;
+            this.imgIcon.mask = e,
+            this._mask = e,
+            this.updateLockData(),
+            Laya.timer.frameLoop(1, this, this.updateProgress),
+            Laya.timer.once(3e3, this, function() {
+                this && this.close()
+            })
+        }
+        onOpened(e) {
+            console.log("UnlockRareNewDialog", e),
+            e && (this.type = e.type,
+            this.rareGateId = e.id)
+        }
+        onCloseClick(e) {
+            this.close(),
+            e.stopPropagation()
+        }
+        onUnLock(e) {
+            console.log("onUnLock", this.rareGateId),
+            this.close(),
+            2 == this.type ? C.Ins.event("cut", this.rareGateId) : 3 == this.type && C.Ins.event("cut", this.rareGateId),
+            e.stopPropagation()
+        }
+        updateProgress() {
+            var e = 3;
+            me.nCurScene <= 2 ? (me.proCount += 2,
+            e = 2) : me.proCount++,
+            me.proCount <= this.tempCount + this.iconH * this.lvPercent * .01 ? (this._mask.graphics.clear(),
+            this._mask.graphics.drawRect(0, 0, this.imgIcon.width, me.proCount, "#fff000"),
+            me.proCount % e == 0 && this.cc < this.lvPercent && (this.textCount++,
+            this.cc++,
+            this.textCount >= 95 && (this.textCount = 100),
+            this.txtUnlock.text = "Unclock:" + this.textCount + "%")) : (this.cc = 0,
+            Laya.timer.clear(this, this.updateProgress))
+        }
+        updateLockData() {
+            var e = me.nCurScene % 2
+              , t = (Math.floor(me.nCurScene / 5),
+            this.imgIcon.width)
+              , s = this.imgIcon.height;
+            me.nCurScene <= 2 ? (this.imgIcon.skin = "image/shop/lock2_6.png",
+            this.imgGray.skin = "image/shop/m2_6.png",
+            s = 408,
+            this.lvPercent = 50,
+            2 == me.nCurScene && this.saveData(2, 5),
+            this.lockLv = 2) : me.nCurScene > 2 && me.nCurScene <= 6 ? (this.imgGray.skin = "image/shop/m1_4.png",
+            this.imgIcon.skin = "image/shop/lock1_4.png",
+            s = 300,
+            e = (me.nCurScene - 2) % 4,
+            this.lvPercent = 25,
+            this.lockLv = 3,
+            6 == me.nCurScene && this.saveData(1, 3)) : me.nCurScene > 6 && me.nCurScene <= 10 ? (this.imgGray.skin = "image/shop/m2_2.png",
+            this.imgIcon.skin = "image/shop/lock2_2.png",
+            s = 394,
+            e = (me.nCurScene - 6) % 4,
+            this.lvPercent = 25,
+            this.lockLv = 3,
+            10 == me.nCurScene && this.saveData(2, 1)) : me.nCurScene > 10 && me.nCurScene <= 15 ? (this.imgGray.skin = "image/shop/m1_5.png",
+            this.imgIcon.skin = "image/shop/lock1_5.png",
+            s = 300,
+            e = (me.nCurScene - 10) % 5,
+            this.lvPercent = 20,
+            this.lockLv = 3,
+            15 == me.nCurScene && this.saveData(1, 4)) : me.nCurScene > 15 && me.nCurScene <= 20 && (this.imgGray.skin = "image/shop/m1_2.png",
+            this.imgIcon.skin = "image/shop/lock1_2.png",
+            s = 300,
+            this.lvPercent = 20,
+            this.lockLv = 3,
+            e = (me.nCurScene - 15) % 5,
+            15 == me.nCurScene && this.saveData(1, 1)),
+            this.iconH = s;
+            var i = Math.floor(s * (100 - this.lvPercent) / 100)
+              , n = Math.floor(s * this.lvPercent / 100);
+            me.proCount = 0 == e ? i : (e - 1) * n,
+            this.textCount = 0 == e ? 100 - this.lvPercent : (e - 1) * this.lvPercent,
+            this.tempCount = me.proCount,
+            this._mask.graphics.clear(),
+            this._mask.graphics.drawRect(0, 0, t, me.proCount, "#fff000")
+        }
+        saveData(e, t) {
+            for (var s = 0; s < 6; s++)
+                1 == me.shopTools[e][s] && (me.shopTools[e][s] = 2);
+            me.shopSelect[e] = t,
+            me.shopTools[e][t] = 1,
+            Laya.LocalStorage.setJSON("ShopItems", me.shopTools),
+            Laya.LocalStorage.setJSON("ShopItemSelect", me.shopSelect)
+        }
+        onDestroy() {}
+    }
+    class Re extends Laya.Script {
+        constructor() {
+            super()
+        }
+        onAwake() {
+            super.onAwake(),
+            this.owner.height = Laya.stage.height;
+            var e, t = this.owner.getChildByName("topUI");
+            t && (e = t.getChildByName("adList"),
+            this.closeBtn = t.getChildByName("closeBtn")),
+            this.middleUI = this.owner.getChildByName("middleUI"),
+            this.middleUI && (e = e || this.middleUI.getChildByName("adList"),
+            this.closeBtn = this.closeBtn || this.middleUI.getChildByName("closeBtn")),
+            this.closeBtn = this.closeBtn || this.owner.getChildByName("closeBtn"),
+            this.adList = e.addComponent(Ee),
+            this.closeBtn.on(Laya.Event.CLICK, this, this.closeView)
+        }
+        onDestroy() {
+            this.closeBtn.off(Laya.Event.CLICK, this, this.closeView)
+        }
+        onStart() {
+            this.adList.requestAdData(V.more, !1, K.SCROLL_NONE, null, 9, !1, !1)
+        }
+        onEnable() {
+            if (ie.sdk.adConfig.electControl("zs_banner_vertical_enable")) {
+                O.sdk.beginMistake(),
+                O.sdk.hideBannerzs(),
+                this.closeBtn.y = Laya.stage.height - 100;
+                let e = ie.sdk.adConfig.electControl("zs_banner_banner_time")
+                  , t = ie.sdk.adConfig.electControl("zs_banner_text_time")
+                  , s = ie.sdk.adConfig.electControl("zs_banner_move_time");
+                Laya.timer.once(e, this, ()=>{
+                    O.sdk.showBannerzs()
+                }
+                ),
+                Laya.Tween.to(this.closeBtn, {
+                    x: this.closeBtn.x,
+                    y: 1e3
+                }, s, null, Laya.Handler.create(this, ()=>{}
+                ), t)
+            }
+        }
+        closeView() {
+            O.sdk && O.sdk.endMistake(),
+            ne.Ins.sceneClose(this.owner.url)
+        }
+    }
+    class Ve extends Laya.Script {
+        constructor() {
+            super()
+        }
+        onEnable() {
+            Laya.timer.loop(100, this, this.start)
+        }
+        start() {
+            let e = this.owner;
+            "common/fingerup.png" == e.skin ? e.skin = "common/fingerdown.png" : "common/fingerdown.png" == e.skin && (e.skin = "common/fingerup.png")
+        }
+        onDisable() {
+            Laya.timer.clearAll(this)
+        }
+    }
+    class Ue extends Laya.Script {
+        constructor() {
+            super()
+        }
+        onAwake() {
+            this.owner.mouseEnabled = !0,
+            this.owner.visible = ie.sdk.adConfig.electControl("zs_history_list_jump")
+        }
+        onClick() {
+            this.owner.mouseEnabled = !1,
+            ne.Ins.sceneOpen(w.fullscreenad2, !1),
+            this.owner.mouseEnabled = !0
+        }
+    }
+    class Ge extends Laya.Script {
+        constructor() {
+            super(),
+            this.headAdList = null,
+            this.mainAdList = null,
+            this.continueBtn = null,
+            this.bannershowed = !0,
+            this.firstClick = !0,
+            this.firstrealclose = !1
+        }
+        onAwake() {
+            super.onAwake();
+            var e, t, s = this.owner.getChildByName("topUI");
+            s && (e = s.getChildByName("headAdList"),
+            t = s.getChildByName("mainAdList"),
+            this.continueBtn = s.getChildByName("continueBtn"));
+            var i = this.owner.getChildByName("middleUI");
+            i && (e = e || i.getChildByName("headAdList"),
+            t = t || i.getChildByName("mainAdList"),
+            this.continueBtn = this.continueBtn || i.getChildByName("continueBtn")),
+            e && (this.headAdList = e.addComponent(Ee)),
+            t && (this.mainAdList = t.addComponent(Ee)),
+            this.continueBtn && this.continueBtn.on(Laya.Event.CLICK, this, this.onContinue)
+        }
+        onDestroy() {
+            this.continueBtn && this.continueBtn.off(Laya.Event.CLICK, this, this.onContinue)
+        }
+        onEnable() {
+            super.onEnable(),
+            O.sdk.hideBannerzs(),
+            ie.sdk.adConfig.electControl("zs_banner_vertical_enable") && (O.sdk.beginMistake(),
+            this.bannershowed = !1,
+            this.firstClick = !1);
+            var e = this.owner;
+            e.top = 0,
+            e.bottom = 0,
+            e.left = 0,
+            e.right = 0;
+            var t = this.owner.getChildByName("topUI")
+              , s = this.owner.getChildByName("middleUI")
+              , i = this.owner.getChildByName("bottomUI")
+              , n = this.owner.getChildByName("fullUI");
+            t && (t.top = 0,
+            t.centerX = 0),
+            s && (s.centerY = 0,
+            s.centerX = 0),
+            i && (i.bottom = 0,
+            i.centerX = 0),
+            n && (n.top = -10,
+            n.bottom = -10,
+            n.left = -10,
+            n.right = -10),
+            this.initFakeExitBtn()
+        }
+        initFakeExitBtn() {
+            let e = this.owner.getChildByName("exitBtn");
+            e && (e.getComponent(Ue) || e.addComponent(Ue))
+        }
+        onStart() {
+            super.onStart();
+            this.headAdList && (this.owner.url != w.fullscreenad2 ? this.headAdList.requestAdData(V.full1Page, !0, K.SCROLL_HORIZONTAL, null) : this.headAdList.requestAdData(V.full2Page, !0, K.SCROLL_HORIZONTAL, null)),
+            this.mainAdList && Laya.timer.once(5, this, ()=>{
+                this.owner.url != w.fullscreenad2 ? (this.mainAdList.requestAdData(V.full1Page, !0, K.SCROLL_VERTICAL, null, null, !1, !1),
+                ie.isQT && K.IS_AUTO_CLICK && ie.sdk.adConfig.electControl("zs_auto_jump_switch_1") && K.IS_START_GAME && (K.IS_AUTO_CLICK = !1,
+                this.mainAdList.autoclick())) : (this.mainAdList.requestAdData(V.full2Page, !0, K.SCROLL_VERTICAL, null, null, !1, !1),
+                ie.isQT && K.IS_AUTO_CLICK && ie.sdk.adConfig.electControl("zs_auto_jump_switch_2") && K.IS_START_GAME && (K.IS_AUTO_CLICK = !1,
+                this.mainAdList.autoclick()))
+            }
+            )
+        }
+        onContinue() {
+            if (this.firstClick)
+                this.bannershowed && this.closeView();
+            else {
+                this.firstClick = !0;
+                var e = this;
+                let t = 1e3
+                  , s = 2e3;
+                ie.isZS ? (t = 1e3,
+                s = 1e3 * ie.sdk.adConfig.electControl("zs_full_screen_banner_time")) : (t = ie.sdk.adConfig.electControl("zs_banner_click_show_time"),
+                s = ie.sdk.adConfig.electControl("zs_banner_click_hide_time")),
+                Laya.timer.once(t, e, function() {
+                    e.owner.url,
+                    w.fullscreenad2,
+                    O.sdk.showBannerzs(),
+                    Laya.timer.once(s, e, function() {
+                        O.sdk.hideBannerzs(),
+                        O.sdk.endMistake(),
+                        e.bannershowed = !0
+                    })
+                })
+            }
+        }
+        closeView() {
+            if (this.owner.url != w.fullscreenad2)
+                Laya.stage.event("FULL_SCREEN_AD1_CLOSE");
+            else {
+                if (O.sdk.isUseZS && ie.sdk.adConfig.electControl("zs_auto_jump_switch") && !this.firstrealclose)
+                    return this.firstrealclose = !0,
+                    void this.mainAdList.autoclick();
+                Laya.stage.event("FULL_SCREEN_AD2_CLOSE")
+            }
+            ne.Ins.sceneClose(this.owner.url)
+        }
+        onOpenListAd() {
+            this.owner.url != w.fullscreenad2 && ne.Ins.sceneOpen(w.fullscreenad2, !1)
+        }
+    }
+    class We extends e.commonUI.zs.MoneyGetUI {
+        constructor() {
+            super(),
+            this.showData = [],
+            this.showIndex = -1,
+            this.height = Laya.stage.height,
+            this.closeEffect = null,
+            this.popupEffect = null
+        }
+        onEnable() {
+            this.btn_Giveup.on(Laya.Event.CLICK, this, this.onGiveupClick),
+            this.btn_Get.on(Laya.Event.CLICK, this, this.onGetClick),
+            this.LoadGame()
+        }
+        onGiveupClick() {
+            Laya.stage.once("FULL_SCREEN_AD1_CLOSE", this, function() {
+                O.sdk.showBannerzs()
+            }),
+            ne.Ins.sceneOpen(w.fullscreenad1, !1),
+            ne.Ins.sceneClose(this.url)
+        }
+        onGetClick() {
+            ie.sdk.navigateToMiniProgram(this.showData[this.showIndex], V.more, ()=>{}
+            , ()=>{}
+            , ()=>{}
+            ),
+            ne.Ins.sceneClose(this.url)
+        }
+        LoadGame() {
+            let e = this;
+            window.zs.sdk.loadAd(function(t) {
+                e.showData = [];
+                for (var s = 0; s < t.endPage.length; s++)
+                    e.showData.push(t.endPage[s]);
+                e.showIndex = Math.floor(Math.random() * e.showData.length),
+                e.lbl_GameName.text = e.showData[e.showIndex].app_title,
+                e.img_Game.skin = e.showData[e.showIndex].app_icon,
+                e.lbl_TipGameName.text = `进入${e.showData[e.showIndex].app_title}领取红包`
+            })
+        }
+    }
+    class He extends Laya.Script {
+        constructor() {
+            super()
+        }
+        onEnable() {
+            this.isPlaying = !0,
+            this.start()
+        }
+        start() {
+            let e = 1
+              , t = this.owner;
+            1 == t.scaleX ? e = .9 : .9 == t.scaleX ? e = 1 : .6 == t.scaleX ? e = .7 : .7 == t.scaleX && (e = .6),
+            Laya.Tween.to(this.owner, {
+                scaleX: e,
+                scaleY: e
+            }, 500, null, new Laya.Handler(this,()=>{
+                this.isPlaying && this.start()
+            }
+            ))
+        }
+        onDisable() {
+            this.isPlaying = !1,
+            Laya.Tween.clearTween(this.owner)
+        }
+    }
+    class Fe extends e.gameUI.BgLayerUI {
+        constructor() {
+            super()
+        }
+        onEnable() {
+            this.imgCry.visible = !1,
+            this.imgSmile.visible = !1,
+            Laya.timer.frameLoop(1, this, this.cloudMove),
+            ne.Ins.sceneClose(w.LoadSceneView)
+        }
+        onAwake() {}
+        cloudMove() {
+            this.cloud1.x -= .1,
+            this.cloud3.x -= .1,
+            this.cloud2.x -= .15,
+            this.cloud4.x -= .15,
+            this.cloud2.x <= -1800 && (this.cloud2.x = 1080),
+            this.cloud4.x <= -1800 && (this.cloud4.x = 1080),
+            this.cloud1.x <= -1800 && (this.cloud1.x = 1080),
+            this.cloud3.x <= -1800 && (this.cloud3.x = 1080)
+        }
+        fishDeath(e, t=0, s=0) {
+            this.imgCry.visible = e,
+            me.bGameWin ? this.imgCry.skin = "image/smile.png" : (this.imgCry.x = t,
+            this.imgCry.y = s,
+            this.imgCry.skin = "image/cry.png")
+        }
+        setBgScale() {
+            this.scaleX -= .004,
+            this.scaleY -= .004
+        }
+        playSmileAct(e, t) {
+            var s = Laya.stage.clientScaleX
+              , i = Laya.stage.clientScaleY;
+            this.imgSmile.x = e / s,
+            this.imgSmile.y = t / i,
+            this.ani2.play(null, !1)
+        }
+        tweenScale() {
+            Laya.Tween.to(this, {
+                scaleX: 1,
+                scaleY: 1
+            }, 700)
+        }
+        changeBg() {
+            Math.floor(3 * Math.random())
+        }
+    }
+    class Xe extends e.gameUI.GameMainUI {
+        constructor() {
+            super(),
+            this.height = Laya.stage.height
+        }
+        onAwake() {}
+        onMouseDown() {}
+        onEnable() {
+            this.btnMoreGame.on(Laya.Event.CLICK, this, this.onClickMoreGame),
+            this.btnResetGame.on(Laya.Event.CLICK, this, this.onResetGame),
+            this.btnWin.on(Laya.Event.CLICK, this, this.onWin),
+            this.btnFail.on(Laya.Event.CLICK, this, this.onFail),
+            this.onEnableADControl(),
+            this.PlatformUIInit()
+        }
+        onOpened() {}
+        onDisable() {}
+        onFail() {
+            if (O.isTT && O.sdk.stopRecording(),
+            O.sdk.isUseZS && (console.log("zs导出2"),
+            ie.sdk.adConfig.isBeforeGameAccount()))
+                return Laya.stage.once("FULL_SCREEN_AD1_CLOSE", this, this.onCloseFullAd, [!1]),
+                K.IS_AUTO_CLICK = !0,
+                void ne.Ins.sceneOpen(w.fullscreenad1, !1);
+            this.Next(!1)
+        }
+        onWin() {
+            if (O.isTT && O.sdk.stopRecording(),
+            O.sdk.isUseZS && (console.log("zs导出2"),
+            ie.sdk.adConfig.isBeforeGameAccount()))
+                return Laya.stage.once("FULL_SCREEN_AD1_CLOSE", this, this.onCloseFullAd, [!0]),
+                K.IS_AUTO_CLICK = !0,
+                void ne.Ins.sceneOpen(w.fullscreenad1, !1);
+            this.Next(!0)
+        }
+        onCloseFullAd(e) {
+            this.Next(e)
+        }
+        Next(e) {
+            this.close()
+        }
+        onResetGame() {
+            O.isTT && O.sdk.stopRecording(),
+            this.close(),
+            Laya.Scene.open(w.GameStartView)
+        }
+        onClickMoreGame(e) {
+            if (e.type == Laya.Event.CLICK)
+                if (O.isTT) {
+                    let e = ie.sdk.getAdList("defaultData");
+                    O.sdk.showMoreGamesModal(e && e.length > 0 ? e[0] : [], null, null, null, e=>{
+                        1 == e && ge.Ins.showMsgTip("打开更多游戏失败", this)
+                    }
+                    )
+                } else
+                    O.isQQ ? O.sdk.showAppBoxAd() : O.isWX && O.sdk.isUseZS ? Laya.Scene.open(w.floatAd, !1, {
+                        isCloseBanner: !1
+                    }) : Laya.Scene.open("commonUI/MoreGameDialog.scene", !1, {
+                        isCloseBanner: !1
+                    });
+            e.stopPropagation()
+        }
+        OnShow() {}
+        onDestroy() {}
+        onEnableADControl() {
+            O.isTT && (console.log("tt游戏中-隐藏banner"),
+            O.sdk.hide_banner())
+        }
+        PlatformUIInit() {}
+    }
+    class je extends Laya.Script {
+        constructor() {
+            super(),
+            this.isClick = !1,
+            this.showData = [],
+            this.unShowData = [],
+            this.showNum = 0
+        }
+        onAwake() {
+            this.owner.height = Laya.stage.height,
+            this.owner.x = -720;
+            this.owner.getChildByName("ImgListBg"),
+            this.owner.getChildByName("adList"),
+            this.owner.getChildByName("btnclose")
+        }
+        onEnable() {
+            this.owner.getChildByName("btnclose").on(Laya.Event.CLICK, this, this.onClose)
+        }
+        tweenshow(e) {
+            let t = this.owner.getChildByName("ImgListBg");
+            t.y = e - 520 - 52,
+            this.owner.getChildByName("adList").y = t.y + 10;
+            let s = this.owner.getChildByName("btnclose");
+            s.index = 0,
+            s.y = e - 52,
+            Laya.Tween.to(this.owner, {
+                x: 0
+            }, 500, null, Laya.Handler.create(this, ()=>{
+                s.index = 1
+            }
+            ), 0)
+        }
+        onClose() {
+            Laya.Tween.to(this.owner, {
+                x: -620
+            }, 500, null, Laya.Handler.create(this, ()=>{
+                this.owner.visible = !1,
+                C.Ins.event(L.EVENT_SHOW_EXPORTGAME)
+            }
+            ), 0)
+        }
+    }
+    class qe extends e.gameUI.GameStartViewUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.height = Laya.stage.height,
+            this.touch.height = Laya.stage.height
+        }
+        onAwake() {}
+        onMouseDown() {}
+        onEnable() {
+            this.btnPlayer.on(Laya.Event.MOUSE_DOWN, this, this.onClickPlayer),
+            this.btnSetting.on(Laya.Event.CLICK, this, this.onClickSetting),
+            this.btnShop.on(Laya.Event.CLICK, this, this.onClickShop),
+            this.btnShop.visible = !0,
+            this.btnMoreGame.on(Laya.Event.CLICK, this, this.onClickMoreGame),
+            this.btnSign.on(Laya.Event.CLICK, this, this.onClickSign),
+            this.btnDesk.on(Laya.Event.CLICK, this, this.onDesk),
+            this.btnPopGame.on(Laya.Event.CLICK, this, this.onPopGameClick),
+            this.btnPopGame.on(Laya.Event.MOUSE_DOWN, this, this.onPopMouseDown),
+            this.btnPopGame.on(Laya.Event.MOUSE_UP, this, this.onPopMouseUp),
+            this.textLevel.text = "Stage " + me.nShowScene.toString(),
+            C.Ins.on("Shopping", this, this.shopping),
+            this.PlatformUIInit(),
+            this.onEnableADControl()
+        }
+        onDisable() {
+            console.log("GameStartView onDisable 退出程序"),
+            this._gameScene.onDestroy()
+        }
+        onDesk(e) {
+            e.type == Laya.Event.CLICK && O.sdk.installShortcut(e=>{
+                e || ge.Ins.showMsgTip("桌面图标已添加")
+            }
+            , e=>{
+                ge.Ins.showMsgTip("桌面图标添加失败")
+            }
+            , ()=>{}
+            ),
+            e.stopPropagation()
+        }
+        playVideo() {
+            let e = this;
+            ie.sdk.adConfig.electControl("zs_start_video_switch") ? ue.Ins.playVideo("Please Watch the full video!", ()=>{
+                e.tapEnergy()
+            }
+            , e, ()=>{
+                e.tapEnergy()
+            }
+            ) : e.tapEnergy()
+        }
+        tapEnergy() {
+            let e = this
+              , t = !1;
+            O.isQQ ? t = ie.sdk.adConfig.isCrazyTap(Ce.inst.level, X.TAP_ENERGY) : O.isWX && (t = ie.isQT ? ie.sdk.adConfig.energyCanShow() : ie.sdk.adConfig.isCrazyTap(Ce.inst.level, X.TAP_CHEST)),
+            t ? (Laya.stage.once("QQ_CLICK_ENERGY", e, function() {
+                e._gameScene.initMainLayer()
+            }),
+            Laya.Scene.open(w.QQEnergy, !1)) : e._gameScene.initMainLayer()
+        }
+        onClickPlayer(e) {
+            K.IS_START_GAME = !0;
+            let t = this;
+            O.isTT && O.sdk.hide_banner(),
+            O.isWX ? (O.sdk.hideBannerzs(),
+            O.sdk.isUseZS ? t._gameScene.initMainLayer() : t.playVideo()) : O.isOP ? ie.sdk.adConfig.electControl("zs_native_limit") && O.sdk.getNativeData() ? (Laya.stage.once("TRYUSE_CLOSE", t, function() {
+                t._gameScene.initMainLayer()
+            }),
+            Laya.Scene.open(w.UseDialog, !1)) : t._gameScene.initMainLayer() : O.isQQ ? ie.sdk.adConfig.checkControl("zs_tryuse_switch", !0) ? (Laya.stage.once("TRYUSE_CLOSE", t, function() {
+                t.tapEnergy()
+            }),
+            ne.Ins.sceneOpen(w.UseDialog, !1)) : this.tapEnergy() : (Laya.stage.once("TRYUSE_CLOSE", t, function() {
+                t._gameScene.initMainLayer()
+            }),
+            Laya.Scene.open(w.UseDialog, !1)),
+            e.stopPropagation(),
+            this.close()
+        }
+        onClickShop(e) {
+            e.type != Laya.Event.CLICK || me.bBtnClicked || (this.SetRollGameVisible(!1),
+            this.HideFloatGame(),
+            me.bBtnClicked = !0,
+            this._gameScene.onShoping(),
+            Laya.Scene.open("gameUI/ShopView.scene", !1)),
+            e.stopPropagation()
+        }
+        onClickMoreGame(e) {
+            let t = this;
+            if (e.type == Laya.Event.CLICK)
+                if (O.isTT) {
+                    let e = ie.sdk.getAdList("defaultData");
+                    O.sdk.showMoreGamesModal(e && e.length > 0 ? e[0] : [], null, null, null, e=>{
+                        1 == e && ge.Ins.showMsgTip("打开更多游戏失败", this)
+                    }
+                    )
+                } else
+                    O.isQQ ? O.sdk.showAppBoxAd() : O.isOP ? O.sdk.showAds(r.GAME_PORTAL, e=>{
+                        console.log("MyOPPOAD:show call", e),
+                        e ? O.sdk.hideBanner() : ge.Ins.showMsgTip("正在获取更多游戏内容...", t)
+                    }
+                    , ()=>{
+                        console.log("MyOPPOAD:close call")
+                    }
+                    , this) : O.isWX && Laya.Scene.open(w.floatAd, !1, {
+                        isCloseBanner: !1
+                    });
+            e.stopPropagation()
+        }
+        onClickSetting(e) {
+            e.type == Laya.Event.CLICK && Laya.Scene.open("commonUI/SettingDialog.scene", !1),
+            e.stopPropagation()
+        }
+        onClickSign(e) {
+            e.type != Laya.Event.CLICK || me.bBtnClicked || (me.bBtnClicked = !0,
+            Laya.Scene.open("commonUI/UISign.scene", !1)),
+            e.stopPropagation()
+        }
+        onPopMouseDown() {
+            this.btnPopGame.scaleX = .9,
+            this.btnPopGame.scaleY = .9
+        }
+        onPopMouseUp() {
+            this.btnPopGame.scaleX = 1,
+            this.btnPopGame.scaleY = 1
+        }
+        onPopGameClick(e=null) {
+            this.btnPopGame.visible = !1;
+            let t = this.getChildByName("exportList2");
+            if (t.visible = !0,
+            t.getComponent(je) || t.addComponent(je),
+            t.getComponent(je).tweenshow(this.btnPopGame.y),
+            !t.getChildByName("adList").getComponent(Ee)) {
+                t.getChildByName("adList").addComponent(Ee).requestAdData(V.sidebar, !0, K.SCROLL_VERTICAL, null, null, !1, !0)
+            }
+            e && e.stopPropagation()
+        }
+        showExportGame() {
+            this.btnPopGame.visible = !0
+        }
+        OnShow() {}
+        onDestroy() {}
+        onEnableADControl() {
+            O.isQQ ? (Laya.timer.once(1e3, this, ()=>{
+                O.sdk.showBlockAd()
+            }
+            ),
+            O.sdk.showBanner()) : O.isWX || (O.isOP ? O.sdk.hideBanner() : O.sdk.showBanner())
+        }
+        PlatformUIInit() {
+            if (O.isOP)
+                this.btnDesk.visible = !0,
+                O.sdk.supportGamePortal() ? this.btnMoreGame.visible = !0 : this.btnMoreGame.visible = !1;
+            else if (O.isTT)
+                this.btnPopGame.visible = !1,
+                this.btnDesk.visible = !1,
+                this.btnMoreGame.visible = !0,
+                this.btnShop.visible = !0,
+                this.btnSetting.x = 20,
+                this.btnSetting.y = 90;
+            else if (O.isQQ)
+                this.btnDesk.visible = !1,
+                this.btnMoreGame.visible = !0,
+                this.btnShop.visible = !0,
+                this.btnSetting.y = 0,
+                this.btnSetting.bottom = 463;
+            else if (O.isWX) {
+                if (console.log("GameStartview  enterBanner"),
+                Laya.stage.on(K.EVENT_NAVIGATE_FAILED, this, this.onShowFullListAd),
+                this.btnDesk.visible = !1,
+                this.getChildByName("GoldSp").y = 10,
+                this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+                ie.sdk.adConfig.electControl("zs_auto_witch")) {
+                    if (ie.sdk.adConfig.electControl("zs_horizontal_export")) {
+                        let e = this.getChildByName("exportList1");
+                        if (e.visible = !0,
+                        !e.getChildAt(0).getComponent(Ee)) {
+                            e.getChildAt(0).addComponent(Ee).requestAdData(V.scroll, !0, K.SCROLL_HORIZONTAL, null, null, !1, !0)
+                        }
+                    }
+                    let e = this.getChildByName("exitBtn");
+                    if (!e.getComponent(Ue)) {
+                        e.active = !1;
+                        e.addComponent(Ue);
+                        e.active = !0
+                    }
+                    C.Ins.on(L.EVENT_SHOW_EXPORTGAME, this, this.showExportGame),
+                    this.btnPopGame.visible = !0;
+                    let t = Ce.inst.get("login", {}).loginCount || 0;
+                    console.log("登录次数", t),
+                    t > 1 && (qe.cblcanshow = !0),
+                    ie.sdk.adConfig.electControl("zs_auto_pop_ups_switch") && qe.cblcanshow && Laya.timer.once(100, this, ()=>{
+                        this.onPopGameClick()
+                    }
+                    ),
+                    qe.cblcanshow = !0,
+                    this.InitFloatGame(),
+                    this.btnMoreGame.visible = !0
+                }
+                this.processWxBanner()
+            }
+        }
+        OnShopClose() {
+            this.SetRollGameVisible(!0),
+            this.InitFloatGame()
+        }
+        SetRollGameVisible(e) {
+            if (ie.sdk.adConfig.electControl("zs_auto_witch") && ie.sdk.adConfig.electControl("zs_horizontal_export")) {
+                let t = this.getChildByName("exportList1");
+                t && (t.visible = e)
+            }
+        }
+        InitFloatGame() {
+            for (let e = 1; e < 5; e++) {
+                let t = this.getChildByName("fgame" + e);
+                if (t) {
+                    let e = t.getComponent(Ne);
+                    if (e)
+                        e.setcanshow();
+                    else {
+                        t.active = !1;
+                        t.addComponent(Ne);
+                        t.active = !0
+                    }
+                }
+            }
+        }
+        HideFloatGame() {
+            for (let e = 1; e < 5; e++) {
+                let t = this.getChildByName("fgame" + e);
+                t && (t.visible = !1)
+            }
+        }
+        processWxBanner() {
+            let e = this;
+            ie.isQT ? qe.entergame ? ie.sdk.adConfig.electControl("zs_gdt_full_screen_1") ? (Laya.stage.once("FULL_SCREEN_AD1_CLOSE", e, function() {
+                ie.sdk.adConfig.electControl("zs_gdt_full_screen_2") ? (Laya.stage.once("FULL_SCREEN_AD2_CLOSE", e, function() {
+                    e.showWxBanner()
+                }),
+                ne.Ins.sceneOpen(w.fullscreenad2, !1)) : e.showWxBanner()
+            }),
+            ne.Ins.sceneOpen(w.fullscreenad1, !1)) : ie.sdk.adConfig.electControl("zs_gdt_full_screen_2") ? (Laya.stage.once("FULL_SCREEN_AD2_CLOSE", e, function() {
+                e.showWxBanner()
+            }),
+            ne.Ins.sceneOpen(w.fullscreenad2, !1)) : e.showWxBanner() : e.showWxBanner() : qe.entergame && ie.sdk.adConfig.electControl("zs_Fakerjump") ? (Laya.stage.once("FULL_SCREEN_AD1_CLOSE", e, function() {
+                O.sdk.showAds(r.INTERSTITIAL, ()=>{}
+                , ()=>{}
+                , e),
+                e.showWxBanner()
+            }),
+            ne.Ins.sceneOpen(w.fullscreenad1, !1)) : (O.sdk.showAds(r.INTERSTITIAL, ()=>{}
+            , ()=>{}
+            , e),
+            e.showWxBanner())
+        }
+        showWxBanner() {
+            qe.entergame = !1,
+            O.sdk.showBannerzs()
+        }
+        onShowFullListAd(e) {
+            let t = this
+              , s = !0;
+            console.log("gamestartvie监听游戏跳转失败打开全屏一"),
+            ie.isQT ? e ? (console.log("游戏跳转失败打开全屏一的参数:", e),
+            e.msgFrom == V.full2Page || e.msgFrom == V.full1Page ? s = !1 : (e.msgFrom != V.endPage && e.msgFrom != V.fakeMsg || (K.IS_AUTO_CLICK = !0),
+            ne.Ins.sceneOpen(w.fullscreenad1, !1, null))) : ne.Ins.sceneOpen(w.fullscreenad1, !1, null) : (s = !1,
+            ne.Ins.sceneOpen(w.fullscreenad1, !1, null)),
+            s && Laya.stage.once("FULL_SCREEN_AD1_CLOSE", t, function() {
+                O.sdk.showBannerzs()
+            })
+        }
+        onOpened(e) {
+            e && e.fromscene && (e.fromscene == S.LOAD_SCENE || e.fromscene == S.RESULT_SCENE && O.isWX && ie.isQT && O.sdk.showAds(r.INTERSTITIAL, ()=>{}
+            , ()=>{}
+            , this))
+        }
+        shopping() {
+            this.level.visible = !me.bOpenShop
+        }
+    }
+    qe.showinitfullad = !1,
+    qe.cblcanshow = !1,
+    qe.entergame = !0;
+    class Qe {
+        constructor() {}
+        static get Ins() {
+            return this._ins || (this._ins = new Qe),
+            this._ins
+        }
+        init() {
+            console.log("MyOppoAD:GameMgr init"),
+            Ce.inst.getData(),
+            ie.init(),
+            de.inst.playMusic(b.bgm, 0),
+            O.isOP && O.sdk.reportMonitor(),
+            C.Ins.on(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.on(L.EVENT_GAME_TO_BG, this, this.Gametobg)
+        }
+        Bgtogame() {
+            console.log("从后台返回游戏,播放音乐"),
+            de.inst.playMusic(b.bgm),
+            Laya.timer.once(2e3, this, ()=>{
+                de.inst.playMusic(b.bgm)
+            }
+            )
+        }
+        Gametobg() {
+            console.log("从游戏切换到后台,停止音乐")
+        }
+    }
+    class Ke {
+        constructor() {}
+        static get Ins() {
+            return this._ins || (this._ins = new Ke),
+            this._ins
+        }
+        init(e, t) {
+            console.log("SceneMgr init");
+            let s = this;
+            Laya.loader.create(s.getResource(), Laya.Handler.create(this, function() {
+                console.log("游戏场景加载完成"),
+                s.initScene(),
+                e && e()
+            }), Laya.Handler.create(this, function(e) {
+                t && t(e)
+            }, null, !1))
+        }
+        initScene() {
+            let e = Laya.loader.getRes(v.game);
+            this.gameScene = e
+        }
+        getResource() {
+            return [v.game, "res/level/leveldata.json"]
+        }
+        loadRes(e, t, s) {
+            Laya.loader.create(e, Laya.Handler.create(t, s))
+        }
+        getRes(e) {
+            return Laya.loader.getRes(e)
+        }
+    }
+    class Ze extends e.gameUI.LoadSceneViewUI {
+        constructor() {
+            super(),
+            this.checkLoadFinishCount = 0,
+            this.maxProgress = 0,
+            this.height = Laya.stage.height,
+            this.bg.height = Laya.stage.height,
+            this.graphics.drawRect(-400, -600, 1500, 2600, "#23a8ea")
+        }
+        onAwake() {
+            this.lab_loading.visible = !0,
+            this.btnPlayer.visible = !1
+        }
+        checkOnLine() {
+            if (!navigator.onLine) {
+                let e = Laya.stage.width / 2
+                  , t = Laya.stage.height - 200;
+                ge.Ins.showMsgTip("When the network is disconnected, the game experience will be affected", Laya.stage, e, t, {
+                    color: "#fff",
+                    strokeColor: "#fff",
+                    fontSize: 33,
+                    width: 500,
+                    stroke: 0,
+                    font: "Microsoft YaHei"
+                }, 0)
+            }
+        }
+        onEnable() {
+            let e;
+            this.checkOnLine(),
+            O.init(),
+            O.isVV && (this.bg.visible = !1);
+            let t = (e = O.isQQ ? ["res1", "res2", "res3", "res4", "res5", "res7"] : O.isOP ? ["LayaScene_GameScene", "LayaScene_LevelMode", "image", "common", "game", "res", "LayaScene_PlayerMode"] : ["res1", "res2", "res3", "res4", "res5", "res6", "res7"]).length / 10;
+            t > .5 && (t = .5);
+            let s = t / e.length
+              , i = this;
+            O.sdk.reportMonitorEx("load_res_begin"),
+            O.sdk.loadSubpackage(e, ()=>{
+                Ke.Ins.init(()=>{
+                    Qe.Ins.init(),
+                    Laya.timer.loop(100, this, this.checkLoadFinish)
+                }
+                , e=>{
+                    i.setProgress(t + e * (1 - t))
+                }
+                )
+            }
+            , e=>{
+                0,
+                i.setProgress(s * (e + 1))
+            }
+            ),
+            O.sdk.reportMonitorEx("load_res_complete")
+        }
+        checkLoadFinish() {
+            this.checkLoadFinishCount++,
+            (ie.sdk.isLoadGameFinish && ie.sdk.isLoadCtrlFinish || this.checkLoadFinishCount > 40) && (Le.getInstance().onLoadedComplete(Ke.Ins.gameScene),
+            this.close(),
+            Laya.timer.clearAll(this))
+        }
+        setProgress(e) {
+            e > this.maxProgress && (this.maxProgress = e,
+            this.progressBar.width = 400 * e)
+        }
+        onDisable() {}
+        onDestroy() {}
+    }
+    class Ye extends e.gameUI.MainLayerUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.curTouchId = -1,
+            this.originPiont = new Laya.Vector2(0,0),
+            this.deltaX = 0,
+            this.deltaY = 0,
+            this.nClickFinish = 1,
+            this.nClickAdd = .2,
+            this.nTimeReduce = .02,
+            this.clickCount = 0,
+            this.secondTime = 6,
+            this.timeCount = 0,
+            this.pressTime = 0,
+            this.hpCount = 3,
+            this.coins = 0,
+            this.endCount = 0,
+            this.height = Laya.stage.height,
+            this.imgBg.height = Laya.stage.height,
+            this.shakeBg.height = Laya.stage.height,
+            this.imgBg.on(Laya.Event.MOUSE_DOWN, this, this.onTouchDown),
+            this.imgBg.on(Laya.Event.MOUSE_MOVE, this, this.onMoveEvent),
+            this.imgBg.on(Laya.Event.MOUSE_UP, this, this.onMouseUp),
+            this.imgBg.on(Laya.Event.MOUSE_OUT, this, this.onMouseUp),
+            this.btnPopGame.on(Laya.Event.CLICK, this, this.onPopGameClick),
+            this.btnPopGame.on(Laya.Event.MOUSE_DOWN, this, this.onPopMouseDown),
+            this.btnPopGame.on(Laya.Event.MOUSE_UP, this, this.onPopMouseUp),
+            this.btnReset.on(Laya.Event.CLICK, this, this.nextGame),
+            this.btnMoregame.on(Laya.Event.CLICK, this, this.onClickMoreGame),
+            this.updateBnum(20),
+            this.imgh.skin = "image/h3.png",
+            this.bulletFclip.value = "20",
+            this.shakeBg.visible = !1,
+            this.imgClick1.visible = !1,
+            this.imgClick2.visible = !1,
+            this.imgClick1.on(Laya.Event.CLICK, this, this.updateClickPro, [this.nClickAdd]),
+            this.imgClick2.on(Laya.Event.CLICK, this, this.updateClickPro, [this.nClickAdd]),
+            O.isWX && (C.Ins.on(L.EVENT_BG_TO_GAME, this, this.Bgtogame),
+            C.Ins.on(L.EVENT_GAME_TO_BG, this, this.gametoBg))
+        }
+        updateBnum(e) {
+            this.bulletFclip.value = e.toString()
+        }
+        nextGame() {
+            Laya.timer.clearAll(this),
+            me.nLookSelect = -1,
+            this.hpCount = 3,
+            this.clickCount = 0,
+            this.timeCount = 0,
+            me.bEndClick = !1,
+            me.bBtnClicked = !1,
+            clearInterval(this.pressTime),
+            this._gameScene.mainLayer && (this._gameScene.mainLayer.destroy(),
+            this._gameScene.mainLayer = null),
+            this._gameScene.nextGame(!1),
+            (O.isTT || O.isOP || O.isQQ) && console.log("show TryUseView------")
+        }
+        showEndClick() {
+            this.clickBg.visible = !0,
+            this.clickBar.height = 0,
+            this.imgClick2.visible = !1,
+            Laya.timer.loop(50, this, this.updateClickPro, [-this.nTimeReduce])
+        }
+        updateClickPro(e) {
+            if (e > 0) {
+                if (this.clickBar.height += 310 * e,
+                this._gameScene._End.setGuoScale(e / 2),
+                this.clickBar.height >= 310 * this.nClickFinish) {
+                    if (me.bOpenClick) {
+                        _e.init();
+                        let e = _e.designToScreen(0, this.imgClick1.y);
+                        O.sdk.bannerMoveTo(e.y, 0)
+                    }
+                    me.bEndClick = !0,
+                    Laya.timer.clear(this, this.updateClickPro),
+                    this.clickBg.visible = !1,
+                    this.imgClick1.visible = !1,
+                    this.imgClick2.visible = !1,
+                    Laya.timer.once(1e3, this, this.completeClick)
+                }
+            } else
+                this.clickBar.height > 0 && (this.clickBar.height += 310 * e,
+                this._gameScene._End.setGuoScale(e / 2));
+            this.clickCount++,
+            5 == this.clickCount ? (this.imgClick1.visible = !1,
+            this.imgClick2.visible = !0) : 10 == this.clickCount && (this.imgClick1.visible = !0,
+            this.imgClick2.visible = !1,
+            this.clickCount = 0),
+            this.timeCount++,
+            this.timeCount % 20 == 0 && this.secondTime > 0 && (this.secondTime--,
+            this.timeText.text = this.secondTime.toString(),
+            this.secondTime <= 0 && (Laya.timer.clear(this, this.updateClickPro),
+            this.clickBg.visible = !1,
+            this.imgClick1.visible = !1,
+            this.imgClick2.visible = !1,
+            this.completeClick()))
+        }
+        completeClick() {
+            O.isWX && O.sdk.bannerMoveTo(0, 0),
+            this._gameScene._End.runToBoss()
+        }
+        Bgtogame() {
+            console.log("MainLayer界面从后台切换回游戏")
+        }
+        gametoBg() {
+            console.log("MainLayer界面切换到后台")
+        }
+        onEnable() {
+            this.onEnableADControl(),
+            this.PlatformUIInit()
+        }
+        onPopMouseDown() {
+            this.btnPopGame.scaleX = .9,
+            this.btnPopGame.scaleY = .9
+        }
+        onPopMouseUp() {
+            this.btnPopGame.scaleX = 1,
+            this.btnPopGame.scaleY = 1
+        }
+        onPopGameClick(e) {
+            this.btnPopGame.visible = !1;
+            let t = this.getChildByName("exportlistPen");
+            if (t.visible = !0,
+            t.getComponent(je) || t.addComponent(je),
+            t.getComponent(je).tweenshow(this.btnPopGame.y),
+            !t.getChildByName("adList").getComponent(Ee)) {
+                t.getChildByName("adList").addComponent(Ee).requestAdData(V.sidebar, !0, K.SCROLL_VERTICAL, null, null, !1, !0)
+            }
+            e.stopPropagation()
+        }
+        showExportGame() {
+            this.btnPopGame.visible = !0
+        }
+        onEnableADControl() {
+            O.isTT ? (console.log("tt游戏中-隐藏banner"),
+            O.sdk.hide_banner(),
+            O.sdk.startRecord()) : O.isWX ? ie.isQT ? ie.sdk.adConfig.electControl("zs_banner_show") ? O.sdk.showBannerzs() : O.sdk.hideBannerzs() : O.sdk.showBannerzs() : (console.log("非tt游戏中-显示banner"),
+            O.sdk.showBanner()),
+            O.isOP && O.sdk.enterGameScene()
+        }
+        PlatformUIInit() {
+            if (O.isWX) {
+                if (ie.sdk.adConfig.electControl("zs_horizontal_export")) {
+                    let e = this.getChildByName("exportList1");
+                    if (e.visible = !0,
+                    !e.getChildAt(0).getComponent(Ee)) {
+                        e.getChildAt(0).addComponent(Ee).requestAdData(V.scroll, !0, K.SCROLL_HORIZONTAL, null, null, !1, !0)
+                    }
+                }
+                let e = this.getChildByName("exitBtn");
+                e.getComponent(Ue) || e.addComponent(Ue),
+                C.Ins.on(L.EVENT_SHOW_EXPORTGAME, this, this.showExportGame),
+                this.btnPopGame.visible = !1,
+                this.slipBg.y = 545,
+                this.InitFloatGame(),
+                this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+                this.getChildByName("GoldSp").y = 10,
+                this.initCrazyData()
+            }
+        }
+        initCrazyData() {
+            me.bOpenClick = ie.sdk.adConfig.isCrazyTap(0, X.TAP_CHEST),
+            me.bOpenClick && (this.nClickFinish = ie.sdk.adConfig.GetCrazyPercent(),
+            this.nClickAdd = ie.sdk.adConfig.electControl("zs_click_award_add"),
+            this.nTimeReduce = ie.sdk.adConfig.electControl("zs_click_award_back"))
+        }
+        InitFloatGame() {
+            for (let e = 1; e < 5; e++) {
+                let t = this.getChildByName("fgame" + e);
+                t && (t.getComponent(Ne) || t.addComponent(Ne))
+            }
+        }
+        onShowFullListAd() {
+            console.log("mainlayer监听游戏跳转失败打开全屏一"),
+            ne.Ins.sceneOpen(w.fullscreenad1, !1, null)
+        }
+        onClickMoreGame(e) {
+            if (e.type == Laya.Event.CLICK)
+                if (O.isTT) {
+                    let e = ie.sdk.getAdList("defaultData");
+                    O.sdk.showMoreGamesModal(e && e.length > 0 ? e[0] : [], null, null, null, e=>{
+                        1 == e && ge.Ins.showMsgTip("打开更多游戏失败", this)
+                    }
+                    )
+                } else
+                    O.isQQ ? O.sdk.showAppBoxAd() : O.isWX ? Laya.Scene.open(w.floatAd, !1, {
+                        isCloseBanner: !1
+                    }) : Laya.Scene.open("commonUI/MoreGameDialog.scene", !1, {
+                        isCloseBanner: !1
+                    });
+            e.stopPropagation()
+        }
+        onTouchDown(e) {
+            this.curTouchId = e.touchId,
+            me.bMouseMoving = !0,
+            this.originPiont.setValue(e.stageX, e.stageY),
+            this.slipBg.visible && this.handSlip(!1)
+        }
+        checkPressDown() {
+            Laya.timer.currTimer;
+            this.pressTime = setInterval(function() {
+                Laya.timer.currTimer
+            }, 20)
+        }
+        onMoveEvent(e) {
+            if (e.touchId == this.curTouchId && me.bMouseMoving) {
+                this.globalToLocal(new Laya.Point(Laya.stage.mouseX,Laya.stage.mouseY), !1);
+                this.deltaX = e.stageX - this.originPiont.x,
+                this.deltaY = e.stageY - this.originPiont.y,
+                me.nChangeX = this.deltaX / 60,
+                this.originPiont.setValue(e.stageX, e.stageY)
+            }
+        }
+        onMouseUp(e) {
+            e.touchId == this.curTouchId && (this.curTouchId = -1,
+            me.nChangeX = 0,
+            me.bRunning = !1,
+            me.bMouseMoving = !1)
+        }
+        showImgTips(e, t, s) {}
+        onHitBullet() {
+            this.hpCount--,
+            this.imgh.skin = "image/h" + this.hpCount + ".png",
+            this.ani5.play(null, !1)
+        }
+        onGameEnd() {
+            this.imgHp.visible = !1,
+            this.bulletBg.visible = !1
+        }
+        showCoinAciton(e, t) {
+            var s = new Laya.Vector2(e / Laya.stage.clientScaleX,t / Laya.stage.clientScaleY);
+            me.goldEffect(s, 1, this)
+        }
+        clearPressTime() {
+            clearInterval(this.pressTime),
+            this.pressTime = 0
+        }
+        gameBegin() {
+            this.txtLv1.text = me.nShowScene.toString(),
+            this.txtLv2.text = (me.nShowScene + 1).toString(),
+            this.handSlip(!0),
+            Laya.timer.once(3e3, this, function() {
+                this.handSlip(!1)
+            })
+        }
+        handSlip(e) {
+            e ? (this.slipBg.visible = !0,
+            this.ani1.play()) : (this.ani1.stop(),
+            this.slipBg.visible = !1)
+        }
+        updateLvUI(e, t) {
+            this.progressLv.width += e,
+            this.progressLv.width >= 287 && (this.progressLv.width = 287),
+            1 == t && (this.coins++,
+            this.txtLvCoin.text = this.coins.toString())
+        }
+        showRetButton(e=!0) {
+            this.btnReset.visible = e,
+            this.btnMoregame.visible = e
+        }
+        showLvBg(e=!0) {
+            this.lvbg.visible = e
+        }
+        setZSADVisible(e=!1) {
+            ie.sdk.adConfig.electControl("zs_horizontal_export") && (this.getChildByName("exportList1").visible = e),
+            this.getChildByName("exportlistPen").visible = e,
+            this.getChildByName("exitBtn").visible = e
+        }
+    }
+    class Je extends Laya.Script {
+        constructor() {
+            super(),
+            this.games = []
+        }
+        onAwake() {
+            if (!ie.sdk.adConfig.electControl("zs_false_news_switch"))
+                return;
+            if (this.games = ie.sdk.getAdList(ie.sdk.getAdType(V.fakeMsg)),
+            !this.games || 0 == this.games.length)
+                return;
+            let e = Math.floor(Math.random() * this.games.length);
+            this.showGame = this.games[e],
+            this.owner.getChildByName("playerName_lbl").text = A.namelist[Math.floor(Math.random() * A.namelist.length)],
+            this.owner.getChildByName("gameName_lbl").text = this.showGame.link_name || this.showGame.app_title,
+            this.owner.mouseEnabled = !0,
+            this.owner.visible = !0,
+            Laya.Tween.to(this.owner, {
+                y: 50
+            }, 1e3, null, Laya.Handler.create(this, ()=>{}
+            )),
+            de.inst.playSound(b.msg, 1),
+            console.log("FakeFriendMsg OnAwake ======= " + b.msg)
+        }
+        onClick() {
+            this.owner.mouseEnabled = !1,
+            ie.sdk.navigateToMiniProgram(this.showGame, V.fakeMsg),
+            this.owner.mouseEnabled = !0
+        }
+    }
+    class $e extends e.gameUI.ResultViewUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.isChecked = !0,
+            this.sharecoins = 500,
+            this.bClosed = !1,
+            this.bPassed = !1,
+            this.muticoins = 3,
+            this.failcoins = 10,
+            this.gameresult = !0,
+            this.bannershowed = !1,
+            this.height = Laya.stage.height,
+            this.bg.graphics.drawRect(0, 0, Laya.stage.width, Laya.stage.height, "#23a8ea"),
+            this.PlatformUIInit()
+        }
+        onAwake() {}
+        onEnable() {
+            this.passBtn.on(Laya.Event.CLICK, this, this.onPassClick),
+            this.closeBtn.on(Laya.Event.CLICK, this, this.onResetGame, [1]),
+            this.shareBtn.on(Laya.Event.CLICK, this, this.sharevideoClick),
+            this.moreGameBtn.on(Laya.Event.CLICK, this, this.moreGameClick),
+            this.Btn_tt_next2.on(Laya.Event.CLICK, this, this.OnPassClick_hole),
+            this.Btn_closehole.on(Laya.Event.CLICK, this, this.OnClosehole),
+            this.onEnableADControl(),
+            de.inst.playSound(b.success, 1)
+        }
+        onGameEnd() {
+            this.lab_result.text = me.bGameWin ? "Congratulations!" : "Failure",
+            me.bGameWin ? (this.titleImg.visible = !0,
+            this.passBtn.visible = !0,
+            this.closeBtn.visible = !0) : (this.scoreTxt.text = "x" + me.nCurScene.toString(),
+            me.nTotalCoins += me.nCurScene,
+            this.titleImg.visible = !1,
+            this.passBtn.visible = !1,
+            this.closeBtn.visible = !1)
+        }
+        nextGame() {
+            let e = this;
+            ne.Ins.sceneClose(this.url),
+            Laya.timer.once(50, this, function() {
+                e._gameScene.nextGame(me.bGameWin)
+            })
+        }
+        onOpened(e) {
+            if (e) {
+                me.taskScore > 0 ? me.taskScore : this.failcoins;
+                this.GetCoins = e.gameresult ? 100 : this.failcoins,
+                this.UpdateUI(e.gameresult),
+                Ce.inst.setLevel()
+            }
+        }
+        isSameDate(e, t) {
+            let s = new Date(e)
+              , i = new Date(t);
+            return s.getFullYear() == i.getFullYear() && s.getMonth() == i.getMonth() && s.getDate() == i.getDate()
+        }
+        onDisable() {
+            O.isQQ && ie.sdk.adConfig.checkControl("zs_jump_switch", !0) && O.sdk.showAds(r.INTERSTITIAL, ()=>{}
+            , e=>{}
+            , {});
+            let e = Ce.inst.singTime;
+            this.isSameDate(Date.now(), e) || O.isWX || O.isTT && !ie.sdk.adConfig.isSameVersion() || (Laya.Scene.open("commonUI/UISign.scene", !1, !0),
+            Ce.inst.setSingTime())
+        }
+        onDestroy() {}
+        sharevideoClick(e) {
+            O.sdk.shareRecordVideo(e=>{
+                e ? (this.addGold(this.sharecoins),
+                Be.Ins.goldEffect(new Laya.Vector2(this.shareBtn.x,this.shareBtn.y), 10, this),
+                this.shareBtn.visible = !1) : ge.Ins.showMsgTip("请分享录屏后才能获得奖励")
+            }
+            )
+        }
+        moreGameClick(e) {
+            O.isQQ && O.sdk.showAppBoxAd()
+        }
+        addGold(e, t=1) {
+            let s = Math.floor(e * t);
+            Ce.inst.setGold(s),
+            this.getChildByName("GoldSp").getComponent(ke).updateUI()
+        }
+        Next() {
+            let e = this;
+            if (O.isWX && (O.sdk.hideBannerzs(),
+            ie.sdk.adConfig.isAfterGameAccount()))
+                return Laya.stage.once("FULL_SCREEN_AD2_CLOSE", e, function() {
+                    e.nextGame()
+                }),
+                K.IS_AUTO_CLICK = !0,
+                void ne.Ins.sceneOpen(w.fullscreenad2, !1);
+            this.nextGame()
+        }
+        OnClosehole(e) {
+            this.rewardTip.visible = !1,
+            e.stopPropagation()
+        }
+        OnPassClick_hole() {
+            if (this.rewardTip.visible) {
+                let e = this;
+                ue.Ins.playVideo("Please watch the full video to receive the reward!", ()=>{
+                    e.gameresult ? e.onResetGame(e.muticoins) : e.onResetGame()
+                }
+                , e)
+            } else
+                this.onResetGame()
+        }
+        onResetGame(e=1) {
+            if (O.isWX && ie.sdk.adConfig.electControl("zs_banner_vertical_enable")) {
+                if (!this.bannershowed)
+                    return;
+                O.sdk.endMistake()
+            }
+            this.bClosed || (this.bClosed = !0,
+            this.GetCoins = this.GetCoins * e,
+            this.GetCoins > 0 ? (this.addGold(this.GetCoins),
+            Be.Ins.goldEffect(new Laya.Vector2(this.bjjbsp.x + 30,this.bjjbsp.y + 30), 10, this, ()=>{
+                this.Next()
+            }
+            )) : this.Next())
+        }
+        onPassClick() {
+            let e = this;
+            O.isVV && 1 == de.inst.getState(oe.Mute) && de.inst.stopMusic();
+            let t = e.gameresult ? "Please Watch the full video to get gold!" : "Please Watch the full video to skip this level!";
+            ue.Ins.playVideo(t, ()=>{
+                e.gameresult ? e.onResetGame(this.muticoins) : (Ce.inst.setLevel(),
+                e.onResetGame())
+            }
+            , this)
+        }
+        goldAddAnimate(e=10) {
+            Laya.Tween.clearTween(this.scoreTxt);
+            let t = this.GetCoins * this.muticoins
+              , s = Math.floor((t - parseInt(this.scoreTxt.text)) / 10);
+            Laya.Tween.to(this.scoreTxt, {}, 5, null, Laya.Handler.create(this, ()=>{
+                this.scoreTxt.text = `${parseInt(this.scoreTxt.text) + s}`,
+                (e -= 1) <= 0 ? this.scoreTxt.text = `${t}` : this.goldAddAnimate(e)
+            }
+            ))
+        }
+        UpdateUI(e) {
+            this.gameresult = e,
+            this.lab_result.text = this.gameresult ? "Congratulations!" : "Failure",
+            this.scoreTxt.text = this.GetCoins + "",
+            O.isTT ? (this.shareBtn.visible = !0,
+            this.passBtn.skin = this.gameresult ? "common/end-35.png" : "common/end-34.png",
+            this.Btn_tt_next2.skin = this.gameresult ? "platform_pics/pic_008.png" : "platform_pics/pic_006.png",
+            this.shareBtn.skin = 500 == this.sharecoins ? "common/end-07.png" : "common/end-06.png") : O.isOP ? (this.passBtn.skin = this.gameresult ? "common/end-35.png" : "common/end-34.png",
+            this.closeBtn.skin = this.gameresult ? ie.sdk.adConfig.isSameVersion() ? "common/end-24.png" : "common/end-24-oppo.png" : ie.sdk.adConfig.isSameVersion() ? "common/tips-31.png" : "common/tips-31-oppo.png") : O.isWX ? (this.passBtn.skin = this.gameresult ? 3 == this.muticoins ? "common/end-35.png" : "common/end-33.png" : "common/end-34.png",
+            this.closeBtn.skin = this.gameresult ? "common/end-24.png" : "common/tips-31.png") : O.isQQ ? (this.passBtn.skin = this.gameresult ? 3 == this.muticoins ? "common/end-35.png" : "common/end-33.png" : "common/end-34.png",
+            this.closeBtn.skin = "common/end-23.png") : (this.lab_State.text = this.gameresult ? "Triple Rewards" : "Skip this level",
+            this.closeBtn.label = (this.gameresult,
+            "Normal Rewards"))
+        }
+        onEnableADControl() {
+            let e = this;
+            if (O.isTT)
+                O.sdk.showBanner(),
+                O.sdk.showAds(r.INTERSTITIAL, ()=>{}
+                , e=>{
+                    e ? console.log("插屏广告播放完成") : console.log("插屏广告播放未完成")
+                }
+                , {});
+            else if (O.isWX)
+                if (ie.sdk.adConfig.electControl("zs_banner_vertical_enable")) {
+                    O.sdk.beginMistake(),
+                    O.sdk.hideBannerzs(),
+                    this.closeBtn.y = Laya.stage.height - 100;
+                    let t = ie.sdk.adConfig.electControl("zs_banner_banner_time")
+                      , s = ie.sdk.adConfig.electControl("zs_banner_text_time")
+                      , i = ie.sdk.adConfig.electControl("zs_banner_move_time");
+                    Laya.timer.once(t, e, ()=>{
+                        e.bannershowed = !0,
+                        O.sdk.showBannerzs()
+                    }
+                    ),
+                    Laya.Tween.to(this.closeBtn, {
+                        x: this.closeBtn.x,
+                        y: 1020
+                    }, i, null, Laya.Handler.create(this, ()=>{}
+                    ), s)
+                } else
+                    O.sdk.showBannerzs();
+            else if (O.isQQ) {
+                if (O.sdk.destroyBlockAd(),
+                ie.sdk.adConfig.isBannerMistake()) {
+                    O.sdk.hide_banner(),
+                    this.closeBtn.y = Laya.stage.height - 100;
+                    let e = ie.sdk.adConfig.electControl("zs_banner_text_time")
+                      , t = ie.sdk.adConfig.electControl("zs_banner_move_time")
+                      , s = e
+                      , i = ie.sdk.adConfig.electControl("zs_box_yc");
+                    Laya.timer.once(i, this, ()=>{
+                        O.sdk.showAppBoxAd()
+                    }
+                    ),
+                    Laya.timer.once(s, this, ()=>{
+                        O.sdk.showBanner()
+                    }
+                    ),
+                    Laya.Tween.to(this.closeBtn, {
+                        x: this.closeBtn.x,
+                        y: 760
+                    }, t, null, Laya.Handler.create(this, ()=>{}
+                    ), e)
+                }
+            } else
+                O.isOP ? O.sdk.hideBanner() : O.isVV && this.InitNativeLayer()
+        }
+        InitNativeLayer() {
+            if (O.isOP && null == O.sdk.getNativeData())
+                return !1;
+            let e = this.getChildByName("imgNativeLayer");
+            return e && (e.getComponent(Se) || e.addComponent(Se)),
+            !0
+        }
+        PlatformUIInit() {
+            O.isTT ? this.TTUIInit() : O.isOP ? this.OPUIInit() : O.isWX ? this.WXUIInit() : O.isQQ ? this.QQUIInit() : O.isVV ? this.VVUIInit() : this.OtherUIInit()
+        }
+        TTUIInit() {
+            this.exportList1.y = 309,
+            this.exportList1.height = 282,
+            this.bjjlTxt.y = 246,
+            this.bjjbsp.y = 235,
+            this.scoreTxt.y = 250,
+            this.passBtn.y = 688,
+            this.shareBtn.y = 878,
+            this.closeBtn.y = 819,
+            this.Btn_tt_next2.y = 670,
+            this.closeBtn.visible = !1,
+            this.passBtn.visible = !1,
+            this.Btn_tt_next2.visible = !0,
+            ie.sdk.adConfig.checkControl("zs_result_get", !0) ? this.rewardTip.visible = !0 : this.rewardTip.visible = !1
+        }
+        OPUIInit() {
+            this.exportList1.visible = !1;
+            let e = Laya.stage.height - 720 - 100;
+            this.closeBtn.y = e - this.closeBtn.height - 20,
+            this.passBtn.y = this.closeBtn.y - this.passBtn.height - 20,
+            this.bjjlTxt.y = this.passBtn.y - this.bjjlTxt.height - 20,
+            this.scoreTxt.y = this.bjjlTxt.y,
+            this.bjjbsp.y = this.bjjlTxt.y - 10;
+            let t = !1;
+            if (ie.sdk.adConfig.isSameVersion() ? t = this.InitNativeLayer() : this.closeBtn.x = (Laya.stage.width - 160) / 2,
+            t)
+                if (this.closeBtn.y = Laya.stage.height - 100,
+                ie.sdk.adConfig.electControl("zs_full_screen_ad"))
+                    this.closeBtn.visible = !1,
+                    C.Ins.on(L.EVENT_NATIVE_PREFAB_CLOSE, this, this.OPClose);
+                else {
+                    let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                    0 != e && ie.sdk.adConfig.isSameVersion() && (this.closeBtn.visible = !1,
+                    Laya.timer.once(e, this, ()=>{
+                        this.closeBtn.visible = !0
+                    }
+                    ))
+                }
+            else {
+                let e = ie.sdk.adConfig.electControl("zs_jump_time");
+                0 != e && ie.sdk.adConfig.isSameVersion() && (this.closeBtn.visible = !1,
+                Laya.timer.once(e, this, ()=>{
+                    this.closeBtn.visible = !0
+                }
+                ))
+            }
+        }
+        WXUIInit() {
+            this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.getChildByName("GoldSp").y = 10,
+            this.initFakeExitBtn(),
+            this.initFakeFriendMsg()
+        }
+        QQUIInit() {
+            this.bjjlTxt.y = 413,
+            this.bjjbsp.y = 402,
+            this.scoreTxt.y = 417,
+            this.passBtn.y = 485,
+            this.moreGameBtn.visible = !0,
+            this.moreGameBtn.y = 620,
+            this.closeBtn.y = 760
+        }
+        VVUIInit() {
+            this.bjjlTxt.y = 717,
+            this.bjjbsp.y = 706,
+            this.scoreTxt.y = 721,
+            this.passBtn.y = 795,
+            this.closeBtn.y = 925
+        }
+        OtherUIInit() {
+            this.bjjlTxt.y = 847,
+            this.bjjbsp.y = 834,
+            this.scoreTxt.y = 851,
+            this.passBtn.y = 915,
+            this.closeBtn.y = 1040,
+            this.closeBtn.visible = !0,
+            this.exportList1.visible = !1
+        }
+        onMoreGame() {
+            O.sdk.showAppBoxAd()
+        }
+        initFakeExitBtn() {
+            let e = this.getChildByName("exitBtn");
+            e && !e.getComponent(Ue) && e.addComponent(Ue)
+        }
+        initFakeFriendMsg() {
+            if (ie.isZS)
+                return;
+            let e = this.getChildByName("FakeFriendMsg");
+            e && (e.y = 0 - e.height,
+            e.getComponent(Je) || e.addComponent(Je))
+        }
+        OPClose() {
+            this.onResetGame()
+        }
+    }
+    class et extends Laya.Script {
+        constructor() {
+            super(),
+            this.isH = !1,
+            this.downH = 54,
+            this.downW = 200,
+            this.timestmp = 0,
+            this.time = 0,
+            this.adData = [],
+            this.fingerindex = -1,
+            this.isStopMove = !1
+        }
+        onAwake() {}
+        onEnable() {
+            let e = this;
+            if (O.isOP || O.isQQ || O.isVV)
+                this.owner.visible = !1;
+            else if (!O.isWX || ie.sdk.adConfig.electControl("zs_jump_switch")) {
+                if (this.owner.getChildByName("list").mouseHandler = new Laya.Handler(this,this.click),
+                this.owner.getChildByName("list").renderHandler = new Laya.Handler(this,this.rederer),
+                O.isTT) {
+                    let e = ie.sdk.getAdList(ie.sdk.getAdType(V.endPage), 30);
+                    O.isTT ? this.setData(e, !0) : this.setData(e, this.isH)
+                } else if (O.isWX) {
+                    if (this.owner.getChildByName("list").hScrollBarSkin = "",
+                    this.owner.getChildByName("list").vScrollBarSkin = "",
+                    O.sdk.isUseZS)
+                        window.zs.sdk.loadAd(function(t) {
+                            e.adData = t.endPage,
+                            e.LoadShowGame(),
+                            Laya.timer.loop(3e3, e, e.LoadShowGame)
+                        });
+                    else
+                        this.adData = ie.sdk.getAdList(ie.sdk.getAdType(V.endPage)),
+                        this.LoadShowGame(),
+                        Laya.timer.loop(3e3, this, this.LoadShowGame)
+                }
+            } else
+                this.owner.visible = !1
+        }
+        LoadShowGame() {
+            let e = [];
+            e.push(this.adData[Math.floor(Math.random() * this.adData.length)]);
+            let t = 6;
+            for (this.adData.length < t && (t = this.adData.length); e.length < t; ) {
+                let t = this.adData[Math.floor(Math.random() * this.adData.length)]
+                  , s = !1;
+                for (let i = 0; i < e.length; i++) {
+                    if ((t.appid || t.id) == (e[i].appid || e[i].id)) {
+                        s = !0;
+                        break
+                    }
+                }
+                s || e.push(t)
+            }
+            let s, i, n = Math.floor(Math.random() * e.length);
+            for (; n == this.fingerindex; )
+                n = Math.floor(Math.random() * e.length);
+            switch (this.fingerindex = n,
+            this.fingerindex) {
+            case 0:
+                s = 120,
+                i = 160;
+                break;
+            case 1:
+                s = 360,
+                i = 160;
+                break;
+            case 2:
+                s = 600,
+                i = 160;
+                break;
+            case 3:
+                s = 120,
+                i = 450;
+                break;
+            case 4:
+                s = 360,
+                i = 450;
+                break;
+            case 5:
+                s = 600,
+                i = 450
+            }
+            let a = this.owner.getChildByName("fingertap");
+            a && (a.x = s,
+            a.y = i,
+            a.visible = !0),
+            this.owner.getChildByName("list").array = e
+        }
+        setData(e, t=!0) {
+            this.data = e,
+            this.isH = t,
+            this.owner.getChildByName("list").array = this.data,
+            t ? this.owner.getChildByName("list").hScrollBarSkin = "" : this.owner.getChildByName("list").vScrollBarSkin = "",
+            Laya.timer.once(1e3, this, this.twMove)
+        }
+        OnShow() {
+            if (!O.isWX) {
+                this.stopMove();
+                let e = this.owner.getChildByName("list");
+                e.tweenTo(0, 500, Laya.Handler.create(this, ()=>{
+                    this.tweenList(e, !1)
+                }
+                ))
+            }
+        }
+        rederer(e, t) {
+            let s = e.dataSource;
+            if (s) {
+                e.getChildByName("icon").texture = s.link_img || s.app_icon,
+                e.getChildByName("nameTxt").text = s.link_name || s.app_title;
+                let i = e.getChildByName("downBg");
+                i.graphics.drawRect(0, 0, i.width, i.height, this.getClor(t)),
+                e.getChildByName("hot").visible = t < 2,
+                t < 2 && (e.getChildByName("hot").texture = 0 == t ? "prefab/icon-hot.png" : "prefab/icon-new.png")
+            }
+        }
+        processGamePlayed(e) {
+            var t = ie.sdk.getNavigateSuccessObj();
+            let s = e.appid || e.id;
+            if (t && t[s]) {
+                let e;
+                for (let i = 0; i < 3; i++)
+                    if (e = this.adData[Math.floor(Math.random() * this.adData.length)]) {
+                        let i = e.appid || e.id;
+                        if (!t[i]) {
+                            console.log("未跳转成功过", s, i);
+                            break
+                        }
+                    }
+                return e
+            }
+            return e
+        }
+        click(e, t) {
+            let s = e.target.dataSource
+              , i = V.endPage;
+            this.isH && (i = V.endPage);
+            if (e.type == Laya.Event.CLICK && (O.isWX || (this.isH && O.isTT ? O.sdk.showMoreGamesModal(s, null, null, null, e=>{
+                1 == e && ge.Ins.showMsgTip("打开更多游戏失败", this)
+            }
+            ) : ie.sdk.navigateToMiniProgram(s, i))),
+            e.type == Laya.Event.MOUSE_DOWN && O.isWX) {
+                let e = this.processGamePlayed(s);
+                ie.sdk.navigateToMiniProgram(e, i, ()=>{}
+                , ()=>{}
+                )
+            }
+        }
+        getClor(e) {
+            return ["0xb852b6", "0x4294a2", "0x2f67c4", "0xe09031", "0x35bd75", "0xc5645e"][e % 6]
+        }
+        twMove() {
+            let e = (new Date).getTime();
+            if (e - this.timestmp >= 2e4 || this.timestmp > 0) {
+                this.timestmp = e;
+                let t = this.owner.getChildByName("list")
+                  , s = 5e4;
+                O.isTT && (s = 7e4),
+                this.tweenList(t, !1, 0)
+            }
+        }
+        stopMove() {
+            this.isStopMove = !0;
+            let e = this.owner.getChildByName("list");
+            Laya.Tween.clearTween(e)
+        }
+        createGameInfo(e, t, s) {
+            return {
+                app_icon: s,
+                appid: e,
+                app_title: t,
+                app_desc: t
+            }
+        }
+        onDisable() {}
+        tweenList(e, t, s=0) {
+            let i = e
+              , n = i.array.length
+              , a = i.repeatX
+              , o = i.repeatY
+              , r = a * o;
+            if (n <= r)
+                return;
+            let l = r;
+            if (t && n % o != 0) {
+                l = r - (o - n % o)
+            } else if (!t && n % a != 0) {
+                l = r - (a - n % a)
+            }
+            let h = n - l;
+            i.tweenTo(h - s, 1500 * (h - s), Laya.Handler.create(this, ()=>{
+                i.tweenTo(0, 1500 * h, Laya.Handler.create(this, ()=>{
+                    this.tweenList(e, !1, 0)
+                }
+                ))
+            }
+            ))
+        }
+    }
+    class tt extends e.gameUI.ShopViewUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.tabNum = 2,
+            this.nCurTab = 1,
+            this.tabAarry = [],
+            this.nPayIndex = 1,
+            this.nCurUsing = 0,
+            this.height = Laya.stage.height
+        }
+        onAwake() {}
+        onMouseDown() {}
+        onEnable() {
+            O.isQQ ? (O.sdk.hideBlockAd(),
+            O.sdk.hide_banner()) : O.isWX ? O.sdk.hideBannerzs() : O.sdk.hide_banner(),
+            this.closeBtn.on(Laya.Event.MOUSE_DOWN, this, function() {
+                me.bBtnClicked = !1,
+                me.bOpenShop = !1,
+                C.Ins.event("Shopping"),
+                this._gameScene.closeShop(),
+                this.close()
+            }),
+            this.videoBtn.on(Laya.Event.MOUSE_DOWN, this, this.onVideo),
+            this.nCurUsing = 0;
+            for (var e = 1; e <= this.tabNum; e++)
+                this.tabAarry[e] = this.getChildByName("tabBtn" + e.toString()),
+                this.tabAarry[e].name = e,
+                this.tabAarry[e].on(Laya.Event.CLICK, this, function(e) {
+                    this.nCurTab = e.target.name,
+                    this.updateTab()
+                });
+            this.updateTab(),
+            this.selectBtn.on(Laya.Event.CLICK, this, this.onBuy),
+            this.list2.renderHandler = new Laya.Handler(this,this.onListRender),
+            this.list2.selectHandler = new Laya.Handler(this,this.onSelect),
+            this.list2.mouseHandler = Laya.Handler.create(this, this.onSelect, null, !1),
+            this.list2.vScrollBarSkin = "",
+            this.PlatformUIInit()
+        }
+        adjustLargerUI() {
+            _e.largeScreen() && (console.log(" 高大屏  ===== "),
+            this.y += 120,
+            this.bg.y -= 120,
+            this.goldBg.y -= 120)
+        }
+        RefreshList() {
+            let e = []
+              , t = ""
+              , s = this.nPayIndex.toString();
+            for (let i = 1; i < 7; i++)
+                t = "image/shop/" + this.nPayIndex + "_" + i + ".png",
+                e.push({
+                    icon: t,
+                    name: "item" + i,
+                    curIndex: me.shopSelect[s],
+                    state: me.shopTools[s][i - 1],
+                    type: ye.ToolType[s][i - 1]
+                });
+            this.list2.array = e
+        }
+        onVideo() {
+            ue.Ins.playVideo("Please watch the full video to receive the reward", ()=>{
+                this.addGold(500),
+                Be.Ins.goldEffect(new Laya.Vector2(this.videoBtn.x + 150,this.videoBtn.y + 50), 10, this, ()=>{}
+                )
+            }
+            , this)
+        }
+        addGold(e, t=1) {
+            let s = Math.floor(e * t);
+            Ce.inst.setGold(s),
+            C.Ins.event("changeGold")
+        }
+        updateData() {
+            for (let e = 1; e < 5; e++) {
+                1 == me.shopTools[this.nPayIndex.toString()][e - 1] && (me.shopTools[this.nPayIndex.toString()][e - 1] = 2)
+            }
+            me.shopTools[this.nPayIndex.toString()][this.nCurUsing] = 1,
+            Laya.LocalStorage.setJSON("ShopItems", me.shopTools),
+            me.shopSelect[this.nPayIndex.toString()] = this.nCurUsing,
+            Laya.LocalStorage.setJSON("ShopItemSelect", me.shopSelect)
+        }
+        onBuy() {
+            let e = me.shopTools[this.nPayIndex.toString()][this.nCurUsing]
+              , t = 2e3 * ye.ToolType[this.nPayIndex.toString()][this.nCurUsing];
+            0 == e ? Ce.inst.gold >= t ? (me.showTips("Item purchase success"),
+            Ce.inst.setGold(-t),
+            C.Ins.event("changeGold"),
+            this.updateData(),
+            this.RefreshList()) : me.showTips("Not enough Gold") : 1 == e ? ge.Ins.showMsgTip("In use!", this) : (ge.Ins.showMsgTip("Use Successfully!", this),
+            this.updateData(),
+            this.RefreshList()),
+            this.updateBtnDesc()
+        }
+        updateTab() {
+            for (var e = 1; e <= this.tabNum; e++) {
+                var t = "image/shop/tab" + e.toString() + ".png";
+                e == this.nCurTab && (t = "image/shop/tab" + (this.nCurTab + 10).toString() + ".png"),
+                this.tabAarry[e].skin = t
+            }
+            this.nPayIndex = this.nCurTab,
+            this.nCurUsing = me.shopSelect[this.nPayIndex.toString()],
+            this.updateBtnDesc(),
+            this.RefreshList()
+        }
+        updateBtnDesc() {
+            let e = 2e3 * ye.ToolType[this.nPayIndex][this.nCurUsing]
+              , t = me.shopTools[this.nPayIndex][this.nCurUsing];
+            this.selectBtn.label = 0 == t ? "  " + e.toString() + " Unlocked" : 1 == t ? "In use" : "Use Item"
+        }
+        onOpened() {}
+        onDisable() {
+            O.isQQ ? (O.sdk.showBlockAd(),
+            O.sdk.showBanner()) : O.isWX ? O.sdk.showBannerzs() : O.sdk.showBanner()
+        }
+        onCloseFullAd(e) {
+            this.Next(e)
+        }
+        Next(e) {
+            this.close(),
+            ne.Ins.sceneOpen(w.ResultView, !1, {
+                gameresult: e
+            })
+        }
+        onResetGame() {
+            O.isTT && O.sdk.stopRecording(),
+            this.close(),
+            Laya.Scene.open(w.GameStartView)
+        }
+        onListRender(e, t) {
+            if (t > this.list2.array.length)
+                return;
+            let s = this.list2.array[t];
+            if (!s)
+                return;
+            let i = e.getChildByName("icon");
+            i && (i.skin = s.icon),
+            1 == this.nCurTab ? i.x = 22 : i.x = 48;
+            let n = e.getChildByName("selectImg")
+              , a = e.getChildByName("type")
+              , o = e.getChildByName("porssTxt");
+            o && (o.text = s.name),
+            t == s.curIndex ? n && (n.visible = !0) : n && (n.visible = !1),
+            2 == s.type ? a && (a.visible = !0) : a && (a.visible = !1),
+            0 == s.state ? (o && (o.text = "Locked"),
+            o.strokeColor = "#666666") : 1 == s.state ? (o && (o.text = "In use"),
+            o.strokeColor = "#00a008") : (o && (o.text = "Unlocked"),
+            o.strokeColor = "#be589e")
+        }
+        onSelect(e, t) {
+            if (e.type == Laya.Event.MOUSE_DOWN) {
+                this.updateCell(),
+                this.nCurUsing = t;
+                let s = e.target.getChildByName("selectImg");
+                s && (s.visible = !0),
+                this.updateBtnDesc(),
+                1 == this.nCurTab ? this._gameScene.changeWeapon(!0, t) : this._gameScene.changeShipin(!0, t)
+            }
+        }
+        updateCell() {
+            for (var e = 0; e < this.list2.array.length; e++) {
+                let t = this.list2.getCell(e);
+                if (t) {
+                    let e = t.getChildByName("selectImg");
+                    e && (e.visible = !1)
+                }
+            }
+        }
+        PlatformUIInit() {
+            O.isWX ? (this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.getChildByName("GoldSp").y = 10) : O.isTT && (this.videoBtn.skin = "platform_pics/pic_007.png")
+        }
+    }
+    class st extends e.gameUI.ShowOffViewUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.tabNum = 1,
+            this.nCurTab = 1,
+            this.tabAarry = [],
+            this.nPayIndex = 0,
+            this._score = 0,
+            this.height = Laya.stage.height,
+            this.bg.height = this.height
+        }
+        onAwake() {}
+        onMouseDown() {}
+        onEnable() {
+            if (this.completeBtn.on(Laya.Event.CLICK, this, this.closeEvent),
+            this.shareBtn.on(Laya.Event.CLICK, this, function() {}),
+            this.closeBtn.on(Laya.Event.CLICK, this, this.closeEvent),
+            me.bTryUse && (me.taskScore = 100),
+            this.progressBar.width = 0,
+            this.showGameUI(),
+            Laya.timer.loop(2, this, this.updateScore),
+            O.isWX && ie.sdk.adConfig.electControl("zs_banner_vertical_enable")) {
+                O.sdk.hideBannerzs(),
+                this.closeBtn.bottom = 50;
+                let e = ie.sdk.adConfig.electControl("zs_banner_banner_time")
+                  , t = ie.sdk.adConfig.electControl("zs_banner_text_time")
+                  , s = ie.sdk.adConfig.electControl("zs_banner_move_time");
+                Laya.timer.once(e, this, ()=>{
+                    O.sdk.showBannerzs()
+                }
+                ),
+                Laya.Tween.to(this.closeBtn, {
+                    x: this.closeBtn.x,
+                    y: this.height - 250 - this.closeBtn.height
+                }, s, null, Laya.Handler.create(this, ()=>{}
+                ), t),
+                this.spProgress.x = 100,
+                this.spProgress.y = 227
+            }
+            if (ie.sdk.adConfig.electControl("zs_horizontal_export")) {
+                let e = this.getChildByName("exportList1");
+                if (e.visible = !0,
+                !e.getChildAt(0).getComponent(Ee)) {
+                    e.getChildAt(0).addComponent(Ee).requestAdData(V.scroll, !0, K.SCROLL_HORIZONTAL, null, null, !1, !0)
+                }
+            }
+        }
+        closeEvent(e) {
+            e.type == Laya.Event.CLICK && (this.initUI(!1),
+            this.close(),
+            this._gameScene.GameFinish(0))
+        }
+        updateScore() {
+            this._score < me.taskScore ? (this._score += 2,
+            this.progressBar.width += 5.96,
+            this.textBar.text = this._score.toString() + "%") : (this.initUI(!0),
+            O.isTT && O.sdk.stopRecording())
+        }
+        initUI(e) {
+            Laya.timer.clear(this, this.updateScore),
+            this.progressBar.width = me.taskScore / 100 * 298,
+            this.textBar.text = me.taskScore.toString() + "%"
+        }
+        showGameUI() {
+            O.isTT ? (this.shareBtn.visible = !0,
+            this.completeBtn.visible = !1) : (this.shareBtn.visible = !1,
+            this.completeBtn.visible = !0)
+        }
+    }
+    class it extends e.gameUI.TryShopViewUI {
+        constructor() {
+            super(),
+            this._gameScene = Le.getInstance(),
+            this.tabNum = 1,
+            this.nCurTab = 1,
+            this.tabAarry = [],
+            this.nPayIndex = 1,
+            this.nCurUsing = 0,
+            this.height = Laya.stage.height,
+            this.bg.height = this.height,
+            this.bg.graphics.drawRect(0, 0, Laya.stage.width, Laya.stage.height, "#23a8ea")
+        }
+        onAwake() {}
+        onMouseDown() {}
+        onEnable() {
+            O.isQQ && O.sdk.hideBlockAd(),
+            this.beginBtn.on(Laya.Event.MOUSE_DOWN, this, this.onBeingTry),
+            this.nCurUsing = 0,
+            this.updateTab(),
+            this.list2.renderHandler = new Laya.Handler(this,this.onListRender),
+            this.list2.selectHandler = new Laya.Handler(this,this.onSelect),
+            this.list2.mouseHandler = Laya.Handler.create(this, this.onSelect, null, !1),
+            this.list2.vScrollBarSkin = "",
+            this.PlatformUIInit(),
+            this.adjustLargerUI()
+        }
+        adjustLargerUI() {
+            _e.largeScreen() && (console.log(" 高大屏  ===== "),
+            this.y += 120,
+            this.bg.y -= 120,
+            this.goldBg.y -= 120)
+        }
+        RefreshList() {
+            let e = []
+              , t = ""
+              , s = this.nPayIndex.toString();
+            for (let i = 1; i < 7; i++)
+                t = "image/shop/" + this.nPayIndex + "_" + i + ".png",
+                e.push({
+                    icon: t,
+                    name: "item" + i,
+                    curIndex: me.shopSelect[s],
+                    state: me.shopTools[s][i - 1],
+                    type: ye.ToolType[s][i - 1]
+                });
+            this.list2.array = e
+        }
+        onBeingTry() {
+            me.nLookSelect = this.nCurUsing + 1,
+            this._gameScene.initMainLayer(),
+            this._gameScene.closeShop(!0),
+            this.close()
+        }
+        updateTab() {
+            this.nPayIndex = this.nCurTab,
+            this.nCurUsing = me.shopSelect[this.nPayIndex.toString()],
+            this.RefreshList()
+        }
+        onDisable() {
+            O.sdk.showBlockAd()
+        }
+        onCloseFullAd(e) {
+            this.Next(e)
+        }
+        Next(e) {
+            this.close(),
+            ne.Ins.sceneOpen(w.ResultView, !1, {
+                gameresult: e
+            })
+        }
+        onResetGame() {
+            O.isTT && O.sdk.stopRecording(),
+            this.close(),
+            Laya.Scene.open(w.GameStartView)
+        }
+        onListRender(e, t) {
+            if (t > this.list2.array.length)
+                return;
+            let s = this.list2.array[t];
+            if (!s)
+                return;
+            let i = e.getChildByName("icon");
+            i && (i.skin = s.icon);
+            let n = e.getChildByName("selectImg")
+              , a = e.getChildByName("type")
+              , o = e.getChildByName("porssTxt");
+            o && (o.text = s.name),
+            t == s.curIndex ? n && (n.visible = !0) : n && (n.visible = !1),
+            2 == s.type ? a && (a.visible = !0) : a && (a.visible = !1),
+            0 == s.state ? (o && (o.text = "未解锁"),
+            o.strokeColor = "#666666") : 1 == s.state ? (o && (o.text = "使用中"),
+            o.strokeColor = "#00a008") : (o && (o.text = "已解锁"),
+            o.strokeColor = "#be589e")
+        }
+        onSelect(e, t) {
+            if (e.type == Laya.Event.MOUSE_DOWN)
+                if (t <= 3) {
+                    this.updateCell(),
+                    this.nCurUsing = t;
+                    let s = e.target.getChildByName("selectImg");
+                    s && (s.visible = !0)
+                } else
+                    ge.Ins.showMsgTip("小鱼待更新!", this)
+        }
+        updateCell() {
+            for (var e = 0; e < this.list2.array.length; e++) {
+                let t = this.list2.getCell(e);
+                if (t) {
+                    let e = t.getChildByName("selectImg");
+                    e && (e.visible = !1)
+                }
+            }
+        }
+        PlatformUIInit() {
+            O.isWX && (this.getChildByName("GoldSp").x = Laya.stage.width - 200,
+            this.getChildByName("GoldSp").y = 10)
+        }
+    }
+    class nt {
+        constructor() {}
+        static init() {
+            var e = Laya.ClassUtils.regClass;
+            e("commonUI/NativeAdDialog.ts", ae),
+            e("commonUI/SettingDialog.ts", ce),
+            e("commonUI/TryUseDialog.ts", Ae),
+            e("commonUI/UIAdwardBox.ts", Te),
+            e("commonUI/prefab/GoldSp.ts", ke),
+            e("commonUI/UIAdwardEnergy.ts", Pe),
+            e("commonUI/UISelectBox.ts", xe),
+            e("commonUI/UISign.ts", Oe),
+            e("commonUI/UnlockNewDialog.ts", Me),
+            e("commonUI/zs/HomeFloatAdView.ts", Re),
+            e("commonUI/script/FingerTap.ts", Ve),
+            e("commonUI/zs/FullScreeAdView.ts", Ge),
+            e("commonUI/zs/MoneyGet.ts", We),
+            e("commonUI/script/Breathe.ts", He),
+            e("gameUI/BgLayer.ts", Fe),
+            e("gameUI/GameMain.ts", Xe),
+            e("gameUI/GameStartView.ts", qe),
+            e("gameUI/LoadSceneView.ts", Ze),
+            e("gameUI/MainLayer.ts", Ye),
+            e("gameUI/ResultView.ts", $e),
+            e("commonUI/prefab/MoreGame1.ts", et),
+            e("gameUI/ShopView.ts", tt),
+            e("gameUI/ShowOffView.ts", st),
+            e("gameUI/TryShopView.ts", it)
+        }
+    }
+    nt.width = 720,
+    nt.height = 1280,
+    nt.scaleMode = "fixedwidth",
+    nt.screenMode = "none",
+    nt.alignV = "top",
+    nt.alignH = "left",
+    nt.startScene = "gameUI/LoadSceneView.scene",
+    nt.sceneRoot = "",
+    nt.debug = !1,
+    nt.stat = !1,
+    nt.physicsDebug = !1,
+    nt.exportSceneToJson = !0,
+    nt.init();
+    new class {
+        constructor() {
+            window.Laya3D ? Laya3D.init(nt.width, nt.height) : Laya.init(nt.width, nt.height, Laya.WebGL),
+            Laya.Physics && Laya.Physics.enable(),
+            Laya.DebugPanel && Laya.DebugPanel.enable(),
+            Laya.stage.scaleMode = nt.scaleMode,
+            Laya.stage.screenMode = nt.screenMode,
+            Laya.stage.alignV = nt.alignV,
+            Laya.stage.alignH = nt.alignH,
+            Laya.URL.exportSceneToJson = nt.exportSceneToJson,
+            (nt.debug || "true" == Laya.Utils.getQueryString("debug")) && Laya.enableDebugPanel(),
+            nt.physicsDebug && Laya.PhysicsDebugDraw && Laya.PhysicsDebugDraw.enable(),
+            nt.stat && Laya.Stat.show(),
+            Laya.ResourceVersion.enable("version.json", Laya.Handler.create(this, this.onVersionLoaded), Laya.ResourceVersion.FILENAME_VERSION)
+        }
+        onVersionLoaded() {
+            Laya.AtlasInfoManager.enable("fileconfig.json", Laya.Handler.create(this, this.onConfigLoaded))
+        }
+        onConfigLoaded() {
+            Le.instance.initScene()
+        }
+    }
+}();
