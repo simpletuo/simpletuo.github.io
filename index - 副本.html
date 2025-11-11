@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Game</title>
+	<style>
+	body, html {
+        margin: 0;
+		width: 100%; 
+        height: 100%; 
+        overflow: hidden; *//* 隐藏滚动条 */
+    }
+		#GameDiv
+		{
+			height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0px !important;
+		}
+		
+		
+		#GameFrame
+		{
+			/**height: calc(100vh - 100px) !important;**/
+			height: 100%;
+            width: 100% !important;
+            position: absolute;
+            left: 0;
+            top: 0px !important;
+		}
+	</style>
+  </head>
+  <body>
+	<div id="GameDiv" >
+		<iframe id="GameFrame"   src="./DD/TubeConnect-test/game.html" style="border-width:0px;"></iframe>
+	</div>
+  </body>
+</html>
