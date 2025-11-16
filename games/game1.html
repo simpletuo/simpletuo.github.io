@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Puzzle - DrawDream</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Block Puzzle</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="ad-banner">[Ad Banner Placeholder]</div>
+    <canvas id="gameCanvas"></canvas>
+    <div class="ad-footer">[Ad Banner Placeholder]</div>
+  </main>
+
+  <footer>
+    <p>© 2025 DrawDream Games. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    canvas.width = window.innerWidth * 0.9;
+    canvas.height = window.innerHeight * 0.6;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#4CAF50';
+    ctx.fillRect(50, 50, 100, 100);
+  </script>
+</body>
+</html>

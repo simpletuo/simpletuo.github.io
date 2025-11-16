@@ -1,0 +1,23 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { display: flex; flex-direction: column; min-height: 100vh; background: #fafafa; color: #333; }
+
+header { background: #0078ff; color: white; padding: 1rem; text-align: center; }
+nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+
+main { flex: 1; padding: 1rem; max-width: 1000px; margin: auto; }
+h2 { margin-bottom: 1rem; }
+
+.games-grid .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+.game-card { background: #fff; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.game-card:hover { background: #f1f1f1; }
+
+.ad-banner, .ad-footer { background: #ddd; text-align: center; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+
+footer {background: #0078ff; color: #fff; text-align: center; padding: 0.8rem; position: relative; bottom: 0; width: 100%; }
+
+@media (max-width: 600px) {
+  nav { display: flex; flex-wrap: wrap; justify-content: center; }
+  .ad-banner, .ad-footer { font-size: 14px; padding: 0.8rem; }
+  h1 { font-size: 1.5rem; }
+}
