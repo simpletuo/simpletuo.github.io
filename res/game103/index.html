@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>DressUp DishWashing Painting</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game103_14.json");
+	  var MyUnityInstance = gameInstance;
+	  if (typeof window.parent != "undefined") {
+          window.parent.MyUnityInstance = MyUnityInstance;
+      }
+    </script>
+  </head>
+  <body style="margin:0;padding:0" onresize="SetResolution();" >
+    <div id="gameContainer" style="width: 100%; height: 100%; margin:0;padding:0"></div>
+	<script>
+	  SetResolution = function()
+      {	
+          let canvas = document.getElementById("#canvas")
+		  console.log("canvas == undefined",canvas == undefined);
+		  if(canvas == undefined)
+		  {
+		  
+			return;
+		  }
+
+		  let w = document.body.clientWidth ||  window.innerWidth  || document.documentElement.clientWidth;
+		  let h = document.body.clientHeight || window.innerHeight || document.documentElement.clientHeight;
+		  
+		  if ('visualViewport' in window) {
+			//console.log("支持 visualViewport view变化：", visualViewport.width, visualViewport.height);
+			  w = visualViewport.width;
+			  h = visualViewport.height;
+		  } else {
+			//console.log('不支持 visualViewport');
+		  }
+
+		  document.body.style.width = w + 'px';
+		  document.body.style.height = h + 'px';
+		  document.body.style.margin = 0;
+		  document.body.style.padding = 0;
+          //var scale = 750/1334;
+		  let scale = 1080/1920;
+		  
+		 // h  -= 100;//加入 顶部50高度 底部50高度
+		 
+		  //var scale = 750/1334;
+		  let width = w;
+		  let height = h;
+		  
+          if (w/h > scale) 
+		  {		
+			if(w > h)
+			{
+				//width = h*scale; 
+			}
+			width = h*scale; //宽度就全屏
+		  }
+		  else
+		  {
+			//height = w/scale;
+		  }
+		 
+		  let top = 0;//顶部50高度 
+		  
+		  // 设置偏移量
+		  //canvas.style.top = top + 'px'; // 距离容器顶部20像素
+		  //canvas.style.left =  (w-width)/2 + 'px'; // 居中
+		  canvas.style.position = 'absolute';
+
+		  let appElement = document.getElementById("app");
+		  if(canvas!=appElement)
+		  {
+			canvas.style.setProperty("height", height + 'px', "important");
+		  }else
+		  {
+			top = 0;
+			canvas.style.setProperty("top", top + 'px', "important");
+		  }
+			
+		  canvas.style.setProperty("left", (w-width)/2 + 'px', "important");
+		  canvas.style.setProperty("width", width + 'px', "important");
+
+	 }
+	 setTimeout(function() {SetResolution();}, 10); 
+	 setTimeout(function() {SetResolution();}, 1000);
+	</script>
+  </body>
+</html>
