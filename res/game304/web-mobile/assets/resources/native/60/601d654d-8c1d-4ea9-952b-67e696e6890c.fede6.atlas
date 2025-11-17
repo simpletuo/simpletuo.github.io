@@ -1,0 +1,48 @@
+
+duan2.png
+size: 221,219
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: false
+  xy: 2, 96
+  size: 105, 121
+  orig: 105, 121
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 109, 114
+  size: 110, 103
+  orig: 110, 103
+  offset: 0, 0
+  index: -1
+youdabi
+  rotate: false
+  xy: 124, 60
+  size: 48, 52
+  orig: 48, 52
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: false
+  xy: 2, 10
+  size: 34, 84
+  orig: 34, 84
+  offset: 0, 0
+  index: -1
+zuodabi
+  rotate: false
+  xy: 74, 41
+  size: 48, 53
+  orig: 48, 53
+  offset: 0, 0
+  index: -1
+zuodatui
+  rotate: false
+  xy: 38, 10
+  size: 34, 84
+  orig: 34, 84
+  offset: 0, 0
+  index: -1

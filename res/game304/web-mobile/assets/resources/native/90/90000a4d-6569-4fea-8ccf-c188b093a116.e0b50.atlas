@@ -1,0 +1,62 @@
+
+changqun8.png
+size: 186,186
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: false
+  xy: 2, 29
+  size: 61, 155
+  orig: 61, 155
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 65, 51
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+youdabi
+  rotate: true
+  xy: 149, 48
+  size: 65, 34
+  orig: 65, 34
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: true
+  xy: 2, 6
+  size: 21, 59
+  orig: 21, 59
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 95, 2
+  size: 30, 24
+  orig: 30, 24
+  offset: 0, 0
+  index: -1
+zuodabi
+  rotate: true
+  xy: 149, 115
+  size: 69, 34
+  orig: 69, 34
+  offset: 0, 0
+  index: -1
+zuodatui
+  rotate: true
+  xy: 65, 28
+  size: 21, 59
+  orig: 21, 59
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 63, 2
+  size: 30, 24
+  orig: 30, 24
+  offset: 0, 0
+  index: -1
