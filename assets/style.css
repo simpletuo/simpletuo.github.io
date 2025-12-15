@@ -85,3 +85,36 @@ footer {background: #0078ff; color: #fff; text-align: center; padding: 0.8rem; p
     padding: 0.8rem;
   }
 }
+
+  /* iframe 全屏 */
+  #myIframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+    z-index: 1000;
+	background-color: #eee;
+  }
+
+  /* 返回按钮图片 */
+  #backBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    left: 20px;
+    z-index: 1010;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  #backBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
