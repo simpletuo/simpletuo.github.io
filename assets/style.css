@@ -21,3 +21,100 @@ footer {background: #0078ff; color: #fff; text-align: center; padding: 0.8rem; p
   .ad-banner, .ad-footer { font-size: 14px; padding: 0.8rem; }
   h1 { font-size: 1.5rem; }
 }
+
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.game-item {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.game-item img {
+  width: 140px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-item .info {
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.game-item p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.game-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Mobile 优化 */
+@media (max-width: 600px) {
+  .game-item {
+    flex-direction: column;
+  }
+
+  .game-item img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .game-item .info {
+    padding: 0.8rem;
+  }
+}
+
+  /* iframe 全屏 */
+  #myIframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+    z-index: 1000;
+	background-color: #eee;
+  }
+
+  /* 返回按钮图片 */
+  #backBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    left: 20px;
+    z-index: 1010;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  #backBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
