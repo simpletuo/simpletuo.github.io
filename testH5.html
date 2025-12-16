@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iframe + 悬浮返回按钮</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  /* 打开按钮 */
+  #openBtn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+/* iframe 父容器：全屏白底 */
+#iframeWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+ 
+  z-index: 1000;
+
+  /* 用 flex 居中 iframe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; /* 默认隐藏 */
+}
+
+/* iframe 基础样式 */
+#myIframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+
+  /* 返回按钮图片 */
+  #backBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    z-index: 1010;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  #backBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<button id="openBtn">打开 iframe</button>
+
+<div id="iframeWrapper">
+	<iframe id="myIframe" src="https://example.com"></iframe>
+</div>
+
+
+<!-- 返回按钮图片 -->
+<div id="backBtn">
+  <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="返回">
+</div>
+
+<script>
+
+const wrapper = document.getElementById('iframeWrapper');
+const iframe = document.getElementById('myIframe');
+
+const DESIGN_WIDTH = 1080;
+const DESIGN_HEIGHT = 1920;
+const DESIGN_RATIO = DESIGN_WIDTH / DESIGN_HEIGHT;
+
+function resizeIframe() {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  // PC 宽屏（横向）
+  if (vw > vh) {
+    const screenRatio = vw / vh;
+
+    if (screenRatio > DESIGN_RATIO) {
+      // 以高度为准
+      iframe.style.height = vh + 'px';
+      iframe.style.width = vh * DESIGN_RATIO + 'px';
+    } else {
+      // 以宽度为准
+      iframe.style.width = vw + 'px';
+      iframe.style.height = vw / DESIGN_RATIO + 'px';
+    }
+  } else {
+    // 手机或竖屏，直接全屏
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+  }
+}
+
+// 监听窗口变化
+window.addEventListener('resize', resizeIframe);
+setTimeout(resizeIframe,30);
+
+const openBtn = document.getElementById('openBtn');
+const backBtn = document.getElementById('backBtn');
+
+openBtn.addEventListener('click', () => {
+  //iframe.style.display = 'block';
+  wrapper.style.display = 'flex';
+  backBtn.style.display = 'block';
+  openBtn.style.display = 'none';
+});
+
+backBtn.addEventListener('click', () => {
+  wrapper.style.display = 'none';
+  backBtn.style.display = 'none';
+  openBtn.style.display = 'inline-block';
+});
+
+// ----------------------
+// 拖动与贴边吸附逻辑
+// ----------------------
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+backBtn.addEventListener('mousedown', startDrag);
+backBtn.addEventListener('touchstart', startDrag);
+
+function startDrag(e) {
+  isDragging = true;
+  const rect = backBtn.getBoundingClientRect();
+  if (e.touches) {
+    offsetX = e.touches[0].clientX - rect.left;
+    offsetY = e.touches[0].clientY - rect.top;
+  } else {
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+  }
+  document.addEventListener('mousemove', drag);
+  document.addEventListener('mouseup', stopDrag);
+  document.addEventListener('touchmove', drag, {passive:false});
+  document.addEventListener('touchend', stopDrag);
+}
+
+function drag(e) {
+  if (!isDragging) return;
+  e.preventDefault();
+  let x, y;
+  if (e.touches) {
+    x = e.touches[0].clientX - offsetX;
+    y = e.touches[0].clientY - offsetY;
+  } else {
+    x = e.clientX - offsetX;
+    y = e.clientY - offsetY;
+  }
+  // 限制在屏幕内
+  x = Math.max(0, Math.min(window.innerWidth - backBtn.offsetWidth, x));
+  y = Math.max(0, Math.min(window.innerHeight - backBtn.offsetHeight, y));
+  backBtn.style.left = x + 'px';
+  backBtn.style.top = y + 'px';
+}
+
+function stopDrag() {
+  if (!isDragging) return;
+  isDragging = false;
+
+  // 吸附到左右边
+  const rect = backBtn.getBoundingClientRect();
+  if (rect.left + rect.width / 2 < window.innerWidth / 2) {
+    backBtn.style.left = '10px'; // 靠左
+  } else {
+    backBtn.style.left = (window.innerWidth - rect.width - 10) + 'px'; // 靠右
+  }
+  document.removeEventListener('mousemove', drag);
+  document.removeEventListener('mouseup', stopDrag);
+  document.removeEventListener('touchmove', drag);
+  document.removeEventListener('touchend', stopDrag);
+}
+</script>
+
+</body>
+</html>
