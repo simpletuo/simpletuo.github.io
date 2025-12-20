@@ -62,7 +62,7 @@ Can you escape the cliff?</p>
       </div>
     </a>
 
-    <a href="javascript:void(0)" onclick="changeURL('/res/game13/web-mobile/index.html')"  class="game-item">
+    <a href="javascript:void(0)" onclick="changeURL('/res/game30/web-mobile/index.html')"  class="game-item">
       <img src="assets/game30_0.jpg" alt="Mini Golf">
       <div class="info">
         <h3>Table tennis</h3>
@@ -244,7 +244,9 @@ Use your fingers to connect the pipes and complete every perfect water flow chal
 </section>
 
   </main>
-<iframe id="myIframe" src=""></iframe>
+<div id="iframeWrapper">
+	<iframe id="myIframe" src=""></iframe>
+</div>
 
 <!-- 返回按钮图片 -->
 <div id="backBtn">
@@ -254,15 +256,17 @@ Use your fingers to connect the pipes and complete every perfect water flow chal
 <script>
 const iframe = document.getElementById('myIframe');
 const backBtn = document.getElementById('backBtn');
+const wrapper = document.getElementById('iframeWrapper');
 
 backBtn.addEventListener('click', () => {
-  iframe.style.display = 'none';
+  wrapper.style.display = 'none';
   backBtn.style.display = 'none';
   iframe.src = "";
 });
 
 function changeURL(url)
 {	
+    wrapper.style.display = 'flex';
 	iframe.style.display = 'block';
 	backBtn.style.display = 'block';
 	iframe.src = url;
@@ -328,6 +332,38 @@ function stopDrag() {
   document.removeEventListener('touchmove', drag);
   document.removeEventListener('touchend', stopDrag);
 }
+
+const DESIGN_WIDTH = 1080;
+const DESIGN_HEIGHT = 1920;
+const DESIGN_RATIO = DESIGN_WIDTH / DESIGN_HEIGHT;
+
+function resizeIframe() {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  // PC 宽屏（横向）
+  if (vw > vh) {
+    const screenRatio = vw / vh;
+
+    if (screenRatio > DESIGN_RATIO) {
+      // 以高度为准
+      iframe.style.height = vh + 'px';
+      iframe.style.width = vh * DESIGN_RATIO + 'px';
+    } else {
+      // 以宽度为准
+      iframe.style.width = vw + 'px';
+      iframe.style.height = vw / DESIGN_RATIO + 'px';
+    }
+  } else {
+    // 手机或竖屏，直接全屏
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+  }
+}
+
+// 监听窗口变化
+window.addEventListener('resize', resizeIframe);
+setTimeout(resizeIframe,30);
 </script>
 
   <footer>

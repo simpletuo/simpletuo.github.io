@@ -86,19 +86,6 @@ footer {background: #0078ff; color: #fff; text-align: center; padding: 0.8rem; p
   }
 }
 
-  /* iframe 全屏 */
-  #myIframe {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: none;
-    z-index: 1000;
-	background-color: #eee;
-  }
-
   /* 返回按钮图片 */
   #backBtn {
     position: fixed;
@@ -118,3 +105,28 @@ footer {background: #0078ff; color: #fff; text-align: center; padding: 0.8rem; p
     height: 100%;
     display: block;
   }
+  
+ /* iframe 父容器：全屏白底 */
+#iframeWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+ 
+  z-index: 1000;
+
+  /* 用 flex 居中 iframe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; /* 默认隐藏 */
+}
+
+/* iframe 基础样式 */
+#myIframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
