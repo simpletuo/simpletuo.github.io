@@ -258,6 +258,7 @@ const iframe = document.getElementById('myIframe');
 const backBtn = document.getElementById('backBtn');
 const wrapper = document.getElementById('iframeWrapper');
 
+backBtn.style.top = Math.floor(window.innerHeight*0.5) + 'px';
 backBtn.addEventListener('click', () => {
   wrapper.style.display = 'none';
   backBtn.style.display = 'none';
