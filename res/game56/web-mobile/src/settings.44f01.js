@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","floor","fruit","knife"],collisionMatrix:[[true],[false,false,true,false],[false,true,false,true],[false,false,true,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/Scenes/Menu.fire",orientation:"",jsList:[],bundleVers:{internal:"d17e2",main:"78f3b"}};
