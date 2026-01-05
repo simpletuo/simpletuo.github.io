@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/GF/StartScene.fire",orientation:"portrait",jsList:[],bundleVers:{internal:"52d36",resources:"78de1",main:"4eb96"}};
