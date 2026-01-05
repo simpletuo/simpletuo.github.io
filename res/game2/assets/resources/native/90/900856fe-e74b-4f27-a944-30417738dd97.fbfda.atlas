@@ -1,0 +1,202 @@
+
+Dog.png
+size: 372,372
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 245
+  size: 197, 125
+  orig: 197, 125
+  offset: 0, 0
+  index: -1
+Dia
+  rotate: false
+  xy: 256, 22
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: true
+  xy: 128, 73
+  size: 28, 19
+  orig: 28, 19
+  offset: 0, 0
+  index: -1
+Eye2
+  rotate: false
+  xy: 120, 103
+  size: 29, 20
+  orig: 29, 20
+  offset: 0, 0
+  index: -1
+Eye3
+  rotate: true
+  xy: 286, 23
+  size: 31, 22
+  orig: 31, 22
+  offset: 0, 0
+  index: -1
+FX/Layer 2
+  rotate: true
+  xy: 268, 154
+  size: 38, 41
+  orig: 38, 41
+  offset: 0, 0
+  index: -1
+FX/Layer 4
+  rotate: false
+  xy: 120, 125
+  size: 44, 64
+  orig: 44, 64
+  offset: 0, 0
+  index: -1
+FX/Layer 6
+  rotate: true
+  xy: 200, 194
+  size: 41, 59
+  orig: 41, 59
+  offset: 0, 0
+  index: -1
+FX/Layer 8
+  rotate: true
+  xy: 256, 94
+  size: 37, 53
+  orig: 37, 53
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 2, 103
+  size: 108, 116
+  orig: 108, 116
+  offset: 0, 0
+  index: -1
+Leg1
+  rotate: true
+  xy: 166, 126
+  size: 63, 41
+  orig: 63, 41
+  offset: 0, 0
+  index: -1
+Leg1_1
+  rotate: false
+  xy: 209, 132
+  size: 30, 60
+  orig: 30, 60
+  offset: 0, 0
+  index: -1
+Leg1_2
+  rotate: false
+  xy: 296, 59
+  size: 29, 22
+  orig: 29, 22
+  offset: 0, 0
+  index: -1
+Leg2
+  rotate: false
+  xy: 319, 178
+  size: 49, 57
+  orig: 49, 57
+  offset: 0, 0
+  index: -1
+Leg2_1
+  rotate: true
+  xy: 311, 83
+  size: 38, 57
+  orig: 38, 57
+  offset: 0, 0
+  index: -1
+Leg2_2
+  rotate: true
+  xy: 355, 341
+  size: 29, 15
+  orig: 29, 15
+  offset: 0, 0
+  index: -1
+Leg3
+  rotate: true
+  xy: 261, 194
+  size: 41, 56
+  orig: 41, 56
+  offset: 0, 0
+  index: -1
+Leg3_1
+  rotate: true
+  xy: 256, 56
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+Leg3_2
+  rotate: true
+  xy: 355, 313
+  size: 26, 15
+  orig: 26, 15
+  offset: 0, 0
+  index: -1
+Leg4
+  rotate: false
+  xy: 58, 20
+  size: 68, 81
+  orig: 68, 81
+  offset: 0, 0
+  index: -1
+Leg4_1
+  rotate: false
+  xy: 241, 133
+  size: 25, 59
+  orig: 25, 59
+  offset: 0, 0
+  index: -1
+Leg4_2
+  rotate: true
+  xy: 128, 47
+  size: 24, 17
+  orig: 24, 17
+  offset: 0, 0
+  index: -1
+Meat
+  rotate: true
+  xy: 2, 16
+  size: 85, 54
+  orig: 85, 54
+  offset: 0, 0
+  index: -1
+Mouth1
+  rotate: false
+  xy: 124, 191
+  size: 74, 52
+  orig: 74, 52
+  offset: 0, 0
+  index: -1
+Mouth2
+  rotate: false
+  xy: 311, 123
+  size: 58, 53
+  orig: 58, 53
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 2, 213
+  size: 120, 30
+  orig: 120, 30
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 151, 19
+  size: 103, 104
+  orig: 103, 104
+  offset: 0, 0
+  index: -1
+ice
+  rotate: true
+  xy: 201, 237
+  size: 133, 152
+  orig: 133, 152
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,160 @@
+
+CampFire.png
+size: 496,496
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+r1
+  rotate: false
+  xy: 2, 2
+  size: 71, 47
+  orig: 71, 47
+  offset: 0, 0
+  index: -1
+r10
+  rotate: false
+  xy: 286, 345
+  size: 139, 69
+  orig: 139, 69
+  offset: 0, 0
+  index: -1
+r11
+  rotate: false
+  xy: 75, 10
+  size: 69, 39
+  orig: 69, 39
+  offset: 0, 0
+  index: -1
+r12
+  rotate: false
+  xy: 352, 14
+  size: 132, 60
+  orig: 132, 60
+  offset: 0, 0
+  index: -1
+r13
+  rotate: false
+  xy: 359, 89
+  size: 103, 61
+  orig: 103, 61
+  offset: 0, 0
+  index: -1
+r2
+  rotate: false
+  xy: 301, 418
+  size: 123, 75
+  orig: 123, 75
+  offset: 0, 0
+  index: -1
+r3
+  rotate: false
+  xy: 119, 100
+  size: 158, 95
+  orig: 158, 95
+  offset: 0, 0
+  index: -1
+r4
+  rotate: false
+  xy: 119, 57
+  size: 57, 41
+  orig: 57, 41
+  offset: 0, 0
+  index: -1
+r5
+  rotate: true
+  xy: 238, 210
+  size: 131, 79
+  orig: 131, 79
+  offset: 0, 0
+  index: -1
+r6
+  rotate: false
+  xy: 359, 152
+  size: 104, 69
+  orig: 104, 69
+  offset: 0, 0
+  index: -1
+r7
+  rotate: false
+  xy: 178, 64
+  size: 44, 34
+  orig: 44, 34
+  offset: 0, 0
+  index: -1
+r8
+  rotate: true
+  xy: 279, 76
+  size: 132, 78
+  orig: 132, 78
+  offset: 0, 0
+  index: -1
+r9
+  rotate: true
+  xy: 319, 223
+  size: 120, 74
+  orig: 120, 74
+  offset: 0, 0
+  index: -1
+w1
+  rotate: false
+  xy: 2, 342
+  size: 139, 151
+  orig: 139, 151
+  offset: 0, 0
+  index: -1
+w2
+  rotate: true
+  xy: 143, 416
+  size: 77, 156
+  orig: 77, 156
+  offset: 0, 0
+  index: -1
+w3
+  rotate: false
+  xy: 120, 211
+  size: 116, 129
+  orig: 116, 129
+  offset: 0, 0
+  index: -1
+w4
+  rotate: false
+  xy: 143, 343
+  size: 141, 71
+  orig: 141, 71
+  offset: 0, 0
+  index: -1
+w5
+  rotate: false
+  xy: 2, 197
+  size: 116, 143
+  orig: 116, 143
+  offset: 0, 0
+  index: -1
+w6
+  rotate: true
+  xy: 210, 4
+  size: 58, 140
+  orig: 58, 140
+  offset: 0, 0
+  index: -1
+w7
+  rotate: false
+  xy: 2, 51
+  size: 115, 144
+  orig: 115, 144
+  offset: 0, 0
+  index: -1
+w8
+  rotate: false
+  xy: 146, 5
+  size: 62, 50
+  orig: 62, 50
+  offset: 0, 0
+  index: -1
+w9
+  rotate: true
+  xy: 395, 276
+  size: 67, 78
+  orig: 67, 78
+  offset: 0, 0
+  index: -1
