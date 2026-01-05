@@ -1,0 +1,27 @@
+
+shuimu.png
+size: 119,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuxu_01
+  rotate: false
+  xy: 44, 39
+  size: 35, 78
+  orig: 35, 78
+  offset: 0, 0
+  index: -1
+chuxu_02
+  rotate: false
+  xy: 2, 39
+  size: 40, 78
+  orig: 40, 78
+  offset: 0, 0
+  index: -1
+shuimu
+  rotate: false
+  xy: 2, 2
+  size: 75, 35
+  orig: 75, 35
+  offset: 0, 0
+  index: -1

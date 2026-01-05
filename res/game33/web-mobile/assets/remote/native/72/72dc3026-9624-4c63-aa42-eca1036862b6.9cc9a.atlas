@@ -1,0 +1,188 @@
+
+girl_03.png
+size: 665,665
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+001_dun
+  rotate: false
+  xy: 422, 145
+  size: 152, 158
+  orig: 260, 260
+  offset: 64, 37
+  index: -1
+001_jump
+  rotate: false
+  xy: 288, 295
+  size: 132, 184
+  orig: 260, 260
+  offset: 74, 37
+  index: -1
+001_lose
+  rotate: false
+  xy: 2, 278
+  size: 148, 192
+  orig: 260, 260
+  offset: 66, 37
+  index: -1
+001_run_001
+  rotate: false
+  xy: 2, 472
+  size: 157, 191
+  orig: 260, 260
+  offset: 63, 37
+  index: -1
+001_run_002
+  rotate: false
+  xy: 161, 481
+  size: 151, 182
+  orig: 260, 260
+  offset: 65, 37
+  index: -1
+001_win
+  rotate: false
+  xy: 2, 88
+  size: 134, 188
+  orig: 260, 260
+  offset: 73, 37
+  index: -1
+001_zuo
+  rotate: true
+  xy: 2, 2
+  size: 84, 158
+  orig: 260, 260
+  offset: 98, 37
+  index: -1
+002_dun
+  rotate: false
+  xy: 273, 120
+  size: 146, 160
+  orig: 260, 260
+  offset: 55, 36
+  index: -1
+002_jump
+  rotate: false
+  xy: 138, 88
+  size: 133, 188
+  orig: 260, 260
+  offset: 62, 36
+  index: -1
+002_lose
+  rotate: false
+  xy: 314, 483
+  size: 152, 180
+  orig: 260, 260
+  offset: 52, 36
+  index: -1
+002_run_001
+  rotate: false
+  xy: 468, 483
+  size: 152, 180
+  orig: 260, 260
+  offset: 55, 36
+  index: -1
+002_run_002
+  rotate: false
+  xy: 422, 305
+  size: 146, 176
+  orig: 260, 260
+  offset: 55, 36
+  index: -1
+002_win
+  rotate: false
+  xy: 152, 282
+  size: 134, 188
+  orig: 260, 260
+  offset: 61, 36
+  index: -1
+002_zuo
+  rotate: true
+  xy: 273, 19
+  size: 99, 159
+  orig: 260, 260
+  offset: 79, 36
+  index: -1
+dun_effect_01
+  rotate: false
+  xy: 288, 282
+  size: 38, 11
+  orig: 38, 11
+  offset: 0, 0
+  index: -1
+dun_effect_02
+  rotate: true
+  xy: 560, 118
+  size: 25, 9
+  orig: 25, 9
+  offset: 0, 0
+  index: -1
+han
+  rotate: false
+  xy: 576, 197
+  size: 23, 24
+  orig: 24, 24
+  offset: 1, 0
+  index: -1
+light
+  rotate: false
+  xy: 622, 567
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+light_02
+  rotate: false
+  xy: 434, 19
+  size: 124, 124
+  orig: 124, 124
+  offset: 0, 0
+  index: -1
+light_03
+  rotate: false
+  xy: 576, 223
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+mojing
+  rotate: false
+  xy: 162, 7
+  size: 38, 17
+  orig: 38, 17
+  offset: 0, 0
+  index: -1
+prop_01
+  rotate: false
+  xy: 162, 26
+  size: 68, 60
+  orig: 68, 60
+  offset: 0, 0
+  index: -1
+prop_02
+  rotate: true
+  xy: 570, 371
+  size: 110, 58
+  orig: 110, 58
+  offset: 0, 0
+  index: -1
+xiaoming
+  rotate: false
+  xy: 570, 310
+  size: 53, 59
+  orig: 53, 59
+  offset: 0, 0
+  index: -1
+yanwu
+  rotate: false
+  xy: 232, 58
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+yingzi
+  rotate: true
+  xy: 622, 585
+  size: 78, 17
+  orig: 78, 17
+  offset: 0, 0
+  index: -1

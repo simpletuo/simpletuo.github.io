@@ -1,0 +1,20 @@
+
+feiyu.png
+size: 193,193
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 159
+  size: 126, 32
+  orig: 126, 33
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: false
+  xy: 130, 145
+  size: 61, 46
+  orig: 61, 46
+  offset: 0, 0
+  index: -1

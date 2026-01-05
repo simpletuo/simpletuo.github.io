@@ -1,0 +1,62 @@
+
+tuding.png
+size: 173,173
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light_01
+  rotate: false
+  xy: 85, 56
+  size: 11, 13
+  orig: 16, 45
+  offset: 3, 3
+  index: -1
+light_02
+  rotate: false
+  xy: 73, 13
+  size: 11, 25
+  orig: 16, 45
+  offset: 3, 3
+  index: -1
+light_03
+  rotate: false
+  xy: 73, 40
+  size: 10, 29
+  orig: 16, 45
+  offset: 4, 7
+  index: -1
+light_04
+  rotate: true
+  xy: 2, 4
+  size: 7, 27
+  orig: 16, 45
+  offset: 5, 17
+  index: -1
+light_05
+  rotate: true
+  xy: 31, 7
+  size: 4, 17
+  orig: 16, 45
+  offset: 7, 28
+  index: -1
+light_06
+  rotate: true
+  xy: 31, 2
+  size: 3, 12
+  orig: 16, 45
+  offset: 7, 33
+  index: -1
+light_tuding
+  rotate: false
+  xy: 2, 71
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+tuding
+  rotate: false
+  xy: 2, 13
+  size: 69, 56
+  orig: 69, 56
+  offset: 0, 0
+  index: -1

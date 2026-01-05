@@ -1,0 +1,62 @@
+
+Caidai.png
+size: 197,39
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+紫
+  rotate: false
+  xy: 187, 12
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+紫条
+  rotate: true
+  xy: 2, 11
+  size: 11, 150
+  orig: 11, 150
+  offset: 0, 0
+  index: -1
+红
+  rotate: true
+  xy: 165, 12
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+绿
+  rotate: false
+  xy: 154, 11
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+绿条
+  rotate: true
+  xy: 2, 2
+  size: 7, 192
+  orig: 7, 192
+  offset: 0, 0
+  index: -1
+蓝
+  rotate: true
+  xy: 176, 12
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+黄
+  rotate: true
+  xy: 175, 24
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+黄条
+  rotate: true
+  xy: 2, 24
+  size: 13, 171
+  orig: 13, 171
+  offset: 0, 0
+  index: -1

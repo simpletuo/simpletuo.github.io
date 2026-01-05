@@ -1,0 +1,27 @@
+
+shanbei.png
+size: 205,205
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shanbei_down
+  rotate: false
+  xy: 2, 17
+  size: 182, 83
+  orig: 182, 83
+  offset: 0, 0
+  index: -1
+shanbei_top
+  rotate: false
+  xy: 2, 102
+  size: 169, 101
+  orig: 169, 101
+  offset: 0, 0
+  index: -1
+shanbei_zhengzhu
+  rotate: false
+  xy: 173, 173
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1

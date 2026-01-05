@@ -1,0 +1,146 @@
+
+cat.png
+size: 700,700
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01_desk
+  rotate: true
+  xy: 2, 209
+  size: 42, 311
+  orig: 42, 312
+  offset: 0, 1
+  index: -1
+02_haidi
+  rotate: true
+  xy: 2, 253
+  size: 40, 339
+  orig: 40, 356
+  offset: 0, 0
+  index: -1
+03_taikong
+  rotate: true
+  xy: 2, 295
+  size: 52, 368
+  orig: 52, 389
+  offset: 0, 0
+  index: -1
+arm_02
+  rotate: false
+  xy: 2, 16
+  size: 107, 191
+  orig: 107, 191
+  offset: 0, 0
+  index: -1
+arm_left
+  rotate: true
+  xy: 302, 73
+  size: 134, 87
+  orig: 134, 87
+  offset: 0, 0
+  index: -1
+arm_right
+  rotate: true
+  xy: 214, 70
+  size: 137, 86
+  orig: 137, 86
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 554, 242
+  size: 456, 144
+  orig: 456, 144
+  offset: 0, 0
+  index: -1
+eye_left_moren
+  rotate: false
+  xy: 214, 2
+  size: 118, 66
+  orig: 118, 66
+  offset: 0, 0
+  index: -1
+eye_left_xia
+  rotate: true
+  xy: 391, 164
+  size: 118, 112
+  orig: 118, 112
+  offset: 0, 0
+  index: -1
+eye_mi
+  rotate: false
+  xy: 372, 284
+  size: 134, 21
+  orig: 134, 21
+  offset: 0, 0
+  index: -1
+eye_right_moren
+  rotate: false
+  xy: 505, 174
+  size: 118, 66
+  orig: 118, 66
+  offset: 0, 0
+  index: -1
+eye_right_xia
+  rotate: false
+  xy: 391, 50
+  size: 118, 112
+  orig: 118, 112
+  offset: 0, 0
+  index: -1
+eye_yanjin
+  rotate: false
+  xy: 383, 21
+  size: 6, 50
+  orig: 6, 50
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 349
+  size: 550, 349
+  orig: 550, 349
+  offset: 0, 0
+  index: -1
+huxu
+  rotate: true
+  xy: 511, 50
+  size: 122, 88
+  orig: 122, 88
+  offset: 0, 0
+  index: -1
+meitou
+  rotate: true
+  xy: 625, 152
+  size: 88, 63
+  orig: 88, 63
+  offset: 0, 0
+  index: -1
+mouth_01
+  rotate: true
+  xy: 334, 2
+  size: 69, 47
+  orig: 69, 47
+  offset: 0, 0
+  index: -1
+mouth_02
+  rotate: false
+  xy: 601, 72
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1
+tanhao
+  rotate: true
+  xy: 372, 307
+  size: 40, 173
+  orig: 40, 173
+  offset: 0, 0
+  index: -1
+wenhao
+  rotate: false
+  xy: 111, 30
+  size: 101, 177
+  orig: 101, 177
+  offset: 0, 0
+  index: -1

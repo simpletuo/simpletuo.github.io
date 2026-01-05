@@ -1,0 +1,69 @@
+
+egg.png
+size: 338,338
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+danbai
+  rotate: true
+  xy: 105, 236
+  size: 100, 107
+  orig: 100, 107
+  offset: 0, 0
+  index: -1
+egg
+  rotate: false
+  xy: 2, 196
+  size: 101, 140
+  orig: 101, 140
+  offset: 0, 0
+  index: -1
+egg_down
+  rotate: false
+  xy: 2, 81
+  size: 101, 113
+  orig: 101, 113
+  offset: 0, 0
+  index: -1
+egg_top
+  rotate: false
+  xy: 105, 128
+  size: 100, 106
+  orig: 100, 106
+  offset: 0, 0
+  index: -1
+liefeng_01
+  rotate: false
+  xy: 99, 23
+  size: 24, 56
+  orig: 24, 56
+  offset: 0, 0
+  index: -1
+liefeng_02
+  rotate: false
+  xy: 99, 2
+  size: 41, 19
+  orig: 41, 19
+  offset: 0, 0
+  index: -1
+xiaoji
+  rotate: true
+  xy: 2, 4
+  size: 75, 95
+  orig: 75, 95
+  offset: 0, 0
+  index: -1
+xiaoji_02
+  rotate: true
+  xy: 131, 33
+  size: 93, 83
+  orig: 93, 83
+  offset: 0, 0
+  index: -1
+xiaoji_leg
+  rotate: false
+  xy: 105, 99
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1

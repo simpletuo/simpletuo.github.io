@@ -1,0 +1,153 @@
+
+wuzei.png
+size: 411,411
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 377, 253
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 377, 216
+  size: 21, 35
+  orig: 21, 35
+  offset: 0, 0
+  index: -1
+03
+  rotate: true
+  xy: 164, 7
+  size: 16, 34
+  orig: 16, 34
+  offset: 0, 0
+  index: -1
+04
+  rotate: true
+  xy: 164, 25
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+wuzei
+  rotate: false
+  xy: 2, 222
+  size: 54, 80
+  orig: 54, 81
+  offset: 0, 1
+  index: -1
+wuzei_00
+  rotate: false
+  xy: 315, 2
+  size: 23, 5
+  orig: 232, 60
+  offset: 13, 26
+  index: -1
+wuzei_01
+  rotate: false
+  xy: 2, 204
+  size: 87, 16
+  orig: 232, 60
+  offset: 12, 20
+  index: -1
+wuzei_02
+  rotate: true
+  xy: 377, 281
+  size: 128, 27
+  orig: 232, 60
+  offset: 12, 15
+  index: -1
+wuzei_03
+  rotate: false
+  xy: 2, 8
+  size: 160, 37
+  orig: 232, 60
+  offset: 12, 11
+  index: -1
+wuzei_04
+  rotate: true
+  xy: 208, 19
+  size: 182, 43
+  orig: 232, 60
+  offset: 12, 8
+  index: -1
+wuzei_05
+  rotate: true
+  xy: 362, 14
+  size: 188, 44
+  orig: 232, 60
+  offset: 12, 8
+  index: -1
+wuzei_06
+  rotate: true
+  xy: 315, 9
+  size: 193, 45
+  orig: 232, 60
+  offset: 12, 7
+  index: -1
+wuzei_07
+  rotate: true
+  xy: 267, 4
+  size: 198, 46
+  orig: 232, 60
+  offset: 12, 6
+  index: -1
+wuzei_08
+  rotate: false
+  xy: 2, 304
+  size: 201, 47
+  orig: 232, 60
+  offset: 12, 6
+  index: -1
+wuzei_09
+  rotate: false
+  xy: 2, 47
+  size: 203, 49
+  orig: 232, 60
+  offset: 12, 5
+  index: -1
+wuzei_10
+  rotate: false
+  xy: 2, 98
+  size: 204, 50
+  orig: 232, 60
+  offset: 12, 5
+  index: -1
+wuzei_11
+  rotate: false
+  xy: 2, 150
+  size: 204, 51
+  orig: 232, 60
+  offset: 12, 5
+  index: -1
+wuzei_12
+  rotate: true
+  xy: 323, 204
+  size: 205, 52
+  orig: 232, 60
+  offset: 12, 5
+  index: -1
+wuzei_13
+  rotate: true
+  xy: 267, 204
+  size: 205, 54
+  orig: 232, 60
+  offset: 13, 4
+  index: -1
+wuzei_14
+  rotate: true
+  xy: 211, 203
+  size: 206, 54
+  orig: 232, 60
+  offset: 13, 4
+  index: -1
+wuzei_15
+  rotate: false
+  xy: 2, 353
+  size: 207, 56
+  orig: 232, 60
+  offset: 13, 3
+  index: -1
