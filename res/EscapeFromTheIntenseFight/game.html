@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Escape From The Intense Fight</title>
+	<link href="TemplateData/styleStart82.css" rel="stylesheet">
+	 	<style type="text/css">
+
+		body,html{
+			padding:0 !important;
+			margin:0;
+			width:100%;
+			height:100%;
+			margin:0!important;
+			position:relative!important;
+			overflow: visible !important;
+			/**overflow:hidden;**/
+
+		}
+
+        #unity-container{
+		}		
+			
+		#game_banner{
+
+			left:0;
+			bottom:calc(20vh + 0px);
+			z-index:999;
+			position: -webkit-sticky;
+			position: sticky;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			line-height: 100px; 
+		
+		}
+		
+		#loadingAD2{
+			width: 100%;
+			justify-content: center;
+			display: flex;
+			position: relative;
+		}
+		
+		#loaderContainer2
+		{
+			width: 100%;
+			height:200%;
+		}
+		
+		#app{
+			display:inline-block;
+			width:100%;
+			height:150%;
+			position:absolute;
+			left:0;
+			top:0 !important;
+			margin:0 !important;
+		}
+		#unity-container.unity-desktop{
+			width:100%;
+			height:100%;
+			display:block
+			padding:-10;
+			background-color:#195496;
+		}
+		.canvasClass{
+			width:100%;
+			height: calc(100% - 50px);
+		}
+		
+		 /**广告未填充就不显示**/
+		ins.adsbygoogle[data-ad-status="unfilled"] {
+			display: none !important;
+		}
+		
+		
+		#GameDiv,#GameFrame
+		{
+			height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+		}
+		
+		
+		#GameFrame
+		{
+			height: calc(100vh - 200px) !important;
+            width: 100% !important;
+            position: absolute;
+            left: 0;
+            top: 100px !important;
+		}
+		
+		.top-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 280px; 
+			object-fit: cover;
+    
+		}
+
+        .progress-container {
+			
+			top:200px;
+			left: calc(50% - 74px);
+            position: relative;
+            width: 149px;
+            height: 46px;
+            overflow: hidden;
+        }
+
+        .progress-bg, .progress-fill,.progress-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .progress-fill {
+            clip-path: inset(0% 100% 0 0); 
+            transition: clip-path 0.3s ease-in-out;
+			left: 5;
+        }
+		
+		.progress-btn
+		{
+			width: 100%;
+            height: 100%;
+			border: 0;
+			background-color: transparent;
+		}
+		
+		
+
+        .blinkLoading {
+            animation: blinkAnimation 1s infinite; 
+			transform: translate(-50%, -50%);
+        }
+
+        @keyframes blinkAnimation {
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0; } 
+        }
+		
+        .breathing-button {
+            width: 149px;
+            height: 46px;
+            font-size: 18px;
+            color: white;
+            background: url('TemplateData/btn_paly.png') no-repeat center / cover;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            outline: none;
+        }
+	</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WFW47DWF');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body onresize="SetResolution();">
+<div id="app">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=640 height=1137  class="canvasClass"></canvas>
+	</div>
+	<div id="loaderContainer">
+    <div class="game-img">
+		<img src="TemplateData/img_bg.png" class="top-bg" /> 
+    </div>
+
+	<div class="progress-container">
+        <!-- 背景图 -->
+        <img class="progress-bg" src="TemplateData/btn_bar.png">
+        <!-- 进度填充图 -->
+        <img class="progress-fill" src="TemplateData/btn_bar2.png">
+			<img id="imgLoading" class="blinkLoading" style="position: absolute;width:89px;height:22px;object-fit: cover;top: 50%;left: 50%;"	src="TemplateData/loading.png" >
+		</img>
+		<button id="btn_play" class="breathing-button"   style="visibility:hidden;"></button>
+    </div>
+	
+    <div id="loadingAD" style='margin-top: 216px;height: 250px;' >
+	<div id='loadingAD2' style='display:inline-block;width:100%;height:250px'>
+	</div>
+	</div>
+	</div>
+	<script>
+      SetResolution = function()
+      {
+          var canvas = document.getElementById("unity-canvas");//获取#canvas
+		  //var canvas = document.getElementById("GameFrame");//获取#canvas
+		  //GameFrame
+		  if(canvas == undefined)
+		  {
+		  
+			return;
+		  }
+
+		  var w = window.innerWidth  || document.documentElement.clientWidth ||  document.body.clientWidth;
+		  var h = window.innerHeight || document.documentElement.clientHeight ||  document.body.clientHeight;
+			
+		  document.body.style.width = w + 'px';
+		  document.body.style.height = h + 'px';
+          //var scale = 750/1334;
+		  var scale = 1080/1920;
+		  
+		 // h  -= 200;//加入 顶部100高度 底部100高度
+		 
+		  //var scale = 750/1334;
+		  var width = w;
+		  var height = h;
+		  
+          if (w/h > scale) 
+		  {		
+			if(w > h)
+			{
+				//width = h*scale; 
+			}
+			//width = h*scale; //宽度就全屏
+		  }
+		  else
+		  {
+			height = w/scale;
+		  }
+		 
+		  var top = 0;//顶部100高度 
+		   
+		  // 设置偏移量
+		  canvas.style.top = top + 'px'; // 距离容器顶部20像素
+		  canvas.style.left =  (w-width)/2 + 'px'; // 居中
+		  canvas.style.position = 'absolute';
+		      // 设置#content元素的宽度和高度为窗口大小
+		  canvas.style.width = width + 'px';
+		  canvas.style.height = height + 'px';
+	 }
+			
+		  
+	  //Reset();
+	 SetResolution();
+	 
+	</script>
+	<div id="loaderContainer2"></div>
+	
+	<div id = "game_banner">
+		
+	</div>
+
+<script>
+function closeLoading() {
+  var loaderContainer = document['getElementById']('loaderContainer');
+  if (loaderContainer)
+      loaderContainer['remove']();
+}
+
+function removeImgLoading() {
+
+  let imgLoading = document.querySelector('#imgLoading');
+  if (imgLoading)
+      imgLoading['remove']();
+	  
+  imgLoading = document.querySelector('.progress-bg');
+  if (imgLoading)
+      imgLoading['remove'](); 
+	  
+  imgLoading = document.querySelector('.progress-fill');
+  if (imgLoading)
+      imgLoading['remove'](); 
+	
+  imgLoading = document.querySelector('.progress-container ');
+  if (imgLoading)
+  {
+	//imgLoading.style.animation = "breathing 2s infinite ease-in-out";
+	//imgLoading.style.transition = "transform 0.2s";
+  }
+}
+</script>
+	<script>
+	MyUnityInstance = null;
+	TimeId = null;
+
+	var _isLoadEnd = false;
+	function IsLoadEnd()
+	{
+		return _isLoadEnd;
+	}
+
+
+	function PauseGame()
+	{
+		  if(MyUnityInstance!=null)
+          {
+            MyUnityInstance.SendMessage("GameManager","PauseGame");
+          }
+	
+	}
+
+	function ResumeGame()
+	{
+		  if(MyUnityInstance!=null)
+          {
+            MyUnityInstance.SendMessage("GameManager","ResumeGame");
+          }
+		  
+		  //RefreshAnchorAD();
+	}
+	
+		
+	var IsDocumentHidden = false;
+	
+	document.addEventListener('visibilitychange', function() {
+			if (document.visibilityState === 'visible') {
+				//console.log("页面可见");
+				ResumeGame();
+				if(IsDocumentHidden)
+				{
+					let rewardType = "browse";
+					BrowseAd(rewardType,null,null,rewardType);
+				}
+				IsDocumentHidden = false;
+			} else if (document.visibilityState === 'hidden') {
+				//console.log("页面关闭")
+				PauseGame();
+				IsDocumentHidden = true;
+			}
+	});
+	
+	
+	//插页广告广告 不能有多余的参数
+	function BrowseAd(rewardName,objName,callbackName,rewardType)
+	{	
+		
+		if(HasPreloadAD==false && typeof ShowAD !="undefined")
+		{	
+			PauseGame();
+			//ShowAD(false,null,rewardType);
+			ShowAD(false,callbackName,rewardType,objName,rewardName);
+			return;
+		}
+		
+		
+		if(!navigator.onLine)return;
+		adBreak({
+			type: rewardType,                     // The type of this placement
+			name: rewardName,                     // A descriptive name for this placement
+			beforeAd: () => 
+			{
+				PauseGame();
+			},                 // Prepare for the ad. Mute and pause the game flow
+			afterAd: () => {
+   
+				ResumeGame();
+			},                  // Resume the game and re-enable sound
+			adBreakDone: (placementInfo) => {
+		
+					//console.log("adBreakDone:" + placementInfo.breakStatus);
+					//ResumeGame();
+					//alert(message);
+			}, // Always called (if provided) even if an ad didn't show
+		});
+
+	}
+	 //函数声明到前面：
+	 ///定义一个函数，防止本地报错
+	 functionShowReward = function(rewardName,objName,callbackName,rewardType)
+	 {	
+	 
+		if('pause'==rewardType)
+		{
+			rewardType = 'browse';//改变插页广告
+			BrowseAd(rewardName,objName,callbackName,rewardType);
+			return;
+		}
+		
+		
+		
+		if(HasPreloadAD==false && typeof ShowAD !="undefined")
+		{	
+			ShowAD(true,callbackName,rewardType,objName,rewardName);
+			return;
+		}
+		
+		
+		
+		if(!navigator.onLine)return;
+		
+		//console.error("adBreak rewardType:" + rewardType);
+		adBreak({
+			type: rewardType,                     // The type of this placement
+			name: rewardName,                     // A descriptive name for this placement
+			beforeAd: () => 
+			{
+				PauseGame();
+		
+			},                 // Prepare for the ad. Mute and pause the game flow
+			afterAd: () => {
+   
+				ResumeGame();
+			},                  // Resume the game and re-enable sound
+			beforeReward: (showAdFn) => {
+		
+				showAdFn();
+			},     // Show reward prompt (call showAdFn() if clicked)
+			adDismissed: () => {
+   
+				ResumeGame();
+			},              // Player dismissed the ad before completion
+			adViewed: () => {
+   
+				if(MyUnityInstance!=null)
+				{
+					MyUnityInstance.SendMessage(objName,callbackName,rewardName);//
+				}
+   
+			},                 // Ad was viewed and closed
+			adBreakDone: (placementInfo) => {
+		
+				//console.log("adBreakDone:" + placementInfo.breakStatus);
+				ResumeGame();
+				//alert(message);
+			}, // Always called (if provided) even if an ad didn't show
+		});
+			
+	 };
+	 
+	 var HasPreloadAD = false;
+	 
+	 functionPreloadAD = function()
+	{		
+			if(!navigator.onLine)return;
+			adConfig({
+				preloadAdBreaks: 'auto',  // Ad preloading strategy   'on|auto
+				sound: 'off',            // This game has sound   on|off  'on|off'    
+				onReady: () => {
+					
+					HasPreloadAD = true;
+					var rewardType = 'preroll';//游戏加载前的 'preroll'   ’start‘
+					BrowseAd("OnLoadGame",null,null,rewardType);
+					
+				},   // Called when API has initialised and adBreak() is ready
+			});
+	};
+	
+	function ShowStartAD()
+	{
+		var rewardType = 'start';//游戏加载前的 'preroll'   ’start‘
+		BrowseAd("OnStart",null,null,rewardType);
+		
+	}
+		
+    //埋点函数
+	functionAthenaSend = function(name,tip){
+		
+
+	};
+	
+	var hasCallLoadCompleted  = false;
+	functionLoadCompleted = function()
+	{	
+		if(hasCallLoadCompleted) return;
+		hasCallLoadCompleted = true;
+
+	};
+	//functionPreloadAD();	 //预加载广告 暂时不需要  这里没有用到adbreak广告了
+
+	</script>
+	<script>
+		function GoogleTagEvent(objParems)
+		{	
+			if(!navigator.onLine)return;
+			if(typeof dataLayer=="undefined")
+			{	
+				//dataLayer = window.dataLayer = {};
+			   return;
+			}
+			
+			dataLayer.push(objParems);
+		}
+		
+		function changeProgress(progress) {
+            progress = Math.max(0, Math.min(100, progress)); // 限制在 0-100%
+            document.querySelector('.progress-fill').style.clipPath = `inset(0 ${100 - progress}% 0 0)`;
+        }
+	</script>
+	<script>//广告相关配置
+		
+		var time_fresh_top_banner  = 20000;//顶部锚定广告刷新时间 20秒
+	
+		var time_fresh_banner = 40000;//bannaer广告刷新时间 40秒
+	
+		var is_fresh_bottom_banner = false;//是否需要刷新底部广告
+	
+		var is_show_top_banner = true;//是否显示顶部广告
+		
+	
+		// 域名 game.gamenest.vip/的广告配置
+		var AdObj_game_gamenest_vip = {
+			
+			//google adScene JS
+			google_adScene_js : "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+			
+			//开屏广告的250 AD  
+			StartADName:'/23161678951/hw_escapefromtheintensefight_20250326_play_300x250',
+			
+			///模拟顶部锚定广告
+			ADId_topBannerBoxId:'/23161678951/hw_escapefromtheintensefight_20250326_topanchor_320x100',
+			
+			//bannaer广告
+			ADIdgame_banner:"/23161678951/hw_escapefromtheintensefight_20250326_bottombanner_320x100",
+			
+			//插页广告
+			ADId_Interstitial:"/23161678951/hw_escapefromtheintensefight_20250326_interstitial",
+			
+			//激励广告
+			ADId_Reward:"/23161678951/hw_escapefromtheintensefight_20250326_rewarded",
+			
+        };
+		
+	
+		//默认的AdObj对象 用game.gamenest.vip
+		AdObj_default = AdObj_game_gamenest_vip;
+	  
+		//当前的ad 对象
+		var AdObj_Current = AdObj_default;
+	
+		var AdObj_domain_name = "AdObj_" + document.domain.replaceAll(".","_").trim();
+		//window.alert("AdObj_domain_name:" + AdObj_domain_name);
+		if(window[AdObj_domain_name] != undefined)
+		{
+		   AdObj_Current = window[AdObj_domain_name];		
+		}
+
+		for (let key in AdObj_Current) {
+			if (AdObj_Current.hasOwnProperty(key)) {
+				window[key] = AdObj_Current[key];
+			}
+		}
+		
+		let StartADDivName = "loadingAD2";
+		function loadGoogleADJS()
+		{	
+			if(google_adScene_js != undefined)
+			{
+				let script = document.createElement("script");
+				script.async = true;//"async"
+				script.src = google_adScene_js;
+				//script.crossorigin = "anonymous";
+				//script.setAttribute("data-ad-frequency-hint","20s");
+				script.setAttribute("crossorigin","anonymous");
+				//script.setAttribute("data-adbreak-test","on");  // 测试模式
+				document.head.appendChild(script);
+			}
+			
+			//防止adBreak找不到报错
+			adBreak = function(obj)
+			{
+			}
+			//window.alert("google_adScene_js:" + google_adScene_js);
+			setTimeout(loadStartAD,200);
+		}
+		
+		function loadStartAD()
+		{
+			
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {
+				googletag.defineSlot(StartADName, [300, 250], StartADDivName).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+			
+			setTimeout(DisplayStartAD,300);
+		}
+		
+		function DisplayStartAD()
+		{	
+			
+			let idName = StartADDivName;
+			DisplayAD(idName);
+		}
+		
+		function DisplayAD(idName)
+		{	
+			
+			//let idName = StartADDivName;//'div-gpt-ad-1737016093984-0'    loadingAD2
+			let obj = document.getElementById(idName);
+			let script = document.createElement("script");
+			script.innerHTML = "googletag.cmd.push(function() { googletag.display('"+idName+"'); });";
+			obj.appendChild(script);
+		}
+		
+		setTimeout(loadGoogleADJS,1000);
+		
+		
+		var topBannSlot = null;
+		var topBannerBoxId = "top-banner";
+		function LoadTopAnrAD()
+		{	
+			DestroyAd_TopAnrAD();
+			//creat_topAnr2();
+			
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {
+				topBannSlot = googletag.defineSlot(ADId_topBannerBoxId, [320, 100], topBannerBoxId).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+			
+			setTimeout(()=>{
+				DisplayAD(topBannerBoxId);
+			},300);
+		}
+		
+		function DestroyAd_TopAnrAD()
+		{	
+			if(topBannSlot!=null)
+			{
+				googletag.destroySlots([topBannSlot]);
+				topBannSlot = null;
+			}
+			
+		}
+		
+		var game_bannerId = "game_banner";
+		var game_bannerSlot = null;
+		
+		function LoadBannerAD()
+		{
+			DestroyAd_BannerAD();
+			let _banner=document.getElementById(game_bannerId);
+			_banner.innerHTML = "";
+			
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {
+				game_bannerSlot = googletag.defineSlot(ADIdgame_banner, [320, 100], game_bannerId).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+			
+			setTimeout(()=>{
+				DisplayAD(game_bannerId);
+			},300);
+		}	
+		
+		function DestroyAd_BannerAD()
+		{	
+			if(game_bannerSlot!=null)
+			{
+				googletag.destroySlots([game_bannerSlot]);
+				game_bannerSlot = null;
+			}
+
+		}
+		
+		var gamingInterstitialSlot = null;
+		var divId_Interstitial = "creative";
+		function LoadAd_Interstitial()
+		{	
+			
+			if(gamingInterstitialSlot!=null)return;
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {
+			gamingInterstitialSlot = googletag.defineSlot(ADId_Interstitial, [[300, 250], [320, 480], [336, 280]], divId_Interstitial).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+		}
+		
+		function ShowAd_Interstitial()
+		{
+			if(gamingInterstitialSlot==null)
+			{
+				LoadAd_Interstitial();
+				
+				setTimeout(()=>{
+					DisplayAD(divId_Interstitial);
+				},300);
+				
+			}
+			else 
+			{
+				DisplayAD(divId_Interstitial);
+			}
+			
+		}
+		
+		function DestroyAd_Interstitial()
+		{	
+			if(gamingInterstitialSlot!=null)
+			{
+				googletag.destroySlots([gamingInterstitialSlot]);
+				gamingInterstitialSlot = null;
+			}
+			
+			//setTimeout(LoadAd_Interstitial,300);
+		}
+		
+		
+		var divId_Reward = "creative";
+		var gamingRewardSlot = null;
+
+		function ShowAd_Reward()
+		{	
+		
+			if(gamingRewardSlot==null)
+			{
+				LoadAd_Reward();
+				
+				setTimeout(()=>{
+					DisplayAD(divId_Reward);
+				},300);
+				
+			}
+			else 
+			{
+				DisplayAD(divId_Reward);
+			}
+		
+		}
+
+		function LoadAd_Reward()
+		{	
+			if(gamingRewardSlot!=null)return;
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {
+				gamingRewardSlot = googletag.defineSlot(ADId_Reward, [[300, 250], [320, 480], [336, 280]], divId_Reward).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+		}
+		
+
+		
+		function DestroyAd_Reward()
+		{	
+			if(gamingRewardSlot!=null)
+			{
+				googletag.destroySlots([gamingRewardSlot]);
+				gamingRewardSlot = null;
+			}
+		}
+		
+		function DelayLoadAD_Interstitial_Reward()
+		{	
+			setTimeout(()=>{
+				LoadAd_Interstitial();
+				setTimeout(LoadAd_Reward,1000);
+			},200);
+		}
+	</script>
+    <script>
+	 var GameFrame = document.querySelector("#GameFrame");
+
+	// 记录游戏的加载开始的时间
+	 var loadStartTime = performance.now();
+	
+	  GoogleTagEvent({'event':'loading_begin'});
+	  var app = document.querySelector("#app");
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+     // var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#loading-bar");
+	  var loadingText = document.querySelector("#loadingText");
+	  var loaderContainer = document.querySelector("#loaderContainer");
+	  var loadTime = 80;//8秒 80 * 100毫秒  单位是100毫秒
+	  var timeLoadJs_1 = loadTime * 0.5;
+	  
+	  
+	 function LoadEnd()
+	 {	
+		_isLoadEnd = true;
+		removeImgLoading();
+		GoogleTagEvent({'event':'loading_end','load_time_s': loadTime/10});
+		var btnPlay = document.querySelector('#btn_play');
+		btnPlay.style.visibility = "visible";
+		btnPlay.onclick = () => {
+				if(typeof GameFrame != "undefined")
+				{
+					MyUnityInstance = GameFrame;
+				}	
+					closeLoading();
+					app.style.height = "120%"
+					
+					GoogleTagEvent({'event':'game_page'});
+					//ShowStartAD();
+					ShowStartAD_2();
+
+					function Try_Yuan_startGame()
+					{
+						if(typeof Yuan_startGame != "undefined")
+						{
+							setTimeout(Yuan_startGame,2000);
+						}else 
+						{
+							setTimeout(Try_Yuan_startGame,1000);
+						}
+					}
+
+					Try_Yuan_startGame();
+		};
+	 }
+	 
+	 var hasLoadJs_1 = false;
+	 var hasLoadJs_2 = false;
+	 function LoadJs_1()
+	 {	
+		  if(hasLoadJs_1)return;
+		  hasLoadJs_1 = true;		  
+		  let script = document.createElement("script");
+		  script.src = "js/jquery.min.js";
+		  document.body.appendChild(script);
+		  
+	 }
+	 
+	 function LoadJs_2()
+	 {	
+		  if(hasLoadJs_2)return;
+		  hasLoadJs_2 = true;	
+		  let script = document.createElement("script");
+		  script.src = "js/boyuanAd_X_88.js";
+		  document.body.appendChild(script);
+		  
+		  
+	 }
+		
+	 
+	 var hasLoadUnityEnd = false;
+	
+	var timeLoadJs_2 = loadTime * 0.8;
+	function LoadVersionPercent(index)
+	{
+		if(index>=loadTime)
+		{	
+			LoadEnd();
+			return;
+		}
+		
+		if(index > timeLoadJs_1)
+		{
+			LoadJs_1();
+		}
+		
+		if(index > timeLoadJs_2)
+		{	
+			LoadJs_2();
+		}
+		
+		setTimeout(()=>{
+			var progress = (index/loadTime) * 100;
+			changeProgress(progress);
+			LoadVersionPercent(index+1);
+		},100);
+	}
+	
+	LoadVersionPercent(1);
+	
+
+	function ShowAD_BoYuan(adId,callback)
+	{
+		//alert("ShowAD_BoYuann22:"+adId);
+		if (typeof ShowADForLayaGame != "undefined")
+		{
+			var isReward = adId==1;
+			var adType = isReward ? "reward" : "next";
+			ShowADForLayaGame(isReward,adType,()=>{
+				callback(true);
+			});
+		}
+		else
+		{
+		
+			callback(true);
+		}
+	}
+	
+	function ShowStartAD_2()
+	{
+		ShowAD_BoYuan(0,(isShow)=>{
+			//ShowAD30Seconds();
+		});
+	}
+	
+	
+	///获得区间[min,max]之间的随机数
+	function getRandomInteger(min, max) {
+		return Math.floor(Math.random() * (max - min + 1) ) + min;
+	}
+
+	
+	//30~35秒显示一次广告
+	function ShowAD30Seconds()
+	{	
+		let num = getRandomInteger(30000,35000);
+		setTimeout(()=>{
+			ShowAD_BoYuan(0,(isShow)=>{
+				ShowAD30Seconds();
+			});
+		},num);
+	}
+	
+
+    </script>
+	</div>
+	<div id="GameDiv" >
+		<iframe id="GameFrame"   src="web-mobile/index.html" style="border-width:0px;"></iframe>
+	</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFW47DWF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
