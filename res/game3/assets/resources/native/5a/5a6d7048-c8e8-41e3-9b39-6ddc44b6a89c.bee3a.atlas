@@ -1,0 +1,48 @@
+
+yx_tishi.png
+size: 694,419
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shou
+  rotate: false
+  xy: 555, 46
+  size: 53, 55
+  orig: 53, 55
+  offset: 0, 0
+  index: -1
+xian
+  rotate: true
+  xy: 319, 8
+  size: 409, 174
+  orig: 409, 174
+  offset: 0, 0
+  index: -1
+xian1
+  rotate: false
+  xy: 495, 103
+  size: 197, 314
+  orig: 197, 314
+  offset: 0, 0
+  index: -1
+xian2
+  rotate: true
+  xy: 2, 2
+  size: 415, 315
+  orig: 416, 316
+  offset: 1, 1
+  index: -1
+yx_icon_lang
+  rotate: false
+  xy: 495, 25
+  size: 58, 76
+  orig: 58, 76
+  offset: 0, 0
+  index: -1
+yx_icon_yang
+  rotate: false
+  xy: 610, 51
+  size: 55, 50
+  orig: 55, 50
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,34 @@
+
+dt_btn_btclxj.png
+size: 554,695
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b1
+  rotate: true
+  xy: 2, 154
+  size: 539, 311
+  orig: 539, 312
+  offset: 0, 0
+  index: -1
+btcwz
+  rotate: true
+  xy: 2, 2
+  size: 150, 142
+  orig: 150, 142
+  offset: 0, 0
+  index: -1
+di
+  rotate: true
+  xy: 315, 37
+  size: 656, 237
+  orig: 656, 237
+  offset: 0, 0
+  index: -1
+yan
+  rotate: true
+  xy: 146, 5
+  size: 30, 38
+  orig: 30, 38
+  offset: 0, 0
+  index: -1

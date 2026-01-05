@@ -1,0 +1,97 @@
+
+dt_btn_znm.png
+size: 243,1032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bi
+  rotate: false
+  xy: 64, 71
+  size: 86, 87
+  orig: 86, 87
+  offset: 0, 0
+  index: -1
+di
+  rotate: true
+  xy: 2, 374
+  size: 656, 237
+  orig: 656, 237
+  offset: 0, 0
+  index: -1
+shent
+  rotate: true
+  xy: 39, 3
+  size: 53, 82
+  orig: 53, 82
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 152, 76
+  size: 71, 82
+  orig: 71, 82
+  offset: 0, 0
+  index: -1
+tui
+  rotate: true
+  xy: 123, 10
+  size: 59, 81
+  orig: 59, 81
+  offset: 0, 0
+  index: -1
+wz
+  rotate: true
+  xy: 64, 160
+  size: 212, 142
+  orig: 212, 142
+  offset: 0, 0
+  index: -1
+xian
+  rotate: true
+  xy: 2, 58
+  size: 314, 60
+  orig: 314, 60
+  offset: 0, 0
+  index: -1
+xie
+  rotate: true
+  xy: 208, 321
+  size: 51, 21
+  orig: 51, 21
+  offset: 0, 0
+  index: -1
+xie1
+  rotate: true
+  xy: 208, 268
+  size: 51, 21
+  orig: 51, 21
+  offset: 0, 0
+  index: -1
+ygbs
+  rotate: false
+  xy: 208, 187
+  size: 28, 38
+  orig: 28, 38
+  offset: 0, 0
+  index: -1
+ygbx
+  rotate: false
+  xy: 206, 15
+  size: 35, 59
+  orig: 35, 59
+  offset: 0, 0
+  index: -1
+zgbs
+  rotate: false
+  xy: 208, 227
+  size: 27, 39
+  orig: 27, 39
+  offset: 0, 0
+  index: -1
+zgbx
+  rotate: false
+  xy: 2, 2
+  size: 35, 54
+  orig: 35, 54
+  offset: 0, 0
+  index: -1

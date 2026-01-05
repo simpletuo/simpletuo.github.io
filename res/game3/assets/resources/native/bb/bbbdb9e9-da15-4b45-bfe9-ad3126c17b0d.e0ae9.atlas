@@ -1,0 +1,20 @@
+
+gq_icon_bx.png
+size: 305,186
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bx
+  rotate: true
+  xy: 167, 3
+  size: 181, 136
+  orig: 181, 136
+  offset: 0, 0
+  index: -1
+bx1
+  rotate: true
+  xy: 2, 2
+  size: 182, 163
+  orig: 182, 163
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,69 @@
+
+juese.png
+size: 470,155
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gan
+  rotate: true
+  xy: 2, 143
+  size: 10, 295
+  orig: 10, 295
+  offset: 0, 0
+  index: -1
+shent
+  rotate: false
+  xy: 226, 2
+  size: 88, 139
+  orig: 88, 139
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 2
+  size: 120, 139
+  orig: 120, 139
+  offset: 0, 0
+  index: -1
+tui
+  rotate: false
+  xy: 124, 4
+  size: 100, 137
+  orig: 100, 137
+  offset: 0, 0
+  index: -1
+xie
+  rotate: true
+  xy: 433, 67
+  size: 86, 35
+  orig: 86, 35
+  offset: 0, 0
+  index: -1
+ygbs
+  rotate: true
+  xy: 316, 6
+  size: 46, 63
+  orig: 46, 63
+  offset: 0, 0
+  index: -1
+ygbx
+  rotate: false
+  xy: 316, 54
+  size: 56, 99
+  orig: 56, 99
+  offset: 0, 0
+  index: -1
+zgbs
+  rotate: true
+  xy: 381, 16
+  size: 44, 65
+  orig: 44, 65
+  offset: 0, 0
+  index: -1
+zgbx
+  rotate: false
+  xy: 374, 62
+  size: 57, 91
+  orig: 57, 91
+  offset: 0, 0
+  index: -1

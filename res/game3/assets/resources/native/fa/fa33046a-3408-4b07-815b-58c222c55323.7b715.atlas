@@ -1,0 +1,41 @@
+
+sangshin.png
+size: 354,144
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dao
+  rotate: true
+  xy: 256, 72
+  size: 70, 96
+  orig: 70, 96
+  offset: 0, 0
+  index: -1
+grb
+  rotate: false
+  xy: 256, 12
+  size: 43, 58
+  orig: 43, 58
+  offset: 0, 0
+  index: -1
+shent
+  rotate: false
+  xy: 134, 2
+  size: 120, 140
+  orig: 120, 140
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 2
+  size: 130, 140
+  orig: 130, 140
+  offset: 0, 0
+  index: -1
+tui
+  rotate: false
+  xy: 301, 9
+  size: 37, 61
+  orig: 37, 61
+  offset: 0, 0
+  index: -1

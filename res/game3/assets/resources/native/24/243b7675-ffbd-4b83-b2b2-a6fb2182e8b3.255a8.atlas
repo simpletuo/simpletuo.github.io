@@ -1,0 +1,34 @@
+
+luoguo.png
+size: 293,127
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+grb
+  rotate: true
+  xy: 205, 2
+  size: 49, 68
+  orig: 49, 68
+  offset: 0, 0
+  index: -1
+shent
+  rotate: true
+  xy: 133, 53
+  size: 72, 158
+  orig: 72, 158
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 9
+  size: 129, 116
+  orig: 129, 116
+  offset: 0, 0
+  index: -1
+tui
+  rotate: true
+  xy: 133, 8
+  size: 43, 70
+  orig: 43, 70
+  offset: 0, 0
+  index: -1

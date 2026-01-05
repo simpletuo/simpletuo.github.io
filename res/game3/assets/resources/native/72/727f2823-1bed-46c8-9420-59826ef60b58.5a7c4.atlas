@@ -1,0 +1,20 @@
+
+yx_duic.png
+size: 259,131
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cuo
+  rotate: false
+  xy: 137, 8
+  size: 120, 121
+  orig: 127, 123
+  offset: 4, 1
+  index: -1
+dui
+  rotate: false
+  xy: 2, 2
+  size: 133, 127
+  orig: 133, 127
+  offset: 0, 0
+  index: -1

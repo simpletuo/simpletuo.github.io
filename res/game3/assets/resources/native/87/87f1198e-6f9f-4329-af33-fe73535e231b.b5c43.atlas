@@ -1,0 +1,27 @@
+
+yx_icon_tu.png
+size: 81,49
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: true
+  xy: 2, 2
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 50, 11
+  size: 29, 36
+  orig: 29, 36
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: false
+  xy: 50, 3
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1

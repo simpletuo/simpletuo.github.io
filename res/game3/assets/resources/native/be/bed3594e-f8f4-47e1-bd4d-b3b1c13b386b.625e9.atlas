@@ -1,0 +1,41 @@
+
+Dog.png
+size: 161,353
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shent
+  rotate: false
+  xy: 2, 111
+  size: 144, 100
+  orig: 144, 100
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 213
+  size: 138, 148
+  orig: 138, 148
+  offset: 0, 0
+  index: -1
+tuih
+  rotate: true
+  xy: 2, 48
+  size: 61, 122
+  orig: 61, 122
+  offset: 0, 0
+  index: -1
+tuiq
+  rotate: true
+  xy: 2, 2
+  size: 44, 87
+  orig: 44, 87
+  offset: 0, 0
+  index: -1
+weib
+  rotate: true
+  xy: 126, 12
+  size: 97, 33
+  orig: 97, 33
+  offset: 0, 0
+  index: -1

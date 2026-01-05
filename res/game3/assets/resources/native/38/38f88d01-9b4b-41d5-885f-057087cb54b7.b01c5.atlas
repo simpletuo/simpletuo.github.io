@@ -1,0 +1,27 @@
+
+yx_icon_yang.png
+size: 50,79
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 2, 29
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 2, 2
+  size: 25, 30
+  orig: 25, 30
+  offset: 0, 0
+  index: -1
+tui
+  rotate: false
+  xy: 34, 19
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1

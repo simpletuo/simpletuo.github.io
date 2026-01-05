@@ -1,0 +1,13 @@
+
+yx_wh.png
+size: 44,58
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wh
+  rotate: false
+  xy: 2, 2
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1

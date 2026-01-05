@@ -1,0 +1,62 @@
+
+bj.png
+size: 1731,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bj
+  rotate: true
+  xy: 2, 2
+  size: 720, 1680
+  orig: 720, 1680
+  offset: 0, 0
+  index: -1
+c_1
+  rotate: true
+  xy: 1684, 429
+  size: 71, 34
+  orig: 71, 34
+  offset: 0, 0
+  index: -1
+c_2
+  rotate: true
+  xy: 1684, 643
+  size: 79, 39
+  orig: 79, 39
+  offset: 0, 0
+  index: -1
+c_3
+  rotate: true
+  xy: 1684, 573
+  size: 68, 41
+  orig: 68, 41
+  offset: 0, 0
+  index: -1
+c_4
+  rotate: true
+  xy: 1684, 502
+  size: 69, 37
+  orig: 69, 37
+  offset: 0, 0
+  index: -1
+c_5
+  rotate: true
+  xy: 1684, 372
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+c_6
+  rotate: true
+  xy: 1684, 267
+  size: 46, 31
+  orig: 46, 31
+  offset: 0, 0
+  index: -1
+c_7
+  rotate: true
+  xy: 1684, 315
+  size: 55, 35
+  orig: 55, 35
+  offset: 0, 0
+  index: -1

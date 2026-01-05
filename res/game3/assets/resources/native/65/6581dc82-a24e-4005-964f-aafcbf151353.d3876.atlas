@@ -1,0 +1,20 @@
+
+yx_bj.png
+size: 280,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di
+  rotate: false
+  xy: 2, 6
+  size: 212, 104
+  orig: 212, 104
+  offset: 0, 0
+  index: -1
+wh
+  rotate: false
+  xy: 216, 2
+  size: 62, 108
+  orig: 62, 108
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+dt_btn_yyxc.png
+size: 859,241
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 660, 11
+  size: 84, 97
+  orig: 84, 97
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 773, 142
+  size: 84, 97
+  orig: 84, 97
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 773, 43
+  size: 84, 97
+  orig: 84, 97
+  offset: 0, 0
+  index: -1
+di
+  rotate: false
+  xy: 2, 2
+  size: 656, 237
+  orig: 656, 237
+  offset: 0, 0
+  index: -1
+wz
+  rotate: false
+  xy: 660, 97
+  size: 111, 142
+  orig: 111, 142
+  offset: 0, 0
+  index: -1

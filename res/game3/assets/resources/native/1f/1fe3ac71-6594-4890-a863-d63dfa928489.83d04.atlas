@@ -1,0 +1,104 @@
+
+sl_icon_bt.png
+size: 1581,597
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guang_sb
+  rotate: true
+  xy: 2, 2
+  size: 593, 587
+  orig: 595, 589
+  offset: 0, 2
+  index: -1
+guang_sl
+  rotate: true
+  xy: 591, 2
+  size: 593, 587
+  orig: 595, 589
+  offset: 0, 2
+  index: -1
+sbbt
+  rotate: true
+  xy: 1180, 68
+  size: 527, 139
+  orig: 527, 139
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 1462, 461
+  size: 98, 134
+  orig: 98, 134
+  offset: 0, 0
+  index: -1
+slbt
+  rotate: true
+  xy: 1321, 68
+  size: 527, 139
+  orig: 527, 139
+  offset: 0, 0
+  index: -1
+tou_sb
+  rotate: false
+  xy: 1462, 331
+  size: 94, 128
+  orig: 94, 128
+  offset: 0, 0
+  index: -1
+tou_sl
+  rotate: false
+  xy: 1462, 201
+  size: 94, 128
+  orig: 94, 128
+  offset: 0, 0
+  index: -1
+xian
+  rotate: true
+  xy: 1243, 9
+  size: 4, 35
+  orig: 4, 35
+  offset: 0, 0
+  index: -1
+xx
+  rotate: true
+  xy: 1180, 3
+  size: 63, 61
+  orig: 63, 61
+  offset: 0, 0
+  index: -1
+xx2
+  rotate: true
+  xy: 1180, 3
+  size: 63, 61
+  orig: 63, 61
+  offset: 0, 0
+  index: -1
+xx1
+  rotate: true
+  xy: 1243, 15
+  size: 51, 49
+  orig: 51, 49
+  offset: 0, 0
+  index: -1
+xx3
+  rotate: true
+  xy: 1243, 15
+  size: 51, 49
+  orig: 51, 49
+  offset: 0, 0
+  index: -1
+ygb
+  rotate: true
+  xy: 1462, 20
+  size: 80, 116
+  orig: 80, 116
+  offset: 0, 0
+  index: -1
+zgb
+  rotate: true
+  xy: 1462, 102
+  size: 97, 117
+  orig: 97, 117
+  offset: 0, 0
+  index: -1

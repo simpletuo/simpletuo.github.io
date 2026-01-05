@@ -1,0 +1,27 @@
+
+yinx.png
+size: 283,117
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lb
+  rotate: true
+  xy: 240, 72
+  size: 43, 41
+  orig: 43, 41
+  offset: 0, 0
+  index: -1
+yin
+  rotate: false
+  xy: 2, 2
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: -1
+yixiang
+  rotate: true
+  xy: 117, 11
+  size: 104, 121
+  orig: 104, 121
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,125 @@
+
+ks_btn_wlg.png
+size: 1039,241
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bai1
+  rotate: false
+  xy: 660, 2
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+bai2
+  rotate: false
+  xy: 824, 70
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+bai3
+  rotate: false
+  xy: 703, 2
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+bai4
+  rotate: false
+  xy: 867, 70
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+bai5
+  rotate: false
+  xy: 910, 57
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+bai6
+  rotate: false
+  xy: 953, 57
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+di
+  rotate: false
+  xy: 2, 2
+  size: 656, 237
+  orig: 656, 237
+  offset: 0, 0
+  index: -1
+lan1
+  rotate: false
+  xy: 996, 57
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+lan2
+  rotate: false
+  xy: 746, 2
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+lan3
+  rotate: false
+  xy: 789, 14
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+lan4
+  rotate: false
+  xy: 832, 27
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+lan5
+  rotate: false
+  xy: 875, 14
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+lan6
+  rotate: false
+  xy: 918, 14
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+shpu
+  rotate: false
+  xy: 771, 57
+  size: 51, 54
+  orig: 51, 54
+  offset: 0, 0
+  index: -1
+wz
+  rotate: false
+  xy: 914, 100
+  size: 113, 139
+  orig: 113, 139
+  offset: 0, 0
+  index: -1
+zi
+  rotate: false
+  xy: 660, 45
+  size: 109, 66
+  orig: 109, 66
+  offset: 0, 0
+  index: -1
+zi1
+  rotate: false
+  xy: 660, 113
+  size: 252, 126
+  orig: 252, 126
+  offset: 0, 0
+  index: -1

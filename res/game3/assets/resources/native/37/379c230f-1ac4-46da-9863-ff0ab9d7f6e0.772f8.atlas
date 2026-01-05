@@ -1,0 +1,20 @@
+
+sheTou.png
+size: 89,61
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tou
+  rotate: true
+  xy: 2, 2
+  size: 57, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+yanpi
+  rotate: false
+  xy: 64, 6
+  size: 23, 53
+  orig: 23, 53
+  offset: 0, 0
+  index: -1

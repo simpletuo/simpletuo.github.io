@@ -1,0 +1,62 @@
+
+huoyan1.png
+size: 787,297
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hy_0
+  rotate: false
+  xy: 583, 152
+  size: 202, 143
+  orig: 230, 169
+  offset: 6, 13
+  index: -1
+hy_1
+  rotate: false
+  xy: 2, 8
+  size: 187, 147
+  orig: 224, 167
+  offset: 11, 9
+  index: -1
+hy_2
+  rotate: false
+  xy: 191, 8
+  size: 199, 145
+  orig: 241, 166
+  offset: 17, 13
+  index: -1
+hy_3
+  rotate: false
+  xy: 200, 155
+  size: 199, 140
+  orig: 236, 167
+  offset: 11, 22
+  index: -1
+hy_4
+  rotate: false
+  xy: 401, 153
+  size: 180, 142
+  orig: 221, 164
+  offset: 13, 20
+  index: -1
+hy_5
+  rotate: false
+  xy: 2, 157
+  size: 196, 138
+  orig: 237, 168
+  offset: 7, 23
+  index: -1
+hy_6
+  rotate: false
+  xy: 392, 4
+  size: 199, 146
+  orig: 245, 160
+  offset: 8, 14
+  index: -1
+hy_7
+  rotate: false
+  xy: 593, 2
+  size: 192, 148
+  orig: 234, 165
+  offset: 10, 14
+  index: -1

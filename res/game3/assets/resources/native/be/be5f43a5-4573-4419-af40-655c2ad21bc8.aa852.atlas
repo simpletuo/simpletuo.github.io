@@ -1,0 +1,27 @@
+
+gongjian.png
+size: 99,66
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gong
+  rotate: false
+  xy: 2, 28
+  size: 67, 36
+  orig: 67, 36
+  offset: 0, 0
+  index: -1
+jian
+  rotate: true
+  xy: 2, 2
+  size: 24, 49
+  orig: 24, 49
+  offset: 0, 0
+  index: -1
+xian
+  rotate: true
+  xy: 71, 7
+  size: 57, 26
+  orig: 57, 26
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+ks_bj.png
+size: 1777,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bj
+  rotate: false
+  xy: 1646, 586
+  size: 129, 136
+  orig: 129, 136
+  offset: 0, 0
+  index: -1
+fh
+  rotate: true
+  xy: 2, 2
+  size: 720, 1642
+  orig: 720, 1650
+  offset: 0, 8
+  index: -1

@@ -1,0 +1,27 @@
+
+load_bj.png
+size: 1220,476
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di
+  rotate: true
+  xy: 2, 2
+  size: 472, 520
+  orig: 472, 520
+  offset: 0, 0
+  index: -1
+huan
+  rotate: false
+  xy: 524, 117
+  size: 357, 357
+  orig: 358, 357
+  offset: 1, 0
+  index: -1
+yuan
+  rotate: true
+  xy: 883, 138
+  size: 336, 335
+  orig: 336, 335
+  offset: 0, 0
+  index: -1

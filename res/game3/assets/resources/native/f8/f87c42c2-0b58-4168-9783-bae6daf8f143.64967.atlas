@@ -1,0 +1,20 @@
+
+gq_jig_qgj.png
+size: 271,179
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gq_jig_qgd
+  rotate: false
+  xy: 180, 32
+  size: 89, 145
+  orig: 89, 145
+  offset: 0, 0
+  index: -1
+gq_jig_qgp
+  rotate: true
+  xy: 2, 2
+  size: 175, 176
+  orig: 175, 176
+  offset: 0, 0
+  index: -1

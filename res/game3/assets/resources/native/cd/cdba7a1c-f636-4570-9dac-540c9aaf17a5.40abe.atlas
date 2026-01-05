@@ -1,0 +1,34 @@
+
+diant.png
+size: 204,37
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gan
+  rotate: false
+  xy: 2, 20
+  size: 132, 15
+  orig: 132, 15
+  offset: 0, 0
+  index: -1
+gan1
+  rotate: false
+  xy: 2, 5
+  size: 130, 13
+  orig: 130, 13
+  offset: 0, 0
+  index: -1
+lun
+  rotate: false
+  xy: 136, 2
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+lun2
+  rotate: false
+  xy: 171, 4
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1

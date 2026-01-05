@@ -1,0 +1,48 @@
+
+Enemy.png
+size: 346,122
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pistol
+  rotate: false
+  xy: 110, 76
+  size: 234, 44
+  orig: 262, 46
+  offset: 27, 1
+  index: -1
+gan
+  rotate: true
+  xy: 2, 2
+  size: 10, 295
+  orig: 10, 295
+  offset: 0, 0
+  index: -1
+grb
+  rotate: false
+  xy: 252, 25
+  size: 37, 49
+  orig: 37, 49
+  offset: 0, 0
+  index: -1
+shent
+  rotate: true
+  xy: 110, 22
+  size: 52, 140
+  orig: 52, 140
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 14
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+tui
+  rotate: false
+  xy: 299, 8
+  size: 25, 66
+  orig: 25, 66
+  offset: 0, 0
+  index: -1
