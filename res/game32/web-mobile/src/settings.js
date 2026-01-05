@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","rope","wall"],collisionMatrix:[[false],[false,false,true],[false,true,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scene/mainScene.fire",orientation:"portrait",jsList:[]};
