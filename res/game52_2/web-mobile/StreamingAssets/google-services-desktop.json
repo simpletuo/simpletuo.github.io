@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "395308856811",
+    "project_id": "master-gun-war-heroes",
+    "storage_bucket": "master-gun-war-heroes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395308856811:ios:a3dcf355e48ad7e29a15ae",
+        "android_client_info": {
+          "package_name": "com.FoxGames.MasterGunWarHeroes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395308856811-d52tosbv5uc9og5bdk67ec9m5a9vcucr.apps.googleusercontent.com"
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDcsBDW-FSNxRSg4JUYpNxHTVZD72IC90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
