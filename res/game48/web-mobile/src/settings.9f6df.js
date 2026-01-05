@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","PlayerController","UIToast"],collisionMatrix:[[true,true],[true,true],[false,false,false]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/Scenes/Loading.fire",orientation:"",jsList:[],bundleVers:{resources:"f109e",internal:"d17e2",main:"61206"}};
