@@ -1,0 +1,1 @@
+window.yyp={},window.yyp.config={},yyp.eventCenter=yyp.eventCenter||new cc.EventTarget;
