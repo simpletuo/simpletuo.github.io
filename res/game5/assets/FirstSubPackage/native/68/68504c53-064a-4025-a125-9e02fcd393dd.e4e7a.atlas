@@ -1,0 +1,62 @@
+
+manghe.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baixiangzi
+  rotate: false
+  xy: 2, 28
+  size: 130, 114
+  orig: 130, 114
+  offset: 0, 0
+  index: -1
+baoshi1
+  rotate: false
+  xy: 881, 884
+  size: 34, 25
+  orig: 34, 25
+  offset: 0, 0
+  index: -1
+dianguang
+  rotate: false
+  xy: 2, 2
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+guang
+  rotate: false
+  xy: 2, 144
+  size: 254, 172
+  orig: 254, 172
+  offset: 0, 0
+  index: -1
+guangdian
+  rotate: false
+  xy: 671, 663
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+icon_manghe
+  rotate: false
+  xy: 258, 202
+  size: 130, 114
+  orig: 130, 114
+  offset: 0, 0
+  index: -1
+quanguang
+  rotate: false
+  xy: 671, 701
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+xuanguang
+  rotate: false
+  xy: 2, 318
+  size: 667, 591
+  orig: 667, 591
+  offset: 0, 0
+  index: -1
