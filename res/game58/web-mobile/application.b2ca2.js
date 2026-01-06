@@ -50,7 +50,8 @@ System.register([], function (_export, _context) {
                 }
               }
             }).then(function () {
-              return cc.game.run();
+              cc.view.enableAutoFullScreen(false);
+              cc.game.run();
             });
           }
         }]);
