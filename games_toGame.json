@@ -357,7 +357,7 @@
     "unlike": 1.2,
     "score": 9,
     "votes": "12553",
-    "url": "/res/game11/web-mobile/index.html"
+    "url": "/res/game11_2/web-mobile/index.html"
   },
   {
     "id": 23,
@@ -808,24 +808,6 @@
     "score": 9.5,
     "votes": "14566",
     "url": "/res/game50/web-mobile/index.html"
-  },
-  {
-    "id": "52",
-    "name": "Animal Tetris",
-    "sortIndex": "52",
-    "type": "Puzzle",
-    "tags": "[Match]",
-    "newGame": "0",
-    "classicgames": "0",
-    "hotgame": "0",
-    "updated": "Dec 2022",
-    "des": "Play the tlmeless block puzzle game together WItheveryone, anywhere!\nWelcome to TETRIS, the official mobile app for theworld's favorite block puzzle game. Play throughhundreds of unique TETRIS Levels in a new and exciting block puzzle experience. Play a quick roundto beat your own score, or blast through infinite rounds to master your skills in the TETRIS SinglePlayer Modes. TETRIS forever!\nEnjoy the ultimate block puzzle game with theseamazing features:\nPuzzle your way through challenging but fun objectives by playing Tetris.\nThe classic block puzzle game with a fresh twist!Improve your gameplay by learning new tricks andmastering the hardest levels.",
-    "pathPicture": "52-Animal Tetris",
-    "like": 8.8,
-    "unlike": 0.8,
-    "score": 9.2,
-    "votes": "11561",
-    "url": "/res/game51/web-mobile/index.html"
   },
   {
     "id": "53",
